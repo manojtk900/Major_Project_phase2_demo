@@ -1,0 +1,62 @@
+{
+  "0": {
+    "id": "bacterial_spot",
+    "name_en": "Bacterial Spot",
+    "name_kn": "ದುಂಡಾಣು ಚುಕ್ಕೆ ರೋಗ",
+    "is_healthy": false
+  },
+  "1": {
+    "id": "early_blight",
+    "name_en": "Early Blight",
+    "name_kn": "ಮುಂಚಿನ ಅಂಗಮಾರಿ ರೋಗ",
+    "is_healthy": false
+  },
+  "2": {
+    "id": "late_blight",
+    "name_en": "Late Blight",
+    "name_kn": "ತಡವಾದ ಅಂಗಮಾರಿ ರೋಗ",
+    "is_healthy": false
+  },
+  "3": {
+    "id": "leaf_mold",
+    "name_en": "Leaf Mold",
+    "name_kn": "ಎಲೆ ಬೂಜು ರೋಗ",
+    "is_healthy": false
+  },
+  "4": {
+    "id": "septoria_leaf_spot",
+    "name_en": "Septoria Leaf Spot",
+    "name_kn": "ಸೆಪ್ಟೋರಿಯಾ ಎಲೆ ಚುಕ್ಕೆ ರೋಗ",
+    "is_healthy": false
+  },
+  "5": {
+    "id": "spider_mites",
+    "name_en": "Spider Mites (Two-spotted)",
+    "name_kn": "ಕೆಂಪು ಜೇಡ ನುಸಿ / ಚಿಬ್ಬು ಕೀಟ",
+    "is_healthy": false
+  },
+  "6": {
+    "id": "target_spot",
+    "name_en": "Target Spot",
+    "name_kn": "ಗುರಿ ಚುಕ್ಕೆ ರೋಗ",
+    "is_healthy": false
+  },
+  "7": {
+    "id": "tomato_yellow_leaf_curl_virus",
+    "name_en": "Tomato Yellow Leaf Curl Virus",
+    "name_kn": "ಹಳದಿ ಎಲೆ ಮುದುಡು ವೈರಸ್",
+    "is_healthy": false
+  },
+  "8": {
+    "id": "tomato_mosaic_virus",
+    "name_en": "Tomato Mosaic Virus",
+    "name_kn": "ಟೊಮೇಟೊ ಮೊಸಾಯಿಕ್ ವೈರಸ್",
+    "is_healthy": false
+  },
+  "9": {
+    "id": "healthy",
+    "name_en": "Healthy Leaf",
+    "name_kn": "ಆರೋಗ್ಯಕರ ಎಲೆ",
+    "is_healthy": true
+  }
+}

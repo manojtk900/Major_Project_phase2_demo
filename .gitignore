@@ -1,0 +1,53 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+
+# Virtual environments
+venv/
+env/
+.venv/
+ENV/
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Environment variables & secrets
+.env
+*.env.local
+*.pem
+*.key
+
+# Temporary backups & scratch scripts
+backup_*/
+scratch_*.py
+scratch/
+*.log
+*.bak
+
+# Duplicate demo sample directories & junctions
+s_demo_samples/
+uplod_demo_samples/
+uplod_demo_samples
+
+# Heavy raw training dataset inside crop_validator (1.28 GB images)
+notebooks/crop_validator/dataset/
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store

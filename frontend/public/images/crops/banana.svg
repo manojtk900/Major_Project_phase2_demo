@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <linearGradient id="bgBanana" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fef9c3"/>
+      <stop offset="100%" stop-color="#fef08a"/>
+    </linearGradient>
+    <linearGradient id="bananaSkin" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#facc15"/>
+      <stop offset="70%" stop-color="#eab308"/>
+      <stop offset="100%" stop-color="#ca8a04"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bgBanana)" rx="16"/>
+  <!-- Banana Bunch -->
+  <path d="M140 100 Q200 160 260 110 Q280 160 210 210 Q150 200 120 150 Z" fill="#84cc16" opacity="0.3"/>
+  <path d="M150 90 C220 120 280 180 270 230 C250 210 200 150 140 110 Z" fill="url(#bananaSkin)" filter="drop-shadow(2px 6px 8px rgba(0,0,0,0.15))"/>
+  <path d="M130 110 C200 140 260 200 240 245 C225 225 180 170 120 130 Z" fill="url(#bananaSkin)" filter="drop-shadow(2px 6px 8px rgba(0,0,0,0.15))"/>
+  <path d="M120 135 C180 165 240 215 215 255 C200 235 160 190 110 155 Z" fill="url(#bananaSkin)" filter="drop-shadow(2px 6px 8px rgba(0,0,0,0.15))"/>
+  <!-- Crown / Stem -->
+  <path d="M120 115 Q110 95 130 90 Q150 95 140 115 Z" fill="#4d7c0f"/>
+  <!-- Label Badge -->
+  <rect x="20" y="246" width="160" height="34" rx="8" fill="rgba(255,255,255,0.9)" stroke="#fef08a"/>
+  <text x="32" y="268" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#854d0e">🍌 Banana (ಬಾಳೆ)</text>
+</svg>

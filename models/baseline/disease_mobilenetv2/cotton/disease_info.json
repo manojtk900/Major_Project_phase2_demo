@@ -1,0 +1,220 @@
+{
+  "bacterial_blight": {
+    "id": "bacterial_blight",
+    "name_en": "Bacterial Blight",
+    "name_kn": "ಬ್ಯಾಕ್ಟೀರಿಯಲ್ ಬ್ಲೈಟ್ (ಕೋನೀಯ ಎಲೆ ಚುಕ್ಕೆ ರೋಗ)",
+    "plant_id": "cotton",
+    "is_healthy": false,
+    "pathogen": "Xanthomonas citri pv. malvacearum",
+    "symptoms_en": [
+      "Small, angular, water-soaked lesions bounded by leaf veinlets",
+      "Lesions turn reddish-brown to dark blackish-brown with yellow haloes",
+      "Infection spreads to petioles and stems forming dark black girdling lesions ('Blackarm' phase)",
+      "Water-soaked oily spots develop on bolls, leading to premature boll rotting"
+    ],
+    "symptoms_kn": [
+      "ಎಲೆಯ ನರಗಳಿಂದ ಸೀಮಿತವಾದ ಸಣ್ಣ, ಕೋನೀಯ, ನೀರಿನಿಂದ ನೆನೆದಂತಹ ಕಲೆಗಳು ಕಾಣಿಸಿಕೊಳ್ಳುತ್ತವೆ",
+      "ಕಲೆಗಳು ಕೆಂಪು-ಕಂದು ಬಣ್ಣದಿಂದ ಗಾಢ ಕಪ್ಪು ಬಣ್ಣಕ್ಕೆ ತಿರುಗಿ ಒಣಗುತ್ತವೆ",
+      "ರೋಗವು ತೊಟ್ಟು ಮತ್ತು ಕಾಂಡಕ್ಕೆ ಹರಡಿ ಕಪ್ಪು ಪಟ್ಟೆಗಳಾಗಿ ಕಾಂಡ ಮುರಿಯುವ 'ಬ್ಲ್ಯಾಕ್‌ಆರ್ಮ್' ಲಕ್ಷಣ ಉಂಟಾಗುತ್ತದೆ",
+      "ಹತ್ತಿ ಕಾಯಿಗಳ ಮೇಲೆ ಎಣ್ಣೆಯುಕ್ತ ಕಲೆಗಳುಂಟಾಗಿ ಕಾಯಿಗಳು ಕೊಳೆಯುತ್ತವೆ"
+    ],
+    "organic_controls_en": [
+      "Foliar spray of Pseudomonas fluorescens @ 5 g/L at first appearance of lesions",
+      "Spray 3% neem oil or 5% Neem Seed Kernel Extract (NSKE) to suppress bacterial spread",
+      "Seed treatment with cow dung extract supernatant and Trichoderma viride (10 g/kg seed)"
+    ],
+    "organic_controls_kn": [
+      "ರೋಗದ ಆರಂಭದಲ್ಲಿ ಪ್ರತಿ ಲೀಟರ್ ನೀರಿಗೆ 5 ಗ್ರಾಂ ಸೂಡೋಮೊನಾಸ್ ಫ್ಲೋರೊಸೆನ್ಸ್ ಬೆರೆಸಿ ಸಿಂಪಡಿಸಿ",
+      "3% ಬೇವಿನ ಎಣ್ಣೆ ಅಥವಾ 5% ಬೇವಿನ ಬೀಜದ ಕಷಾಯ (NSKE) ಸಿಂಪಡಿಸಿ ರೋಗ ಹರಡುವಿಕೆ ತಡೆಯಿರಿ",
+      "ಬಿತ್ತನೆ ಬೀಜಗಳಿಗೆ ಟ್ರೈಕೋಡರ್ಮಾ ವಿರಿಡೆ (10 ಗ್ರಾಂ/ಕೆ.ಜಿ) ಜೈವಿಕ ಬೀಜೋಪಚಾರ ಮಾಡಿ"
+    ],
+    "chemical_controls_en": [
+      "Spray Copper Oxychloride 50 WP (2.5 g/L) + Streptocycline (100 mg/L) dissolved in water",
+      "Alternatively spray Plantomycin @ 1.0 g/L combined with Copper Hydroxide (2.0 g/L)"
+    ],
+    "chemical_controls_kn": [
+      "ಪ್ರತಿ ಲೀಟರ್ ನೀರಿಗೆ 2.5 ಗ್ರಾಂ ತಾಮ್ರದ ಆಕ್ಸಿಕ್ಲೋರೈಡ್ (COC) + 100 ಮಿ.ಗ್ರಾಂ ಸ್ಟ್ರೆಪ್ಟೋಸೈಕ್ಲಿನ್ ಬೆರೆಸಿ ಸಿಂಪಡಿಸಿ",
+      "ಅಥವಾ ಪ್ಲಾಂಟೊಮೈಸಿನ್ (1 ಗ್ರಾಂ/ಲೀ) ಜೊತೆಗೆ ತಾಮ್ರದ ಹೈಡ್ರಾಕ್ಸೈಡ್ (2 ಗ್ರಾಂ/ಲೀ) ಸಿಂಪಡಿಸಿ"
+    ],
+    "preventive_measures_en": [
+      "Use acid-delinted, certified disease-free seeds from authorized agricultural centers",
+      "Avoid excessive doses of nitrogenous fertilizers; adopt split applications of urea with potash",
+      "Collect and deep-bury or burn infected crop debris and stubbles post-harvest"
+    ],
+    "preventive_measures_kn": [
+      "ಪ್ರಮಾಣೀಕೃತ ಆಸಿಡ್-ಡಿಲಿಂಟೆಡ್ (ರೋಗ ಮುಕ್ತ) ಬಿತ್ತನೆ ಬೀಜಗಳನ್ನು ಮಾತ್ರ ಬಳಸಿ",
+      "ಅತಿಯಾದ ಯೂರಿಯಾ ಬಳಕೆಯನ್ನು ತಪ್ಪಿಸಿ; ಸಾರಜನಕ ಮತ್ತು ಪೊಟ್ಯಾಷ್ ಗೊಬ್ಬರಗಳನ್ನು ಕಂತುಗಳಲ್ಲಿ ನೀಡಿ",
+      "ಸುಗ್ಗಿಯ ನಂತರ ರೋಗಪೀಡಿತ ಹತ್ತಿ ಗಿಡದ ಉಳಿಕೆಗಳನ್ನು ಸಂಗ್ರಹಿಸಿ ಸುಟ್ಟು ಅಥವಾ ಮಣ್ಣಿನಲ್ಲಿ ಹೂತುಹಾಕಿ"
+    ],
+    "govt_schemes_en": [
+      "National Food Security Mission (NFSM-Commercial Crops: Cotton) plant protection subsidy",
+      "Pradhan Mantri Fasal Bima Yojana (PMFBY) covering localized leaf blight loss"
+    ],
+    "govt_schemes_kn": [
+      "ರಾಷ್ಟ್ರೀಯ ಆಹಾರ ಭದ್ರತಾ ಮಿಷನ್ (NFSM-ವಾಣಿಜ್ಯ ಬೆಳೆಗಳು: ಹತ್ತಿ) ಸಸ್ಯ ಸಂರಕ್ಷಣಾ ಸಹಾಯಧನ",
+      "ಪ್ರಧಾನಮಂತ್ರಿ ಫಸಲ್ ಬಿಮಾ ಯೋಜನೆ (PMFBY) ಹತ್ತಿ ಬೆಳೆ ವಿಮೆ"
+    ]
+  },
+  "curl_virus": {
+    "id": "curl_virus",
+    "name_en": "Cotton Leaf Curl Virus",
+    "name_kn": "ಹತ್ತಿ ಎಲೆ ಸುರುಳಿ ವೈರಸ್ ರೋಗ",
+    "plant_id": "cotton",
+    "is_healthy": false,
+    "pathogen": "Cotton Leaf Curl Virus (CLCuV / Begomovirus, transmitted by Whitefly)",
+    "symptoms_en": [
+      "Upward or downward rolling and thickening of leaf margins",
+      "Thickening and darkening of primary, secondary, and tertiary veins on leaf abaxial surface",
+      "Formation of characteristic cup-shaped or leaf-like enations underneath the leaf blade",
+      "Severe plant stunting, internode shortening, and drastically reduced boll formation"
+    ],
+    "symptoms_kn": [
+      "ಎಲೆಯ ಅಂಚುಗಳು ಮೇಲ್ಮುಖವಾಗಿ ಅಥವಾ ಕೆಳಮುಖವಾಗಿ ಸುರುಳಿಯಾಗುವುದು ಮತ್ತು ದಪ್ಪವಾಗುವುದು",
+      "ಎಲೆಯ ಹಿಂಭಾಗದ ಮುಖ್ಯ ಮತ್ತು ಉಪ ನರಗಳು ದಪ್ಪಗಾಗಿ ಹಸಿರು ಬಣ್ಣಕ್ಕೆ ತಿರುಗುತ್ತವೆ",
+      "ಎಲೆಯ ಕೆಳಭಾಗದಲ್ಲಿ ಚಿಕ್ಕದಾದ ಕಪ್ಪಿನಾಕಾರದ ಅಥವಾ ಎಲೆಯಂತಹ ಬೆಳವಣಿಗೆಗಳು (ಎನೇಶನ್) ಕಾಣಿಸಿಕೊಳ್ಳುತ್ತವೆ",
+      "ಗಿಡಗಳ ಬೆಳವಣಿಗೆ ಕುಂಠಿತವಾಗಿ ಗಿಣ್ಣುಗಳು ಚಿಕ್ಕದಾಗುತ್ತವೆ ಮತ್ತು ಕಾಯಿಗಳ ಕಟ್ಟುವಿಕೆ ತೀವ್ರವಾಗಿ ಕಡಿಮೆಯಾಗುತ್ತದೆ"
+    ],
+    "organic_controls_en": [
+      "Install 15-20 yellow sticky traps per acre to mass-trap whitefly (Bemisia tabaci) vectors",
+      "Foliar spray of 3% Neem oil or 5% NSKE (Neem Seed Kernel Extract) to deter whitefly oviposition",
+      "Spray Pongamia (Honge) oil @ 5 ml/L with mild soap emulsifier"
+    ],
+    "organic_controls_kn": [
+      "ಬಿಳಿ ನೊಣಗಳನ್ನು ಆಕರ್ಷಿಸಿ ನಾಶಮಾಡಲು ಎಕರೆಗೆ 15-20 ಹಳದಿ ಜಿಗುಟು ಬಲೆಗಳನ್ನು (Yellow Sticky Traps) ಅಳವಡಿಸಿ",
+      "ಬಿಳಿ ನೊಣದ ಮೊಟ್ಟೆ ಇಡುವಿಕೆಯನ್ನು ತಡೆಯಲು 3% ಬೇವಿನ ಎಣ್ಣೆ ಅಥವಾ 5% NSKE ಸಿಂಪಡಿಸಿ",
+      "ಹೊಂಗೆ ಎಣ್ಣೆ (5 ಮಿ.ಲೀ/ಲೀ) ಸಾಬೂನು ನೀರಿನೊಂದಿಗೆ ಬೆರೆಸಿ ಸಿಂಪಡಿಸಿ"
+    ],
+    "chemical_controls_en": [
+      "Spray Diafenthiuron 50 WP @ 1.0 g/L or Pyriproxyfen 10 EC @ 1.5 ml/L against whiteflies",
+      "Alternatively apply Spiromesifen 22.9 SC @ 1.0 ml/L or Flonicamid 50 WG @ 0.4 g/L"
+    ],
+    "chemical_controls_kn": [
+      "ವಾಹಕ ಕೀಟವಾದ ಬಿಳಿ ನೊಣದ ನಿಯಂತ್ರಣಕ್ಕೆ ಡಯಾಫೆಂಥಿಯುರಾನ್ 50 WP (1 ಗ್ರಾಂ/ಲೀ) ಅಥವಾ ಪಿರಿಪ್ರಾಕ್ಸಿಫೆನ್ 10 EC (1.5 ಮಿ.ಲೀ/ಲೀ) ಸಿಂಪಡಿಸಿ",
+      "ಅಥವಾ ಸ್ಪೈರೋಮೆಸಿಫೆನ್ 22.9 SC (1 ಮಿ.ಲೀ/ಲೀ) ಅಥವಾ ಫ್ಲೋನಿಕಾಮಿಡ್ 50 WG (0.4 ಗ್ರಾಂ/ಲೀ) ಸಿಂಪಡಿಸಿ"
+    ],
+    "preventive_measures_en": [
+      "Eradicate alternate weed hosts (Abutilon indicum, Sida cordifolia, Parthenium) around field borders",
+      "Cultivate tolerant/resistant Bt cotton hybrids recommended for Karnataka (UAS Dharwad / Raichur)",
+      "Adopt synchronous sowing in the village cluster to prevent whitefly population migration"
+    ],
+    "preventive_measures_kn": [
+      "ಗದ್ದೆಯ ಬದುಗಳಲ್ಲಿರುವ ಕಳೆಗಳಾದ ತುತತ್ತಿ, ಬಲ ಮತ್ತು ಕಾಂಗ್ರೆಸ್ ಕಳೆಗಳನ್ನು ಸಂಪೂರ್ಣವಾಗಿ ನಿರ್ಮೂಲನೆ ಮಾಡಿ",
+      "ಕರ್ನಾಟಕ ಕೃಷಿ ವಿಶ್ವವಿದ್ಯಾಲಯಗಳು (ಧಾರವಾಡ/ರಾಯಚೂರು) ಶಿಫಾರಸು ಮಾಡಿದ ನಿರೋಧಕ ತಳಿಗಳನ್ನು ಬೆಳೆಯಿರಿ",
+      "ಕೀಟಗಳ ವಲಸೆ ತಡೆಯಲು ಇಡೀ ಪ್ರದೇಶದಲ್ಲಿ ಏಕಕಾಲದಲ್ಲಿ ಬಿತ್ತನೆ ಕೈಗೊಳ್ಳಿ"
+    ],
+    "govt_schemes_en": [
+      "Integrated Pest Management (IPM) Mission under Karnataka Department of Agriculture",
+      "Pradhan Mantri Fasal Bima Yojana (PMFBY)"
+    ],
+    "govt_schemes_kn": [
+      "ಕರ್ನಾಟಕ ಕೃಷಿ ಇಲಾಖೆಯ ಸಮಗ್ರ ಕೀಟ ನಿರ್ವಹಣಾ (IPM) ಕಾರ್ಯಕ್ರಮ",
+      "ಪ್ರಧಾನಮಂತ್ರಿ ಫಸಲ್ ಬಿಮಾ ಯೋಜನೆ (PMFBY)"
+    ]
+  },
+  "fusarium_wilt": {
+    "id": "fusarium_wilt",
+    "name_en": "Fusarium Wilt",
+    "name_kn": "ನೆಟೆ ರೋಗ / ಫ್ಯುಸೇರಿಯಮ್ ಬಾಡುವಿಕೆ ರೋಗ",
+    "plant_id": "cotton",
+    "is_healthy": false,
+    "pathogen": "Fusarium oxysporum f. sp. vasinfectum",
+    "symptoms_en": [
+      "Yellowing, wilting, and drooping of leaves starting from the bottom upward",
+      "Leaves turn dull yellow, brown, and drop prematurely leaving bare branches",
+      "Characteristic dark brown to black vascular discoloration seen when main stem or root is split longitudinally",
+      "Roots show dark rotting and xylem vessels become clogged with fungal mycelium"
+    ],
+    "symptoms_kn": [
+      "ಕೆಳ ಹಂತದ ಎಲೆಗಳಿಂದ ಆರಂಭವಾಗಿ ಮೇಲ್ಮುಖವಾಗಿ ಎಲೆಗಳು ಹಳದಿಯಾಗಿ ಬಾಡಿ ಜೋತುಬೀಳುತ್ತವೆ",
+      "ಎಲೆಗಳು ಕಂದು ಬಣ್ಣಕ್ಕೆ ತಿರುಗಿ ಅಕಾಲಿಕವಾಗಿ ಉದುರಿ ಬರಿಯ ಕಡ್ಡಿಗಳು ಉಳಿಯುತ್ತವೆ",
+      "ಕಾಂಡ ಅಥವಾ ಬೇರನ್ನು ಉದ್ದವಾಗಿ ಸೀಳಿ ನೋಡಿದಾಗ ನಾಳಗಳಲ್ಲಿ ಗಾಢ ಕಂದು-ಕಪ್ಪು ಬಣ್ಣದ ಗೆರೆಗಳು ಸ್ಪಷ್ಟವಾಗಿ ಕಾಣುತ್ತವೆ",
+      "ಬೇರುಗಳು ಕೊಳೆತು ನೀರಿನ ಸಾಗಾಣಿಕೆ ಸಂಪೂರ್ಣವಾಗಿ ಸ್ಥಗಿತಗೊಳ್ಳುತ್ತದೆ"
+    ],
+    "organic_controls_en": [
+      "Soil application of Trichoderma viride or T. harzianum @ 2 kg/acre enriched in 200 kg well-decomposed FYM",
+      "Drench the root zone of vulnerable plants with Pseudomonas fluorescens @ 10 g/L",
+      "Adopt crop rotation with non-host cereals (Sorghum, Pearl Millet, Maize) for 2-3 seasons"
+    ],
+    "organic_controls_kn": [
+      "200 ಕೆ.ಜಿ ಕೊಟ್ಟಿಗೆ ಗೊಬ್ಬರದಲ್ಲಿ 2 ಕೆ.ಜಿ ಟ್ರೈಕೋಡರ್ಮಾ ವಿರಿಡೆ ಬೆರೆಸಿ ಮಣ್ಣಿಗೆ ಸೇರಿಸಿ",
+      "ಗಿಡಗಳ ಬುಡಕ್ಕೆ ಸೂಡೋಮೊನಾಸ್ ಫ್ಲೋರೊಸೆನ್ಸ್ (10 ಗ್ರಾಂ/ಲೀ) ದ್ರಾವಣವನ್ನು ಸುರಿಯಿರಿ (Root Drenching)",
+      "ಜೋಳ, ಸಜ್ಜೆ ಅಥವಾ ಮೆಕ್ಕೆಜೋಳದಂತಹ ಬೆಳೆಗಳೊಂದಿಗೆ 2-3 ವರ್ಷಗಳ ಕಾಲ ಬೆಳೆ ಪರಿವರ್ತನೆ ಮಾಡಿ"
+    ],
+    "chemical_controls_en": [
+      "Seed treatment before sowing with Carbendazim 50 WP or Benomyl @ 2.0 g/kg seed",
+      "Spot drench the root zone of affected and surrounding plants with Carbendazim 50 WP (1.0 g/L) or Copper Oxychloride 50 WP (3.0 g/L)"
+    ],
+    "chemical_controls_kn": [
+      "ಬಿತ್ತನೆಗೆ ಮುನ್ನ ಕಾರ್ಬೆಂಡಾಜಿಮ್ 50 WP (2 ಗ್ರಾಂ/ಕೆ.ಜಿ) ಶಿಲೀಂಧ್ರನಾಶಕದಿಂದ ಬೀಜೋಪಚಾರ ಮಾಡಿ",
+      "ರೋಗದ ಆರಂಭಿಕ ಹಂತದಲ್ಲಿ ಗಿಡದ ಬುಡಕ್ಕೆ ಕಾರ್ಬೆಂಡಾಜಿಮ್ (1 ಗ್ರಾಂ/ಲೀ) ಅಥವಾ ಬ್ಲೈಟಾಕ್ಸ್/COC (3 ಗ್ರಾಂ/ಲೀ) ದ್ರಾವಣವನ್ನು ಸುರಿಯಿರಿ"
+    ],
+    "preventive_measures_en": [
+      "Rectify soil acidity or drainage defects; apply gypsum or lime based on soil test results",
+      "Avoid deep root injuries during inter-cultivation weeding operations to prevent fungal entry",
+      "Select resistant cultivars and ensure seed provenance is certified"
+    ],
+    "preventive_measures_kn": [
+      "ಮಣ್ಣು ಪರೀಕ್ಷೆ ನಡೆಸಿ ಮಣ್ಣಿನ ಆಮ್ಲೀಯತೆ ಮತ್ತು ಬಸಿಗಾಲುವೆ ಸಮಸ್ಯೆಗಳನ್ನು ಸರಿಪಡಿಸಿ",
+      "ಎಡೆಕುಂಟೆ ಹೊಡೆಯುವಾಗ ಬೇರುಗಳಿಗೆ ಗಾಯವಾಗದಂತೆ ಎಚ್ಚರವಹಿಸಿ (ಗಾಯಗಳಿಂದ ಶಿಲೀಂಧ್ರ ಸುಲಭವಾಗಿ ಪ್ರವೇಶಿಸುತ್ತದೆ)",
+      "ರೋಗ ನಿರೋಧಕ ತಳಿಗಳನ್ನು ಆಯ್ಕೆ ಮಾಡಿ"
+    ],
+    "govt_schemes_en": [
+      "Soil Health Card Scheme for micro-nutrient balancing",
+      "Rashtriya Krishi Vikas Yojana (RKVY) soil improvement assistance"
+    ],
+    "govt_schemes_kn": [
+      "ಮಣ್ಣು ಆರೋಗ್ಯ ಕಾರ್ಡ್ ಯೋಜನೆ (Soil Health Card Scheme)",
+      "ರಾಷ್ಟ್ರೀಯ ಕೃಷಿ ವಿಕಾಸ ಯೋಜನೆ (RKVY)"
+    ]
+  },
+  "healthy": {
+    "id": "healthy",
+    "name_en": "Healthy Leaf",
+    "name_kn": "ಆರೋಗ್ಯಕರ ಎಲೆ",
+    "plant_id": "cotton",
+    "is_healthy": true,
+    "pathogen": "None (Healthy Foliage)",
+    "symptoms_en": [
+      "Broad, dark green, turgid leaf lamina with distinct palmately lobed venation",
+      "Uniform upright canopy with active vegetative branches (monopodia) and fruiting branches (sympodia)",
+      "Absence of necrotic lesions, mosaic mottling, vein thickening, or vascular wilting"
+    ],
+    "symptoms_kn": [
+      "ಯಾವುದೇ ರೋಗ ಅಥವಾ ಕೀಟಬಾಧೆಯ ಲಕ್ಷಣಗಳಿಲ್ಲದ ದೃಢವಾದ, ಗಾಢ ಹಸಿರು ಬಣ್ಣದ ಎಲೆಗಳು",
+      "ಸಮೃದ್ಧ ಕಾಯಿ ಕಟ್ಟುವಿಕೆ ಮತ್ತು ಆರೋಗ್ಯಕರ ಕವಲುಗಳ ಬೆಳವಣಿಗೆ",
+      "ಎಲೆ ಸುರುಳಿ, ಕಲೆಗಳು ಅಥವಾ ನೆಟೆ ರೋಗದ ಯಾವುದೇ ಬಾಧೆ ಇರುವುದಿಲ್ಲ"
+    ],
+    "organic_controls_en": [
+      "Apply Jeevamrutha or Panchagavya (3%) every 20 days to promote beneficial phyllosphere microorganisms",
+      "Maintain soil organic matter by incorporating Sunn hemp or Cowpea green manure"
+    ],
+    "organic_controls_kn": [
+      "ಪ್ರತಿ 20 ದಿನಗಳಿಗೊಮ್ಮೆ ಜೀವಾಮೃತ ಅಥವಾ 3% ಪಂಚಗವ್ಯ ಸಿಂಪಡಿಸಿ ಸಸ್ಯದ ರೋಗನಿರೋಧಕ ಶಕ್ತಿ ಹೆಚ್ಚಿಸಿ",
+      "ಸೆಣಬು ಅಥವಾ ಹುರುಳಿ ಹಸಿರೆಲೆ ಗೊಬ್ಬರವನ್ನು ಮಣ್ಣಿಗೆ ಸೇರಿಸಿ ಫಲವತ್ತತೆ ಕಾಪಾಡಿ"
+    ],
+    "chemical_controls_en": [
+      "No chemical fungicide, bactericide, or viricide application required."
+    ],
+    "chemical_controls_kn": [
+      "ಯಾವುದೇ ರಾಸಾಯನಿಕ ಶಿಲೀಂಧ್ರನಾಶಕ ಸಿಂಪಡಣೆಯ ಅಗತ್ಯವಿಲ್ಲ."
+    ],
+    "preventive_measures_en": [
+      "Maintain recommended plant spacing (90 × 60 cm for Bt hybrids) to ensure aeration and sunlight penetration",
+      "Install pheromone traps (5 per acre) to monitor pink bollworm (Pectinophora gossypiella) adults",
+      "Provide balanced NPK fertilization with 25 kg Zinc Sulphate and 10 kg Borax per acre"
+    ],
+    "preventive_measures_kn": [
+      "ಗಾಳಿ-ಬೆಳಕು ಚೆನ್ನಾಗಿ ಆಡಲು ಶಿಫಾರಸು ಮಾಡಿದ ಅಂತರದಲ್ಲಿ (90 × 60 ಸೆಂ.ಮೀ) ಗಿಡಗಳನ್ನು ಬೆಳೆಸಿ",
+      "ಗುಲಾಬಿ ಕಾಯಿಕೊರಕ ಕೀಟದ ನಿಗಾ ಇಡಲು ಎಕರೆಗೆ 5 ಮೋಹಕ ಬಲೆಗಳನ್ನು (Pheromone Traps) ಅಳವಡಿಸಿ",
+      "ಶಿಫಾರಸು ಮಾಡಿದ ಸಾರಜನಕ, ರಂಜಕ, ಪೊಟ್ಯಾಷ್ ಜೊತೆಗೆ ಸತು ಮತ್ತು ಬೋರಾನ್ ಲಘು ಪೋಷಕಾಂಶಗಳನ್ನು ನೀಡಿ"
+    ],
+    "govt_schemes_en": [
+      "Paramparagat Krishi Vikas Yojana (PKVY) for organic cotton cultivation",
+      "PM Kisan Samman Nidhi Yojana"
+    ],
+    "govt_schemes_kn": [
+      "ಪರಂಪರಾಗತ್ ಕೃಷಿ ವಿಕಾಸ್ ಯೋಜನೆ (PKVY)",
+      "ಪ್ರಧಾನಮಂತ್ರಿ ಕಿಸಾನ್ ಸಮ್ಮಾನ್ ನಿಧಿ ಯೋಜನೆ"
+    ]
+  }
+}

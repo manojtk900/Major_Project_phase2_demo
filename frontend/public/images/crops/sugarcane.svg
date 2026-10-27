@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <linearGradient id="bgSugar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f0fdf4"/>
+      <stop offset="100%" stop-color="#dcfce7"/>
+    </linearGradient>
+    <linearGradient id="caneStalk" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#65a30d"/>
+      <stop offset="50%" stop-color="#84cc16"/>
+      <stop offset="100%" stop-color="#4d7c0f"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bgSugar)" rx="16"/>
+  <!-- Canes -->
+  <g filter="drop-shadow(2px 6px 8px rgba(0,0,0,0.12))">
+    <!-- Stalk 1 -->
+    <rect x="160" y="50" width="22" height="200" rx="4" fill="url(#caneStalk)"/>
+    <line x1="160" y1="90" x2="182" y2="90" stroke="#facc15" stroke-width="3"/>
+    <line x1="160" y1="130" x2="182" y2="130" stroke="#facc15" stroke-width="3"/>
+    <line x1="160" y1="170" x2="182" y2="170" stroke="#facc15" stroke-width="3"/>
+    <line x1="160" y1="210" x2="182" y2="210" stroke="#facc15" stroke-width="3"/>
+    <!-- Stalk 2 -->
+    <rect x="210" y="40" width="22" height="210" rx="4" fill="url(#caneStalk)"/>
+    <line x1="210" y1="80" x2="232" y2="80" stroke="#facc15" stroke-width="3"/>
+    <line x1="210" y1="120" x2="232" y2="120" stroke="#facc15" stroke-width="3"/>
+    <line x1="210" y1="160" x2="232" y2="160" stroke="#facc15" stroke-width="3"/>
+    <line x1="210" y1="200" x2="232" y2="200" stroke="#facc15" stroke-width="3"/>
+  </g>
+  <!-- Long Arching Leaves -->
+  <path d="M170 60 Q120 20 80 50 Q120 40 170 70 Z" fill="#22c55e"/>
+  <path d="M220 50 Q280 15 330 45 Q280 35 220 60 Z" fill="#16a34a"/>
+  <!-- Label Badge -->
+  <rect x="20" y="246" width="180" height="34" rx="8" fill="rgba(255,255,255,0.9)" stroke="#bbf7d0"/>
+  <text x="32" y="268" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#166534">🎋 Sugarcane (ಕಬ್ಬು)</text>
+</svg>

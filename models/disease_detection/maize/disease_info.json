@@ -1,0 +1,192 @@
+{
+  "cercospora_gray_leaf_spot": {
+    "id": "cercospora_gray_leaf_spot",
+    "name_en": "Cercospora Gray Leaf Spot",
+    "name_kn": "ಬೂದು ಎಲೆ ಚುಕ್ಕೆ ರೋಗ",
+    "pathogen": "Cercospora zeae-maydis (Fungus)",
+    "severity": "High",
+    "severity_kn": "ಹೆಚ್ಚು ಅಪಾಯ",
+    "affected_part_en": "Foliage / Lower leaves spreading to upper canopy",
+    "affected_part_kn": "ಕೆಳ ಎಲೆಗಳು ಹಾಗೂ ಮೇಲ್ಭಾಗದ ಎಲೆಗಳು",
+    "symptoms_en": [
+      "Small, rectangular, tan-to-gray lesions running strictly parallel to leaf veins.",
+      "Lesions expand into long gray streaks under humid and warm conditions.",
+      "Premature drying and blighting of foliage leading to stalk lodging and reduced cob filling."
+    ],
+    "symptoms_kn": [
+      "ಎಲೆಯ ನರಗಳಿಗೆ ಸಮಾನಾಂತರವಾಗಿ ಉದ್ದನೆಯ ಆಯತಾಕಾರದ ಬೂದು-ಕಂದು ಚುಕ್ಕೆಗಳು ಕಾಣಿಸಿಕೊಳ್ಳುತ್ತವೆ.",
+      "ಆರ್ದ್ರ ಹಾಗೂ ಬೆಚ್ಚಗಿನ ವಾತಾವರಣದಲ್ಲಿ ಇಡೀ ಎಲೆ ಒಣಗಿ ಸುಟ್ಟುಹೋದಂತೆ ಕಾಣುತ್ತದೆ.",
+      "ತೆನೆಗಳಲ್ಲಿ ಕಾಳು ಕಟ್ಟುವಿಕೆ ಗಣನೀಯವಾಗಿ ಕಡಿಮೆಯಾಗುತ್ತದೆ."
+    ],
+    "organic_en": [
+      "Spray neem oil (Azadirachtin 10,000 ppm) @ 3-5 ml/L at initial symptom appearance.",
+      "Apply bio-fungicide Trichoderma viride or Pseudomonas fluorescens @ 5 g/L with cow urine solution.",
+      "Practice 2-year crop rotation with non-cereal crops such as pulses (red gram, cowpea) or groundnut.",
+      "Deep summer ploughing to bury infected crop debris into the soil."
+    ],
+    "organic_kn": [
+      "ಪ್ರಾರಂಭಿಕ ಹಂತದಲ್ಲಿ ಬೇವಿನ ಎಣ್ಣೆ (Azadirachtin) 3-5 ಮಿ.ಲೀ/ಲೀಟರ್ ನೀರಿಗೆ ಬೆರೆಸಿ ಸಿಂಪಡಿಸಿ.",
+      "ಟ್ರೈಕೋಡರ್ಮ ವಿರಿಡೆ (Trichoderma viride) 5 ಗ್ರಾಂ/ಲೀಟರ್ ನಂತೆ ಎಲೆಗಳ ಮೇಲೆ ಸಿಂಪಡಿಸಿ.",
+      "ದ್ವಿದಳ ಧಾನ್ಯಗಳೊಂದಿಗೆ (ತೊಗರಿ, ಹೆಸರು) ಬೆಳೆ ಪರಿವರ್ತನೆ ಮಾಡಿ.",
+      "ಬೇಸಿಗೆಯಲ್ಲಿ ಆಳವಾದ ಉಳುಮೆ ಮಾಡಿ ಹಳೆಯ ಬೆಳೆಯ ತ್ಯಾಜ್ಯವನ್ನು ಮಣ್ಣಿನಲ್ಲಿ ಹೂತುಹಾಕಿ."
+    ],
+    "chemical_en": [
+      "Spray Mancozeb 75 WP @ 2.5 g/L or Chlorothalonil 75 WP @ 2.0 g/L.",
+      "For severe infection, spray Azoxystrobin 18.2% + Difenoconazole 11.4% SC @ 1.0 ml/L or Propiconazole 25 EC @ 1.0 ml/L.",
+      "Repeat spray after 12-15 days if cloudy, humid weather persists."
+    ],
+    "chemical_kn": [
+      "ಮ್ಯಾಂಕೋಜೆಬ್ 75 WP (Mancozeb) 2.5 ಗ್ರಾಂ/ಲೀಟರ್ ನೀರಿಗೆ ಬೆರೆಸಿ ಸಿಂಪಡಿಸಿ.",
+      "ತೀವ್ರ ಬಾಧೆಯಿದ್ದರೆ ಅಜಾಕ್ಸಿಸ್ಟ್ರೋಬಿನ್ + ಡೈಫೆನೊಕೊನಜೋಲ್ (Azoxystrobin + Difenoconazole) 1.0 ಮಿ.ಲೀ/ಲೀಟರ್ ಸಿಂಪಡಿಸಿ.",
+      "ಮೋಡ ಕವಿದ ವಾತಾವರಣ ಮುಂದುವರಿದರೆ 12-15 ದಿನಗಳ ನಂತರ ಮರು ಸಿಂಪಡಣೆ ಮಾಡಿ."
+    ],
+    "prevention_en": [
+      "Plant tolerant / resistant maize hybrids recommended by UAS Bengaluru (e.g., CP-818, PAC-740).",
+      "Maintain optimal row spacing (60 cm x 20 cm) to ensure proper sunlight and air ventilation.",
+      "Avoid excessive overhead sprinkler irrigation during warm humid evenings."
+    ],
+    "prevention_kn": [
+      "ಶಿಫಾರಸು ಮಾಡಿದ ರೋಗ ನಿರೋಧಕ ತಳಿಗಳನ್ನು ಆಯ್ಕೆ ಮಾಡಿ.",
+      "ಸಾಲುಗಳ ನಡುವೆ 60 ಸೆಂ.ಮೀ x 20 ಸೆಂ.ಮೀ ಅಂತರ ಕಾಪಾಡಿ ಗಾಳಿಯಾಡುವಂತೆ ನೋಡಿಕೊಳ್ಳಿ.",
+      "ಸಂಜೆ ಹೊತ್ತು ನೀರು ನಿಲ್ಲದಂತೆ ಎಚ್ಚರವಹಿಸಿ."
+    ]
+  },
+  "common_rust": {
+    "id": "common_rust",
+    "name_en": "Common Rust",
+    "name_kn": "ತುಕ್ಕು ರೋಗ",
+    "pathogen": "Puccinia sorghi (Fungus)",
+    "severity": "Moderate to High",
+    "severity_kn": "ಮಧ್ಯಮದಿಂದ ಹೆಚ್ಚು ಅಪಾಯ",
+    "affected_part_en": "Leaves, leaf sheaths, and husks",
+    "affected_part_kn": "ಎಲೆಗಳು ಮತ್ತು ತೆನೆಯ ಸಿಪ್ಪೆ",
+    "symptoms_en": [
+      "Golden to cinnamon-brown, circular to elongated pustules erupting on both upper and lower leaf surfaces.",
+      "Pustules rupture the leaf epidermis, releasing powdery rust-colored spores when touched.",
+      "In severe stages, pustules turn dark brownish-black as winter teliospores form."
+    ],
+    "symptoms_kn": [
+      "ಎಲೆಯ ಎರಡೂ ಬದಿಗಳಲ್ಲಿ ಸಣ್ಣದಾದ ಕೆಂಪು-ಕಂದು ಬಣ್ಣದ ತುಕ್ಕು ಪುಡಿಯಂತಹ ಗುಳ್ಳೆಗಳು ಕಾಣಿಸಿಕೊಳ್ಳುತ್ತವೆ.",
+      "ಮುಟ್ಟಿದಾಗ ಬೆರಳಿಗೆ ಕೆಂಪು ಪುಡಿಯ ಕಲೆ ಮೆತ್ತಿಕೊಳ್ಳುತ್ತದೆ.",
+      "ಹೆಚ್ಚಿನ ಬಾಧೆಯಿಂದ ಎಲೆಗಳು ಹಳದಿಯಾಗಿ ಒಣಗುತ್ತವೆ."
+    ],
+    "organic_en": [
+      "Spray fermented sour buttermilk (10%) or wettable sulphur 80 WP @ 3 g/L.",
+      "Remove and safely burn or bury heavily infected lower leaves before spores spread to upper ear leaves.",
+      "Apply foliar spray of seaweed extract or panchagavya to improve plant systemic immunity."
+    ],
+    "organic_kn": [
+      "ಹುಳಿ ಮಜ್ಜಿಗೆ (10%) ಅಥವಾ ಗಂಧಕದ ಪುಡಿ (Wettable Sulphur) 3 ಗ್ರಾಂ/ಲೀಟರ್ ನೀರಿಗೆ ಬೆರೆಸಿ ಸಿಂಪಡಿಸಿ.",
+      "ಕೆಳಗಿನ ಪೀಡಿತ ಎಲೆಗಳನ್ನು ಕಿತ್ತು ನಾಶಪಡಿಸಿ.",
+      "ಪಂಚಗವ್ಯ ಸಿಂಪಡಿಸಿ ಗಿಡಕ್ಕೆ ರೋಗನಿರೋಧಕ ಶಕ್ತಿ ಹೆಚ್ಚಿಸಿ."
+    ],
+    "chemical_en": [
+      "Spray Propiconazole 25 EC (Tilt) @ 1.0 ml/L or Tebuconazole 25.9 EC @ 1.0 ml/L at earliest sign of pustules.",
+      "Alternatively, apply Mancozeb 75 WP @ 2.5 g/L thoroughly covering both top and bottom leaf surfaces.",
+      "Ensure application reaches the ear leaves during knee-high to tasseling stages."
+    ],
+    "chemical_kn": [
+      "ಪ್ರೊಪಿಕೊನಜೋಲ್ 25 EC (Tilt) 1 ಮಿ.ಲೀ/ಲೀಟರ್ ನೀರಿಗೆ ಬೆರೆಸಿ ಸಿಂಪಡಿಸಿ.",
+      "ಅಥವಾ ಮ್ಯಾಂಕೋಜೆಬ್ 75 WP 2.5 ಗ್ರಾಂ/ಲೀಟರ್ ಸಿಂಪಡಿಸಿ.",
+      "ಎಲೆಯ ಕೆಳಭಾಗಕ್ಕೂ ಔಷಧಿ ತಲುಪುವಂತೆ ಸಮಗ್ರವಾಗಿ ಸಿಂಪಡಿಸಿ."
+    ],
+    "prevention_en": [
+      "Plant early in the kharif/rabi season to escape airborne spore clouds from neighboring late crops.",
+      "Avoid high nitrogen fertilization which creates lush, highly susceptible green tissue; balance with potassium."
+    ],
+    "prevention_kn": [
+      "ಬುಡಕ್ಕೆ ಅಧಿಕ ಸಾರಜನಕ ನೀಡುವುದನ್ನು ತಪ್ಪಿಸಿ, ಸಮತೋಲಿತ ಪೊಟ್ಯಾಷ್ ಗೊಬ್ಬರ ನೀಡಿ.",
+      "ಸಕಾಲಕ್ಕೆ ಬಿತ್ತನೆ ಮಾಡಿ ರೋಗದಿಂದ ತಪ್ಪಿಸಿಕೊಳ್ಳಿ."
+    ]
+  },
+  "northern_leaf_blight": {
+    "id": "northern_leaf_blight",
+    "name_en": "Northern Leaf Blight (NLB)",
+    "name_kn": "ಉತ್ತರದ ಎಲೆ ಅಂಗಮಾರಿ ರೋಗ",
+    "pathogen": "Exserohilum turcicum (Fungus)",
+    "severity": "High",
+    "severity_kn": "ಹೆಚ್ಚು ಅಪಾಯ",
+    "affected_part_en": "Leaves and husks (starts lower canopy, moves rapidly upward)",
+    "affected_part_kn": "ಎಲೆಗಳು ಮತ್ತು ಸಿಪ್ಪೆ",
+    "symptoms_en": [
+      "Large, elliptical or boat-shaped grayish-green or tan lesions (2.5 to 15 cm long).",
+      "Lesions have distinct dark margins and often coalesce into extensive leaf blight.",
+      "During wet weather, masses of dark olive-black spores cover the lesions."
+    ],
+    "symptoms_kn": [
+      "ದೋಣಿಯಾಕಾರದ ಅಥವಾ ಉದ್ದನೆಯ ಬೂದು-ಕಂದು ಬಣ್ಣದ ದೊಡ್ಡ ಕಲೆಗಳು ಎಲೆಯ ಮೇಲೆ ಉಂಟಾಗುತ್ತವೆ (2.5 ರಿಂದ 15 ಸೆಂ.ಮೀ).",
+      "ಹಲವು ಕಲೆಗಳು ಒಂದಾಗಿ ಇಡೀ ಎಲೆಯನ್ನು ಒಣಗಿಸಿ ಸುಟ್ಟುಹೋದಂತೆ ಮಾಡುತ್ತವೆ.",
+      "ತೆನೆ ಹಾಲು ತುಂಬುವ ಮುನ್ನ ಎಲೆ ಸುಟ್ಟುಹೋದರೆ ಇಳುವರಿ 50% ಕ್ಕಿಂತ ಹೆಚ್ಚು ಕುಸಿಯುತ್ತದೆ."
+    ],
+    "organic_en": [
+      "Treat seed with Trichoderma harzianum @ 10 g/kg seed prior to sowing.",
+      "Foliar spray with Pseudomonas fluorescens @ 5 g/L + cow dung slurry filtrate (5%).",
+      "Destroy and burn crop residue immediately after harvest to break the disease cycle."
+    ],
+    "organic_kn": [
+      "ಬಿತ್ತನೆಗೆ ಮುನ್ನ ಬೀಜೋಪಚಾರ: ಟ್ರೈಕೋಡರ್ಮ ಹಾರ್ಜಿಯಾನಂ 10 ಗ್ರಾಂ/ಕೆ.ಜಿ ಬೀಜಕ್ಕೆ ಬೆರೆಸಿ.",
+      "ಸ್ಯೂಡೋಮೊನಾಸ್ ಫ್ಲೋರೊಸೆನ್ಸ್ 5 ಗ್ರಾಂ/ಲೀಟರ್ ನೀರಿಗೆ ಹಾಕಿ ಎಲೆಗಳಿಗೆ ಸಿಂಪಡಿಸಿ.",
+      "ಕೊಯ್ಲಿನ ನಂತರ ಬೆಳೆ ಉಳಿಕೆಗಳನ್ನು ಸುಟ್ಟು ಅಥವಾ ಉಳುಮೆ ಮಾಡಿ ನಾಶಪಡಿಸಿ."
+    ],
+    "chemical_en": [
+      "Spray Azoxystrobin 23% SC @ 1.0 ml/L or Pyraclostrobin 20% WG @ 1.0 g/L at first appearance of lesions.",
+      "Spray Mancozeb 75 WP @ 2.5 g/L or Zineb 75 WP @ 2.0 g/L at 10-14 day intervals.",
+      "Focus spraying on middle and upper leaves during silking stage."
+    ],
+    "chemical_kn": [
+      "ಅಜಾಕ್ಸಿಸ್ಟ್ರೋಬಿನ್ 23% SC 1.0 ಮಿ.ಲೀ/ಲೀಟರ್ ಅಥವಾ ಪೈರಾಕ್ಲೋಸ್ಟ್ರೋಬಿನ್ 1.0 ಗ್ರಾಂ/ಲೀಟರ್ ಸಿಂಪಡಿಸಿ.",
+      "ಅಥವಾ ಮ್ಯಾಂಕೋಜೆಬ್ 75 WP 2.5 ಗ್ರಾಂ/ಲೀಟರ್ ನೀರಿಗೆ ಬೆರೆಸಿ 10-14 ದಿನಗಳ ಅಂತರದಲ್ಲಿ ಸಿಂಪಡಿಸಿ.",
+      "ತೆನೆ ಬಿಡುವ ಹಂತದಲ್ಲಿ ಎಲೆಗಳಿಗೆ ರಕ್ಷಣೆ ನೀಡುವುದು ಅತಿ ಮುಖ್ಯ."
+    ],
+    "prevention_en": [
+      "Plant resistant varieties (e.g. Dekalb-9108, Pioneer-3396, UASB Hybrid-4).",
+      "Maintain balanced N:P:K application (150:75:40 kg/ha); avoid excess urea."
+    ],
+    "prevention_kn": [
+      "ಶಿಫಾರಸು ಮಾಡಿದ NLB ರೋಗ ನಿರೋಧಕ ಹೈಬ್ರಿಡ್ ತಳಿಗಳನ್ನು ಬಿತ್ತನೆ ಮಾಡಿ.",
+      "ಸಾರಜನಕ ಗೊಬ್ಬರವನ್ನು 3-4 ಕಂತುಗಳಲ್ಲಿ ನೀಡಿ, ಒಮ್ಮೆಲೇ ಹೆಚ್ಚು ಯೂರಿಯಾ ಹಾಕಬೇಡಿ."
+    ]
+  },
+  "healthy": {
+    "id": "healthy",
+    "name_en": "Healthy Foliage",
+    "name_kn": "ಆರೋಗ್ಯಕರ ಎಲೆ",
+    "pathogen": "None (Plant is in good health)",
+    "severity": "None",
+    "severity_kn": "ಯಾವುದೇ ರೋಗವಿಲ್ಲ",
+    "affected_part_en": "None",
+    "affected_part_kn": "ಯಾವುದೇ ರೋಗವಿಲ್ಲ",
+    "symptoms_en": [
+      "Vibrant green, uniform leaf blades without lesions, rust pustules, or chlorotic streaks.",
+      "Firm, upright plant growth and well-developed leaf sheath attachment."
+    ],
+    "symptoms_kn": [
+      "ಹಸಿರಾದ, ಕಲೆಗಳಿಲ್ಲದ, ಸಮೃದ್ಧವಾಗಿ ಬೆಳೆದ ಎಲೆಗಳು.",
+      "ಯಾವುದೇ ತುಕ್ಕು, ಚುಕ್ಕೆ ಅಥವಾ ಸುಟ್ಟ ಕಲೆಗಳಿಲ್ಲದ ಆರೋಗ್ಯಕರ ಪೈರು."
+    ],
+    "organic_en": [
+      "Apply well-decomposed Farmyard Manure (FYM) @ 5 tonnes/acre or vermicompost @ 1 tonne/acre.",
+      "Spray Jeevamrutha or Panchagavya (3%) once every 20 days to maintain soil microbiology and vigor."
+    ],
+    "organic_kn": [
+      "ಎಕರೆಗೆ 5 ಟನ್ ಚೆನ್ನಾಗಿ ಕಳಿತ ಕೊಟ್ಟಿಗೆ ಗೊಬ್ಬರ ಅಥವಾ 1 ಟನ್ ಎರೆಹುಳು ಗೊಬ್ಬರ ನೀಡಿ.",
+      "ಪ್ರತಿ 20 ದಿನಕ್ಕೊಮ್ಮೆ ಜೀವಾಮೃತ ಅಥವಾ ಪಂಚಗವ್ಯ (3%) ಸಿಂಪಡಿಸಿ ಪೈರಿನ ರಕ್ಷಣೆಯನ್ನು ಮುಂದುವರಿಸಿ."
+    ],
+    "chemical_en": [
+      "No chemical fungicide or insecticide is required.",
+      "Maintain standard fertilizer schedule: N:P:K (150:75:40 kg/ha) with zinc sulphate @ 10 kg/acre."
+    ],
+    "chemical_kn": [
+      "ಯಾವುದೇ ರಾಸಾಯನಿಕ ಶಿಲೀಂಧ್ರನಾಶಕದ ಅಗತ್ಯವಿಲ್ಲ.",
+      "ಶಿಫಾರಸು ಮಾಡಿದ ರಸಗೊಬ್ಬರ ಮತ್ತು ಸತು (Zinc Sulphate 10 ಕೆ.ಜಿ/ಎಕರೆ) ನೀಡಿ."
+    ],
+    "prevention_en": [
+      "Continue regular weekly scouting for Fall Armyworm (Spodoptera frugiperda) and foliar blights.",
+      "Ensure regular irrigation during the critical knee-high, tasseling, and grain-filling stages."
+    ],
+    "prevention_kn": [
+      "ವಾರಕ್ಕೊಮ್ಮೆ ಲದ್ದಿಹುಳು (Fall Armyworm) ಬಾಧೆಗಾಗಿ ಪೈರನ್ನು ಪರಿಶೀಲಿಸಿ.",
+      "ಹೂವಾಡುವ ಮತ್ತು ಕಾಳು ಕಟ್ಟುವ ಹಂತದಲ್ಲಿ ನೀರಿನ ಕೊರತೆಯಾಗದಂತೆ ನಿಗಾವಹಿಸಿ."
+    ]
+  }
+}

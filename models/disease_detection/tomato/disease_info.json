@@ -1,0 +1,468 @@
+{
+  "bacterial_spot": {
+    "id": "bacterial_spot",
+    "name_en": "Bacterial Spot",
+    "name_kn": "ದುಂಡಾಣು ಚುಕ್ಕೆ ರೋಗ",
+    "pathogen": "Xanthomonas perforans / euvesicatoria (Bacterium)",
+    "severity": "High",
+    "severity_kn": "ಹೆಚ್ಚು ಅಪಾಯ",
+    "affected_part_en": "Leaves, stems, and fruits",
+    "affected_part_kn": "ಎಲೆಗಳು, ಕಾಂಡ ಮತ್ತು ಹಣ್ಣುಗಳು",
+    "symptoms_en": [
+      "Small, circular, water-soaked dark spots (1–3 mm) on leaves, turning greasy brown.",
+      "Spots coalesce, causing yellow halos, leaf blighting, and premature defoliation.",
+      "Raised, scabby, rough dark spots on developing green fruits."
+    ],
+    "symptoms_kn": [
+      "ಎಲೆಗಳ ಮೇಲೆ ಸಣ್ಣದಾದ ನೀರಿನಿಂದ ಕೂಡಿದ ಕಪ್ಪು-ಕಂದು ಚುಕ್ಕೆಗಳು ಕಾಣಿಸಿಕೊಳ್ಳುತ್ತವೆ.",
+      "ಚುಕ್ಕೆಗಳು ಒಟ್ಟಾಗಿ ಹರಡಿ ಎಲೆಗಳು ಹಳದಿಯಾಗಿ ಉದುರಿಹೋಗುತ್ತವೆ.",
+      "ಹಣ್ಣುಗಳ ಮೇಲ್ಮೈಯಲ್ಲಿ ಒರಟಾದ ಕಜ್ಜಿ ಕಲೆಗಳು ಉಂಟಾಗಿ ಮಾರುಕಟ್ಟೆ ಮೌಲ್ಯ ಕಳೆದುಕೊಳ್ಳುತ್ತವೆ."
+    ],
+    "organic_en": [
+      "Spray Pseudomonas fluorescens @ 5 g/L with cow urine solution (5%).",
+      "Spray copper hydroxide or neem seed kernel extract (NSKE 5%) preventively.",
+      "Avoid handling plants or working in the field when foliage is wet to prevent spread."
+    ],
+    "organic_kn": [
+      "ಸ್ಯೂಡೋಮೊನಾಸ್ ಫ್ಲೋರೊಸೆನ್ಸ್ 5 ಗ್ರಾಂ/ಲೀಟರ್ ನೀರಿಗೆ ಬೆರೆಸಿ ಎಲೆಗಳ ಮೇಲೆ ಸಿಂಪಡಿಸಿ.",
+      "ಬೇವಿನ ಬೀಜದ ಕಷಾಯ (NSKE 5%) ಸಿಂಪಡಿಸಿ ರೋಗ ಹರಡುವಿಕೆಯನ್ನು ತಡೆಯಿರಿ.",
+      "ಗಿಡಗಳು ತೇವವಾಗಿರುವಾಗ ಕಳೆ ಕೀಳುವುದು ಅಥವಾ ಮುಟ್ಟುವುದನ್ನು ತಪ್ಪಿಸಿ."
+    ],
+    "chemical_en": [
+      "Spray Copper Oxychloride 50 WP @ 2.5 g/L + Streptocycline @ 0.1 g/L (1 g in 10 L water).",
+      "Alternatively spray Kasugamycin 3% SL @ 2.0 ml/L at initial disease appearance.",
+      "Repeat at 10-day intervals during wet weather."
+    ],
+    "chemical_kn": [
+      "ಕಾಪರ್ ಆಕ್ಸಿಕ್ಲೋರೈಡ್ (COC) 2.5 ಗ್ರಾಂ + ಸ್ಟ್ರೆಪ್ಟೋಸೈಕ್ಲಿನ್ 0.1 ಗ್ರಾಂ (1 ಗ್ರಾಂ/10 ಲೀಟರ್ ನೀರಿಗೆ) ಸಿಂಪಡಿಸಿ.",
+      "ಅಥವಾ ಕಸುಗಾಮೈಸಿನ್ 3% SL 2 ಮಿ.ಲೀ/ಲೀಟರ್ ನೀರಿಗೆ ಬೆರೆಸಿ ಸಿಂಪಡಿಸಿ.",
+      "ಮಳೆ ಅಥವಾ ತೇವಾಂಶವಿದ್ದರೆ 10 ದಿನಗಳ ನಂತರ ಪುನಃ ಸಿಂಪಡಿಸಿ."
+    ],
+    "prevention_en": [
+      "Use certified disease-free seeds; treat seed with hot water at 50°C for 25 minutes.",
+      "Follow strict 2-3 year rotation with non-solanaceous crops (maize, pulses, or ragi)."
+    ],
+    "prevention_kn": [
+      "ರೋಗಮುಕ್ತ ದೃಢೀಕೃತ ಬೀಜಗಳನ್ನು ಮಾತ್ರ ಬಳಸಿ (50°C ಬಿಸಿ ನೀರಿನಲ್ಲಿ 25 ನಿಮಿಷ ಬೀಜೋಪಚಾರ ಮಾಡಿ).",
+      "ಟೊಮೇಟೊ ನಂತರ ಜೋಳ ಅಥವಾ ದ್ವಿದಳ ಧಾನ್ಯಗಳೊಂದಿಗೆ ಬೆಳೆ ಪರಿವರ್ತನೆ ಮಾಡಿ."
+    ]
+  },
+  "early_blight": {
+    "id": "early_blight",
+    "name_en": "Early Blight",
+    "name_kn": "ಮುಂಚಿನ ಅಂಗಮಾರಿ ರೋಗ",
+    "pathogen": "Alternaria solani (Fungus)",
+    "severity": "High",
+    "severity_kn": "ಹೆಚ್ಚು ಅಪಾಯ",
+    "affected_part_en": "Lower leaves progressing upward, stems, and fruits",
+    "affected_part_kn": "ಕೆಳ ಎಲೆಗಳು, ಕಾಂಡ ಮತ್ತು ಹಣ್ಣಿನ ತೊಟ್ಟು",
+    "symptoms_en": [
+      "Characteristic concentric brown-to-black rings ('target board' pattern) on older leaves.",
+      "Lesions surrounded by prominent yellow chlorotic halos causing lower foliage to wither.",
+      "Sunken, dark, leathery lesions at the stem end of fruits."
+    ],
+    "symptoms_kn": [
+      "ಕೆಳಭಾಗದ ಹಳೆಯ ಎಲೆಗಳ ಮೇಲೆ ಗುರಿ ಹಲಗೆಯಂತಹ (Target board) ವೃತ್ತಾಕಾರದ ಕಂದು ಕಲೆಗಳು ಉಂಟಾಗುತ್ತವೆ.",
+      "ಕಲೆಗಳ ಸುತ್ತಲೂ ಹಳದಿ ಬಣ್ಣದ ಬಳೆ ಕಾಣಿಸಿಕೊಂಡು ಎಲೆ ಒಣಗಿ ಉದುರುತ್ತದೆ.",
+      "ಹಣ್ಣಿನ ತೊಟ್ಟಿನ ಭಾಗದಲ್ಲಿ ಕಪ್ಪು ಕುಳಿ ಕಲೆಗಳು ಉಂಟಾಗುತ್ತವೆ."
+    ],
+    "organic_en": [
+      "Spray Trichoderma viride or T. harzianum @ 5 g/L with fermented sour buttermilk (10%).",
+      "Mulch plant beds with clean paddy straw to prevent rain-splash from soil.",
+      "Remove and destroy infected lower leaves (bottom 30 cm) before flowering."
+    ],
+    "organic_kn": [
+      "ಟ್ರೈಕೋಡರ್ಮ ವಿರಿಡೆ 5 ಗ್ರಾಂ/ಲೀಟರ್ ನಂತೆ ಹುಳಿ ಮಜ್ಜಿಗೆಯೊಂದಿಗೆ ಬೆರೆಸಿ ಸಿಂಪಡಿಸಿ.",
+      "ಮಣ್ಣಿನಿಂದ ರೋಗಾಣು ಎಲೆಗೆ ಚಿಮ್ಮದಂತೆ ಬುಡಕ್ಕೆ ಭತ್ತದ ಹುಲ್ಲಿನ ಹೊದಿಕೆ (Mulching) ಹಾಕಿ.",
+      "ಕೆಳಗಿನ ಪೀಡಿತ ಎಲೆಗಳನ್ನು ಕಿತ್ತು ಸುಟ್ಟುಹಾಕಿ."
+    ],
+    "chemical_en": [
+      "Spray Mancozeb 75 WP @ 2.5 g/L or Chlorothalonil 75 WP @ 2.0 g/L preventively.",
+      "For active blight, spray Difenoconazole 25 EC (Score) @ 1.0 ml/L or Azoxystrobin 23% SC @ 1.0 ml/L.",
+      "Repeat spray at 12–14 day intervals."
+    ],
+    "chemical_kn": [
+      "ಮ್ಯಾಂಕೋಜೆಬ್ 75 WP 2.5 ಗ್ರಾಂ/ಲೀಟರ್ ಅಥವಾ ಕ್ಲೋರೋಥಾಲೋನಿಲ್ 2.0 ಗ್ರಾಂ/ಲೀಟರ್ ಸಿಂಪಡಿಸಿ.",
+      "ತೀವ್ರ ಬಾಧೆಗೆ ಡೈಫೆನೊಕೊನಜೋಲ್ (Score) 1.0 ಮಿ.ಲೀ/ಲೀಟರ್ ಅಥವಾ ಅಜಾಕ್ಸಿಸ್ಟ್ರೋಬಿನ್ 1.0 ಮಿ.ಲೀ/ಲೀಟರ್ ಸಿಂಪಡಿಸಿ.",
+      "12-14 ದಿನಗಳ ಅಂತರದಲ್ಲಿ ಮರು ಸಿಂಪಡಣೆ ಮಾಡಿ."
+    ],
+    "prevention_en": [
+      "Stake tomato vines securely on bamboo trellises to keep foliage well above soil.",
+      "Avoid planting after potato, chilli, or brinjal in the same plot."
+    ],
+    "prevention_kn": [
+      "ಬಳ್ಳಿಗಳನ್ನು ಚಪ್ಪರ ಅಥವಾ ಕಂಬಗಳಿಗೆ ಕಟ್ಟಿ ನೆಲಕ್ಕೆ ಸೋಂಕದಂತೆ ನಿಲ್ಲಿಸಿ.",
+      "ಆಲೂಗಡ್ಡೆ, ಮೆಣಸಿನಕಾಯಿ ಅಥವಾ ಬದನೆ ಬೆಳೆದ ಜಾಗದಲ್ಲಿ ತಕ್ಷಣ ಟೊಮೇಟೊ ಬೆಳೆಯಬೇಡಿ."
+    ]
+  },
+  "late_blight": {
+    "id": "late_blight",
+    "name_en": "Late Blight",
+    "name_kn": "ತಡವಾದ ಅಂಗಮಾರಿ ರೋಗ",
+    "pathogen": "Phytophthora infestans (Oomycete)",
+    "severity": "Very High",
+    "severity_kn": "ಅತಿ ಹೆಚ್ಚು ಅಪಾಯ",
+    "affected_part_en": "Leaves, petioles, stems, and green fruits",
+    "affected_part_kn": "ಎಲೆಗಳು, ಕಾಂಡ ಮತ್ತು ಹಸಿರು ಕಾಯಿಗಳು",
+    "symptoms_en": [
+      "Large, irregular water-soaked pale-green to dark-brown lesions on leaves during cool, foggy, humid weather.",
+      "Delicate white cottony mildew growth visible on leaf undersides in morning dew.",
+      "Firm, greasy, olive-brown to dark sunken rot rapidly covering fruits."
+    ],
+    "symptoms_kn": [
+      "ತಂಪಾದ, ಮಂಜು ಮುಸುಕಿದ ವಾತಾವರಣದಲ್ಲಿ ನೀರಿನಿಂದ ತೊಯ್ದಂತಿರುವ ಕಪ್ಪು-ಕಂದು ದೊಡ್ಡ ಕಲೆಗಳು ಎಲೆಗಳ ಮೇಲೆ ಕಾಣಿಸುತ್ತವೆ.",
+      "ಮುಂಜಾನೆ ಎಲೆಯ ಕೆಳಭಾಗದಲ್ಲಿ ಬಿಳಿ ಹತ್ತಿಯಂತಹ ಶಿಲೀಂಧ್ರ ಬೂಜು ಬೆಳೆದಿರುತ್ತದೆ.",
+      "ಹಸಿರು ಕಾಯಿಗಳು ಕಂದು ಬಣ್ಣಕ್ಕೆ ತಿರುಗಿ ಕೊಳೆತು ಇಡೀ ಗಿಡ ಕೆಲವೇ ದಿನಗಳಲ್ಲಿ ಸುಟ್ಟುಹೋದಂತೆ ನಾಶವಾಗುತ್ತದೆ."
+    ],
+    "organic_en": [
+      "Spray Bordeaux mixture 1% or copper hydroxide 53.8 DF @ 2.0 g/L at first weather warning.",
+      "Immediately harvest mature green fruits and prune heavily blighted vines.",
+      "Ensure wide row spacing (90 cm x 60 cm) to maximize sunshine and wind aeration."
+    ],
+    "organic_kn": [
+      "ಮೋಡ ಕವಿದ ವಾತಾವರಣ ಬಂದ ತಕ್ಷಣ ಬೋರ್ಡೋ ದ್ರಾವಣ 1% ಅಥವಾ ತಾಮ್ರದ ಶಿಲೀಂಧ್ರನಾಶಕ 2 ಗ್ರಾಂ/ಲೀಟರ್ ಸಿಂಪಡಿಸಿ.",
+      "ರೋಗ ತಗುಲಿದ ರೆಂಬೆಗಳನ್ನು ತಕ್ಷಣ ಕತ್ತರಿಸಿ ತೋಟದಿಂದ ಹೊರಗೆ ಸುಟ್ಟುಹಾಕಿ.",
+      "ಸಾಲುಗಳ ನಡುವೆ ಉತ್ತಮ ಅಂತರವಿಟ್ಟು ಗಾಳಿ-ಬೆಳಕು ಬೀಳುವಂತೆ ಮಾಡಿ."
+    ],
+    "chemical_en": [
+      "Spray Metalaxyl 8% + Mancozeb 64% WP (Ridomil MZ) @ 2.5 g/L immediately.",
+      "Alternatively spray Cymoxanil 8% + Mancozeb 64% WP @ 2.0 g/L or Dimethomorph 50 WP @ 1.0 g/L.",
+      "Repeat at 7–10 day intervals as long as overcast humid weather persists."
+    ],
+    "chemical_kn": [
+      "ರಿಡೋಮಿಲ್ (Metalaxyl + Mancozeb) 2.5 ಗ್ರಾಂ/ಲೀಟರ್ ನೀರಿಗೆ ಬೆರೆಸಿ ತಕ್ಷಣ ಸಿಂಪಡಿಸಿ.",
+      "ಅಥವಾ ಸೈಮೋಕ್ಸಾನಿಲ್ + ಮ್ಯಾಂಕೋಜೆಬ್ 2.0 ಗ್ರಾಂ/ಲೀಟರ್ ಅಥವಾ ಡೈಮೆಥೊಮಾರ್ಫ್ 1 ಗ್ರಾಂ/ಲೀಟರ್ ಸಿಂಪಡಿಸಿ.",
+      "ಮಳೆ-ಮಂಜು ಮುಂದುವರಿದರೆ 7-10 ದಿನಕ್ಕೊಮ್ಮೆ ಮರು ಸಿಂಪಡಿಸಿ."
+    ],
+    "prevention_en": [
+      "Plant resistant tomato hybrids developed by IIHR Bengaluru (e.g., Arka Abhed).",
+      "Completely avoid sprinkler/overhead irrigation; use drip irrigation at ground level."
+    ],
+    "prevention_kn": [
+      "IIHR ಬೆಂಗಳೂರು ಅಭಿವೃದ್ಧಿಪಡಿಸಿದ ರೋಗ ನಿರೋಧಕ ತಳಿಗಳನ್ನು (ಉದಾ: ಅರ್ಕಾ ಅಭೇದ್) ನಾಟಿ ಮಾಡಿ.",
+      "ಹನಿ ನೀರಾವರಿ ಬಳಸಿ, ಎಲೆಗಳ ಮೇಲೆ ನೀರು ಬೀಳದಂತೆ ನೋಡಿಕೊಳ್ಳಿ."
+    ]
+  },
+  "leaf_mold": {
+    "id": "leaf_mold",
+    "name_en": "Leaf Mold",
+    "name_kn": "ಎಲೆ ಬೂಜು ರೋಗ",
+    "pathogen": "Passalora fulva (Cladosporium fulvum) (Fungus)",
+    "severity": "Moderate",
+    "severity_kn": "ಮಧ್ಯಮ ಅಪಾಯ",
+    "affected_part_en": "Older foliage and protected canopy leaves",
+    "affected_part_kn": "ಹಳೆಯ ಎಲೆಗಳ ಕೆಳಭಾಗ",
+    "symptoms_en": [
+      "Pale yellowish spots with indefinite margins on upper surface of older leaves.",
+      "Plush, olive-green to brownish-purple velvety fungal mold covering matching areas on leaf undersides.",
+      "Infected leaves curl, wither, and drop prematurely."
+    ],
+    "symptoms_kn": [
+      "ಎಲೆಯ ಮೇಲ್ಭಾಗದಲ್ಲಿ ಹಳದಿ ಕಲೆಗಳು ಮತ್ತು ಕೆಳಭಾಗದಲ್ಲಿ ಆಲಿವ್ ಹಸಿರು ಅಥವಾ ಕಂದು ಬಣ್ಣದ ವೆಲ್ವೆಟ್ ಬೂಜು ಬೆಳೆಯುತ್ತದೆ.",
+      "ಬಾಧಿತ ಎಲೆಗಳು ಒಣಗಿ ಕೆಳಕ್ಕೆ ಸುರುಳಿಯಾಗುತ್ತವೆ.",
+      "ಗಿಡದ ಒಳಭಾಗದಲ್ಲಿ ಗಾಳಿಯಾಡದಿದ್ದಾಗ ರೋಗ ತೀವ್ರವಾಗುತ್ತದೆ."
+    ],
+    "organic_en": [
+      "Prune lower suckers and dense leaves to reduce relative humidity inside canopy.",
+      "Spray wettable sulphur 80 WP @ 3 g/L or bio-fungicide Bacillus subtilis @ 5 g/L.",
+      "Ensure polyhouses or shade nets have adequate ventilation."
+    ],
+    "organic_kn": [
+      "ಗಿಡದ ಒಳಗೆ ಗಾಳಿಯಾಡಲು ಕೆಳಗಿನ ಸಣ್ಣ ಕವಲುಗಳನ್ನು (Suckers) ಕತ್ತರಿಸಿ ತೆಗೆಯಿರಿ.",
+      "ಗಂಧಕದ ಪುಡಿ (Wettable Sulphur) 3 ಗ್ರಾಂ/ಲೀಟರ್ ನೀರಿಗೆ ಬೆರೆಸಿ ಸಿಂಪಡಿಸಿ.",
+      "ಹಸಿರುಮನೆ ಅಥವಾ ಪಾಲಿಹೌಸ್‌ನಲ್ಲಿ ಉತ್ತಮ ಗಾಳಿಯಾಡುವಿಕೆ ಕಾಪಾಡಿ."
+    ],
+    "chemical_en": [
+      "Spray Copper Oxychloride 50 WP @ 2.5 g/L or Mancozeb 75 WP @ 2.5 g/L.",
+      "For severe infection, spray Azoxystrobin 23% SC @ 1.0 ml/L or Difenoconazole 25 EC @ 1.0 ml/L."
+    ],
+    "chemical_kn": [
+      "ಕಾಪರ್ ಆಕ್ಸಿಕ್ಲೋರೈಡ್ 2.5 ಗ್ರಾಂ/ಲೀಟರ್ ಅಥವಾ ಮ್ಯಾಂಕೋಜೆಬ್ 2.5 ಗ್ರಾಂ/ಲೀಟರ್ ಸಿಂಪಡಿಸಿ.",
+      "ಹೆಚ್ಚಿನ ಬಾಧೆಗೆ ಅಜಾಕ್ಸಿಸ್ಟ್ರೋಬಿನ್ 1.0 ಮಿ.ಲೀ/ಲೀಟರ್ ಸಿಂಪಡಿಸಿ."
+    ],
+    "prevention_en": [
+      "Maintain canopy relative humidity below 85% by proper spacing.",
+      "Water plants early in the morning so foliage dries quickly during daylight."
+    ],
+    "prevention_kn": [
+      "ತೇವಾಂಶ 85% ಕ್ಕಿಂತ ಹೆಚ್ಚಾಗದಂತೆ ನಿಯಂತ್ರಿಸಿ.",
+      "ಬೆಳಗಿನ ಜಾವ ನೀರು ಹಾಯಿಸಿ ಸಂಜೆಯೊಳಗೆ ಗಿಡ ಒಣಗುವಂತೆ ಮಾಡಿ."
+    ]
+  },
+  "septoria_leaf_spot": {
+    "id": "septoria_leaf_spot",
+    "name_en": "Septoria Leaf Spot",
+    "name_kn": "ಸೆಪ್ಟೋರಿಯಾ ಎಲೆ ಚುಕ್ಕೆ ರೋಗ",
+    "pathogen": "Septoria lycopersici (Fungus)",
+    "severity": "Moderate to High",
+    "severity_kn": "ಮಧ್ಯಮದಿಂದ ಹೆಚ್ಚು ಅಪಾಯ",
+    "affected_part_en": "Lower leaves advancing upward, petioles, and calyx",
+    "affected_part_kn": "ಕೆಳ ಎಲೆಗಳು, ತೊಟ್ಟು ಮತ್ತು ಹೂವಿನ ದಳಗಳು",
+    "symptoms_en": [
+      "Numerous small, circular spots (2–3 mm diameter) with dark brown borders and pale grayish-white centers.",
+      "Tiny black speck-like fruiting bodies (pycnidia) clearly visible inside older lesions.",
+      "Severe yellowing, senescence, and defoliation exposing fruits to sunscald."
+    ],
+    "symptoms_kn": [
+      "ಎಲೆಗಳ ಮೇಲೆ ಕಪ್ಪು ಅಂಚು ಮತ್ತು ಬೂದು ಬಣ್ಣದ ಮಧ್ಯಭಾಗವಿರುವ ಅಸಂಖ್ಯಾತ ಸಣ್ಣ ದುಂಡಗಿನ ಚುಕ್ಕೆಗಳು ಉಂಟಾಗುತ್ತವೆ.",
+      "ಚುಕ್ಕೆಗಳ ಒಳಗೆ ಸಣ್ಣ ಕಪ್ಪು ಚುಕ್ಕೆಯಂತಹ ಶಿಲೀಂಧ್ರ ಬೀಜಕೋಶಗಳು ಕಾಣಿಸುತ್ತವೆ.",
+      "ಕೆಳ ಎಲೆಗಳು ಸಂಪೂರ್ಣ ಉದುರಿ ಹಣ್ಣುಗಳು ಬಿಸಿಲಿನ ತಾಪಕ್ಕೆ ಸುಟ್ಟುಹೋಗುತ್ತವೆ (Sunscald)."
+    ],
+    "organic_en": [
+      "Remove and safely burn lower infected leaves as soon as first spots appear.",
+      "Apply straw mulch over bare soil to prevent spore splash from rain droplets.",
+      "Spray neem oil 10,000 ppm @ 3–5 ml/L or cow urine extract (10%)."
+    ],
+    "organic_kn": [
+      "ರೋಗದ ಮೊದಲ ಲಕ್ಷಣ ಕಂಡ ತಕ್ಷಣ ಕೆಳಭಾಗದ ಪೀಡಿತ ಎಲೆಗಳನ್ನು ಕಿತ್ತು ನಾಶಪಡಿಸಿ.",
+      "ಮಣ್ಣಿನ ಮೇಲ್ಮೈಗೆ ಹುಲ್ಲಿನ ಹೊದಿಕೆ (Mulching) ಹಾಕಿ ಬೀಜಾಣು ಚಿಮ್ಮುವುದನ್ನು ತಡೆಯಿರಿ.",
+      "ಬೇವಿನ ಎಣ್ಣೆ 3-5 ಮಿ.ಲೀ/ಲೀಟರ್ ನೀರಿಗೆ ಬೆರೆಸಿ ಸಿಂಪಡಿಸಿ."
+    ],
+    "chemical_en": [
+      "Spray Mancozeb 75 WP @ 2.5 g/L or Zineb 75 WP @ 2.0 g/L every 10–14 days.",
+      "For progressive blight, spray Chlorothalonil 75 WP @ 2.0 g/L or Pyraclostrobin 20% WG @ 1.0 g/L."
+    ],
+    "chemical_kn": [
+      "ಮ್ಯಾಂಕೋಜೆಬ್ 75 WP 2.5 ಗ್ರಾಂ/ಲೀಟರ್ ಅಥವಾ ಜೈನೆಬ್ 2.0 ಗ್ರಾಂ/ಲೀಟರ್ 10-14 ದಿನಗಳ ಅಂತರದಲ್ಲಿ ಸಿಂಪಡಿಸಿ.",
+      "ಕ್ಲೋರೋಥಾಲೋನಿಲ್ 2.0 ಗ್ರಾಂ/ಲೀಟರ್ ನೀರಿಗೆ ಬೆರೆಸಿ ಸಮಗ್ರವಾಗಿ ಸಿಂಪಡಿಸಿ."
+    ],
+    "prevention_en": [
+      "Deep summer ploughing to bury crop residue below 15 cm depth.",
+      "Keep tomato fields clean of solanaceous nightshade weeds."
+    ],
+    "prevention_kn": [
+      "ಬೇಸಿಗೆಯಲ್ಲಿ ಆಳವಾದ ಉಳುಮೆ ಮಾಡಿ ಶಿಲೀಂಧ್ರವನ್ನು ಮಣ್ಣಿನಲ್ಲಿ ಹೂತುಹಾಕಿ.",
+      "ತೋಟದ ಸುತ್ತಮುತ್ತಲಿನ ಕಾಡು ಕಳೆಗಳನ್ನು ಸ್ವಚ್ಛಗೊಳಿಸಿ."
+    ]
+  },
+  "spider_mites": {
+    "id": "spider_mites",
+    "name_en": "Spider Mites (Two-spotted)",
+    "name_kn": "ಕೆಂಪು ಜೇಡ ನುಸಿ / ಚಿಬ್ಬು ಕೀಟ",
+    "pathogen": "Tetranychus urticae (Arachnid Pest)",
+    "severity": "Moderate to High",
+    "severity_kn": "ಮಧ್ಯಮದಿಂದ ಹೆಚ್ಚು ಅಪಾಯ",
+    "affected_part_en": "Underside of leaves, growing shoots, and flowers",
+    "affected_part_kn": "ಎಲೆಯ ಕೆಳಭಾಗ, ಕುಡಿಗಳು ಮತ್ತು ಹೂವುಗಳು",
+    "symptoms_en": [
+      "Fine, yellow-white speckled stippling on the upper surface of foliage.",
+      "Fine silken webbing spun across the undersides of leaves and growing tips.",
+      "Leaves turn bronzed, rusty-brown, and brittle, drying out during hot dry dry spells."
+    ],
+    "symptoms_kn": [
+      "ಎಲೆಯ ಮೇಲ್ಭಾಗದಲ್ಲಿ ಹಳದಿ-ಬಿಳಿ ಬಣ್ಣದ ಸೂಕ್ಷ್ಮ ಚುಕ್ಕೆಗಳು ಕಾಣಿಸಿಕೊಳ್ಳುತ್ತವೆ.",
+      "ಎಲೆಯ ಕೆಳಭಾಗದಲ್ಲಿ ಸಣ್ಣ ರೇಷ್ಮೆಯಂತಹ ಬಲೆ ಕಟ್ಟಿರುವುದು ಕಾಣಿಸುತ್ತದೆ.",
+      "ಬಿಸಿಲಿನ ದಿನಗಳಲ್ಲಿ ಎಲೆಗಳು ತಾಮ್ರದ ಬಣ್ಣಕ್ಕೆ ತಿರುಗಿ ಸುರುಟಿಕೊಂಡು ಒಣಗುತ್ತವೆ."
+    ],
+    "organic_en": [
+      "Spray neem oil 10,000 ppm @ 3–5 ml/L with soap solution, targeting leaf undersides.",
+      "Release predatory mites (Neoseiulus longispinosus) @ 10 mites/plant.",
+      "Spray strong jets of water on the underside of foliage to disrupt webs and dislodge mites."
+    ],
+    "organic_kn": [
+      "ಬೇವಿನ ಎಣ್ಣೆ 3-5 ಮಿ.ಲೀ/ಲೀಟರ್ ನೀರಿಗೆ ಸಾಬೂನಿನ ದ್ರಾವಣ ಬೆರೆಸಿ ಎಲೆಯ ಕೆಳಭಾಗಕ್ಕೆ ತಾಗುವಂತೆ ಸಿಂಪಡಿಸಿ.",
+      "ಪರಭಕ್ಷಕ ನುಸಿಗಳನ್ನು (Predatory mites) ತೋಟದಲ್ಲಿ ಬಿಡಿ.",
+      "ಹೆಚ್ಚಿನ ಒತ್ತಡದ ನೀರಿನಿಂದ ಎಲೆಯ ಕೆಳಭಾಗವನ್ನು ತೊಳೆಯಿರಿ."
+    ],
+    "chemical_en": [
+      "Spray Spiromesifen 22.9 SC @ 1.0 ml/L or Propargite 57 EC @ 2.0 ml/L.",
+      "Alternatively spray Fenpyroximate 5 EC @ 1.0 ml/L or Abamectin 1.9 EC @ 0.5 ml/L.",
+      "Ensure thorough spray coverage of the lower leaf surfaces."
+    ],
+    "chemical_kn": [
+      "ಸ್ಪೈರೋಮೆಸಿಫೆನ್ (Oberon) 1.0 ಮಿ.ಲೀ/ಲೀಟರ್ ಅಥವಾ ಪ್ರೊಪಾರ್ಗೈಟ್ 2.0 ಮಿ.ಲೀ/ಲೀಟರ್ ಸಿಂಪಡಿಸಿ.",
+      "ಅಥವಾ ಅಬಾಮೆಕ್ಟಿನ್ 0.5 ಮಿ.ಲೀ/ಲೀಟರ್ ನೀರಿಗೆ ಬೆರೆಸಿ ಎಲೆಯ ಕೆಳಭಾಗಕ್ಕೆ ಸಿಂಪಡಿಸಿ."
+    ],
+    "prevention_en": [
+      "Avoid excessive synthetic nitrogen application which encourages rapid mite multiplication.",
+      "Eliminate Parthenium and wild weed hosts around field margins."
+    ],
+    "prevention_kn": [
+      "ಅಧಿಕ ಸಾರಜನಕ ಗೊಬ್ಬರ ಹಾಕಬೇಡಿ, ಇದು ನುಸಿಗಳ ಸಂತಾನೋತ್ಪತ್ತಿಯನ್ನು ಹೆಚ್ಚಿಸುತ್ತದೆ.",
+      "ಬದುಗಳಲ್ಲಿರುವ ಪಾರ್ಥೇನಿಯಂ ಕಳೆಯನ್ನು ಕಿತ್ತು ನಾಶಪಡಿಸಿ."
+    ]
+  },
+  "target_spot": {
+    "id": "target_spot",
+    "name_en": "Target Spot",
+    "name_kn": "ಗುರಿ ಚುಕ್ಕೆ ರೋಗ",
+    "pathogen": "Corynespora cassiicola (Fungus)",
+    "severity": "Moderate",
+    "severity_kn": "ಮಧ್ಯಮ ಅಪಾಯ",
+    "affected_part_en": "Leaves, stems, and ripening fruits",
+    "affected_part_kn": "ಎಲೆಗಳು, ಕಾಂಡ ಮತ್ತು ಹಣ್ಣುಗಳು",
+    "symptoms_en": [
+      "Brown pinpoint spots expanding into large circular lesions with pale tan centers and dark margins.",
+      "Concentric rings frequently visible in mature lesions, causing defoliation in warm humid weather.",
+      "Depressed brown lesions on fruits with dark velvety margins."
+    ],
+    "symptoms_kn": [
+      "ಎಲೆಗಳ ಮೇಲೆ ಸಣ್ಣ ಕಂದು ಕಲೆಗಳು ಉಂಟಾಗಿ ನಂತರ ದೊಡ್ಡ ವೃತ್ತಾಕಾರದ ಕಲೆಗಳಾಗುತ್ತವೆ.",
+      "ಕಲೆಗಳ ಮಧ್ಯಭಾಗ ತಿಳಿ ಕಂದು ಮತ್ತು ಅಂಚು ಕಪ್ಪಾಗಿರುತ್ತದೆ.",
+      "ಹಣ್ಣುಗಳ ಮೇಲೆ ತಗ್ಗಾದ ಕಪ್ಪು ಕಲೆಗಳು ಉಂಟಾಗುತ್ತವೆ."
+    ],
+    "organic_en": [
+      "Apply foliar bio-fungicide Trichoderma harzianum @ 5 g/L with cow urine filtrate.",
+      "Mulch plant rows with straw to prevent fungal spore splashing from contaminated soil.",
+      "Prune infected foliage and dispose of it away from the field."
+    ],
+    "organic_kn": [
+      "ಟ್ರೈಕೋಡರ್ಮ ಹಾರ್ಜಿಯಾನಂ 5 ಗ್ರಾಂ/ಲೀಟರ್ ನೀರಿಗೆ ಬೆರೆಸಿ ಸಿಂಪಡಿಸಿ.",
+      "ಮಣ್ಣಿಗೆ ಹುಲ್ಲಿನ ಹೊದಿಕೆ ಹಾಕಿ ರೋಗದ ಬೀಜಾಣು ಚಿಮ್ಮದಂತೆ ತಡೆಯಿರಿ.",
+      "ಪೀಡಿತ ಎಲೆಗಳನ್ನು ಕತ್ತರಿಸಿ ದೂರದಲ್ಲಿ ಹೂತುಹಾಕಿ."
+    ],
+    "chemical_en": [
+      "Spray Azoxystrobin 18.2% + Difenoconazole 11.4% SC @ 1.0 ml/L.",
+      "Alternatively spray Chlorothalonil 75 WP @ 2.0 g/L or Pyraclostrobin 20% WG @ 1.0 g/L.",
+      "Repeat application every 10–14 days during periods of high humidity."
+    ],
+    "chemical_kn": [
+      "ಅಜಾಕ್ಸಿಸ್ಟ್ರೋಬಿನ್ + ಡೈಫೆನೊಕೊನಜೋಲ್ 1.0 ಮಿ.ಲೀ/ಲೀಟರ್ ನೀರಿಗೆ ಬೆರೆಸಿ ಸಿಂಪಡಿಸಿ.",
+      "ಅಥವಾ ಕ್ಲೋರೋಥಾಲೋನಿಲ್ 2.0 ಗ್ರಾಂ/ಲೀಟರ್ 10-14 ದಿನಗಳ ಅಂತರದಲ್ಲಿ ಸಿಂಪಡಿಸಿ."
+    ],
+    "prevention_en": [
+      "Maintain wider row spacing (90 cm x 60 cm) to facilitate rapid drying of foliage.",
+      "Avoid planting tomato consecutively on the same plot for 2 seasons."
+    ],
+    "prevention_kn": [
+      "ಸಾಲುಗಳ ನಡುವೆ 90 ಸೆಂ.ಮೀ x 60 ಸೆಂ.ಮೀ ಅಂತರವಿಟ್ಟು ಗಾಳಿಯಾಡುವಂತೆ ಮಾಡಿ.",
+      "ಒಂದೇ ಜಾಗದಲ್ಲಿ ಸತತವಾಗಿ ಟೊಮೇಟೊ ಬೆಳೆಯಬೇಡಿ."
+    ]
+  },
+  "tomato_yellow_leaf_curl_virus": {
+    "id": "tomato_yellow_leaf_curl_virus",
+    "name_en": "Tomato Yellow Leaf Curl Virus (TYLCV)",
+    "name_kn": "ಹಳದಿ ಎಲೆ ಮುದುಡು ವೈರಸ್",
+    "pathogen": "Tomato Yellow Leaf Curl Begomovirus (Vector: Bemisia tabaci whitefly)",
+    "severity": "Very High",
+    "severity_kn": "ಅತಿ ಹೆಚ್ಚು ಅಪಾಯ",
+    "affected_part_en": "Entire plant, growing shoot tips, and leaves",
+    "affected_part_kn": "ಇಡೀ ಗಿಡ, ಕುಡಿಗಳು ಮತ್ತು ಎಲೆಗಳು",
+    "symptoms_en": [
+      "Severe upward rolling and cupping of leaf margins, giving leaves a spoon-like shape.",
+      "Pronounced yellowing (chlorosis) along leaf borders and stunted, bushy, erect plant growth.",
+      "Blossom drop with complete or near-total failure of fruit development."
+    ],
+    "symptoms_kn": [
+      "ಎಲೆಯ ಅಂಚುಗಳು ಮೇಲ್ಮುಖವಾಗಿ ಸುರುಟಿಕೊಂಡು ಚಮಚದಾಕಾರದಲ್ಲಿ ಮುದುಡಿಕೊಳ್ಳುತ್ತವೆ.",
+      "ಎಲೆಗಳು ಹಳದಿಯಾಗುತ್ತವೆ, ಗಿಡ ಗಿಡ್ಡವಾಗಿ ಪೊದೆಯಂತಾಗುತ್ತದೆ.",
+      "ಹೂವುಗಳು ಉದುರಿ ಕಾಯಿ ಕಟ್ಟುವುದಿಲ್ಲ, ಇಳುವರಿ ಸಂಪೂರ್ಣ ನಷ್ಟವಾಗುತ್ತದೆ."
+    ],
+    "organic_en": [
+      "Install bright yellow sticky traps (15–20 traps/acre) at canopy height to capture whiteflies.",
+      "Spray neem seed kernel extract (NSKE 5%) or fish oil rosin soap @ 20 g/L every 7 days.",
+      "Rogue out and bury virus-infected plants immediately to eliminate vector feeding sources."
+    ],
+    "organic_kn": [
+      "ಬಿಳಿ ನೊಣಗಳನ್ನು ಹಿಡಿಯಲು ಎಕರೆಗೆ 15-20 ಹಳದಿ ಜಿಗುಟು ಬಲೆಗಳನ್ನು (Yellow sticky traps) ಅಳವಡಿಸಿ.",
+      "ಬೇವಿನ ಬೀಜದ ಕಷಾಯ (NSKE 5%) ಪ್ರತಿ 7 ದಿನಕ್ಕೊಮ್ಮೆ ಸಿಂಪಡಿಸಿ.",
+      "ರೋಗಪೀಡಿತ ಗಿಡಗಳನ್ನು ಕಂಡ ತಕ್ಷಣ ಬುಡಸಹಿತ ಕಿತ್ತು ಮಣ್ಣಿನಲ್ಲಿ ಹೂತುಹಾಕಿ."
+    ],
+    "chemical_en": [
+      "Control whitefly vectors: Spray Imidacloprid 17.8 SL @ 0.3 ml/L or Thiamethoxam 25 WG @ 0.3 g/L.",
+      "Alternate with Diafenthiuron 50 WP @ 1.0 g/L or Pyriproxyfen 10% EC @ 1.0 ml/L to manage nymph stages.",
+      "Target leaf undersides where whitefly nymphs congregate."
+    ],
+    "chemical_kn": [
+      "ಬಿಳಿ ನೊಣ ನಿಯಂತ್ರಣಕ್ಕೆ ಇಮಿಡಾಕ್ಲೋಪ್ರಿಡ್ 0.3 ಮಿ.ಲೀ/ಲೀಟರ್ ಅಥವಾ ಥೈಯಾಮೆಥೊಕ್ಸಾಮ್ 0.3 ಗ್ರಾಂ/ಲೀಟರ್ ಸಿಂಪಡಿಸಿ.",
+      "ಡಯಾಫೆಂಥಿಯುರಾನ್ 1.0 ಗ್ರಾಂ/ಲೀಟರ್ ಸಿಂಪಡಿಸಿ ಮರಿ ಹುಳುಗಳನ್ನು ನಿಯಂತ್ರಿಸಿ.",
+      "ಎಲೆಯ ಕೆಳಭಾಗದಲ್ಲಿ ಬಿಳಿ ನೊಣಗಳು ಇರುವುದರಿಂದ ಕೆಳಭಾಗಕ್ಕೂ ತಾಗುವಂತೆ ಸಿಂಪಡಿಸಿ."
+    ],
+    "prevention_en": [
+      "Plant TYLCV-resistant hybrids developed by IIHR (e.g., Arka Rakshak, Arka Samrat).",
+      "Cover nursery seedbeds with 40-mesh nylon insect nets for 30 days before transplanting."
+    ],
+    "prevention_kn": [
+      "ವೈರಸ್ ನಿರೋಧಕ ತಳಿಗಳಾದ ಅರ್ಕಾ ರಕ್ಷಕ್, ಅರ್ಕಾ ಸಾಮ್ರಾಟ್ ನಾಟಿ ಮಾಡಿ.",
+      "ಮಡಿಗಳಲ್ಲಿ ನರ್ಸರಿ ಸಸಿಗಳನ್ನು 40 ಮೆಶ್ ನೈಲಾನ್ ಬಲೆಯಿಂದ ಮುಚ್ಚಿ ಬೆಳೆಸಿ."
+    ]
+  },
+  "tomato_mosaic_virus": {
+    "id": "tomato_mosaic_virus",
+    "name_en": "Tomato Mosaic Virus (ToMV)",
+    "name_kn": "ಟೊಮೇಟೊ ಮೊಸಾಯಿಕ್ ವೈರಸ್",
+    "pathogen": "Tomato Mosaic Tobamovirus (Mechanical transmission)",
+    "severity": "High",
+    "severity_kn": "ಹೆಚ್ಚು ಅಪಾಯ",
+    "affected_part_en": "Foliage, growing shoots, and fruits",
+    "affected_part_kn": "ಎಲೆಗಳು, ಕುಡಿಗಳು ಮತ್ತು ಹಣ್ಣುಗಳು",
+    "symptoms_en": [
+      "Mottling of leaves with alternating light green and dark green mosaic patches.",
+      "Blistering, puckering, and narrow 'fern-leaf' or 'shoestring' distortion of foliage.",
+      "Internal brown necrosis (browning) inside ripe fruits."
+    ],
+    "symptoms_kn": [
+      "ಎಲೆಗಳ ಮೇಲೆ ತಿಳಿ ಹಸಿರು ಮತ್ತು ಕಡು ಹಸಿರು ಬಣ್ಣದ ಮೊಸಾಯಿಕ್ ಚಿತ್ತಾರಗಳು ಕಾಣಿಸುತ್ತವೆ.",
+      "ಎಲೆಗಳು ಒರಟಾಗಿ ಮುದುಡಿಕೊಂಡು ಜರೀಯಂತೆ (Fern-like) ಕಿರಿದಾಗುತ್ತವೆ.",
+      "ಹಣ್ಣಿನ ಒಳಭಾಗದಲ್ಲಿ ಕಂದು ಬಣ್ಣದ ಗೆರೆಗಳು ಉಂಟಾಗುತ್ತವೆ."
+    ],
+    "organic_en": [
+      "Wash hands and tools with 10% trisodium phosphate (TSP) or skimmed milk before touching plants.",
+      "Immediately rogue out, bag, and burn virus-infected plants to prevent mechanical transmission.",
+      "Do not allow smoking, chewing tobacco, or bidi handling in or near the tomato field."
+    ],
+    "organic_kn": [
+      "ಗಿಡಗಳನ್ನು ಮುಟ್ಟುವ ಮುನ್ನ ಕೈ ಮತ್ತು ಕತ್ತರಿಗಳನ್ನು ಹಾಲಿನ ದ್ರಾವಣ ಅಥವಾ ಸಾಬೂನು ನೀರಿನಿಂದ ತೊಳೆಯಿರಿ.",
+      "ರೋಗಪೀಡಿತ ಗಿಡಗಳನ್ನು ತಕ್ಷಣ ಕಿತ್ತು ಚೀಲದಲ್ಲಿ ಹಾಕಿ ತೋಟದ ಹೊರಗೆ ಸುಟ್ಟುಹಾಕಿ.",
+      "ತೋಟದಲ್ಲಿ ಕೆಲಸ ಮಾಡುವಾಗ ತಂಬಾಕು, ಬೀಡಿ ಸೇದುವುದನ್ನು ಕಟ್ಟುನಿಟ್ಟಾಗಿ ನಿಷೇಧಿಸಿ."
+    ],
+    "chemical_en": [
+      "Viruses cannot be cured with chemical sprays once inside plant vascular tissue.",
+      "Apply zinc sulphate (0.5%) + borax (0.2%) foliar spray to strengthen surviving healthy plants."
+    ],
+    "chemical_kn": [
+      "ವೈರಸ್ ರೋಗಕ್ಕೆ ಯಾವುದೇ ರಾಸಾಯನಿಕ ಮದ್ದು ಇಲ್ಲ; ರೋಗಾಣು ಹರಡದಂತೆ ತಡೆಯುವುದೇ ಮುಖ್ಯ.",
+      "ಉಳಿದ ಆರೋಗ್ಯಕರ ಗಿಡಗಳಿಗೆ ಸೂಕ್ಷ್ಮ ಪೋಷಕಾಂಶಗಳನ್ನು ಸಿಂಪಡಿಸಿ."
+    ],
+    "prevention_en": [
+      "Treat seed by dry heating at 70°C for 4 days or soak in 10% trisodium phosphate (TSP) for 30 minutes.",
+      "Use certified virus-free seed stock and disinfect all trellising stakes."
+    ],
+    "prevention_kn": [
+      "ದೃಢೀಕೃತ ವೈರಸ್ ಮುಕ್ತ ಬೀಜಗಳನ್ನು ಬಳಸಿ, 10% TSP ದ್ರಾವಣದಲ್ಲಿ 30 ನಿಮಿಷ ಬೀಜೋಪಚಾರ ಮಾಡಿ.",
+      "ಹಳೆಯ ಆಸರೆ ಕಂಬಗಳನ್ನು ಬಿಸಿಲಿನಲ್ಲಿ ಚೆನ್ನಾಗಿ ಒಣಗಿಸಿ ಬಳಸಿ."
+    ]
+  },
+  "healthy": {
+    "id": "healthy",
+    "name_en": "Healthy Foliage",
+    "name_kn": "ಆರೋಗ್ಯಕರ ಎಲೆ",
+    "pathogen": "None (Plant is in good health)",
+    "severity": "None",
+    "severity_kn": "ಯಾವುದೇ ರೋಗವಿಲ್ಲ",
+    "affected_part_en": "None",
+    "affected_part_kn": "ಯಾವುದೇ ರೋಗವಿಲ್ಲ",
+    "symptoms_en": [
+      "Vibrant, dark green compound leaves without spots, chlorosis, mosaic mottling, or curling.",
+      "Strong vine structure, active apical growth, and abundant flowering clusters."
+    ],
+    "symptoms_kn": [
+      "ಯಾವುದೇ ಕಲೆ, ಚುಕ್ಕೆ, ಹಳದಿ ಅಥವಾ ಮುದುಡುವಿಕೆ ಇಲ್ಲದ ಸಮೃದ್ಧ ಹಸಿರು ಎಲೆಗಳು.",
+      "ಉತ್ತಮ ಹೂವು ಮತ್ತು ಕಾಯಿ ಕಟ್ಟುವಿಕೆ ಹೊಂದಿರುವ ಆರೋಗ್ಯಕರ ಗಿಡ."
+    ],
+    "organic_en": [
+      "Apply well-decomposed FYM @ 10 tonnes/acre or vermicompost @ 2 tonnes/acre.",
+      "Spray Jeevamrutha or Panchagavya 3% once every 15 days for root health and plant vigor."
+    ],
+    "organic_kn": [
+      "ಎಕರೆಗೆ 10 ಟನ್ ಕಳಿತ ಕೊಟ್ಟಿಗೆ ಗೊಬ್ಬರ ಅಥವಾ 2 ಟನ್ ಎರೆಹುಳು ಗೊಬ್ಬರ ನೀಡಿ.",
+      "ಪ್ರತಿ 15 ದಿನಕ್ಕೊಮ್ಮೆ ಜೀವಾಮೃತ ಅಥವಾ ಪಂಚಗವ್ಯ (3%) ಸಿಂಪಡಿಸಿ."
+    ],
+    "chemical_en": [
+      "No chemical fungicide or bactericide is needed.",
+      "Maintain balanced fertigation: N:P:K (150:100:100 kg/ha) with calcium nitrate @ 25 kg/acre to prevent blossom-end rot."
+    ],
+    "chemical_kn": [
+      "ಯಾವುದೇ ರಾಸಾಯನಿಕ ಸಿಂಪಡಣೆ ಅಗತ್ಯವಿಲ್ಲ.",
+      "ಶಿಫಾರಸು ಮಾಡಿದ ರಸಗೊಬ್ಬರ ಮತ್ತು ಕ್ಯಾಲ್ಸಿಯಂ ನೈಟ್ರೇಟ್ 25 ಕೆ.ಜಿ/ಎಕರೆ ನೀಡಿ ಹಣ್ಣು ಕೊಳೆಯುವುದನ್ನು ತಪ್ಪಿಸಿ."
+    ],
+    "prevention_en": [
+      "Conduct routine weekly scouting for early signs of leaf miner, whitefly, or blight spots.",
+      "Maintain consistent soil moisture through drip irrigation to prevent fruit cracking."
+    ],
+    "prevention_kn": [
+      "ವಾರಕ್ಕೊಮ್ಮೆ ಕೀಟ ಅಥವಾ ರೋಗದ ಲಕ್ಷಣಗಳಿಗಾಗಿ ತೋಟ ಪರಿಶೀಲಿಸಿ.",
+      "ಹನಿ ನೀರಾವರಿ ಮೂಲಕ ಸಮಾನ ತೇವಾಂಶ ಕಾಪಾಡಿ ಹಣ್ಣು ಒಡೆಯದಂತೆ ಎಚ್ಚರವಹಿಸಿ."
+    ]
+  }
+}

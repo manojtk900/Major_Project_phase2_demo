@@ -1,0 +1,2460 @@
+{
+  "_metadata": {
+    "description": "Authoritative crop lifecycle stages, day ranges, tasks, and weather sensitivities for Karnataka pilot crops. Grounded in UAS Bengaluru, UAS Dharwad, ICAR-IIHR, and ICAR-CPCRI Package of Practices.",
+    "version": "2.0.0",
+    "last_updated": "2026-09-22",
+    "supported_crops": [
+      "ragi",
+      "rice",
+      "maize",
+      "tomato",
+      "arecanut"
+    ],
+    "sources": [
+      "UAS Bengaluru — Package of Practices for High Yielding Crops (2024–2026)",
+      "UAS Dharwad — Agronomic Recommendations for Field and Horticultural Crops",
+      "ICAR-IIMR Hyderabad — Millets and Maize Production Technologies",
+      "ICAR-IIHR Hesaraghatta — Vegetable Production Technology (Tomato)",
+      "ICAR-CPCRI Kasaragod — Arecanut Management Calendar and Disease Advisory"
+    ]
+  },
+  "crops": {
+    "ragi": {
+      "crop_id": "ragi",
+      "crop_name_en": "Ragi (Finger Millet)",
+      "crop_name_kn": "ರಾಗಿ",
+      "lifecycle_type": "annual",
+      "total_duration_days": 115,
+      "harvest_window_days": 15,
+      "stages": [
+        {
+          "stage_id": "sowing_germination",
+          "name_en": "Land Preparation & Sowing",
+          "name_kn": "ಭೂಮಿ ತಯಾರಿ ಮತ್ತು ಬಿತ್ತನೆ",
+          "start_day": 1,
+          "end_day": 10,
+          "icon": "🌱",
+          "description_en": "Fine seedbed tilth, furrow opening, seed treatment, and shallow line sowing in red sandy loam.",
+          "description_kn": "ಕೆಂಪು ಗೋಡು ಮಣ್ಣಿನಲ್ಲಿ ಹದವಾದ ಬೀಜಮಡಿ ಸಿದ್ಧತೆ, ಬೀಜೋಪಚಾರ ಮತ್ತು ಸಾಲು ಬಿತ್ತನೆ.",
+          "tasks_en": [
+            "Plough field 2-3 times and incorporate 7.5 to 10 tonnes FYM/compost per hectare",
+            "Treat seed with Trichoderma viride @ 4 g/kg seed to prevent seedling foot rot",
+            "Sow seeds at 2 to 3 cm depth with 22.5 to 30 cm inter-row spacing"
+          ],
+          "tasks_kn": [
+            "2-3 ಬಾರಿ ಉಳುಮೆ ಮಾಡಿ ಹೆಕ್ಟೇರಿಗೆ 7.5 ರಿಂದ 10 ಟನ್ ಕೊಟ್ಟಿಗೆ ಗೊಬ್ಬರ ಮಣ್ಣಿಗೆ ಸೇರಿಸಿ",
+            "ಬುಡ ಕೊಳೆ ರೋಗ ತಡೆಗಟ್ಟಲು ಪ್ರತಿ ಕೆಜಿ ಬೀಜಕ್ಕೆ 4 ಗ್ರಾಂ ಟ್ರೈಕೋಡರ್ಮಾದಿಂದ ಬೀಜೋಪಚಾರ ಮಾಡಿ",
+            "22.5 ರಿಂದ 30 ಸೆಂ.ಮೀ ಸಾಲಿನ ಅಂತರದಲ್ಲಿ 2-3 ಸೆಂ.ಮೀ ಆಳದಲ್ಲಿ ಬಿತ್ತನೆ ಮಾಡಿ"
+          ],
+          "key_observations_en": "Check for uniform emergence within 5 to 7 days; avoid water accumulation in furrows.",
+          "key_observations_kn": "5 ರಿಂದ 7 ದಿನಗಳಲ್ಲಿ ಸಸಿಗಳು ಸಮರ್ಪಕವಾಗಿ ಮೊಳಕೆಯೊಡೆಯುವುದನ್ನು ಗಮನಿಸಿ.",
+          "weather_sensitivity": {
+            "rain_favorable": true,
+            "drought_sensitive": true,
+            "action_on_rain_en": "Open drainage furrows to prevent soil crusting and seed rot.",
+            "action_on_rain_kn": "ಬೀಜ ಕೊಳೆಯದಂತೆ ಬಸಿಗಾಲುವೆಗಳನ್ನು ಸರಿಪಡಿಸಿ."
+          },
+          "thumbnail": "public/images/stages/ragi_stage1_land.jpg",
+          "main_photo": {
+            "url": "public/images/stages/ragi_stage1_land.jpg",
+            "caption_en": "Ploughed red loam seedbed and line sowing with bullock seed drill",
+            "caption_kn": "ಕೆಂಪು ಗೋಡು ಮಣ್ಣಿನಲ್ಲಿ ಹದವಾದ ಬೀಜಮಡಿ ಸಿದ್ಧತೆ ಮತ್ತು ಕೂರಿಗೆ ಬಿತ್ತನೆ",
+            "source": "ICAR-IIMR / UAS Bengaluru Package of Practices",
+            "source_url": "https://uasbangalore.edu.in"
+          },
+          "what_happens_en": "The seed absorbs soil moisture, activates embryo enzymes, and pushes out the primary radicle. The green shoot emerges through the topsoil within 5 to 7 days.",
+          "what_happens_kn": "ಬೀಜವು ತೇವಾಂಶ ಹೀರಿಕೊಂಡು ಮೊಳಕೆಯೊಡೆಯುತ್ತದೆ. ಪ್ರಾಥಮಿಕ ಬೇರುಗಳು ಮಣ್ಣಿನಲ್ಲಿ ಊರಿಕೊಂಡು 5-7 ದಿನಗಳಲ್ಲಿ ಮೊದಲ ಹಸಿರೆಲೆ ಹೊರಬರುತ್ತದೆ.",
+          "animation_type": "seed_germination",
+          "farmer_actions": {
+            "crop_care": {
+              "action_en": "Deep summer ploughing followed by harrowing. Maintain shallow sowing depth (2 to 3 cm).",
+              "action_kn": "ಬೇಸಿಗೆ ಉಳುಮೆ ನಂತರ ಹರಗುವುದು. ಬೀಜವನ್ನು 2-3 ಸೆಂ.ಮೀ ಆಳಕ್ಕಿಂತ ಹೆಚ್ಚು ಬಿತ್ತಬೇಡಿ."
+            },
+            "water": {
+              "action_en": "Ensure adequate seedbed moisture before sowing. Avoid furrow flooding.",
+              "action_kn": "ಬಿತ್ತನೆಗೆ ಮುನ್ನ ಮಣ್ಣಿನಲ್ಲಿ ಹದವಾದ ತೇವಾಂಶವಿರಲಿ. ನೀರು ನಿಲ್ಲದಂತೆ ನೋಡಿಕೊಳ್ಳಿ."
+            },
+            "weed": {
+              "action_en": "Apply pre-emergence Isoproturon @ 0.5 kg a.i./ha or Pendimethalin within 48h if weed history is high.",
+              "action_kn": "ಕಳೆಯ ಸಮಸ್ಯೆಯಿದ್ದರೆ ಬಿತ್ತಿದ 48 ಗಂಟೆಗಳಲ್ಲಿ ಶಿಫಾರಸು ಮಾಡಿದ ಕಳೆನಾಶಕ ಸಿಂಪಡಿಸಿ."
+            },
+            "nutrients": {
+              "action_en": "Apply 50% N + 100% P₂O₅ + 100% K₂O into furrow as basal dose.",
+              "action_kn": "ಶೇ 50 ಸಾರಜನಕ ಮತ್ತು ಪೂರ್ಣ ಪ್ರಮಾಣದ ರಂಜಕ-ಪೊಟ್ಯಾಷ್ ಅನ್ನು ಬಿತ್ತನೆ ಸಾಲಿನಲ್ಲಿ ಬಾಸಲ್ ಡೋಸ್ ಆಗಿ ನೀಡಿ.",
+              "npk_schedule": "Rainfed: 40:20:20 kg NPK/ha | Irrigated: 60:30:30 kg NPK/ha",
+              "timing_en": "Basal at sowing; adjust dose based on Soil Health Card test values.",
+              "timing_kn": "ಬಿತ್ತನೆಯ ಸಮಯದಲ್ಲಿ ಬಾಸಲ್ ಡೋಸ್; ಮಣ್ಣು ಪರೀಕ್ಷೆ ಆಧಾರದ ಮೇಲೆ ಸರಿಹೊಂದಿಸಿ.",
+              "source": "UAS Bengaluru Package of Practices (Field Crops)"
+            },
+            "protection": {
+              "action_en": "Treat seed with Trichoderma viride @ 4 g/kg seed to prevent damping-off.",
+              "action_kn": "ಸಸಿ ಕೊಳೆ ರೋಗ ತಡೆಗಟ್ಟಲು ಪ್ರತಿ ಕೆಜಿ ಬೀಜಕ್ಕೆ 4 ಗ್ರಾಂ ಟ್ರೈಕೋಡರ್ಮಾದಿಂದ ಬೀಜೋಪಚಾರ ಮಾಡಿ."
+            }
+          },
+          "gallery_photos": [
+            {
+              "url": "public/images/stages/ragi_stage1_land.jpg",
+              "caption_en": "Prepared furrow seedbed in Mandya district",
+              "caption_kn": "ಮಂಡ್ಯ ಜಿಲ್ಲೆಯ ಹದವಾದ ಬಿತ್ತನೆ ಸಾಲುಗಳು",
+              "source": "UAS Bengaluru Farm Extension"
+            }
+          ],
+          "video": {
+            "title_en": "Finger Millet Scientific Production Technology & Line Sowing",
+            "title_kn": "ರಾಗಿ ಬೆಳೆ ವೈಜ್ಞಾನಿಕ ಉತ್ಪಾದನಾ ತಂತ್ರಜ್ಞಾನ ಮತ್ತು ಬಿತ್ತನೆ ವಿಧಾನ",
+            "publisher": "UAS Bengaluru Krishi Vigyan Kendra & ICAR",
+            "thumbnail": "public/images/stages/ragi_stage1_land.jpg",
+            "url": "https://www.youtube.com/watch?v=kYJj8hB7m-s",
+            "duration": "14 min",
+            "source": "ICAR Agricultural Extension Channel"
+          },
+          "quick_tip_en": "Never sow ragi deeper than 3 cm; deep placement causes delayed or patchy emergence.",
+          "quick_tip_kn": "ರಾಗಿ ಬೀಜವನ್ನು 3 ಸೆಂ.ಮೀಗಿಂತ ಆಳವಾಗಿ ಬಿತ್ತಬೇಡಿ; ಹೆಚ್ಚು ಆಳವಾದರೆ ಮೊಳಕೆ ದುರ್ಬಲವಾಗುತ್ತದೆ.",
+          "references": [
+            {
+              "title": "Package of Practices for High Yielding Finger Millet",
+              "source": "UAS Bengaluru Directorate of Extension",
+              "type": "University Manual"
+            },
+            {
+              "title": "Millet Production Technologies for Rainfed Areas",
+              "source": "ICAR-IIMR Hyderabad",
+              "type": "ICAR Advisory"
+            }
+          ]
+        },
+        {
+          "stage_id": "vegetative_tillering",
+          "name_en": "Vegetative Growth & Active Tillering",
+          "name_kn": "ಕವಲೊಡೆಯುವಿಕೆ ಮತ್ತು ಸಸ್ಯ ಬೆಳವಣಿಗೆ",
+          "start_day": 11,
+          "end_day": 45,
+          "icon": "🌿",
+          "description_en": "Root system consolidation, rapid leaf area expansion, and primary tiller production.",
+          "description_kn": "ಬೇರುಗಳ ಬಲವರ್ಧನೆ, ಎಲೆಗಳ ಹರಡುವಿಕೆ ಮತ್ತು ಬುಡದಿಂದ ಹುಲುಸಾದ ಕವಲುಗಳು ಒಡೆಯುವ ಹಂತ.",
+          "tasks_en": [
+            "Thin seedlings and gap-fill at 12 to 15 days to maintain optimal plant stand",
+            "Carry out inter-cultivation (ಎಡೆಕುಂಟೆ) at 20 and 35 days after sowing",
+            "Top dress remaining 50% Nitrogen when soil has good moisture at 25-30 days"
+          ],
+          "tasks_kn": [
+            "12-15 ದಿನಗಳಲ್ಲಿ ಹೆಚ್ಚುವರಿ ಸಸಿ ತೆಗೆದು ಖಾಲಿ ಜಾಗದಲ್ಲಿ ಮರುನಾಟಿ ಮಾಡಿ",
+            "ಬಿತ್ತಿದ 20 ಮತ್ತು 35 ದಿನಗಳಿಗೆ ಎಡೆಕುಂಟೆ ಹೊಡೆದು ಕಳೆ ನಿಯಂತ್ರಿಸಿ",
+            "25-30 ದಿನಗಳಿಗೆ ತೇವಾಂಶವಿದ್ದಾಗ ಉಳಿದ ಶೇ 50 ಸಾರಜನಕವನ್ನು ಮೇಲುಗೊಬ್ಬರವಾಗಿ ನೀಡಿ"
+          ],
+          "key_observations_en": "Scout for leaf blast spindle lesions and stem borer dead hearts.",
+          "key_observations_kn": "ಎಲೆಗಳಲ್ಲಿ ಕಂದು ಮಚ್ಚೆ ರೋಗ (ಬ್ಲಾಸ್ಟ್) ಅಥವಾ ಸುಳಿ ಒಣಗುವ ಲಕ್ಷಣಗಳನ್ನು ಗಮನಿಸಿ.",
+          "weather_sensitivity": {
+            "rain_favorable": true,
+            "drought_sensitive": true,
+            "action_on_rain_en": "Take advantage of soil moisture to top dress nitrogen fertilizer.",
+            "action_on_rain_kn": "ಮಳೆಯ ನಂತರದ ತೇವಾಂಶದಲ್ಲಿ ಸಾರಜನಕ ಮೇಲುಗೊಬ್ಬರ ನೀಡಿ."
+          },
+          "thumbnail": "public/images/stages/ragi_stage2_sowing.jpg",
+          "main_photo": {
+            "url": "public/images/stages/ragi_stage2_sowing.jpg",
+            "caption_en": "Healthy vegetative tillering ragi stand in Karnataka dryland",
+            "caption_kn": "ಕವಲೊಡೆಯುವ ಹಂತದಲ್ಲಿರುವ ಸಮೃದ್ಧ ಹಸಿರು ರಾಗಿ ಬೆಳೆ",
+            "source": "UAS Bengaluru Agronomy Station",
+            "source_url": "https://uasbangalore.edu.in"
+          },
+          "what_happens_en": "The plant produces 4 to 8 vigorous basal tillers from crown nodes. Photosynthetic leaf area multiplies rapidly to build carbohydrate reserves.",
+          "what_happens_kn": "ಸಸಿಗಳು ಹುಲುಸಾಗಿ ಬೆಳೆದು 4 ರಿಂದ 8 ಕವಲುಗಳು ಒಡೆಯುತ್ತವೆ. ಎಲೆಗಳು ಸೂರ್ಯನ ಬೆಳಕನ್ನು ಹೀರಿಕೊಂಡು ಧಾನ್ಯ ತಯಾರಿಕೆಗೆ ಶಕ್ತಿ ಸಂಗ್ರಹಿಸುತ್ತವೆ.",
+          "animation_type": "vegetative_tillering",
+          "farmer_actions": {
+            "crop_care": {
+              "action_en": "Perform thinning and gap filling within 15 days to maintain 22–25 plants/m².",
+              "action_kn": "15 ದಿನಗಳೊಳಗೆ ಸಸಿಗಳನ್ನು ಸಮತೋಲನಗೊಳಿಸಿ; ಸಾಲಿನಲ್ಲಿ ಹೆಚ್ಚುವರಿ ಸಸಿ ತೆಗೆಯಿರಿ."
+            },
+            "water": {
+              "action_en": "Critical tillering phase; irrigate at 10–12 day intervals if dry spell exceeds 10 days.",
+              "action_kn": "ಕವಲೊಡೆಯುವ ಪ್ರಮುಖ ಹಂತ; ಮಳೆಯಿಲ್ಲದಿದ್ದರೆ 10-12 ದಿನಗಳಿಗೊಮ್ಮೆ ಲಘು ನೀರಾವರಿ ನೀಡಿ."
+            },
+            "weed": {
+              "action_en": "Run inter-cultivator blade (ಎಡೆಕುಂಟೆ) twice between rows to mulch topsoil and kill weeds.",
+              "action_kn": "ಸಾಲುಗಳ ನಡುವೆ ಎಡೆಕುಂಟೆ ಹೊಡೆದು ಕಳೆ ನಾಶಪಡಿಸಿ ಮತ್ತು ಮಣ್ಣಿನ ತೇವಾಂಶ ಕಾಪಾಡಿ."
+            },
+            "nutrients": {
+              "action_en": "Top-dress remaining 50% Nitrogen (20 kg N/ha rainfed; 30 kg N/ha irrigated) at 25-30 days.",
+              "action_kn": "25-30 ದಿನಗಳಿಗೆ ಉಳಿದ ಶೇ. 50 ಸಾರಜನಕ (20-30 ಕೆಜಿ/ಹೆಕ್ಟೇರ್) ಅನ್ನು ಮೇಲುಗೊಬ್ಬರವಾಗಿ ನೀಡಿ.",
+              "npk_schedule": "Rainfed top-dress: 20 kg N/ha | Irrigated top-dress: 30 kg N/ha",
+              "timing_en": "Apply after inter-cultivation when soil is moist.",
+              "timing_kn": "ಎಡೆಕುಂಟೆ ಹೊಡೆದ ನಂತರ ಮಣ್ಣಿನಲ್ಲಿ ತೇವಾಂಶವಿರುವಾಗ ನೀಡಿ.",
+              "source": "UAS Bengaluru Package of Practices"
+            },
+            "protection": {
+              "action_en": "Scout for finger millet blast lesions; spray Mancozeb 75 WP @ 2 g/L if disease appears.",
+              "action_kn": "ಎಲೆ ಬ್ಲಾಸ್ಟ್ ರೋಗದ ಚುಕ್ಕೆಗಳು ಕಂಡರೆ ಮ್ಯಾಂಕೋಜೆಬ್ 2 ಗ್ರಾಂ ಪ್ರತಿ ಲೀಟರ್ ನೀರಿಗೆ ಬೆರೆಸಿ ಸಿಂಪಡಿಸಿ."
+            }
+          },
+          "gallery_photos": [
+            {
+              "url": "public/images/stages/ragi_stage2_sowing.jpg",
+              "caption_en": "Row-planted ragi crop during 30-day vegetative tillering",
+              "caption_kn": "30 ದಿನಗಳ ಕವಲೊಡೆದ ರಾಗಿ ಬೆಳೆ",
+              "source": "ICAR-IIMR"
+            }
+          ],
+          "video": {
+            "title_en": "Weed Management and Top Dressing in Finger Millet",
+            "title_kn": "ರಾಗಿ ಬೆಳೆಯಲ್ಲಿ ಕಳೆ ನಿರ್ವಹಣೆ ಮತ್ತು ಮೇಲುಗೊಬ್ಬರ ನೀಡುವ ವಿಧಾನ",
+            "publisher": "UAS Bengaluru Krishi Vigyan Kendra",
+            "thumbnail": "public/images/stages/ragi_stage2_sowing.jpg",
+            "url": "https://www.youtube.com/watch?v=kYJj8hB7m-s",
+            "duration": "10 min",
+            "source": "Extension Advisory"
+          },
+          "quick_tip_en": "Timely inter-cultivation at 25 days creates a dust mulch that conserves vital subsoil moisture.",
+          "quick_tip_kn": "25 ದಿನಗಳಿಗೆ ಎಡೆಕುಂಟೆ ಹೊಡೆಯುವುದರಿಂದ ಮಣ್ಣು ಸಡಿಲವಾಗಿ ತೇವಾಂಶ ಸಂರಕ್ಷಣೆಯಾಗುತ್ತದೆ.",
+          "references": [
+            {
+              "title": "Dryland Agronomy & Inter-cultivation Guidelines",
+              "source": "UAS Bengaluru",
+              "type": "Agronomy Guide"
+            }
+          ]
+        },
+        {
+          "stage_id": "flowering_panicle",
+          "name_en": "Panicle Emergence & Flowering",
+          "name_kn": "ತೆನೆ ಹೊರಬರುವಿಕೆ ಮತ್ತು ಹೂ ಬಿಡುವ ಹಂತ",
+          "start_day": 46,
+          "end_day": 75,
+          "icon": "🌾",
+          "description_en": "Boot leaf emergence, finger spike exertion, and active floret pollination.",
+          "description_kn": "ಬೂಟ್ ಎಲೆಯಿಂದ ರಾಗಿ ತೆನೆಯ ಬೆರಳುಗಳು ಹೊರಬರುವುದು ಮತ್ತು ಹೂವರಳುವ ಸೂಕ್ಷ್ಮ ಹಂತ.",
+          "tasks_en": [
+            "Maintain soil moisture as drought during flowering causes floret sterility",
+            "Rogue out diseased or off-type plants from seed production plots",
+            "Scout for neck blast and earhead caterpillars"
+          ],
+          "tasks_kn": [
+            "ಹೂ ಬಿಡುವ ಸಮಯದಲ್ಲಿ ತೇವಾಂಶ ಕೊರತೆಯಾಗದಂತೆ ಲಘು ನೀರಾವರಿ ಒದಗಿಸಿ",
+            "ಬೆರಕೆ ಸಸಿಗಳು ಅಥವಾ ರೋಗಪೀಡಿತ ತೆನೆಗಳನ್ನು ಹೊಲದಿಂದ ತೆಗೆದುಹಾಕಿ",
+            "ಕುತ್ತಿಗೆ ಕೊಳೆ ರೋಗ ಮತ್ತು ತೆನೆ ತಿನ್ನುವ ಕೀಟಗಳ ಮೇಲೆ ನಿಗಾ ಇರಿಸಿ"
+          ],
+          "key_observations_en": "Monitor opening of finger spikelets and check for water stress wilting.",
+          "key_observations_kn": "ತೆನೆಗಳ ಅರಳುವಿಕೆ ಮತ್ತು ನೀರಿನ ಕೊರತೆಯಿಂದ ಎಲೆಗಳು ಬಾಡುವುದನ್ನು ಗಮನಿಸಿ.",
+          "weather_sensitivity": {
+            "rain_favorable": false,
+            "drought_sensitive": true,
+            "action_on_rain_en": "Continuous heavy downpours wash away pollen; ensure prompt field drainage.",
+            "action_on_rain_kn": "ನಿರಂತರ ಮಳೆಯಾದರೆ ಪರಾಗಸ್ಪರ್ಶ ಕುಂಠಿತವಾಗುವುದರಿಂದ ನೀರು ನಿಲ್ಲದಂತೆ ಬಸಿದುಹೋಗಲು ಬಿಡಿ."
+          },
+          "thumbnail": "public/images/stages/ragi_stage3_veg.jpg",
+          "main_photo": {
+            "url": "public/images/stages/ragi_stage3_veg.jpg",
+            "caption_en": "Finger millet earheads emerging with 4 to 6 whorled fingers",
+            "caption_kn": "4 ರಿಂದ 6 ಬೆರಳುಗಳಂತೆ ಅರಳುತ್ತಿರುವ ರಾಗಿ ತೆನೆ",
+            "source": "UAS Bengaluru Department of Agronomy",
+            "source_url": "https://uasbangalore.edu.in"
+          },
+          "what_happens_en": "The terminal shoot produces 4 to 6 finger-like spikes. Florets open early in the morning and shed pollen, initiating fertilization within the spikelets.",
+          "what_happens_kn": "ಮುಖ್ಯ ಕಾಂಡದ ತುದಿಯಲ್ಲಿ 4 ರಿಂದ 6 ಬೆರಳಿನಾಕಾರದ ತೆನೆಗಳು ಹೊರಬರುತ್ತವೆ. ಮುಂಜಾನೆ ಹೂಗಳು ಅರಳಿ ಪರಾಗಸ್ಪರ್ಶ ನಡೆದು ಕಾಯಿ ಕಟ್ಟಲು ಆರಂಭವಾಗುತ್ತದೆ.",
+          "animation_type": "flowering_panicle",
+          "farmer_actions": {
+            "crop_care": {
+              "action_en": "Protect the flag leaf from pest damage; rogue out off-types.",
+              "action_kn": "ಬಾವುಟ ಎಲೆಯನ್ನು ರೋಗದಿಂದ ರಕ್ಷಿಸಿ; ಬೆರಕೆ ಸಸಿಗಳನ್ನು ಹೊಲದಿಂದ ತೆಗೆದುಹಾಕಿ."
+            },
+            "water": {
+              "action_en": "Highest moisture sensitivity stage. Give 1 protective irrigation during dry spells to prevent chaffy grains.",
+              "action_kn": "ಅತ್ಯಂತ ಸೂಕ್ಷ್ಮ ಹಂತ; ಮಳೆಯಿಲ್ಲದಿದ್ದರೆ ತೆನೆ ಜಳ್ಳಾಗುವುದನ್ನು ತಡೆಯಲು 1 ಸಂರಕ್ಷಕ ನೀರಾವರಿ ನೀಡಿ."
+            },
+            "weed": {
+              "action_en": "Hand pull escaped tall weeds that overtop the crop canopy.",
+              "action_kn": "ಬೆಳೆಗಿಂತ ಎತ್ತರ ಬೆಳೆದ ಕಳೆಗಳನ್ನು ಕೈಯಿಂದ ಕೀಳಿಸಿ."
+            },
+            "nutrients": {
+              "action_en": "Foliar spray of Potassium nitrate (KNO₃ @ 1%) if rainfed crop experiences moisture stress.",
+              "action_kn": "ತೇವಾಂಶದ ಕೊರತೆಯಿದ್ದರೆ ಪೊಟ್ಯಾಷಿಯಂ ನೈಟ್ರೇಟ್ (ಶೇ 1) ದ್ರಾವಣವನ್ನು ಎಲೆಗಳ ಮೇಲೆ ಸಿಂಪಡಿಸಿ.",
+              "npk_schedule": "Foliar 1% KNO₃ or 19:19:19 @ 10 g/L (Optional for stress tolerance)",
+              "timing_en": "Apply at 50% flowering stage during non-rainy afternoon.",
+              "timing_kn": "ಶೇ 50 ಹೂ ಬಿಡುವ ಹಂತದಲ್ಲಿ ಮಳೆಯಿಲ್ಲದ ಸಂಜೆ ವೇಳೆಯಲ್ಲಿ ಸಿಂಪಡಿಸಿ.",
+              "source": "ICAR-IIMR Agro-Advisory"
+            },
+            "protection": {
+              "action_en": "Spray Tricyclazole 75 WP @ 0.6 g/L if neck/finger blast appears.",
+              "action_kn": "ಕುತ್ತಿಗೆ ಬ್ಲಾಸ್ಟ್ ರೋಗ ಕಂಡರೆ ಟ್ರೈಸೈಕ್ಲೋಜೋಲ್ 0.6 ಗ್ರಾಂ ಪ್ರತಿ ಲೀಟರ್ ನೀರಿಗೆ ಬೆರೆಸಿ ಸಿಂಪಡಿಸಿ."
+            }
+          },
+          "gallery_photos": [
+            {
+              "url": "public/images/stages/ragi_stage3_veg.jpg",
+              "caption_en": "Flowering panicle of improved finger millet variety GPU-28",
+              "caption_kn": "ಜಿಪಿಯು-28 ತಳಿಯ ರಾಗಿ ತೆನೆ ಹೂ ಬಿಡುವ ಹಂತ",
+              "source": "UAS Bengaluru"
+            }
+          ],
+          "video": {
+            "title_en": "Neck Blast and Pest Management in Finger Millet",
+            "title_kn": "ರಾಗಿ ಬೆಳೆಯಲ್ಲಿ ಕುತ್ತಿಗೆ ಬೆಂಕಿ ರೋಗ ಮತ್ತು ಕೀಟ ನಿರ್ವಹಣೆ",
+            "publisher": "UAS Bengaluru Extension & ICAR",
+            "thumbnail": "public/images/stages/ragi_stage3_veg.jpg",
+            "url": "https://www.youtube.com/watch?v=kYJj8hB7m-s",
+            "duration": "12 min",
+            "source": "ICAR Extension"
+          },
+          "quick_tip_en": "Moisture stress during flowering causes empty spikelets (chaffiness). Prioritize life-saving water here.",
+          "quick_tip_kn": "ಹೂ ಬಿಡುವಾಗ ನೀರಿನ ಕೊರತೆಯಾದರೆ ಕಾಳು ಕಟ್ಟದೆ ಜಳ್ಳಾಗುತ್ತದೆ; ಈ ಹಂತದಲ್ಲಿ ಜೀವ ರಕ್ಷಕ ನೀರು ನೀಡಿ.",
+          "references": [
+            {
+              "title": "ICAR Kharif Agro-Advisories for Farmers (2025-2026)",
+              "source": "ICAR New Delhi",
+              "type": "National Advisory"
+            },
+            {
+              "title": "Package of Practices for Finger Millet",
+              "source": "UAS Bengaluru",
+              "type": "University Bulletin"
+            }
+          ]
+        },
+        {
+          "stage_id": "grain_filling",
+          "name_en": "Grain Filling & Dough Stage",
+          "name_kn": "ಕಾಳು ತುಂಬುವ ಮತ್ತು ಗಟ್ಟಿಯಾಗುವ ಹಂತ",
+          "start_day": 76,
+          "end_day": 95,
+          "icon": "🌾",
+          "description_en": "Starch translocation, milking to dough stage transition, and seed hardening.",
+          "description_kn": "ತೆನೆಗಳಲ್ಲಿ ಹಾಲು ತುಂಬಿ, ನಂತರ ಗಟ್ಟಿಯಾದ ಕಂದು ಕಾಳುಗಳಾಗಿ ಮಾರ್ಪಡುವ ಹಂತ.",
+          "tasks_en": [
+            "Maintain moderate subsoil moisture to support continuous grain filling",
+            "Protect developing earheads from bird depredation in morning and evening",
+            "Withhold nitrogen fertilizers; allow natural senescence of lower leaves"
+          ],
+          "tasks_kn": [
+            "ಕಾಳು ಸರಿಯಾಗಿ ತುಂಬಲು ಮಣ್ಣಿನಲ್ಲಿ ಹದವಾದ ತೇವಾಂಶವಿರುವಂತೆ ನೋಡಿಕೊಳ್ಳಿ",
+            "ಮುಂಜಾನೆ ಮತ್ತು ಸಂಜೆ ವೇಳೆ ಪಕ್ಷಿಗಳು ತೆನೆ ತಿನ್ನದಂತೆ ಕಾವಲು ಕಾಯಿರಿ",
+            "ಯಾವುದೇ ರಾಸಾಯನಿಕ ಗೊಬ್ಬರ ನೀಡಬೇಡಿ; ನೈಸರ್ಗಿಕವಾಗಿ ಪಕ್ವವಾಗಲು ಬಿಡಿ"
+          ],
+          "key_observations_en": "Check grain firmness by squeezing spikelet; milk turns into firm dough.",
+          "key_observations_kn": "ತೆನೆಯ ಕಾಳನ್ನು ಒತ್ತಿ ನೋಡಿ; ಹಾಲಿನಂತಿರುವ ದ್ರವ ಗಟ್ಟಿಯಾಗುವುದನ್ನು ಗಮನಿಸಿ.",
+          "weather_sensitivity": {
+            "rain_favorable": false,
+            "drought_sensitive": false,
+            "action_on_rain_en": "Excess rain delays grain drying; ensure drainage trenches are clear.",
+            "action_on_rain_kn": "ಹೆಚ್ಚು ಮಳೆಯಾದರೆ ಕಾಳು ಒಣಗುವುದು ತಡವಾಗುವುದರಿಂದ ನೀರು ಸರಾಗವಾಗಿ ಹರಿಯಲು ಬಿಡಿ."
+          },
+          "thumbnail": "public/images/stages/ragi_stage4_flower.jpg",
+          "main_photo": {
+            "url": "public/images/stages/ragi_stage4_flower.jpg",
+            "caption_en": "Ragi grains filling with starch and changing to amber-brown",
+            "caption_kn": "ತೆನೆಯಲ್ಲಿ ಕಾಳು ತುಂಬಿ ಕಂದು ಬಣ್ಣಕ್ಕೆ ತಿರುಗುತ್ತಿರುವ ಹಂತ",
+            "source": "ICAR-IIMR Millet Research",
+            "source_url": "https://millets.icar.gov.in"
+          },
+          "what_happens_en": "Starch and proteins synthesized in the green flag leaf and stem are translocated into grain kernels. Moisture drops gradually as dry matter accumulates.",
+          "what_happens_kn": "ಎಲೆಗಳಲ್ಲಿ ತಯಾರಾದ ಪೋಷಕಾಂಶಗಳು ತೆನೆಗೆ ವರ್ಗಾವಣೆಯಾಗಿ ಕಾಳು ತುಂಬುತ್ತದೆ. ಹಾಲಿನ ಹಂತ ಮುಗಿದು ಕಾಳು ಗಟ್ಟಿಯಾಗತೊಡಗುತ್ತದೆ.",
+          "animation_type": "grain_filling",
+          "farmer_actions": {
+            "crop_care": {
+              "action_en": "Scare birds during dawn and dusk as grains enter sweet milk stage.",
+              "action_kn": "ಹಾಲು ತುಂಬುವ ಸಮಯದಲ್ಲಿ ಪಕ್ಷಿಗಳ ಬಾಧೆ ಹೆಚ್ಚಿರುವುದರಿಂದ ಕಾವಲು ಕಾಯಿರಿ."
+            },
+            "water": {
+              "action_en": "Provide 1 light irrigation if severe drought occurs before dough stage. Stop water 10 days before harvest.",
+              "action_kn": "ತೀವ್ರ ಒಣಹವೆಯಿದ್ದರೆ 1 ಲಘು ನೀರು ನೀಡಿ; ಕಟಾವಿಗೆ 10 ದಿನ ಮುಂಚೆ ನೀರು ನಿಲ್ಲಿಸಿ."
+            },
+            "weed": {
+              "action_en": "No mechanical weeding needed; avoid root disturbance.",
+              "action_kn": "ಈ ಹಂತದಲ್ಲಿ ಯಾವುದೇ ಎಡೆಕುಂಟೆ ಅಥವಾ ಕಳೆ ಕೀಳುವುದು ಬೇಡ."
+            },
+            "nutrients": {
+              "action_en": "No soil fertilizer application at this stage.",
+              "action_kn": "ಈ ಹಂತದಲ್ಲಿ ಯಾವುದೇ ಗೊಬ್ಬರ ನೀಡುವ ಅಗತ್ಯವಿಲ್ಲ.",
+              "npk_schedule": "None (Nutrient uptake is complete; translocation from leaves)",
+              "timing_en": "Do not apply nitrogen; it delays maturity and promotes lodging.",
+              "timing_kn": "ಈಗ ಸಾರಜನಕ ಹಾಕಬೇಡಿ; ಗಿಡ ಮಲಗುವ ಸಾಧ್ಯತೆಯಿರುತ್ತದೆ.",
+              "source": "UAS Bengaluru"
+            },
+            "protection": {
+              "action_en": "Scout for earhead caterpillars; spray Azadirachtin (neem oil) 1% @ 2 mL/L if infestation is severe.",
+              "action_kn": "ತೆನೆ ತಿನ್ನುವ ಹುಳು ಕಂಡರೆ ಬೇವಿನ ಎಣ್ಣೆ (ಶೇ 1) 2 ಮಿ.ಲೀ ಪ್ರತಿ ಲೀಟರ್ ನೀರಿಗೆ ಬೆರೆಸಿ ಸಿಂಪಡಿಸಿ."
+            }
+          },
+          "gallery_photos": [
+            {
+              "url": "public/images/stages/ragi_stage4_flower.jpg",
+              "caption_en": "Plump ragi grain development in spikelets",
+              "caption_kn": "ರಾಗಿ ತೆನೆಗಳಲ್ಲಿ ಕಾಳು ಮಾಗುವಿಕೆ",
+              "source": "ICAR-IIMR"
+            }
+          ],
+          "video": {
+            "title_en": "Millet Grain Maturation & Harvest Timing",
+            "title_kn": "ರಾಗಿ ಬೆಳೆ ಮಾಗುವಿಕೆ ಮತ್ತು ಕಟಾವಿನ ಸೂಕ್ತ ಸಮಯ",
+            "publisher": "UAS Bengaluru Extension",
+            "thumbnail": "public/images/stages/ragi_stage4_flower.jpg",
+            "url": "https://www.youtube.com/watch?v=kYJj8hB7m-s",
+            "duration": "8 min",
+            "source": "Extension Channel"
+          },
+          "quick_tip_en": "Withhold irrigation 10 days before harvest to promote uniform drying and prevent mold.",
+          "quick_tip_kn": "ಕಟಾವಿಗೆ 10 ದಿನ ಮುಂಚಿತವಾಗಿ ನೀರು ನಿಲ್ಲಿಸುವುದರಿಂದ ತೆನೆಗಳು ಸಮನಾಗಿ ಒಣಗುತ್ತವೆ.",
+          "references": [
+            {
+              "title": "Post-flowering Management in Rainfed Cereals",
+              "source": "UAS Bengaluru",
+              "type": "University Guide"
+            }
+          ]
+        },
+        {
+          "stage_id": "maturity_harvest",
+          "name_en": "Physiological Maturity & Harvest",
+          "name_kn": "ಬೆಳೆ ಮಾಗುವಿಕೆ ಮತ್ತು ಕೊಯ್ಲು",
+          "start_day": 96,
+          "end_day": 115,
+          "icon": "🌾",
+          "description_en": "85% earheads turn golden brown, moisture drops to 14%, and crop is ready for sickle harvest.",
+          "description_kn": "ತೆನೆಗಳು ಶೇ 85ರಷ್ಟು ಕಂದು ಬಣ್ಣಕ್ಕೆ ತಿರುಗಿ, ಕಾಳು ಗಟ್ಟಿಯಾಗಿ ಕೊಯ್ಲಿಗೆ ಸಿದ್ಧವಾದ ಹಂತ.",
+          "tasks_en": [
+            "Harvest mature earheads with sickle when 85% of crop turns golden brown",
+            "Dry earheads on clean threshing yard or tarpaulin for 3 to 4 days",
+            "Thresh with tractor/roller, winnow, and sun dry grain to 10-12% moisture"
+          ],
+          "tasks_kn": [
+            "ಶೇ 85ರಷ್ಟು ತೆನೆಗಳು ಕಂದು ಬಣ್ಣಕ್ಕೆ ತಿರುಗಿದಾಗ ಕುಡುಗೋಲಿನಿಂದ ಕೊಯ್ಲು ಮಾಡಿ",
+            "ಕಟಾವು ಮಾಡಿದ ತೆನೆಗಳನ್ನು ಕಣದಲ್ಲಿ ಅಥವಾ ಟಾರ್ಪಾಲಿನ್ ಮೇಲೆ 3-4 ದಿನ ಒಣಗಿಸಿ",
+            "ಒಕ್ಕಣೆ ಮಾಡಿ ತೂರಿ ಕಾಳನ್ನು ಶೇ 10-12 ತೇವಾಂಶಕ್ಕೆ ಒಣಗಿಸಿ ಶೇಖರಿಸಿ"
+          ],
+          "key_observations_en": "Grains should resist cracking between thumbnail and forefinger.",
+          "key_observations_kn": "ಬೆರಳಿನ ಉಗುರಿನಿಂದ ಒತ್ತಿದಾಗ ಕಾಳು ಸುಲಭವಾಗಿ ಒಡೆಯದಷ್ಟು ಗಟ್ಟಿಯಾಗಿರಬೇಕು.",
+          "weather_sensitivity": {
+            "rain_favorable": false,
+            "drought_sensitive": false,
+            "action_on_rain_en": "Cover harvested earhead heaps with plastic tarpaulins to prevent grain mold.",
+            "action_on_rain_kn": "ಮಳೆಯಾದರೆ ಕಾಳು ಬೂಸ್ಟ್ ಹಿಡಿಯದಂತೆ ಕಟಾವು ಮಾಡಿದ ತೆನೆಗಳನ್ನು ಟಾರ್ಪಾಲಿನ್‌ನಿಂದ ಮುಚ್ಚಿ."
+          },
+          "thumbnail": "public/images/stages/ragi_stage5_harvest.jpg",
+          "main_photo": {
+            "url": "public/images/stages/ragi_stage5_harvest.jpg",
+            "caption_en": "Golden mature ragi earheads ready for manual harvest in Mandya",
+            "caption_kn": "ಕೊಯ್ಲಿಗೆ ಸಿದ್ಧವಾದ ಕಂದು ಬಣ್ಣದ ರಾಗಿ ಬೆಳೆ",
+            "source": "UAS Bengaluru Farm Extension",
+            "source_url": "https://uasbangalore.edu.in"
+          },
+          "what_happens_en": "Photosynthesis ceases, grains form a black abscission layer at base, and grain moisture drops from 20% to safe storage levels (12–14%).",
+          "what_happens_kn": "ಗಿಡಗಳು ಪೂರ್ಣವಾಗಿ ಮಾಗಿ, ತೆನೆಗಳಲ್ಲಿ ಕಾಳು ಗಟ್ಟಿಯಾಗುತ್ತದೆ. ತೇವಾಂಶವು ಕಡಿಮೆಯಾಗಿ ಶೇಖರಣೆಗೆ ಯೋಗ್ಯವಾಗುತ್ತದೆ.",
+          "animation_type": "harvest_curing",
+          "farmer_actions": {
+            "crop_care": {
+              "action_en": "Harvest earheads separately with sickle, then cut straw close to ground for nutritious cattle fodder.",
+              "action_kn": "ಮೊದಲು ತೆನೆಗಳನ್ನು ಕುಡುಗೋಲಿನಿಂದ ಕೊಯ್ದು, ನಂತರ ಮೇವಿಗಾಗಿ ಹುಲ್ಲನ್ನು ಬುಡದಿಂದ ಕತ್ತರಿಸಿ."
+            },
+            "water": {
+              "action_en": "Completely stop water to ensure crisp earhead drying.",
+              "action_kn": "ತೆನೆಗಳು ಸರಿಯಾಗಿ ಒಣಗಲು ಸಂಪೂರ್ಣವಾಗಿ ನೀರು ನಿಲ್ಲಿಸಿ."
+            },
+            "weed": {
+              "action_en": "Clean threshing floor to avoid mixing weed seeds into harvested grain.",
+              "action_kn": "ಕಣವನ್ನು ಸ್ವಚ್ಛಗೊಳಿಸಿ; ಕಳೆ ಬೀಜಗಳು ಧಾನ್ಯದೊಂದಿಗೆ ಬೆರೆಯದಂತೆ ಎಚ್ಚರವಹಿಸಿ."
+            },
+            "nutrients": {
+              "action_en": "No fertilizers required.",
+              "action_kn": "ಯಾವುದೇ ಗೊಬ್ಬರದ ಅಗತ್ಯವಿಲ್ಲ.",
+              "npk_schedule": "None (Harvest stage)",
+              "timing_en": "Post-harvest incorporation of stubble enriches soil organic matter.",
+              "timing_kn": "ಕೊಯ್ಲಿನ ನಂತರ ಉಳಿದ ಬುಡವನ್ನು ಉಳುಮೆ ಮಾಡಿ ಮಣ್ಣಿಗೆ ಸೇರಿಸಿ.",
+              "source": "UAS Bengaluru"
+            },
+            "protection": {
+              "action_en": "Sun-dry grain to 10-12% moisture; mix dried neem leaves or Malathion 5% dust in gunny bags against storage weevils.",
+              "action_kn": "ಧಾನ್ಯವನ್ನು ಚೆನ್ನಾಗಿ ಒಣಗಿಸಿ; ಕಣಜದ ಕೀಟಗಳು ಬಾರದಂತೆ ಒಣ ಬೇವಿನೆಲೆ ಬೆರೆಸಿ ಶೇಖರಿಸಿ."
+            }
+          },
+          "gallery_photos": [
+            {
+              "url": "public/images/stages/ragi_stage5_harvest.jpg",
+              "caption_en": "Threshing and sun drying of harvested ragi",
+              "caption_kn": "ರಾಗಿ ಒಕ್ಕಣೆ ಮತ್ತು ಕಣದಲ್ಲಿ ಧಾನ್ಯ ಒಣಗಿಸುವಿಕೆ",
+              "source": "UAS Bengaluru"
+            }
+          ],
+          "video": {
+            "title_en": "Scientific Harvesting, Threshing & Safe Storage of Finger Millet",
+            "title_kn": "ರಾಗಿ ಕೊಯ್ಲು, ಒಕ್ಕಣೆ ಮತ್ತು ಸುರಕ್ಷಿತ ಶೇಖರಣಾ ವಿಧಾನ",
+            "publisher": "UAS Bengaluru Krishi Vigyan Kendra",
+            "thumbnail": "public/images/stages/ragi_stage5_harvest.jpg",
+            "url": "https://www.youtube.com/watch?v=kYJj8hB7m-s",
+            "duration": "15 min",
+            "source": "UAS Extension"
+          },
+          "quick_tip_en": "Store grain below 12% moisture with dried neem leaves to prevent weevil attack for over 2 years.",
+          "quick_tip_kn": "ಶೇ 12ಕ್ಕಿಂತ ಕಡಿಮೆ ತೇವಾಂಶದಲ್ಲಿ ಬೇವಿನೆಲೆ ಬೆರೆಸಿ ಶೇಖರಿಸಿದರೆ ರಾಗಿ 2 ವರ್ಷ ಕೆಡುವುದಿಲ್ಲ.",
+          "references": [
+            {
+              "title": "Post-Harvest Technology and Grain Storage Guide",
+              "source": "UAS Bengaluru",
+              "type": "Extension Bulletin"
+            }
+          ]
+        }
+      ]
+    },
+    "rice": {
+      "crop_id": "rice",
+      "crop_name_en": "Rice (Paddy)",
+      "crop_name_kn": "ಭತ್ತ",
+      "lifecycle_type": "annual",
+      "total_duration_days": 135,
+      "harvest_window_days": 15,
+      "stages": [
+        {
+          "stage_id": "nursery_transplanting",
+          "name_en": "Nursery Raising & Transplanting",
+          "name_kn": "ಸಸಿ ಮಡಿ ಮತ್ತು ನಾಟಿ ಹಂತ",
+          "start_day": 1,
+          "end_day": 25,
+          "icon": "🌱",
+          "description_en": "Wetbed nursery preparation, 21-day seedling uprooting, and puddled field transplanting.",
+          "description_kn": "ಕೆಸರು ಸಸಿಮಡಿ ಬೆಳೆಸಿ 21 ದಿನಗಳ ಸಸಿಗಳನ್ನು ಮುಖ್ಯ ಗದ್ದೆಗೆ ನಾಟಿ ಮಾಡುವ ಹಂತ.",
+          "tasks_en": [
+            "Prepare wetbed nursery with 25 kg DAP and 10 kg MOP per 10 gunta bed",
+            "Transplant 21 to 25 day old seedlings at 20x10 cm or 20x15 cm spacing (2-3 seedlings/hill)",
+            "Apply basal dose of 50% N + 100% P₂O₅ + 50% K₂O into puddled soil before final levelling"
+          ],
+          "tasks_kn": [
+            "10 ಗುಂಟೆ ಸಸಿಮಡಿಗೆ 25 ಕೆಜಿ ಡಿಎಪಿ ಮತ್ತು 10 ಕೆಜಿ ಎಂಒಪಿ ಗೊಬ್ಬರ ನೀಡಿ ಸಸಿ ಬೆಳೆಸಿ",
+            "21-25 ದಿನಗಳ ಸಸಿಗಳನ್ನು 20x10 ಅಥವಾ 20x15 ಸೆಂ.ಮೀ ಅಂತರದಲ್ಲಿ ಪ್ರತಿ ಬುಡಕ್ಕೆ 2-3 ಸಸಿ ನಾಟಿ ಮಾಡಿ",
+            "ಕೆಸರು ಗದ್ದೆಯ ಕೊನೆಯ ಹಂತದಲ್ಲಿ ಶೇ 50 ಸಾರಜನಕ + ಪೂರ್ಣ ರಂಜಕ + ಶೇ 50 ಪೊಟ್ಯಾಷ್ ನೀಡಿ"
+          ],
+          "key_observations_en": "Ensure shallow transplanting (2 to 3 cm); deep planting delays tillering.",
+          "key_observations_kn": "ಸಸಿಗಳನ್ನು 2-3 ಸೆಂ.ಮೀ ಗಿಂತ ಆಳವಾಗಿ ನಾಟಿ ಮಾಡಬೇಡಿ; ಆಳವಾದರೆ ಕವಲೊಡೆಯುವುದು ತಡವಾಗುತ್ತದೆ.",
+          "weather_sensitivity": {
+            "rain_favorable": true,
+            "drought_sensitive": true,
+            "action_on_rain_en": "Store rainwater in puddled field; maintain 2-3 cm standing water.",
+            "action_on_rain_kn": "ಗದ್ದೆಯಲ್ಲಿ ಮಳೆನೀರನ್ನು ಸಂಗ್ರಹಿಸಿ 2-3 ಸೆಂ.ಮೀ ನೀರು ನಿಲ್ಲಿಸಿ."
+          },
+          "thumbnail": "public/images/stages/rice_stage1_nursery.jpg",
+          "main_photo": {
+            "url": "public/images/stages/rice_stage1_nursery.jpg",
+            "caption_en": "21-day wetbed rice nursery ready for uprooting",
+            "caption_kn": "ನಾಟಿಗೆ ಸಿದ್ಧವಾದ 21 ದಿನಗಳ ಹಸಿರು ಭತ್ತದ ಸಸಿ ಮಡಿ",
+            "source": "UAS Dharwad Rice Research Station",
+            "source_url": "https://uasd.edu"
+          },
+          "what_happens_en": "Seeds germinate in wet nurseries and develop 4 to 5 leaves within 21 days. After transplanting, roots establish in puddled soil within 3 to 5 days.",
+          "what_happens_kn": "ಸಸಿಮಡಿಯಲ್ಲಿ 21 ದಿನಗಳಲ್ಲಿ 4-5 ಎಲೆಗಳು ಬರುತ್ತವೆ. ನಾಟಿ ಮಾಡಿದ ನಂತರ ಹೊಸ ಬಿಳಿ ಬೇರುಗಳು ಬಿಟ್ಟು 3-5 ದಿನಗಳಲ್ಲಿ ಗದ್ದೆಯಲ್ಲಿ ಬೇರೂರುತ್ತವೆ.",
+          "animation_type": "seed_germination",
+          "farmer_actions": {
+            "crop_care": {
+              "action_en": "Uproot seedlings carefully without injuring root zone; transplant on same day.",
+              "action_kn": "ಬೇರಿಗೆ ಹಾನಿಯಾಗದಂತೆ ಸಸಿ ಕೀಳಿ; ಅದೇ ದಿನ ನಾಟಿ ಪೂರ್ಣಗೊಳಿಸಿ."
+            },
+            "water": {
+              "action_en": "Maintain shallow water depth of 2 to 3 cm during transplanting and establishment.",
+              "action_kn": "ನಾಟಿಯ ಸಮಯದಲ್ಲಿ ಗದ್ದೆಯಲ್ಲಿ 2 ರಿಂದ 3 ಸೆಂ.ಮೀ ನೀರು ನಿಲ್ಲಿಸಿ."
+            },
+            "weed": {
+              "action_en": "Apply Pretilachlor 50 EC @ 1.0 L/ha or Pyrazosulfuron @ 200 g/ha within 3-5 days after transplanting.",
+              "action_kn": "ನಾಟಿ ಮಾಡಿದ 3-5 ದಿನಗಳಲ್ಲಿ ಶಿಫಾರಸು ಮಾಡಿದ ಕಳೆನಾಶಕವನ್ನು ಮಣ್ಣಿನ ತೇವಾಂಶದಲ್ಲಿ ಸಿಂಪಡಿಸಿ."
+            },
+            "nutrients": {
+              "action_en": "Apply basal NPK (50% N + 100% P₂O₅ + 50% K₂O).",
+              "action_kn": "ಶೇ 50 ಸಾರಜನಕ + ಪೂರ್ಣ ರಂಜಕ + ಶೇ 50 ಪೊಟ್ಯಾಷ್ ಅನ್ನು ಬಾಸಲ್ ಡೋಸ್ ಆಗಿ ನೀಡಿ.",
+              "npk_schedule": "UAS Recommendation: 100:50:50 kg NPK/ha (Medium duration varieties)",
+              "timing_en": "Basal at transplanting; top-dress splits at tillering and panicle initiation.",
+              "timing_kn": "ನಾಟಿಯ ಸಮಯದಲ್ಲಿ ಬಾಸಲ್; ಉಳಿದದ್ದು ಕವಲೊಡೆಯುವ ಮತ್ತು ತೆನೆ ಬರುವ ಹಂತದಲ್ಲಿ.",
+              "source": "UAS Dharwad / ICAR-NRRI Cuttack"
+            },
+            "protection": {
+              "action_en": "Dip seedling roots in Chlorpyriphos 20 EC (1 mL/L) solution for 20 minutes before planting.",
+              "action_kn": "ಕಾಂಡ ಕೊರೆಯುವ ಹುಳು ತಡೆಗಟ್ಟಲು ನಾಟಿಗೆ ಮುನ್ನ ಸಸಿಗಳ ಬೇರನ್ನು ಕ್ಲೋರೋಪೈರಿಫಾಸ್ ದ್ರಾವಣದಲ್ಲಿ ಅದ್ದಿ."
+            }
+          },
+          "gallery_photos": [
+            {
+              "url": "public/images/stages/rice_stage1_nursery.jpg",
+              "caption_en": "Manual puddled field transplanting in Mandya",
+              "caption_kn": "ಮಂಡ್ಯ ಭಾಗದಲ್ಲಿ ಭತ್ತದ ನಾಟಿ ಕಾರ್ಯ",
+              "source": "UAS Bengaluru"
+            }
+          ],
+          "video": {
+            "title_en": "Scientific Rice Nursery & System of Rice Intensification (SRI)",
+            "title_kn": "ವೈಜ್ಞಾನಿಕ ಭತ್ತದ ಸಸಿಮಡಿ ಮತ್ತು ನಾಟಿ ತಂತ್ರಜ್ಞಾನ",
+            "publisher": "UAS Dharwad Extension",
+            "thumbnail": "public/images/stages/rice_stage1_nursery.jpg",
+            "url": "https://www.youtube.com/watch?v=kYJj8hB7m-s",
+            "duration": "16 min",
+            "source": "Extension Channel"
+          },
+          "quick_tip_en": "Never transplant seedlings older than 25 days; over-aged seedlings produce fewer tillers.",
+          "quick_tip_kn": "25 ದಿನಗಳಿಗಿಂತ ಹಳೆಯ ಸಸಿಗಳನ್ನು ನಾಟಿ ಮಾಡಬೇಡಿ; ಹಳೆಯ ಸಸಿಗಳಲ್ಲಿ ಕವಲುಗಳು ಕಡಿಮೆಯಾಗುತ್ತವೆ.",
+          "references": [
+            {
+              "title": "Package of Practices for Wetland Rice",
+              "source": "UAS Dharwad",
+              "type": "University Manual"
+            }
+          ]
+        },
+        {
+          "stage_id": "tillering_vegetative",
+          "name_en": "Active Tillering & Canopy Establishment",
+          "name_kn": "ಕವಲೊಡೆಯುವಿಕೆ ಮತ್ತು ಸಸ್ಯ ಬೆಳವಣಿಗೆ",
+          "start_day": 26,
+          "end_day": 55,
+          "icon": "🌾",
+          "description_en": "Maximum tiller production, root deepening, and canopy closure in standing water.",
+          "description_kn": "ಬುಡದಿಂದ 15-20 ಕವಲುಗಳು ಒಡೆದು ಹಸಿರು ಗದ್ದೆ ಆವರಿಸುವ ಸಸ್ಯ ಬೆಳವಣಿಗೆ ಹಂತ.",
+          "tasks_en": [
+            "Maintain 3 to 5 cm water; practice alternate wetting and drying (AWD) to aerate roots",
+            "Top dress 25% Nitrogen (25 kg N/ha) at 25-30 days after transplanting",
+            "Run cono-weeder or rotary weeder between rows to incorporate weeds and aerate soil"
+          ],
+          "tasks_kn": [
+            "3-5 ಸೆಂ.ಮೀ ನೀರು ನಿಲ್ಲಿಸಿ; ಬೇರುಗಳಿಗೆ ಗಾಳಿ ಸಿಗಲು ಮಧ್ಯೆ ಒಮ್ಮೆ ನೀರು ಬಸಿಯಲು ಬಿಡಿ",
+            "ನಾಟಿ ಮಾಡಿದ 25-30 ದಿನಗಳಿಗೆ ಶೇ 25 ಸಾರಜನಕವನ್ನು ಮೇಲುಗೊಬ್ಬರವಾಗಿ ನೀಡಿ",
+            "ಕೋನೋವೀಡರ್ ಬಳಸಿ ಕಳೆಗಳನ್ನು ಮಣ್ಣಿಗೆ ಸೇರಿಸಿ ಬೇರಿಗೆ ಗಾಳಿ ಆಡುವಂತೆ ಮಾಡಿ"
+          ],
+          "key_observations_en": "Scout for yellow stem borer egg masses and dead hearts.",
+          "key_observations_kn": "ಕಾಂಡ ಕೊರೆಯುವ ಹುಳುವಿನ ಮೊಟ್ಟೆಯ ಗೊಂಚಲು ಅಥವಾ ಒಣಗಿದ ಸುಳಿಗಳನ್ನು ಗಮನಿಸಿ.",
+          "weather_sensitivity": {
+            "rain_favorable": true,
+            "drought_sensitive": true,
+            "action_on_rain_en": "Drain excess water before applying fertilizer.",
+            "action_on_rain_kn": "ಗೊಬ್ಬರ ಕೊಡುವ ಮುನ್ನ ಗದ್ದೆಯಲ್ಲಿ ನಿಂತ ಹೆಚ್ಚಿನ ನೀರನ್ನು ಬಸಿದುಹಾಕಿ."
+          },
+          "thumbnail": "public/images/stages/rice_stage2_transplant.jpg",
+          "main_photo": {
+            "url": "public/images/stages/rice_stage2_transplant.jpg",
+            "caption_en": "Lush green active tillering rice field in Karnataka",
+            "caption_kn": "ಕವಲೊಡೆದು ದಟ್ಟವಾಗಿ ಬೆಳೆಯುತ್ತಿರುವ ಭತ್ತದ ಗದ್ದೆ",
+            "source": "ICAR-NRRI Cuttack",
+            "source_url": "https://icar-nrri.gov.in"
+          },
+          "what_happens_en": "Auxillary buds at basal nodes produce 15 to 25 tillers per hill. Extensive adventitious roots spread outward into the reduced soil layer.",
+          "what_happens_kn": "ಪ್ರತಿ ಬುಡದಲ್ಲಿ 15 ರಿಂದ 20 ಕವಲುಗಳು ಒಡೆಯುತ್ತವೆ. ಬೇರುಗಳು ಮಣ್ಣಿನಲ್ಲಿ ಆಳವಾಗಿ ಹರಡಿ ಪೋಷಕಾಂಶಗಳನ್ನು ಹೀರುತ್ತವೆ.",
+          "animation_type": "vegetative_tillering",
+          "farmer_actions": {
+            "crop_care": {
+              "action_en": "Operate rotary weeder / cono-weeder at 30 DAT to incorporate weeds and aerate root zone.",
+              "action_kn": "30 ದಿನಗಳಿಗೆ ಕೋನೋವೀಡರ್ ಓಡಿಸಿ ಕಳೆಗಳನ್ನು ಮಣ್ಣಿಗೆ ಸೇರಿಸಿ."
+            },
+            "water": {
+              "action_en": "Practice Alternate Wetting and Drying (AWD); allow water to recede to soil surface before re-flooding.",
+              "action_kn": "ನೀರು ನಿಲ್ಲಿಸಿ-ಆರಿಸಿ ಪದ್ಧತಿ ಅನುಸರಿಸಿ; ಸತತವಾಗಿ ಹೆಚ್ಚು ನೀರು ನಿಲ್ಲಿಸಬೇಡಿ."
+            },
+            "weed": {
+              "action_en": "Hand weed any escapes around hills that the weeder missed.",
+              "action_kn": "ಬುಡದ ಬಳಿ ಉಳಿದ ಕಳೆಗಳನ್ನು ಕೈಯಿಂದ ಕೀಳಿಸಿ."
+            },
+            "nutrients": {
+              "action_en": "Top-dress 25% Nitrogen (25 kg N/ha) after draining standing water.",
+              "action_kn": "ಗದ್ದೆಯ ನೀರು ಬಸಿದು ಶೇ 25 ಸಾರಜನಕವನ್ನು ಮೇಲುಗೊಬ್ಬರವಾಗಿ ನೀಡಿ.",
+              "npk_schedule": "First top-dress: 25 kg N/ha (Urea ~ 55 kg/ha)",
+              "timing_en": "Apply at 25–30 days after transplanting.",
+              "timing_kn": "ನಾಟಿ ಮಾಡಿದ 25-30 ದಿನಗಳಿಗೆ ನೀಡಿ.",
+              "source": "UAS Dharwad Package of Practices"
+            },
+            "protection": {
+              "action_en": "Scout for stem borer and leaf folder; spray Chlorantraniliprole 18.5 SC @ 0.3 mL/L if ETL crossed.",
+              "action_kn": "ಎಲೆ ಸುರುಳಿ ಹುಳು ಅಥವಾ ಕಾಂಡ ಕೊರೆಯುವ ಹುಳು ಕಂಡರೆ ಸೂಕ್ತ ಕೀಟನಾಶಕ ಸಿಂಪಡಿಸಿ."
+            }
+          },
+          "gallery_photos": [
+            {
+              "url": "public/images/stages/rice_stage2_transplant.jpg",
+              "caption_en": "Tillering canopy closure in irrigated wetland",
+              "caption_kn": "ಗದ್ದೆಯಲ್ಲಿ ಕವಲೊಡೆದ ಭತ್ತದ ಬೆಳೆ",
+              "source": "UAS Dharwad"
+            }
+          ],
+          "video": {
+            "title_en": "Nutrient & Water Management during Rice Tillering",
+            "title_kn": "ಭತ್ತದ ಕವಲೊಡೆಯುವ ಹಂತದಲ್ಲಿ ಗೊಬ್ಬರ ಮತ್ತು ನೀರು ನಿರ್ವಹಣೆ",
+            "publisher": "ICAR-NRRI Extension",
+            "thumbnail": "public/images/stages/rice_stage2_transplant.jpg",
+            "url": "https://www.youtube.com/watch?v=kYJj8hB7m-s",
+            "duration": "14 min",
+            "source": "ICAR Extension"
+          },
+          "quick_tip_en": "AWD (alternate wetting & drying) saves 25% irrigation water without reducing grain yield.",
+          "quick_tip_kn": "ನೀರು ನಿಲ್ಲಿಸಿ-ಆರಿಸಿ ಪದ್ಧತಿಯಿಂದ ಶೇಕಡಾ 25ರಷ್ಟು ನೀರು ಉಳಿತಾಯವಾಗುತ್ತದೆ ಮತ್ತು ಇಳುವರಿ ಉತ್ತಮವಾಗಿರುತ್ತದೆ.",
+          "references": [
+            {
+              "title": "AWD Water Management in Rice",
+              "source": "ICAR-NRRI",
+              "type": "Technical Bulletin"
+            }
+          ]
+        },
+        {
+          "stage_id": "panicle_initiation_flowering",
+          "name_en": "Panicle Initiation & Flowering",
+          "name_kn": "ತೆನೆ ಹೊರಬರುವಿಕೆ ಮತ್ತು ಹೂ ಬಿಡುವ ಹಂತ",
+          "start_day": 56,
+          "end_day": 90,
+          "icon": "🌾",
+          "description_en": "Boot leaf swelling, panicle exertion from flag leaf, and floret anthesis.",
+          "description_kn": "ಬೂಟ್ ಎಲೆ ದಪ್ಪಗಾಗಿ ತೆನೆ ಹೊರಬರುವುದು ಮತ್ತು ಹೂವರಳಿ ಪರಾಗಸ್ಪರ್ಶವಾಗುವ ಹಂತ.",
+          "tasks_en": [
+            "Maintain continuous shallow water (3 to 5 cm) — critical drought sensitive stage",
+            "Top dress remaining 25% Nitrogen + 50% Potash at panicle initiation",
+            "Scout for neck blast, sheath blight, and brown planthopper (BPH) at base"
+          ],
+          "tasks_kn": [
+            "3-5 ಸೆಂ.ಮೀ ನಿರಂತರ ನೀರು ನಿಲ್ಲಿಸಿ — ಈ ಹಂತದಲ್ಲಿ ನೀರಿನ ಕೊರತೆಯಾಗಬಾರದು",
+            "ತೆನೆ ಬರುವ ಹಂತದಲ್ಲಿ ಕೊನೆಯ ಕಂತಿನ ಶೇ 25 ಸಾರಜನಕ + ಶೇ 50 ಪೊಟ್ಯಾಷ್ ನೀಡಿ",
+            "ಕುತ್ತಿಗೆ ಬೆಂಕಿ ರೋಗ, ಬುಡ ಕೊಳೆ ಮತ್ತು ಜಿಗಿ ಹುಳುಗಳ ಬಗ್ಗೆ ಎಚ್ಚರವಿರಲಿ"
+          ],
+          "key_observations_en": "Examine boot leaf sheath; inspect stem bases for brown planthopper nymphs.",
+          "key_observations_kn": "ತೆನೆಯ ರಕ್ಷಾ ಕವಚ ಮತ್ತು ಗಿಡದ ಬುಡದಲ್ಲಿ ಜಿಗಿ ಹುಳುಗಳು ಇರುವುದನ್ನು ಪರಿಶೀಲಿಸಿ.",
+          "weather_sensitivity": {
+            "rain_favorable": false,
+            "drought_sensitive": true,
+            "action_on_rain_en": "Heavy rains wash pollen; drain excess water promptly.",
+            "action_on_rain_kn": "ನಿರಂತರ ಮಳೆಯಿಂದ ಪರಾಗಸ್ಪರ್ಶಕ್ಕೆ ತೊಂದರೆಯಾಗುವುದರಿಂದ ಬಸಿಗಾಲುವೆ ಸರಿಪಡಿಸಿ."
+          },
+          "thumbnail": "public/images/stages/rice_stage3_tillering.jpg",
+          "main_photo": {
+            "url": "public/images/stages/rice_stage3_tillering.jpg",
+            "caption_en": "Panicles emerging with delicate white stamens during morning flowering",
+            "caption_kn": "ಮುಂಜಾನೆ ಹೂವರಳಿ ಪರಾಗಸ್ಪರ್ಶವಾಗುತ್ತಿರುವ ಭತ್ತದ ತೆನೆಗಳು",
+            "source": "UAS Dharwad Agronomy",
+            "source_url": "https://uasd.edu"
+          },
+          "what_happens_en": "Microscopic panicle branches develop within the boot sheath and push through the flag leaf. Spikelets open in morning hours and complete self-pollination.",
+          "what_happens_kn": "ಕಾಂಡದ ಒಳಗಿನಿಂದ ತೆನೆ ಹೊರಬರುತ್ತದೆ. ಬೆಳಗಿನ ಸಮಯದಲ್ಲಿ ಸಣ್ಣ ಬಿಳಿ ಹೂಗಳು ಅರಳಿ ಪರಾಗಸ್ಪರ್ಶ ನಡೆದು ಧಾನ್ಯ ರೂಪುಗೊಳ್ಳಲು ಆರಂಭವಾಗುತ್ತದೆ.",
+          "animation_type": "flowering_panicle",
+          "farmer_actions": {
+            "crop_care": {
+              "action_en": "Do not disturb plants during peak morning flowering (9 AM - 12 PM).",
+              "action_kn": "ಬೆಳಗಿನ ಪರಾಗಸ್ಪರ್ಶದ ಸಮಯದಲ್ಲಿ (9 ರಿಂದ 12 ಗಂಟೆ) ಗದ್ದೆಗೆ ಇಳಿಯಬೇಡಿ."
+            },
+            "water": {
+              "action_en": "Keep continuous 3 to 5 cm water standing; moisture stress now causes sterile white earheads.",
+              "action_kn": "3-5 ಸೆಂ.ಮೀ ನೀರು ಸದಾ ಇರಲಿ; ನೀರಿನ ಕೊರತೆಯಾದರೆ ತೆನೆ ಬೆಳ್ಳಗಾಗಿ ಜಳ್ಳಾಗುತ್ತದೆ."
+            },
+            "weed": {
+              "action_en": "Hand pull any tall weeds emerging above canopy.",
+              "action_kn": "ಎತ್ತರ ಬೆಳೆದ ಕಳೆಗಳನ್ನು ಕೈಯಿಂದ ಕಿತ್ತುಹಾಕಿ."
+            },
+            "nutrients": {
+              "action_en": "Top-dress remaining 25% Nitrogen (25 kg N/ha) + remaining 50% Potash (25 kg K₂O/ha).",
+              "action_kn": "ಕೊನೆಯ ಕಂತಿನ ಶೇ 25 ಸಾರಜನಕ ಮತ್ತು ಶೇ 50 ಪೊಟ್ಯಾಷ್ ಅನ್ನು ಮೇಲುಗೊಬ್ಬರವಾಗಿ ನೀಡಿ.",
+              "npk_schedule": "PI Top-dress: 25 kg N/ha + 25 kg K₂O/ha",
+              "timing_en": "Apply at Panicle Initiation (green ring stage at stem base).",
+              "timing_kn": "ತೆನೆ ಮೂಡುವ ಆರಂಭಿಕ ಹಂತದಲ್ಲಿ ನೀಡಿ.",
+              "source": "UAS Dharwad & ICAR-NRRI"
+            },
+            "protection": {
+              "action_en": "If neck blast appears, spray Tricyclazole 75 WP @ 0.6 g/L or Azoxystrobin @ 1 mL/L.",
+              "action_kn": "ಕುತ್ತಿಗೆ ಬೆಂಕಿ ರೋಗದ ಲಕ್ಷಣವಿದ್ದರೆ ಟ್ರೈಸೈಕ್ಲೋಜೋಲ್ 0.6 ಗ್ರಾಂ ಪ್ರತಿ ಲೀಟರ್ ನೀರಿಗೆ ಸಿಂಪಡಿಸಿ."
+            }
+          },
+          "gallery_photos": [
+            {
+              "url": "public/images/stages/rice_stage3_tillering.jpg",
+              "caption_en": "Exerted rice panicles with anthesis underway",
+              "caption_kn": "ಪರಾಗಸ್ಪರ್ಶ ಹಂತದಲ್ಲಿರುವ ಭತ್ತದ ಬೆಳೆ",
+              "source": "UAS Dharwad"
+            }
+          ],
+          "video": {
+            "title_en": "Panicle Initiation & Blast Management in Rice",
+            "title_kn": "ಭತ್ತದಲ್ಲಿ ತೆನೆ ಬರುವ ಹಂತ ಮತ್ತು ರೋಗ ನಿರ್ವಹಣೆ",
+            "publisher": "UAS Dharwad Krishi Vigyan Kendra",
+            "thumbnail": "public/images/stages/rice_stage3_tillering.jpg",
+            "url": "https://www.youtube.com/watch?v=kYJj8hB7m-s",
+            "duration": "12 min",
+            "source": "Extension Video"
+          },
+          "quick_tip_en": "Potash applied at panicle initiation strengthens stems and prevents crop lodging during wind and rain.",
+          "quick_tip_kn": "ತೆನೆ ಬರುವಾಗ ಪೊಟ್ಯಾಷ್ ಗೊಬ್ಬರ ನೀಡುವುದರಿಂದ ಕಾಂಡ ಗಟ್ಟಿಯಾಗಿ ಬೆಳೆ ಮಲಗುವುದು ತಪ್ಪುತ್ತದೆ.",
+          "references": [
+            {
+              "title": "Rice Crop Protection & Nutrient Protocol",
+              "source": "ICAR-NRRI",
+              "type": "Technical Bulletin"
+            }
+          ]
+        },
+        {
+          "stage_id": "grain_filling_dough",
+          "name_en": "Grain Filling & Milk / Dough Stage",
+          "name_kn": "ಕಾಳು ತುಂಬುವ ಮತ್ತು ಹಾಲಿನ ಹಂತ",
+          "start_day": 91,
+          "end_day": 115,
+          "icon": "🌾",
+          "description_en": "Kernel starch accumulation, transition from milky fluid to soft and hard dough.",
+          "description_kn": "ತೆನೆಯ ಕಾಳುಗಳಲ್ಲಿ ಹಾಲು ತುಂಬಿ, ನಂತರ ಗಟ್ಟಿಯಾದ ಕಾಳಾಗಿ ಪರಿವರ್ತನೆಗೊಳ್ಳುವ ಹಂತ.",
+          "tasks_en": [
+            "Maintain 2 to 3 cm water until hard dough stage",
+            "Scout for gundhi bug (rice earhead bug) in morning hours sucking milky grains",
+            "Withhold nitrogen application to avoid grain discoloration and blast flare-ups"
+          ],
+          "tasks_kn": [
+            "ಕಾಳು ಗಟ್ಟಿಯಾಗುವವರೆಗೆ ಗದ್ದೆಯಲ್ಲಿ 2-3 ಸೆಂ.ಮೀ ನೀರು ಕಾಪಾಡಿ",
+            "ಹಾಲಿನ ಕಾಳನ್ನು ಹೀರುವ ಗಂಧಿ ತಿಗಣೆಯ ಬಾಧೆಯ ಬಗ್ಗೆ ಮುಂಜಾನೆ ಪರಿಶೀಲಿಸಿ",
+            "ಈಗ ಯಾವುದೇ ಸಾರಜನಕ ಗೊಬ್ಬರ ಹಾಕಬೇಡಿ; ಕಾಳು ಕಪ್ಪಾಗುವ ಸಾಧ್ಯತೆಯಿರುತ್ತದೆ"
+          ],
+          "key_observations_en": "Squeeze spikelets: clear liquid turns milky white then firms to solid dough.",
+          "key_observations_kn": "ಕಾಳನ್ನು ಒತ್ತಿದಾಗ ಬಿಳಿ ಹಾಲು ಬರುವುದು ನಂತರ ಗಟ್ಟಿಯಾಗುವುದನ್ನು ಗಮನಿಸಿ.",
+          "weather_sensitivity": {
+            "rain_favorable": false,
+            "drought_sensitive": true,
+            "action_on_rain_en": "Drain field to avoid water stagnation and grain sprouting.",
+            "action_on_rain_kn": "ಕಾಳು ಮೊಳಕೆಯೊಡೆಯದಂತೆ ಹೆಚ್ಚುವರಿ ನೀರನ್ನು ಹೊರಹಾಕಿ."
+          },
+          "thumbnail": "public/images/stages/rice_stage4_flower.jpg",
+          "main_photo": {
+            "url": "public/images/stages/rice_stage4_flower.jpg",
+            "caption_en": "Drooping heavy rice panicles during grain filling stage",
+            "caption_kn": "ಕಾಳು ತುಂಬಿ ಬಾಗುತ್ತಿರುವ ಭಾರವಾದ ಭತ್ತದ ತೆನೆಗಳು",
+            "source": "ICAR-NRRI Cuttack",
+            "source_url": "https://icar-nrri.gov.in"
+          },
+          "what_happens_en": "Sucrose translocated from the flag leaf is enzymatically converted into starch inside endosperm cells. Kernels attain full length and thickness.",
+          "what_happens_kn": "ಬಾವುಟ ಎಲೆಯಿಂದ ಸಕ್ಕರೆ ಅಂಶವು ತೆನೆಗೆ ಸಾಗಿ ಪಿಷ್ಟವಾಗಿ ಬದಲಾಗುತ್ತದೆ. ಕಾಳುಗಳು ಗಟ್ಟಿಯಾಗಿ ಸಂಪೂರ್ಣ ತೂಕ ಪಡೆಯುತ್ತವೆ.",
+          "animation_type": "grain_filling",
+          "farmer_actions": {
+            "crop_care": {
+              "action_en": "Maintain field hygiene; ensure bunds are clear of gundhi bug alternate weed hosts.",
+              "action_kn": "ಬದುಗಳಲ್ಲಿರುವ ಕಳೆಗಳನ್ನು ತೆಗೆದು ಗಂಧಿ ತಿಗಣೆ ಆಶ್ರಯ ಪಡೆಯದಂತೆ ಮಾಡಿ."
+            },
+            "water": {
+              "action_en": "Maintain 2 cm water until dough stage (Day 115). Drain water 10 to 12 days before harvest.",
+              "action_kn": "115ನೇ ದಿನದವರೆಗೆ 2 ಸೆಂ.ಮೀ ನೀರು ಇರಲಿ; ಕಟಾವಿಗೆ 10-12 ದಿನ ಮುಂಚೆ ಸಂಪೂರ್ಣ ಬಸಿದುಬಿಡಿ."
+            },
+            "weed": {
+              "action_en": "No weeding needed.",
+              "action_kn": "ಕಳೆ ಕೀಳುವ ಅಗತ್ಯವಿಲ್ಲ."
+            },
+            "nutrients": {
+              "action_en": "No soil fertilizer. Optional foliar spray of 1% Potassium Nitrate (KNO₃) if flag leaf shows early drying.",
+              "action_kn": "ಮಣ್ಣಿಗೆ ಗೊಬ್ಬರ ಬೇಡ. ಬಾವುಟ ಎಲೆ ಒಣಗುತ್ತಿದ್ದರೆ ಶೇ 1ರ ಪೊಟ್ಯಾಷಿಯಂ ನೈಟ್ರೇಟ್ ಸಿಂಪಡಿಸಬಹುದು.",
+              "npk_schedule": "None (Translocation active)",
+              "timing_en": "Do not apply urea.",
+              "timing_kn": "ಯೂರಿಯಾ ಗೊಬ್ಬರ ಬಳಸಬೇಡಿ.",
+              "source": "UAS Dharwad"
+            },
+            "protection": {
+              "action_en": "Dust Malathion 5% D @ 25 kg/ha or spray Lambda-cyhalothrin @ 1 mL/L if gundhi bug crosses 1 bug/hill.",
+              "action_kn": "ಗಂಧಿ ತಿಗಣೆ ಬಾಧೆಯಿದ್ದರೆ ಮುಂಜಾನೆ ವೇಳೆಯಲ್ಲಿ ಮ್ಯಾಲಥಿಯಾನ್ ಪುಡಿ ಉದುರಿಸಿ."
+            }
+          },
+          "gallery_photos": [
+            {
+              "url": "public/images/stages/rice_stage4_flower.jpg",
+              "caption_en": "Dough stage rice panicle",
+              "caption_kn": "ಮಾಗುತ್ತಿರುವ ಭತ್ತದ ತೆನೆ",
+              "source": "UAS Dharwad"
+            }
+          ],
+          "video": {
+            "title_en": "Rice Grain Filling Stage Care & Gundhi Bug Control",
+            "title_kn": "ಭತ್ತದಲ್ಲಿ ಕಾಳು ತುಂಬುವ ಹಂತ ಮತ್ತು ಗಂಧಿ ತಿಗಣೆ ನಿಯಂತ್ರಣ",
+            "publisher": "UAS Dharwad Extension",
+            "thumbnail": "public/images/stages/rice_stage4_flower.jpg",
+            "url": "https://www.youtube.com/watch?v=kYJj8hB7m-s",
+            "duration": "11 min",
+            "source": "Extension Video"
+          },
+          "quick_tip_en": "Drain water 10-12 days before harvest to promote uniform ripening and firm soil for machinery/reapers.",
+          "quick_tip_kn": "ಕಟಾವಿಗೆ 10-12 ದಿನ ಮುಂಚೆ ನೀರು ಬಸಿದರೆ ಕಾಳು ಸಮನಾಗಿ ಮಾಗಲು ಮತ್ತು ಕೊಯ್ಲು ಸುಲಭವಾಗಲು ಸಹಕಾರಿ.",
+          "references": [
+            {
+              "title": "Irrigation Termination in Rice",
+              "source": "ICAR-NRRI",
+              "type": "Agronomic Protocol"
+            }
+          ]
+        },
+        {
+          "stage_id": "maturity_harvest",
+          "name_en": "Maturity & Golden Harvest",
+          "name_kn": "ಪೂರ್ಣ ಮಾಗುವಿಕೆ ಮತ್ತು ಬಂಗಾರದ ಕೊಯ್ಲು",
+          "start_day": 116,
+          "end_day": 135,
+          "icon": "🌾",
+          "description_en": "85% grains turn golden yellow, moisture drops to 20%, and crop is harvested.",
+          "description_kn": "ಶೇ 85ರಷ್ಟು ತೆನೆಗಳು ಹಳದಿ-ಬಂಗಾರದ ಬಣ್ಣಕ್ಕೆ ತಿರುಗಿ ಕಟಾವಿಗೆ ಸಿದ್ಧವಾದ ಹಂತ.",
+          "tasks_en": [
+            "Harvest with combine harvester or sickle when 80-85% grains turn straw-golden",
+            "Thresh and clean grain on threshing floor; dry under sun to 12-14% moisture",
+            "Store cleaned paddy in gunny bags on wooden pallets to prevent dampness"
+          ],
+          "tasks_kn": [
+            "ಶೇ 80-85ರಷ್ಟು ಕಾಳುಗಳು ಬಂಗಾರದ ಬಣ್ಣಕ್ಕೆ ತಿರುಗಿದಾಗ ಕಟಾವು ಮಾಡಿ",
+            "ಒಕ್ಕಣೆ ಮಾಡಿ ಕಾಳನ್ನು ಶೇ 12-14 ತೇವಾಂಶಕ್ಕೆ ಬಿಸಿಲಿನಲ್ಲಿ ಒಣಗಿಸಿ",
+            "ತೇವವಿಲ್ಲದ ಜಾಗದಲ್ಲಿ ಮರದ ಹಲಗೆಯ ಮೇಲಿಟ್ಟು ಚೀಲಗಳಲ್ಲಿ ಶೇಖರಿಸಿ"
+          ],
+          "key_observations_en": "Lower spikelets on panicle turn firm yellow; grain moisture reaches 20-22%.",
+          "key_observations_kn": "ತೆನೆಯ ಕೆಳಭಾಗದ ಕಾಳುಗಳು ಹಳದಿ ಬಣ್ಣಕ್ಕೆ ತಿರುಗಿ ಗಟ್ಟಿಯಾಗಿರುವುದನ್ನು ಪರಿಶೀಲಿಸಿ.",
+          "weather_sensitivity": {
+            "rain_favorable": false,
+            "drought_sensitive": false,
+            "action_on_rain_en": "Harvest promptly before cyclonic showers cause lodging and grain shedding.",
+            "action_on_rain_kn": "ಮಳೆ ಬರುವ ಮುನ್ನ ಕಟಾವು ಮಾಡಿ ಧಾನ್ಯವನ್ನು ಸುರಕ್ಷಿತವಾಗಿ ಒಣಗಿಸಿ."
+          },
+          "thumbnail": "public/images/stages/rice_stage5_harvest.jpg",
+          "main_photo": {
+            "url": "public/images/stages/rice_stage5_harvest.jpg",
+            "caption_en": "Golden ripe paddy field ready for combine harvester",
+            "caption_kn": "ಕೊಯ್ಲಿಗೆ ಸಿದ್ಧವಾದ ಬಂಗಾರದ ಬಣ್ಣದ ಭತ್ತದ ಗದ್ದೆ",
+            "source": "Karnataka Department of Agriculture",
+            "source_url": "https://raitamitra.karnataka.gov.in"
+          },
+          "what_happens_en": "Respiration drops, kernel black abscission layer seals the grain, and moisture naturally drops from 22% to harvest equilibrium.",
+          "what_happens_kn": "ಕಾಳು ಪೂರ್ಣವಾಗಿ ಮಾಗಿ ಗಟ್ಟಿಯಾಗುತ್ತದೆ. ನೈಸರ್ಗಿಕವಾಗಿ ತೇವಾಂಶ ಕಡಿಮೆಯಾಗಿ ಕೊಯ್ಲಿಗೆ ಯೋಗ್ಯವಾಗುತ್ತದೆ.",
+          "animation_type": "harvest_curing",
+          "farmer_actions": {
+            "crop_care": {
+              "action_en": "Harvest at right stage (20-22% moisture) to minimize field shattering and milling breakage.",
+              "action_kn": "ಕಾಳು ಉದುರುವುದನ್ನು ತಡೆಯಲು ಸರಿಯಾದ ತೇವಾಂಶದಲ್ಲಿ ಕೊಯ್ಲು ಮಾಡಿ."
+            },
+            "water": {
+              "action_en": "Field must be dry for easy tractor / combine mobility.",
+              "action_kn": "ಕಟಾವು ಯಂತ್ರಗಳ ಚಲನೆಗೆ ಗದ್ದೆ ಸಂಪೂರ್ಣ ಒಣಗಿರಬೇಕು."
+            },
+            "weed": {
+              "action_en": "Separate weed seeds before bagging.",
+              "action_kn": "ಧಾನ್ಯವನ್ನು ತೂರಿ ಕಳೆ ಬೀಜಗಳನ್ನು ಬೇರ್ಪಡಿಸಿ."
+            },
+            "nutrients": {
+              "action_en": "Incorporate paddy straw into soil or bale for fodder.",
+              "action_kn": "ಭತ್ತದ ಹುಲ್ಲನ್ನು ಮಣ್ಣಿಗೆ ಸೇರಿಸಿ ಅಥವಾ ಜಾನುವಾರು ಮೇವಾಗಿ ಬಳಸಿ.",
+              "npk_schedule": "None (Harvest)",
+              "timing_en": "Do not burn paddy straw.",
+              "timing_kn": "ಹುಲ್ಲನ್ನು ಸುಡಬೇಡಿ; ಮಣ್ಣಿಗೆ ಸೇರಿಸಿ.",
+              "source": "UAS Dharwad"
+            },
+            "protection": {
+              "action_en": "Sun-dry paddy to 12-14% moisture before storage in clean gunny bags.",
+              "action_kn": "ಕಾಳನ್ನು ಶೇ 12-14 ತೇವಾಂಶಕ್ಕೆ ಒಣಗಿಸಿ ಚೀಲಗಳಲ್ಲಿ ಸುರಕ್ಷಿತವಾಗಿ ಶೇಖರಿಸಿ."
+            }
+          },
+          "gallery_photos": [
+            {
+              "url": "public/images/stages/rice_stage5_harvest.jpg",
+              "caption_en": "Combine harvesting in Tungabhadra command area",
+              "caption_kn": "ತುಂಗಭದ್ರಾ ಅಚ್ಚುಕಟ್ಟು ಪ್ರದೇಶದಲ್ಲಿ ಭತ್ತದ ಕೊಯ್ಲು",
+              "source": "UAS Raichur"
+            }
+          ],
+          "video": {
+            "title_en": "Mechanized Harvesting and Safe Grain Storage in Paddy",
+            "title_kn": "ಭತ್ತದ ಯಾಂತ್ರೀಕೃತ ಕೊಯ್ಲು ಮತ್ತು ವೈಜ್ಞಾನಿಕ ಶೇಖರಣಾ ವಿಧಾನ",
+            "publisher": "UAS Dharwad Extension",
+            "thumbnail": "public/images/stages/rice_stage5_harvest.jpg",
+            "url": "https://www.youtube.com/watch?v=kYJj8hB7m-s",
+            "duration": "13 min",
+            "source": "UAS Video"
+          },
+          "quick_tip_en": "Milling recovery is highest when paddy is dried slowly under partial shade rather than harsh midday sun.",
+          "quick_tip_kn": "ತೀಕ್ಷ್ಣ ಬಿಸಿಲಿನಲ್ಲಿ ಒಣಗಿಸದೆ ಹದವಾದ ಬಿಸಿಲಿನಲ್ಲಿ ಒಣಗಿಸಿದರೆ ಅಕ್ಕಿ ಮುರಿಯುವುದು ಕಡಿಮೆಯಾಗುತ್ತದೆ.",
+          "references": [
+            {
+              "title": "Post-Harvest Handling & Milling of Rice",
+              "source": "ICAR-NRRI",
+              "type": "Technical Guide"
+            }
+          ]
+        }
+      ]
+    },
+    "maize": {
+      "crop_id": "maize",
+      "crop_name_en": "Maize (Corn)",
+      "crop_name_kn": "ಮೆಕ್ಕೆ ಜೋಳ",
+      "lifecycle_type": "annual",
+      "total_duration_days": 110,
+      "harvest_window_days": 15,
+      "stages": [
+        {
+          "stage_id": "sowing_emergence",
+          "name_en": "Land Preparation, Sowing & Emergence",
+          "name_kn": "ಭೂಮಿ ತಯಾರಿ, ಬಿತ್ತನೆ ಮತ್ತು ಮೊಳಕೆ",
+          "start_day": 1,
+          "end_day": 15,
+          "icon": "🌱",
+          "description_en": "Ridge & furrow preparation, hybrid seed treatment, line sowing, and coleoptile emergence.",
+          "description_kn": "ಬೋದು ಸಾಲುಗಳ ತಯಾರಿ, ಬೀಜೋಪಚಾರ ಮತ್ತು ಸಸಿ ಮೊಳಕೆಯೊಡೆದು ಹೊರಬರುವಿಕೆ.",
+          "tasks_en": [
+            "Plough deep and open ridges and furrows at 60 cm spacing",
+            "Treat hybrid seed with Imidacloprid 70 WS @ 5 g/kg seed against shoot fly and fall armyworm",
+            "Apply basal dose of 33% N + 100% P₂O₅ + 100% K₂O + 10 t/ha FYM into furrows"
+          ],
+          "tasks_kn": [
+            "ಆಳವಾದ ಉಳುಮೆ ಮಾಡಿ 60 ಸೆಂ.ಮೀ ಅಂತರದಲ್ಲಿ ಬೋದು ಸಾಲುಗಳನ್ನು ತೆರೆಯಿರಿ",
+            "ಕಾಂಡದ ನೊಣ ಮತ್ತು ಸೈನಿಕ ಹುಳು ತಡೆಗಟ್ಟಲು ಇಮಿಡಾಕ್ಲೋಪ್ರಿಡ್‌ನಿಂದ ಬೀಜೋಪಚಾರ ಮಾಡಿ",
+            "ಶೇ 33 ಸಾರಜನಕ + ಪೂರ್ಣ ರಂಜಕ + ಪೂರ್ಣ ಪೊಟ್ಯಾಷ್ ಗೊಬ್ಬರವನ್ನು ಬಾಸಲ್ ಡೋಸ್ ಆಗಿ ನೀಡಿ"
+          ],
+          "key_observations_en": "Ensure uniform emergence within 5 to 7 days; avoid water stagnation in furrows.",
+          "key_observations_kn": "5-7 ದಿನಗಳಲ್ಲಿ ಸಮರ್ಪಕವಾಗಿ ಮೊಳಕೆಯೊಡೆಯುವುದನ್ನು ಗಮನಿಸಿ.",
+          "weather_sensitivity": {
+            "rain_favorable": true,
+            "drought_sensitive": true,
+            "action_on_rain_en": "Open furrow ends to drain standing water; maize is highly sensitive to waterlogging.",
+            "action_on_rain_kn": "ನೀರು ನಿಲ್ಲದಂತೆ ಬೋದುಗಳ ತುದಿಯಲ್ಲಿ ಬಸಿಗಾಲುವೆ ತೆರೆಯಿರಿ; ಮೆಕ್ಕೆಜೋಳಕ್ಕೆ ನೀರು ನಿಲ್ಲಬಾರದು."
+          },
+          "thumbnail": "public/images/stages/maize_stage1_sowing.jpg",
+          "main_photo": {
+            "url": "public/images/stages/maize_stage1_sowing.jpg",
+            "caption_en": "Vigorous two-leaf maize seedling emergence in ridge and furrow system",
+            "caption_kn": "ಬೋದು ಸಾಲುಗಳಲ್ಲಿ ಹುಲುಸಾಗಿ ಮೊಳಕೆಯೊಡೆದ ಎರಡು ಎಲೆಯ ಮೆಕ್ಕೆಜೋಳದ ಸಸಿ",
+            "source": "ICAR-IIMR Directorate of Maize Research",
+            "source_url": "https://iimr.icar.gov.in"
+          },
+          "what_happens_en": "Seed imbibes water, radicle emerges, and coleoptile pushes through the surface. Within 10 to 14 days, the seedling reaches the V2 stage with 2 fully expanded collared leaves.",
+          "what_happens_kn": "ಬೀಜವು ಮೊಳಕೆಯೊಡೆದು ಬೇರು ಬಿಡುತ್ತದೆ. 10-14 ದಿನಗಳಲ್ಲಿ ಎರಡು ಅಗಲವಾದ ಎಲೆಗಳು ಹೊರಬಂದು ಗಿಡ ಸ್ಥಿರಗೊಳ್ಳುತ್ತದೆ.",
+          "animation_type": "seed_germination",
+          "farmer_actions": {
+            "crop_care": {
+              "action_en": "Maintain 60x20 cm spacing with 1 plant per hill. Gap-fill within 8-10 days if needed.",
+              "action_kn": "60x20 ಸೆಂ.ಮೀ ಅಂತರ ಕಾಪಾಡಿ; ಪ್ರತಿ ಜಾಗದಲ್ಲಿ ಒಂದೇ ಸಸಿ ಇರಲಿ."
+            },
+            "water": {
+              "action_en": "Sow in moist soil. If irrigated, provide light irrigation immediately after sowing.",
+              "action_kn": "ಹದವಾದ ತೇವಾಂಶದಲ್ಲಿ ಬಿತ್ತಿ; ನೀರಾವರಿಯಿದ್ದರೆ ಲಘು ನೀರು ನೀಡಿ."
+            },
+            "weed": {
+              "action_en": "Spray Atrazine 50 WP @ 1.0 kg a.i./ha as pre-emergence within 48h of sowing in moist soil.",
+              "action_kn": "ಬಿತ್ತಿದ 48 ಗಂಟೆಗಳಲ್ಲಿ ಅಟ್ರಾಜಿನ್ ಕಳೆನಾಶಕವನ್ನು ತೇವಾಂಶವಿರುವ ಮಣ್ಣಿನಲ್ಲಿ ಸಿಂಪಡಿಸಿ."
+            },
+            "nutrients": {
+              "action_en": "Apply basal NPK (33% N + 100% P₂O₅ + 100% K₂O + 10 kg Zinc Sulphate/ha).",
+              "action_kn": "ಶೇ 33 ಸಾರಜನಕ + ಪೂರ್ಣ ರಂಜಕ + ಪೂರ್ಣ ಪೊಟ್ಯಾಷ್ + ಸತು ಸಲ್ಫೇಟ್ ಬಾಸಲ್ ಡೋಸ್ ಆಗಿ ನೀಡಿ.",
+              "npk_schedule": "UAS Recommendation: 100:50:50 kg NPK/ha (Kharif hybrid maize)",
+              "timing_en": "Basal at sowing; remaining N in 2 splits at knee-high and tasseling.",
+              "timing_kn": "ಬಿತ್ತನೆಯ ಸಮಯದಲ್ಲಿ ಬಾಸಲ್; ಉಳಿದ ಸಾರಜನಕ ಮೊಣಕಾಲುದ್ದ ಮತ್ತು ಚಾಮರ ಬರುವಾಗ.",
+              "source": "UAS Raichur / ICAR-IIMR"
+            },
+            "protection": {
+              "action_en": "Scout for Fall Armyworm (FAW) pinhole damage on whorl leaves; apply Metarhizium anisopliae @ 5 g/L if seen.",
+              "action_kn": "ಸೈನಿಕ ಹುಳುವಿನ ಸಣ್ಣ ರಂಧ್ರಗಳನ್ನು ಗಮನಿಸಿ; ಜೈವಿಕ ಕೀಟನಾಶಕ ಸಿಂಪಡಿಸಿ."
+            }
+          },
+          "gallery_photos": [
+            {
+              "url": "public/images/stages/maize_stage1_sowing.jpg",
+              "caption_en": "Maize ridge sowing in Haveri district",
+              "caption_kn": "ಹಾವೇರಿ ಜಿಲ್ಲೆಯಲ್ಲಿ ಬೋದು ಸಾಲಿನಲ್ಲಿ ಬಿತ್ತನೆ",
+              "source": "UAS Dharwad"
+            }
+          ],
+          "video": {
+            "title_en": "Scientific Maize Cultivation & Fall Armyworm Prevention",
+            "title_kn": "ಮೆಕ್ಕೆಜೋಳ ವೈಜ್ಞಾನಿಕ ಬೇಸಾಯ ಮತ್ತು ಸೈನಿಕ ಹುಳು ತಡೆಗಟ್ಟುವಿಕೆ",
+            "publisher": "ICAR-IIMR & UAS Dharwad",
+            "thumbnail": "public/images/stages/maize_stage1_sowing.jpg",
+            "url": "https://www.youtube.com/watch?v=kYJj8hB7m-s",
+            "duration": "15 min",
+            "source": "ICAR Channel"
+          },
+          "quick_tip_en": "Zinc deficiency causes 'white bud' in maize. Always apply 10 kg Zinc Sulphate per acre with basal fertilizer.",
+          "quick_tip_kn": "ಮೆಕ್ಕೆಜೋಳದಲ್ಲಿ ಸತುವಿನ ಕೊರತೆಯಿಂದ ಸುಳಿ ಬೆಳ್ಳಗಾಗುತ್ತದೆ; ಬಿತ್ತನೆಯಲ್ಲಿ ಜಿಂಕ್ ಸಲ್ಫೇಟ್ ತಪ್ಪದೆ ನೀಡಿ.",
+          "references": [
+            {
+              "title": "Maize Production Technologies for Karnataka",
+              "source": "ICAR-IIMR",
+              "type": "ICAR Technical Bulletin"
+            }
+          ]
+        },
+        {
+          "stage_id": "vegetative_knee_high",
+          "name_en": "Knee-High Vegetative Growth",
+          "name_kn": "ಮೊಣಕಾಲುದ್ದದ ಸಸ್ಯ ಬೆಳವಣಿಗೆ ಹಂತ",
+          "start_day": 16,
+          "end_day": 45,
+          "icon": "🌽",
+          "description_en": "Rapid stem elongation, root brace whorls, and intensive dry matter accumulation.",
+          "description_kn": "ಕಾಂಡದ ಕ್ಷಿಪ್ರ ಬೆಳವಣಿಗೆ, ಆಸರೆ ಬೇರುಗಳು ಮೂಡುವುದು ಮತ್ತು ಸಸ್ಯದ ಹರಡುವಿಕೆ.",
+          "tasks_en": [
+            "Top dress 33% Nitrogen (35 to 40 kg N/ha) at knee-high stage (30-35 days)",
+            "Carry out earthing-up (ಏರು ಮಣ್ಣು ಹಾಕುವುದು) to bury top-dressed urea and provide root support",
+            "Scout whorls intensively for Fall Armyworm (FAW) larvae"
+          ],
+          "tasks_kn": [
+            "ಮೊಣಕಾಲುದ್ದದ ಹಂತದಲ್ಲಿ (30-35 ದಿನ) 2ನೇ ಕಂತಿನ ಶೇ 33 ಸಾರಜನಕ ನೀಡಿ",
+            "ಗೊಬ್ಬರ ಮುಚ್ಚಲು ಮತ್ತು ಗಿಡಕ್ಕೆ ಆಸರೆ ನೀಡಲು ಸಾಲುಗಳಿಗೆ ಏರು ಮಣ್ಣು ಹಾಕಿ",
+            "ಸುಳಿಯೊಳಗೆ ಸೈನಿಕ ಹುಳುವಿನ ಬಾಧೆಯ ಬಗ್ಗೆ ನಿರಂತರ ನಿಗಾ ಇರಿಸಿ"
+          ],
+          "key_observations_en": "Inspect central leaf whorls for sawdust-like frass indicating FAW presence.",
+          "key_observations_kn": "ಸುಳಿಯಲ್ಲಿ ಮರದ ಪುಡಿಯಂತಹ ಹಿಕ್ಕೆಗಳು ಕಂಡರೆ ಸೈನಿಕ ಹುಳುವಿನ ಬಾಧೆಯಿದೆ ಎಂದು ಗುರುತಿಸಿ.",
+          "weather_sensitivity": {
+            "rain_favorable": true,
+            "drought_sensitive": true,
+            "action_on_rain_en": "Top dress urea and earth up immediately after good shower.",
+            "action_on_rain_kn": "ಮಳೆಯ ನಂತರದ ತೇವಾಂಶದಲ್ಲಿ ಯೂರಿಯಾ ಕೊಟ್ಟು ಏರು ಮಣ್ಣು ಹಾಕಿ."
+          },
+          "thumbnail": "public/images/stages/maize_stage2_veg.jpg",
+          "main_photo": {
+            "url": "public/images/stages/maize_stage2_veg.jpg",
+            "caption_en": "Thriving knee-high hybrid maize crop with deep green leaf canopy",
+            "caption_kn": "ಮೊಣಕಾಲುದ್ದದ ಹಂತದಲ್ಲಿ ಹುಲುಸಾಗಿ ಬೆಳೆದಿರುವ ಹೈಬ್ರಿಡ್ ಮೆಕ್ಕೆಜೋಳ",
+            "source": "UAS Raichur Field Station",
+            "source_url": "https://uasraichur.edu.in"
+          },
+          "what_happens_en": "The growing point transitions from below to above the soil line. Leaf initiation concludes and microscopic tassel and cob development begins inside the stem.",
+          "what_happens_kn": "ಕಾಂಡದ ಒಳಗೆ ಸೂಕ್ಷ್ಮವಾಗಿ ತೆನೆ ಮತ್ತು ಚಾಮರದ ಬೆಳವಣಿಗೆ ಆರಂಭವಾಗುತ್ತದೆ. ಎಲೆಗಳು ವೇಗವಾಗಿ ಬೆಳೆದು ಗಿಡ ಗಟ್ಟಿಯಾಗುತ್ತದೆ.",
+          "animation_type": "vegetative_tillering",
+          "farmer_actions": {
+            "crop_care": {
+              "action_en": "Perform earthing up at 30-35 days to support brace roots and prevent lodging.",
+              "action_kn": "30-35 ದಿನಗಳಿಗೆ ಗಿಡಕ್ಕೆ ಏರು ಮಣ್ಣು ಹಾಕಿ ಗಿಡ ಮಲಗದಂತೆ ಆಸರೆ ನೀಡಿ."
+            },
+            "water": {
+              "action_en": "Irrigate at 10 to 12 day intervals in dry zones. Avoid standing water.",
+              "action_kn": "10-12 ದಿನಗಳಿಗೊಮ್ಮೆ ಹದವಾಗಿ ನೀರು ನೀಡಿ; ನೀರು ನಿಲ್ಲಲು ಬಿಡಬೇಡಿ."
+            },
+            "weed": {
+              "action_en": "Earthing-up operation automatically smothers and controls inter-row weeds.",
+              "action_kn": "ಏರು ಮಣ್ಣು ಹಾಕುವುದರಿಂದ ಕಳೆಗಳು ಮುಚ್ಚಿ ನಾಶವಾಗುತ್ತವೆ."
+            },
+            "nutrients": {
+              "action_en": "Top dress 33% Nitrogen (35-40 kg N/ha, ~75 kg Urea/ha) 5 cm away from plant base.",
+              "action_kn": "ಗಿಡದ ಬುಡದಿಂದ 5 ಸೆಂ.ಮೀ ದೂರದಲ್ಲಿ ಶೇ 33 ಸಾರಜನಕವನ್ನು ಮೇಲುಗೊಬ್ಬರವಾಗಿ ನೀಡಿ.",
+              "npk_schedule": "Second split: 35-40 kg N/ha (~75 kg Urea/ha)",
+              "timing_en": "Apply at knee-high stage (V6 to V8 stage, 30-35 days).",
+              "timing_kn": "ಮೊಣಕಾಲುದ್ದದ ಹಂತದಲ್ಲಿ ನೀಡಿ.",
+              "source": "UAS Raichur / UAS Dharwad"
+            },
+            "protection": {
+              "action_en": "If FAW larvae found in whorls, apply Emamectin benzoate 5 SG @ 0.4 g/L or Chlorantraniliprole 18.5 SC @ 0.4 mL/L.",
+              "action_kn": "ಸುಳಿಯಲ್ಲಿ ಸೈನಿಕ ಹುಳು ಕಂಡರೆ ಎಮಾಮೆಕ್ಟಿನ್ ಬೆಂಜೊಯೇಟ್ 0.4 ಗ್ರಾಂ ಪ್ರತಿ ಲೀಟರ್ ನೀರಿಗೆ ಬೆರೆಸಿ ಸುಳಿಗೆ ಸಿಂಪಡಿಸಿ."
+            }
+          },
+          "gallery_photos": [
+            {
+              "url": "public/images/stages/maize_stage2_veg.jpg",
+              "caption_en": "Earthed-up maize rows in Davanagere",
+              "caption_kn": "ದಾವಣಗೆರೆಯಲ್ಲಿ ಏರು ಮಣ್ಣು ಹಾಕಿದ ಮೆಕ್ಕೆಜೋಳ",
+              "source": "UAS Bengaluru"
+            }
+          ],
+          "video": {
+            "title_en": "Fall Armyworm Identification and Control in Maize",
+            "title_kn": "ಮೆಕ್ಕೆಜೋಳದಲ್ಲಿ ಸೈನಿಕ ಹುಳು ಗುರುತಿಸುವಿಕೆ ಮತ್ತು ಸಮಗ್ರ ನಿರ್ವಹಣೆ",
+            "publisher": "UAS Raichur & ICAR",
+            "thumbnail": "public/images/stages/maize_stage2_veg.jpg",
+            "url": "https://www.youtube.com/watch?v=kYJj8hB7m-s",
+            "duration": "14 min",
+            "source": "Extension Video"
+          },
+          "quick_tip_en": "Always apply fertilizer 5 cm away from the plant stem to prevent chemical scorching of shallow brace roots.",
+          "quick_tip_kn": "ಗೊಬ್ಬರವನ್ನು ಗಿಡದ ಬುಡಕ್ಕೆ ತಾಗಿಸದೆ 5 ಸೆಂ.ಮೀ ದೂರದಲ್ಲಿ ಹಾಕಬೇಕು; ಇಲ್ಲದಿದ್ದರೆ ಬೇರು ಸುಡುತ್ತದೆ.",
+          "references": [
+            {
+              "title": "Fall Armyworm IPM Strategy",
+              "source": "ICAR-NBAIR Bengaluru",
+              "type": "IPM Advisory"
+            }
+          ]
+        },
+        {
+          "stage_id": "tasseling_silking",
+          "name_en": "Tasseling & Silking / Pollination",
+          "name_kn": "ಚಾಮರ (ಗಂಡು ಹೂ) ಮತ್ತು ರೇಷ್ಮೆ ಕದಿರು ಹಂತ",
+          "start_day": 46,
+          "end_day": 65,
+          "icon": "🌽",
+          "description_en": "Male tassel emergence, pollen shed, and receptive female silk emergence (VT-R1 stage).",
+          "description_kn": "ಮೇಲ್ಭಾಗದಲ್ಲಿ ಚಾಮರ ಅರಳುವುದು ಮತ್ತು ತೆನೆಯಿಂದ ರೇಷ್ಮೆ ಕದಿರು ಹೊರಬಂದು ಪರಾಗಸ್ಪರ್ಶವಾಗುವ ಹಂತ.",
+          "tasks_en": [
+            "Most drought-critical stage — maintain adequate soil moisture to ensure silk receptivity",
+            "Top dress final 33% Nitrogen (35 to 40 kg N/ha) just before tassel emergence",
+            "Avoid spraying chemical insecticides during active morning pollen shedding (8 AM - 11 AM)"
+          ],
+          "tasks_kn": [
+            "ಅತ್ಯಂತ ಸೂಕ್ಷ್ಮ ಹಂತ — ರೇಷ್ಮೆ ಕದಿರು ಒಣಗದಂತೆ ಕಡ್ಡಾಯವಾಗಿ ತೇವಾಂಶ ಕಾಪಾಡಿ",
+            "ಚಾಮರ ಬರುವ ಮುನ್ನ ಕೊನೆಯ ಕಂತಿನ ಶೇ 33 ಸಾರಜನಕವನ್ನು ಮೇಲುಗೊಬ್ಬರವಾಗಿ ನೀಡಿ",
+            "ಬೆಳಗಿನ ಪರಾಗಸ್ಪರ್ಶದ ಸಮಯದಲ್ಲಿ (8 ರಿಂದ 11 ಗಂಟೆ) ಕೀಟನಾಶಕ ಸಿಂಪಡಿಸಬೇಡಿ"
+          ],
+          "key_observations_en": "Check synchrony between tassel pollen shed and moist receptive silks.",
+          "key_observations_kn": "ಚಾಮರದಿಂದ ಪರಾಗ ಉದುರುವುದು ಮತ್ತು ರೇಷ್ಮೆ ಕದಿರು ಹಸಿಯಾಗಿರುವುದನ್ನು ಗಮನಿಸಿ.",
+          "weather_sensitivity": {
+            "rain_favorable": false,
+            "drought_sensitive": true,
+            "action_on_rain_en": "Heavy continuous downpours wash away pollen; ensure prompt field drainage.",
+            "action_on_rain_kn": "ಮಳೆಯಿಂದ ಪರಾಗ ಕೊಚ್ಚಿಹೋಗದಂತೆ ಮತ್ತು ನೀರು ನಿಲ್ಲದಂತೆ ನೋಡಿಕೊಳ್ಳಿ."
+          },
+          "thumbnail": "public/images/stages/maize_stage3_tassel.jpg",
+          "main_photo": {
+            "url": "public/images/stages/maize_stage3_tassel.jpg",
+            "caption_en": "Male tassel releasing golden pollen above receptive female ear silks",
+            "caption_kn": "ಗಂಡು ಚಾಮರದಿಂದ ಪರಾಗ ಉದುರಿ ರೇಷ್ಮೆ ಕದಿರಿಗೆ ತಲುಪುವ ಅದ್ಭುತ ಹಂತ",
+            "source": "ICAR-IIMR Crop Science",
+            "source_url": "https://iimr.icar.gov.in"
+          },
+          "what_happens_en": "The male tassel emerges and sheds millions of golden pollen grains over 5 to 8 days. Pollen grains land on moist silks, germinate, and fertilize ovules to form corn kernels.",
+          "what_happens_kn": "ಮೇಲ್ಭಾಗದಲ್ಲಿ ಚಾಮರ ಅರಳಿ ಲಕ್ಷಾಂತರ ಪರಾಗ ಕಣಗಳು ಉದುರುತ್ತವೆ. ರೇಷ್ಮೆ ಕದಿರಿನ ಮೇಲೆ ಬಿದ್ದ ಪರಾಗವು ಒಳಗಿರುವ ಅಂಡಾಶಯವನ್ನು ತಲುಪಿ ಕಾಳುಗಳು ರೂಪುಗೊಳ್ಳುತ್ತವೆ.",
+          "animation_type": "flowering_panicle",
+          "farmer_actions": {
+            "crop_care": {
+              "action_en": "Do not mechanically disturb the plants during peak morning pollen shed.",
+              "action_kn": "ಬೆಳಗಿನ ಪರಾಗಸ್ಪರ್ಶದ ಸಮಯದಲ್ಲಿ ಗಿಡಗಳನ್ನು ಅಲುಗಾಡಿಸಬೇಡಿ."
+            },
+            "water": {
+              "action_en": "Moisture stress during tasseling/silking causes up to 50% yield reduction. Irrigate without fail.",
+              "action_kn": "ಈ ಹಂತದಲ್ಲಿ ನೀರಿನ ಕೊರತೆಯಾದರೆ ಇಳುವರಿ ಶೇ 50ರಷ್ಟು ಕುಸಿಯುತ್ತದೆ; ತಪ್ಪದೆ ನೀರು ನೀಡಿ."
+            },
+            "weed": {
+              "action_en": "No weeding needed.",
+              "action_kn": "ಕಳೆ ಕೀಳುವ ಅಗತ್ಯವಿಲ್ಲ."
+            },
+            "nutrients": {
+              "action_en": "Apply final 33% Nitrogen top-dress (35-40 kg N/ha) just prior to tassel emergence.",
+              "action_kn": "ಚಾಮರ ಬರುವ ಮುನ್ನ ಕೊನೆಯ ಕಂತಿನ ಶೇ 33 ಸಾರಜನಕ ನೀಡಿ.",
+              "npk_schedule": "Final split: 35-40 kg N/ha",
+              "timing_en": "Pre-tasseling stage (Day 45-50).",
+              "timing_kn": "45-50 ದಿನಗಳಲ್ಲಿ ಚಾಮರ ಬರುವ ಮುನ್ನ ನೀಡಿ.",
+              "source": "UAS Raichur"
+            },
+            "protection": {
+              "action_en": "Scout for cob borers entering the ear tip; apply biological spray in evening if needed.",
+              "action_kn": "ತೆನೆಯ ತುದಿಯಲ್ಲಿ ಕೀಟ ಬಾಧೆಯಿದ್ದರೆ ಸಂಜೆ ವೇಳೆಯಲ್ಲಿ ಜೈವಿಕ ಕೀಟನಾಶಕ ಸಿಂಪಡಿಸಿ."
+            }
+          },
+          "gallery_photos": [
+            {
+              "url": "public/images/stages/maize_stage3_tassel.jpg",
+              "caption_en": "Synchronized flowering in hybrid maize field",
+              "caption_kn": "ಹೈಬ್ರಿಡ್ ಮೆಕ್ಕೆಜೋಳದಲ್ಲಿ ಹೂ ಬಿಡುವ ಹಂತ",
+              "source": "ICAR-IIMR"
+            }
+          ],
+          "video": {
+            "title_en": "Critical Tasseling-Silking Stage & Irrigation in Maize",
+            "title_kn": "ಮೆಕ್ಕೆಜೋಳದಲ್ಲಿ ಚಾಮರ-ರೇಷ್ಮೆ ಕದಿರು ಹಂತ ಮತ್ತು ನೀರಾವರಿ",
+            "publisher": "UAS Raichur Extension",
+            "thumbnail": "public/images/stages/maize_stage3_tassel.jpg",
+            "url": "https://www.youtube.com/watch?v=kYJj8hB7m-s",
+            "duration": "11 min",
+            "source": "Extension Video"
+          },
+          "quick_tip_en": "A single hot dry day during silking dries up silks and causes barren cobs. Prioritize irrigation here.",
+          "quick_tip_kn": "ರೇಷ್ಮೆ ಕದಿರು ಬರುವಾಗ ಒಣಹವೆಯಾದರೆ ಕದಿರು ಒಣಗಿ ತೆನೆ ಬೋಳಾಗುತ್ತದೆ; ತಪ್ಪದೆ ನೀರು ಒದಗಿಸಿ.",
+          "references": [
+            {
+              "title": "Maize Water Deficit Sensitivity Guidelines",
+              "source": "ICAR-IIMR",
+              "type": "Technical Bulletin"
+            }
+          ]
+        },
+        {
+          "stage_id": "grain_filling_cob",
+          "name_en": "Cob Development & Grain Filling",
+          "name_kn": "ತೆನೆ ದಪ್ಪಗಾಗುವ ಮತ್ತು ಕಾಳು ತುಂಬುವ ಹಂತ",
+          "start_day": 66,
+          "end_day": 90,
+          "icon": "🌽",
+          "description_en": "Kernel blister, milk, and dent stage starch accumulation inside ear husks.",
+          "description_kn": "ತೆನೆ ದಪ್ಪಗಾಗಿ, ಕಾಳುಗಳಲ್ಲಿ ಹಾಲು ತುಂಬಿ, ಮುತ್ತಿನಂತಹ ಗಟ್ಟಿ ಕಾಳುಗಳಾಗುವ ಹಂತ.",
+          "tasks_en": [
+            "Maintain soil moisture through milk to dent stage (Day 65 to 85)",
+            "Scout for cob rot diseases and birds entering the field",
+            "Cease nitrogen application; let crop mature naturally"
+          ],
+          "tasks_kn": [
+            "ಕಾಳು ಸರಿಯಾಗಿ ತುಂಬಲು 85ನೇ ದಿನದವರೆಗೆ ಮಣ್ಣಿನಲ್ಲಿ ತೇವಾಂಶವಿರಲಿ",
+            "ತೆನೆ ಕೊಳೆ ರೋಗ ಮತ್ತು ಪಕ್ಷಿಗಳ ಬಾಧೆಯ ಬಗ್ಗೆ ನಿಗಾ ಇರಿಸಿ",
+            "ಯಾವುದೇ ರಾಸಾಯನಿಕ ಗೊಬ್ಬರ ನೀಡಬೇಡಿ; ನೈಸರ್ಗಿಕವಾಗಿ ಪಕ್ವವಾಗಲು ಬಿಡಿ"
+          ],
+          "key_observations_en": "Peel back husk tip: check kernel starch line moving from crown to base.",
+          "key_observations_kn": "ತೆನೆಯ ರೇಕೆ ಸರಿಸಿ ಕಾಳನ್ನು ನೋಡಿ; ಬಿಳಿ ಹಾಲಿನ ಹಂತ ಮುಗಿದು ಗಟ್ಟಿಯಾಗುವುದನ್ನು ಗಮನಿಸಿ.",
+          "weather_sensitivity": {
+            "rain_favorable": false,
+            "drought_sensitive": true,
+            "action_on_rain_en": "Ensure surface water drains freely; prevent water logging at base.",
+            "action_on_rain_kn": "ಬುಡದಲ್ಲಿ ನೀರು ನಿಲ್ಲದಂತೆ ಬಸಿಗಾಲುವೆ ಸರಿಪಡಿಸಿ."
+          },
+          "thumbnail": "public/images/stages/maize_stage4_cob.jpg",
+          "main_photo": {
+            "url": "public/images/stages/maize_stage4_cob.jpg",
+            "caption_en": "Enlarging maize cob with fully packed yellow kernels in milk-dent stage",
+            "caption_kn": "ಕಾಳು ತುಂಬಿ ದಪ್ಪವಾಗಿರುವ ಹಸಿರು ರೇಕೆಯ ಮೆಕ್ಕೆಜೋಳದ ತೆನೆ",
+            "source": "UAS Raichur Agronomy Department",
+            "source_url": "https://uasraichur.edu.in"
+          },
+          "what_happens_en": "Sugar transported from leaves is deposited as starch inside the kernels. Kernels transition from watery blister to sweet milk, and finally to firm dent stage.",
+          "what_happens_kn": "ಎಲೆಗಳಲ್ಲಿ ತಯಾರಾದ ಪೋಷಕಾಂಶಗಳು ತೆನೆಗೆ ವರ್ಗಾವಣೆಯಾಗಿ ಪಿಷ್ಟವಾಗಿ ಬದಲಾಗುತ್ತದೆ. ಕಾಳುಗಳು ದಪ್ಪಗಾಗಿ ಗಟ್ಟಿಯಾಗತೊಡಗುತ್ತವೆ.",
+          "animation_type": "grain_filling",
+          "farmer_actions": {
+            "crop_care": {
+              "action_en": "Protect field margins from wild boars and birds during sweet milk stage.",
+              "action_kn": "ಹಾಲು ತುಂಬುವ ಸಮಯದಲ್ಲಿ ಹಂದಿ ಮತ್ತು ಪಕ್ಷಿಗಳ ಹಾವಳಿಯಿಂದ ತೋಟವನ್ನು ರಕ್ಷಿಸಿ."
+            },
+            "water": {
+              "action_en": "Provide 1-2 irrigations during dry spells. Stop irrigation when kernel milk line reaches 50%.",
+              "action_kn": "ಒಣಹವೆಯಿದ್ದರೆ 1-2 ಲಘು ನೀರು ನೀಡಿ; ಕಾಳು ಗಟ್ಟಿಯಾದ ಮೇಲೆ ನೀರು ನಿಲ್ಲಿಸಿ."
+            },
+            "weed": {
+              "action_en": "No weeding required.",
+              "action_kn": "ಕಳೆ ಕೀಳುವ ಅಗತ್ಯವಿಲ್ಲ."
+            },
+            "nutrients": {
+              "action_en": "No fertilizer application.",
+              "action_kn": "ಯಾವುದೇ ಗೊಬ್ಬರದ ಅಗತ್ಯವಿಲ್ಲ.",
+              "npk_schedule": "None (Translocation active)",
+              "timing_en": "Nutrient uptake is complete.",
+              "timing_kn": "ಪೋಷಕಾಂಶಗಳ ಹೀರುವಿಕೆ ಮುಗಿದಿದೆ.",
+              "source": "UAS Raichur"
+            },
+            "protection": {
+              "action_en": "Check for earhead rot caused by Fusarium; ensure good aeration.",
+              "action_kn": "ತೆನೆ ಕೊಳೆ ರೋಗ ಬರದಂತೆ ಗದ್ದೆಯಲ್ಲಿ ಗಾಳಿ ಆಡುವಂತೆ ನೋಡಿಕೊಳ್ಳಿ."
+            }
+          },
+          "gallery_photos": [
+            {
+              "url": "public/images/stages/maize_stage4_cob.jpg",
+              "caption_en": "Cob filling in hybrid field",
+              "caption_kn": "ತೆನೆಯಲ್ಲಿ ಕಾಳು ತುಂಬುವಿಕೆ",
+              "source": "ICAR-IIMR"
+            }
+          ],
+          "video": {
+            "title_en": "Grain Filling Stage & Cob Protection in Maize",
+            "title_kn": "ಮೆಕ್ಕೆಜೋಳದಲ್ಲಿ ಕಾಳು ತುಂಬುವ ಹಂತ ಮತ್ತು ತೆನೆ ಸಂರಕ್ಷಣೆ",
+            "publisher": "UAS Dharwad Extension",
+            "thumbnail": "public/images/stages/maize_stage4_cob.jpg",
+            "url": "https://www.youtube.com/watch?v=kYJj8hB7m-s",
+            "duration": "10 min",
+            "source": "Extension Video"
+          },
+          "quick_tip_en": "Kernel weight accounts for 85% of total grain yield. Never allow soil to crack during grain filling.",
+          "quick_tip_kn": "ಕಾಳು ತುಂಬುವಾಗ ಮಣ್ಣು ಬಿರುಕು ಬಿಡದಂತೆ ನೋಡಿಕೊಂಡರೆ ಕಾಳು ತೂಕ ಬಂದು ಉತ್ತಮ ಇಳುವರಿ ಸಿಗುತ್ತದೆ.",
+          "references": [
+            {
+              "title": "Maize Agronomy and Kernel Development",
+              "source": "ICAR-IIMR",
+              "type": "Technical Bulletin"
+            }
+          ]
+        },
+        {
+          "stage_id": "maturity_harvest",
+          "name_en": "Cob Maturity, Black Layer & Harvest",
+          "name_kn": "ತೆನೆ ಮಾಗುವಿಕೆ ಮತ್ತು ಕೊಯ್ಲು",
+          "start_day": 91,
+          "end_day": 110,
+          "icon": "🌽",
+          "description_en": "Husk leaves turn dry and papery, black layer forms at kernel tip, and cobs are harvested.",
+          "description_kn": "ರೇಕೆಗಳು ಒಣಗಿ ಬಿಳಿ-ಕಂದು ಬಣ್ಣಕ್ಕೆ ತಿರುಗಿ, ಕಾಳಿನ ಬುಡದಲ್ಲಿ ಕಪ್ಪು ಪದರ ಉಂಟಾಗಿ ಕೊಯ್ಲಿಗೆ ಸಿದ್ಧ.",
+          "tasks_en": [
+            "Verify maturity by checking black layer formation at the base of kernel",
+            "Harvest dry cobs manually by snapping or mechanically with corn combine",
+            "De-husk, shell cobs with maize sheller, and sun dry grain to 12% moisture"
+          ],
+          "tasks_kn": [
+            "ಕಾಳಿನ ಬುಡದಲ್ಲಿ ಕಪ್ಪು ಪದರ (Black layer) ಉಂಟಾಗಿರುವುದನ್ನು ನೋಡಿ ಪಕ್ವತೆ ಖಚಿತಪಡಿಸಿ",
+            "ಒಣಗಿದ ತೆನೆಗಳನ್ನು ಕೀಳಿ, ರೇಕೆ ಸುಲಿದು ಮೆಕ್ಕೆಜೋಳದ ಶೆಲ್ಲರ್ ಮೂಲಕ ಕಾಳು ಬೇರ್ಪಡಿಸಿ",
+            "ಕಾಳನ್ನು ಬಿಸಿಲಿನಲ್ಲಿ ಶೇ 12 ತೇವಾಂಶಕ್ಕೆ ಚೆನ್ನಾಗಿ ಒಣಗಿಸಿ ಶೇಖರಿಸಿ"
+          ],
+          "key_observations_en": "Black abscission layer forms at kernel tip; husk leaves are completely dry.",
+          "key_observations_kn": "ಕಾಳಿನ ತುದಿಯಲ್ಲಿ ಕಪ್ಪು ಪದರ ಸ್ಪಷ್ಟವಾಗಿ ಕಾಣುತ್ತದೆ; ರೇಕೆಗಳು ಸಂಪೂರ್ಣ ಒಣಗಿರುತ್ತವೆ.",
+          "weather_sensitivity": {
+            "rain_favorable": false,
+            "drought_sensitive": false,
+            "action_on_rain_en": "Store harvested cobs under shelter to prevent aflatoxin mold growth.",
+            "action_on_rain_kn": "ಮಳೆಯಿಂದ ತೆನೆಗಳು ಬೂಸ್ಟ್ ಹಿಡಿಯದಂತೆ ಸುರಕ್ಷಿತ ಜಾಗದಲ್ಲಿರಿಸಿ ಒಣಗಿಸಿ."
+          },
+          "thumbnail": "public/images/stages/maize_stage5_harvest.jpg",
+          "main_photo": {
+            "url": "public/images/stages/maize_stage5_harvest.jpg",
+            "caption_en": "Dry mature corn cobs harvested and ready for mechanical shelling",
+            "caption_kn": "ಒಣಗಿ ಕೊಯ್ಲಿಗೆ ಸಿದ್ಧವಾದ ಬಂಗಾರದ ಬಣ್ಣದ ಮೆಕ್ಕೆಜೋಳದ ತೆನೆಗಳು",
+            "source": "UAS Bengaluru Farm Extension",
+            "source_url": "https://uasbangalore.edu.in"
+          },
+          "what_happens_en": "Physiological maturity is reached when hard starch reaches the base and the black layer seals the kernel. Moisture drops to 15–18%.",
+          "what_happens_kn": "ಕಾಳು ಪೂರ್ಣವಾಗಿ ಮಾಗಿ ಗಟ್ಟಿಯಾಗುತ್ತದೆ. ಕಾಳಿನ ಬುಡದಲ್ಲಿ ಕಪ್ಪು ಪದರ ಉಂಟಾಗಿ ರಸ ಸಂಚಾರ ನಿಲ್ಲುತ್ತದೆ. ತೇವಾಂಶ ಕಡಿಮೆಯಾಗಿ ಕೊಯ್ಲಿಗೆ ಸಿದ್ಧವಾಗುತ್ತದೆ.",
+          "animation_type": "harvest_curing",
+          "farmer_actions": {
+            "crop_care": {
+              "action_en": "Harvest cobs on dry sunny days; avoid harvesting wet cobs to prevent fungal rot.",
+              "action_kn": "ಒಣ ಬಿಸಿಲಿನ ದಿನಗಳಲ್ಲಿ ತೆನೆಗಳನ್ನು ಕಟಾವು ಮಾಡಿ."
+            },
+            "water": {
+              "action_en": "Complete stoppage of water.",
+              "action_kn": "ಸಂಪೂರ್ಣವಾಗಿ ನೀರು ನಿಲ್ಲಿಸಿ."
+            },
+            "weed": {
+              "action_en": "Clear dried weeds from field borders.",
+              "action_kn": "ಬದುಗಳಲ್ಲಿರುವ ಒಣ ಕಳೆಗಳನ್ನು ತೆಗೆಯಿರಿ."
+            },
+            "nutrients": {
+              "action_en": "Incorporate chopped maize stalks into soil with rotavator to add organic carbon.",
+              "action_kn": "ಮೆಕ್ಕೆಜೋಳದ ತಟ್ಟೆಗಳನ್ನು ರೋಟಾವೇಟರ್‌ನಿಂದ ಪುಡಿಮಾಡಿ ಮಣ್ಣಿಗೆ ಸೇರಿಸಿ.",
+              "npk_schedule": "None (Harvest)",
+              "timing_en": "Do not burn crop residues.",
+              "timing_kn": "ಬೆಳೆಯ ತ್ಯಾಜ್ಯವನ್ನು ಸುಡಬೇಡಿ; ಮಣ್ಣಿಗೆ ಸೇರಿಸಿ.",
+              "source": "UAS Raichur"
+            },
+            "protection": {
+              "action_en": "Dry shelled grain to 12% moisture before bagging to prevent Aspergillus flavus (aflatoxin).",
+              "action_kn": "ಅಫ್ಲಾಟಾಕ್ಸಿನ್ ಶಿಲೀಂಧ್ರ ಬರದಂತೆ ಕಾಳನ್ನು ಶೇ 12 ತೇವಾಂಶಕ್ಕೆ ಬಿಸಿಲಿನಲ್ಲಿ ಒಣಗಿಸಿ ಶೇಖರಿಸಿ."
+            }
+          },
+          "gallery_photos": [
+            {
+              "url": "public/images/stages/maize_stage5_harvest.jpg",
+              "caption_en": "Tractor maize sheller operating in Haveri",
+              "caption_kn": "ಮೆಕ್ಕೆಜೋಳ ಶೆಲ್ಲರ್ ಮೂಲಕ ಕಾಳು ಬೇರ್ಪಡಿಸುವಿಕೆ",
+              "source": "UAS Dharwad"
+            }
+          ],
+          "video": {
+            "title_en": "Maize Harvesting, Shelling & Aflatoxin Prevention",
+            "title_kn": "ಮೆಕ್ಕೆಜೋಳ ಕೊಯ್ಲು, ಒಕ್ಕಣೆ ಮತ್ತು ಅಫ್ಲಾಟಾಕ್ಸಿನ್ ತಡೆಗಟ್ಟುವಿಕೆ",
+            "publisher": "ICAR-IIMR Extension",
+            "thumbnail": "public/images/stages/maize_stage5_harvest.jpg",
+            "url": "https://www.youtube.com/watch?v=kYJj8hB7m-s",
+            "duration": "12 min",
+            "source": "ICAR Video"
+          },
+          "quick_tip_en": "Never store maize with more than 12% moisture; high moisture causes toxic aflatoxin contamination.",
+          "quick_tip_kn": "ಮೆಕ್ಕೆಜೋಳವನ್ನು ಶೇ 12ಕ್ಕಿಂತ ಹೆಚ್ಚು ತೇವಾಂಶದಲ್ಲಿ ಶೇಖರಿಸಬೇಡಿ; ಅಫ್ಲಾಟಾಕ್ಸಿನ್ ವಿಷಕಾರಿ ಶಿಲೀಂಧ್ರ ಬೆಳೆಯುತ್ತದೆ.",
+          "references": [
+            {
+              "title": "Post-Harvest Management & Safe Storage of Maize",
+              "source": "ICAR-IIMR",
+              "type": "Extension Bulletin"
+            }
+          ]
+        }
+      ]
+    },
+    "tomato": {
+      "crop_id": "tomato",
+      "crop_name_en": "Tomato",
+      "crop_name_kn": "ಟೊಮೇಟೊ",
+      "lifecycle_type": "annual",
+      "total_duration_days": 125,
+      "harvest_window_days": 25,
+      "stages": [
+        {
+          "stage_id": "nursery_transplanting",
+          "name_en": "Pro-tray Nursery & Transplanting",
+          "name_kn": "ಸಸಿ ಮಡಿ ಮತ್ತು ಏರುಮಡಿ ನಾಟಿ",
+          "start_day": 1,
+          "end_day": 25,
+          "icon": "🌱",
+          "description_en": "Pro-tray seedling production under shade net, raised bed preparation, and mulch transplanting.",
+          "description_kn": "ಪ್ರೋಟ್ರೆಗಳಲ್ಲಿ ಸಸಿ ಬೆಳೆಸಿ, ಏರುಮಡಿ ಮತ್ತು ಹನಿ ನೀರಾವರಿ ಬಳಸಿ ಗದ್ದೆಗೆ ನಾಟಿ ಮಾಡುವ ಹಂತ.",
+          "tasks_en": [
+            "Raise seedlings in 98-cell pro-trays using sterilized coco-peat under shade net",
+            "Prepare raised beds of 90 cm width, 15 cm height, and install drip line under silver-black mulch",
+            "Transplant 25-day-old seedlings at 60x45 cm or 90x45 cm spacing in late afternoon"
+          ],
+          "tasks_kn": [
+            "98 ಗುಂಡಿಗಳ ಪ್ರೋಟ್ರೆಗಳಲ್ಲಿ ಕ್ರಿಮಿಮುಕ್ತ ಕೊಕ್ಕೋಪೀಟ್ ಬಳಸಿ ನೆರಳು ಪರದೆಯಡಿಯಲ್ಲಿ ಸಸಿ ಬೆಳೆಸಿ",
+            "90 ಸೆಂ.ಮೀ ಅಗಲದ ಏರುಮಡಿ ಮಾಡಿ ಹನಿ ನೀರಾವರಿ ಮತ್ತು ಮಲ್ಚಿಂಗ್ ಶೀಟ್ ಅಳವಡಿಸಿ",
+            "25 ದಿನಗಳ ಸಸಿಗಳನ್ನು ಸಂಜೆ ವೇಳೆ 60x45 ಸೆಂ.ಮೀ ಅಂತರದಲ್ಲಿ ನಾಟಿ ಮಾಡಿ"
+          ],
+          "key_observations_en": "Transplant sturdy, thick-stemmed seedlings with 4 to 5 true leaves.",
+          "key_observations_kn": "4-5 ಎಲೆಗಳಿರುವ ಗಟ್ಟಿಮುಟ್ಟಾದ ಸಸಿಗಳನ್ನು ಮಾತ್ರ ನಾಟಿಗೆ ಆರಿಸಿ.",
+          "weather_sensitivity": {
+            "rain_favorable": false,
+            "drought_sensitive": true,
+            "action_on_rain_en": "Ensure raised beds prevent collar rot from standing water.",
+            "action_on_rain_kn": "ಏರುಮಡಿಯ ಪಕ್ಕದಲ್ಲಿ ನೀರು ನಿಲ್ಲದಂತೆ ಬಸಿಗಾಲುವೆ ಸರಿಪಡಿಸಿ."
+          },
+          "thumbnail": "public/images/stages/tomato_stage1_nursery.jpg",
+          "main_photo": {
+            "url": "public/images/stages/tomato_stage1_nursery.jpg",
+            "caption_en": "25-day-old vigorous pro-tray tomato seedlings ready for field planting",
+            "caption_kn": "ಪ್ರೋಟ್ರೆಗಳಲ್ಲಿ ನಾಟಿಗೆ ಸಿದ್ಧವಾದ 25 ದಿನಗಳ ಟೊಮೇಟೊ ಸಸಿಗಳು",
+            "source": "ICAR-IIHR Hesaraghatta",
+            "source_url": "https://iihr.res.in"
+          },
+          "what_happens_en": "Seeds germinate in pro-trays within 5 days. Adventitious roots proliferate in coco-peat plug. After transplanting, roots establish into raised bed soil within 3 to 4 days.",
+          "what_happens_kn": "ಪ್ರೋಟ್ರೆಗಳಲ್ಲಿ 5 ದಿನಗಳಲ್ಲಿ ಬೀಜ ಮೊಳಕೆಯೊಡೆದು ಬೇರು ಬೆಳೆಯುತ್ತದೆ. ನಾಟಿ ಮಾಡಿದ 3-4 ದಿನಗಳಲ್ಲಿ ಮುಖ್ಯ ಮಣ್ಣಿನಲ್ಲಿ ಬೇರೂರುತ್ತದೆ.",
+          "animation_type": "seed_germination",
+          "farmer_actions": {
+            "crop_care": {
+              "action_en": "Drench seedling trays with Trichoderma viride (5 g/L) before uprooting to prevent damping off.",
+              "action_kn": "ನಾಟಿಗೆ ಮುನ್ನ ಸಸಿಮಡಿಗೆ ಟ್ರೈಕೋಡರ್ಮಾ ದ್ರಾವಣ ಸಿಂಪಡಿಸಿ ಬೇರು ಕೊಳೆ ರೋಗ ತಡೆಯಿರಿ."
+            },
+            "water": {
+              "action_en": "Operate drip irrigation for 30 minutes prior to and immediately after transplanting.",
+              "action_kn": "ನಾಟಿಗೆ ಮುನ್ನ ಮತ್ತು ನಂತರ ಹನಿ ನೀರಾವರಿ ಮೂಲಕ ಹದವಾಗಿ ನೀರು ನೀಡಿ."
+            },
+            "weed": {
+              "action_en": "Use 25-30 micron silver-black plastic mulch to suppress 95% of weed growth.",
+              "action_kn": "ಬೆಳ್ಳಿ-ಕಪ್ಪು ಮಲ್ಚಿಂಗ್ ಶೀಟ್ ಬಳಸುವುದರಿಂದ ಕಳೆ ಬೆಳೆಯುವುದು ಸಂಪೂರ್ಣ ನಿಯಂತ್ರಣವಾಗುತ್ತದೆ."
+            },
+            "nutrients": {
+              "action_en": "Apply basal RDF: 50% N + 100% P₂O₅ + 50% K₂O + 25 t/ha FYM incorporated into beds.",
+              "action_kn": "ಏರುಮಡಿಗೆ ಶೇ 50 ಸಾರಜನಕ + ಪೂರ್ಣ ರಂಜಕ + ಶೇ 50 ಪೊಟ್ಯಾಷ್ ಮತ್ತು ಕೊಟ್ಟಿಗೆ ಗೊಬ್ಬರ ನೀಡಿ.",
+              "npk_schedule": "ICAR-IIHR RDF: 180:120:150 kg NPK/ha (High yielding hybrid tomato)",
+              "timing_en": "Basal at bed preparation; fertigate remaining N and K in weekly splits.",
+              "timing_kn": "ಏರುಮಡಿ ಮಾಡುವಾಗ ಬಾಸಲ್; ಉಳಿದದ್ದು ಹನಿ ನೀರಾವರಿ ಮೂಲಕ ವಾರಕ್ಕೊಮ್ಮೆ.",
+              "source": "ICAR-IIHR Hesaraghatta (Vegetable Division)"
+            },
+            "protection": {
+              "action_en": "Install yellow sticky traps (15/acre) to monitor whiteflies transmitting Tomato Leaf Curl Virus (ToLCV).",
+              "action_kn": "ಎಲೆ ಮುದುರು ವೈರಸ್ ಹರಡುವ ಬಿಳಿ ನೊಣ ನಿಯಂತ್ರಿಸಲು ಎಕರೆಗೆ 15 ಹಳದಿ ಅಂಟು ಬಲೆಗಳನ್ನು ಹಾಕಿ."
+            }
+          },
+          "gallery_photos": [
+            {
+              "url": "public/images/stages/tomato_stage1_nursery.jpg",
+              "caption_en": "Raised bed planting under drip in Kolar",
+              "caption_kn": "ಕೋಲಾರದಲ್ಲಿ ಹನಿ ನೀರಾವರಿ ನಾಟಿ",
+              "source": "ICAR-IIHR"
+            }
+          ],
+          "video": {
+            "title_en": "Scientific Tomato Nursery & Drip-Mulch Transplanting",
+            "title_kn": "ವೈಜ್ಞಾನಿಕ ಟೊಮೇಟೊ ಸಸಿ ಮಡಿ ಮತ್ತು ಮಲ್ಚಿಂಗ್ ನಾಟಿ ತಂತ್ರಜ್ಞಾನ",
+            "publisher": "ICAR-IIHR Bengaluru",
+            "thumbnail": "public/images/stages/tomato_stage1_nursery.jpg",
+            "url": "https://www.youtube.com/watch?v=kYJj8hB7m-s",
+            "duration": "14 min",
+            "source": "ICAR-IIHR Channel"
+          },
+          "quick_tip_en": "Transplant seedlings during late afternoon (after 3:30 PM) to avoid midday heat wilting.",
+          "quick_tip_kn": "ಸಂಜೆಯ ವೇಳೆ (3:30ರ ನಂತರ) ನಾಟಿ ಮಾಡುವುದರಿಂದ ಬಿಸಿಲಿಗೆ ಸಸಿ ಬಾಡುವುದು ತಪ್ಪುತ್ತದೆ.",
+          "references": [
+            {
+              "title": "Tomato Production Technology Bulletin",
+              "source": "ICAR-IIHR Hesaraghatta",
+              "type": "Technical Bulletin"
+            }
+          ]
+        },
+        {
+          "stage_id": "vegetative_branching",
+          "name_en": "Vegetative Branching & Staking",
+          "name_kn": "ಕವಲೊಡೆಯುವಿಕೆ ಮತ್ತು ಕಡ್ಡಿ ಕಟ್ಟುವುದು",
+          "start_day": 26,
+          "end_day": 50,
+          "icon": "🌿",
+          "description_en": "Vigorous lateral shoot development, canopy architecture training, and bamboo staking.",
+          "description_kn": "ಸಸಿಗಳ ಕವಲುಗಳ ಬೆಳವಣಿಗೆ, ಬಿದಿರಿನ ಕಡ್ಡಿಗಳಿಂದ ಸಸಿ ಕಟ್ಟುವುದು ಮತ್ತು ಹಂದರ ನಿರ್ವಹಣೆ.",
+          "tasks_en": [
+            "Erect bamboo stakes and GI wire trellising to support indeterminate/semi-determinate plants",
+            "Prune lower suckers touching the ground to promote air circulation and prevent early blight",
+            "Fertigate weekly splits of 19:19:19 and Calcium Nitrate through drip system"
+          ],
+          "tasks_kn": [
+            "ಬಿದಿರಿನ ಕಡ್ಡಿ ಮತ್ತು ಜಿಐ ತಂತಿ ಬಳಸಿ ಗಿಡಗಳನ್ನು ಕಟ್ಟಿ ಮಣ್ಣಿಗೆ ಬೀಳದಂತೆ ಆಸರೆ ನೀಡಿ",
+            "ಮಣ್ಣಿಗೆ ತಾಗುವ ಕೆಳಗಿನ ಅನಗತ್ಯ ಕವಲುಗಳನ್ನು ಕತ್ತರಿಸಿ ರೋಗ ಬರದಂತೆ ಗಾಳಿ ಆಡಲು ಬಿಡಿ",
+            "ಹನಿ ನೀರಾವರಿ ಮೂಲಕ ವಾರಕ್ಕೊಮ್ಮೆ 19:19:19 ಮತ್ತು ಕ್ಯಾಲ್ಸಿಯಂ ನೈಟ್ರೇಟ್ ಗೊಬ್ಬರ ನೀಡಿ"
+          ],
+          "key_observations_en": "Check for early blight concentric rings on lower leaves; scout for leaf miner trails.",
+          "key_observations_kn": "ಕೆಳಗಿನ ಎಲೆಗಳಲ್ಲಿ ಕಪ್ಪು ವೃತ್ತಾಕಾರದ ಮಚ್ಚೆ ರೋಗ ಅಥವಾ ಎಲೆ ಕೊರೆಯುವ ಹುಳುವಿನ ಗೆರೆಗಳನ್ನು ಗಮನಿಸಿ.",
+          "weather_sensitivity": {
+            "rain_favorable": false,
+            "drought_sensitive": true,
+            "action_on_rain_en": "High humidity triggers early blight; spray preventive Mancozeb @ 2 g/L.",
+            "action_on_rain_kn": "ಮಳೆಯಿಂದ ಮಚ್ಚೆ ರೋಗ ಬರದಂತೆ ಮುನ್ನೆಚ್ಚರಿಕೆಯಾಗಿ ಶಿಲೀಂಧ್ರನಾಶಕ ಸಿಂಪಡಿಸಿ."
+          },
+          "thumbnail": "public/images/stages/tomato_stage2_transplant.jpg",
+          "main_photo": {
+            "url": "public/images/stages/tomato_stage2_transplant.jpg",
+            "caption_en": "Staked commercial hybrid tomato crop on drip irrigation in Karnataka",
+            "caption_kn": "ಕಡ್ಡಿ ಕಟ್ಟಿ ಬೆಳೆಸಿದ ಸಮೃದ್ಧ ಹಸಿರು ಟೊಮೇಟೊ ಗಿಡಗಳು",
+            "source": "ICAR-IIHR Division of Vegetable Crops",
+            "source_url": "https://iihr.res.in"
+          },
+          "what_happens_en": "Lateral axillary branches proliferate rapidly. The main stem thickens and develops strong vascular bundles to bear heavy upcoming fruit loads.",
+          "what_happens_kn": "ಗಿಡವು ಸಮೃದ್ಧವಾಗಿ ಕವಲೊಡೆದು ದಪ್ಪನೆಯ ಕಾಂಡ ಪಡೆಯುತ್ತದೆ. ಹಣ್ಣುಗಳ ಭಾರವನ್ನು ಹೊರಲು ಗಿಡ ಸಜ್ಜಾಗುತ್ತದೆ.",
+          "animation_type": "vegetative_tillering",
+          "farmer_actions": {
+            "crop_care": {
+              "action_en": "Tie stems loosely to stakes with jute twine every 20 cm height.",
+              "action_kn": "ಪ್ರತಿ 20 ಸೆಂ.ಮೀ ಬೆಳವಣಿಗೆಗೆ ಗಿಡದ ಕಾಂಡವನ್ನು ಕಡ್ಡಿಗೆ ಕಟ್ಟುತ್ತಾ ಹೋಗಿ."
+            },
+            "water": {
+              "action_en": "Apply drip irrigation daily for 45 to 60 minutes based on soil moisture tensiometer.",
+              "action_kn": "ಹನಿ ನೀರಾವರಿ ಮೂಲಕ ಪ್ರತಿದಿನ 45-60 ನಿಮಿಷ ಹದವಾಗಿ ನೀರು ನೀಡಿ."
+            },
+            "weed": {
+              "action_en": "Hand weed furrow walkways between mulch beds.",
+              "action_kn": "ಮಲ್ಚಿಂಗ್ ಸಾಲುಗಳ ನಡುವಿನ ಜಾಗದಲ್ಲಿ ಕಳೆ ಕೀಳಿಸಿ."
+            },
+            "nutrients": {
+              "action_en": "Fertigate water-soluble 19:19:19 @ 3 kg/acre twice weekly through drip system.",
+              "action_kn": "ಹನಿ ನೀರಾವರಿ ಮೂಲಕ ವಾರಕ್ಕೆ 2 ಬಾರಿ ಎಕರೆಗೆ 3 ಕೆಜಿ 19:19:19 ಗೊಬ್ಬರ ನೀಡಿ.",
+              "npk_schedule": "Fertigation: 19:19:19 (3 kg/acre/application) + micronutrient foliar spray",
+              "timing_en": "Apply during active branching (Days 25–45).",
+              "timing_kn": "ಕವಲೊಡೆಯುವ 25-45 ದಿನಗಳಲ್ಲಿ ನೀಡಿ.",
+              "source": "ICAR-IIHR Fertigation Protocol"
+            },
+            "protection": {
+              "action_en": "Spray preventive Mancozeb 75 WP @ 2 g/L against early blight and Azadirachtin (neem oil) for leaf miner.",
+              "action_kn": "ಮಚ್ಚೆ ರೋಗ ತಡೆಗಟ್ಟಲು ಮ್ಯಾಂಕೋಜೆಬ್ 2 ಗ್ರಾಂ ಪ್ರತಿ ಲೀಟರ್ ನೀರಿಗೆ ಬೆರೆಸಿ ಸಿಂಪಡಿಸಿ."
+            }
+          },
+          "gallery_photos": [
+            {
+              "url": "public/images/stages/tomato_stage2_transplant.jpg",
+              "caption_en": "Bamboo staking in commercial tomato plot",
+              "caption_kn": "ಬಿದಿರಿನ ಕಡ್ಡಿ ಕಟ್ಟಿ ನಿರ್ವಹಿಸಿದ ತೋಟ",
+              "source": "ICAR-IIHR"
+            }
+          ],
+          "video": {
+            "title_en": "Staking, Training & Fertigation in Hybrid Tomato",
+            "title_kn": "ಟೊಮೇಟೊ ಬೆಳೆಯಲ್ಲಿ ಕಡ್ಡಿ ಕಟ್ಟುವುದು ಮತ್ತು ಹನಿ ಗೊಬ್ಬರ ನೀಡುವ ವಿಧಾನ",
+            "publisher": "ICAR-IIHR Bengaluru",
+            "thumbnail": "public/images/stages/tomato_stage2_transplant.jpg",
+            "url": "https://www.youtube.com/watch?v=kYJj8hB7m-s",
+            "duration": "15 min",
+            "source": "IIHR Extension"
+          },
+          "quick_tip_en": "Staking prevents fruits from touching wet soil, reducing fruit rot losses by up to 40%.",
+          "quick_tip_kn": "ಕಡ್ಡಿ ಕಟ್ಟಿ ಬೆಳೆಸಿದರೆ ಕಾಯಿ ಮಣ್ಣಿಗೆ ತಾಗದೆ ಕೊಳೆಯುವುದು ಶೇಕಡಾ 40ರಷ್ಟು ಕಡಿಮೆಯಾಗುತ್ತದೆ.",
+          "references": [
+            {
+              "title": "Protected & Staked Tomato Production",
+              "source": "ICAR-IIHR",
+              "type": "Package of Practices"
+            }
+          ]
+        },
+        {
+          "stage_id": "flowering_fruit_set",
+          "name_en": "Flowering & First Fruit Setting",
+          "name_kn": "ಹೂ ಬಿಡುವಿಕೆ ಮತ್ತು ಕಾಯಿ ಕಟ್ಟುವ ಹಂತ",
+          "start_day": 51,
+          "end_day": 75,
+          "icon": "🍅",
+          "description_en": "Yellow floral cluster development, bumblebee pollination, and initial green berry set.",
+          "description_kn": "ಹಳದಿ ಹೂ ಗೊಂಚಲುಗಳು ಅರಳಿ ಪುಟ್ಟ ಹಸಿರು ಕಾಯಿಗಳು ಕಟ್ಟುವ ಹಂತ.",
+          "tasks_en": [
+            "Foliar spray Boron (Solubor @ 1 g/L) to prevent flower drop and ensure fruit set",
+            "Maintain consistent soil moisture; fluctuations cause flower shedding",
+            "Scout for tomato fruit borer (Helicoverpa armigera) and pinworm (Tuta absoluta)"
+          ],
+          "tasks_kn": [
+            "ಹೂ ಉದುರುವುದು ತಡೆಯಲು ಬೋರಾನ್ (1 ಗ್ರಾಂ/ಲೀಟರ್) ಎಲೆಗಳ ಮೇಲೆ ಸಿಂಪಡಿಸಿ",
+            "ಮಣ್ಣಿನಲ್ಲಿ ಸಮನಾದ ತೇವಾಂಶ ಕಾಪಾಡಿ; ನೀರಿನ ಏರಿಳಿತವಾದರೆ ಹೂ ಉದುರುತ್ತದೆ",
+            "ಕಾಯಿ ಕೊರೆಯುವ ಕಾಯಿಕೊರಕ ಹುಳು ಮತ್ತು ಟೂಟಾ ಹುಳುಗಳ ಬಗ್ಗೆ ಎಚ್ಚರವಿರಲಿ"
+          ],
+          "key_observations_en": "Inspect yellow flower clusters; check for pinworm leaf mines and fruit entry holes.",
+          "key_observations_kn": "ಹೂ ಗೊಂಚಲುಗಳು ಉದುರುವುದನ್ನು ಮತ್ತು ಸಣ್ಣ ಕಾಯಿಗಳಲ್ಲಿ ಹುಳು ಕೊರೆದಿರುವುದನ್ನು ಗಮನಿಸಿ.",
+          "weather_sensitivity": {
+            "rain_favorable": false,
+            "drought_sensitive": true,
+            "action_on_rain_en": "Continuous rain washes away pollen and causes flower drop; spray systemic fungicide after rain.",
+            "action_on_rain_kn": "ಮಳೆಯಿಂದ ಹೂ ಉದುರದಂತೆ ಮತ್ತು ಕೊಳೆಯದಂತೆ ಮುನ್ನೆಚ್ಚರಿಕೆ ವಹಿಸಿ."
+          },
+          "thumbnail": "public/images/stages/tomato_stage3_veg.jpg",
+          "main_photo": {
+            "url": "public/images/stages/tomato_stage3_veg.jpg",
+            "caption_en": "Vibrant yellow tomato blossom cluster setting small green berries",
+            "caption_kn": "ಹಳದಿ ಹೂಗಳ ಗೊಂಚಲು ಮತ್ತು ಸಣ್ಣ ಹಸಿರು ಕಾಯಿ ಕಟ್ಟುವಿಕೆ",
+            "source": "ICAR-IIHR Protected Cultivation Unit",
+            "source_url": "https://iihr.res.in"
+          },
+          "what_happens_en": "Inflorescences produce 5 to 8 bright yellow blossoms. Anthers release pollen onto the stigma, and fertilized ovules swell into pea-sized green berries within 7 days.",
+          "what_happens_kn": "ಹಳದಿ ಹೂಗಳು ಅರಳಿ ಪರಾಗಸ್ಪರ್ಶವಾಗುತ್ತದೆ. 7 ದಿನಗಳಲ್ಲಿ ಹೂವಿನ ದಳ ಉದುರಿ ಪುಟ್ಟ ಬಟಾಣಿ ಕಾಳಿನ ಗಾತ್ರದ ಕಾಯಿಗಳು ಕಟ್ಟುತ್ತವೆ.",
+          "animation_type": "flowering_panicle",
+          "farmer_actions": {
+            "crop_care": {
+              "action_en": "Gently tap staking wires in morning to enhance self-pollination in greenhouse/sheltered plots.",
+              "action_kn": "ಮುಂಜಾನೆ ತಂತಿಯನ್ನು ಮೆಲ್ಲನೆ ಅಲುಗಾಡಿಸುವುದರಿಂದ ಪರಾಗಸ್ಪರ್ಶ ಉತ್ತಮಗೊಳ್ಳುತ್ತದೆ."
+            },
+            "water": {
+              "action_en": "Maintain strictly regular irrigation schedules; moisture fluctuation causes blossom drop.",
+              "action_kn": "ನಿಯಮಿತವಾಗಿ ನೀರು ನೀಡಿ; ಹೆಚ್ಚು ಒಣಗಿಸುವುದು ಅಥವಾ ಹೆಚ್ಚು ನೀರು ಕೊಡುವುದು ಎರಡೂ ಹೂ ಉದುರುವಿಕೆಗೆ ಕಾರಣ."
+            },
+            "weed": {
+              "action_en": "Keep field perimeter free of solanaceous weeds.",
+              "action_kn": "ತೋಟದ ಸುತ್ತಮುತ್ತ ಕಳೆ ಬೆಳೆಯದಂತೆ ಸ್ವಚ್ಛವಾಗಿಡಿ."
+            },
+            "nutrients": {
+              "action_en": "Fertigate with Calcium Nitrate (2 kg/acre) + Potassium Nitrate 13:0:45 (3 kg/acre) twice weekly.",
+              "action_kn": "ಕ್ಯಾಲ್ಸಿಯಂ ನೈಟ್ರೇಟ್ ಮತ್ತು 13:0:45 ಪೊಟ್ಯಾಷ್ ಗೊಬ್ಬರವನ್ನು ಹನಿ ನೀರಾವರಿ ಮೂಲಕ ನೀಡಿ.",
+              "npk_schedule": "Fertigation: 13:0:45 (3 kg/acre) + Calcium Nitrate (2 kg/acre)",
+              "timing_en": "Apply weekly during flowering and early fruit swell.",
+              "timing_kn": "ಹೂ ಮತ್ತು ಕಾಯಿ ಕಟ್ಟುವ ಹಂತದಲ್ಲಿ ವಾರಕ್ಕೊಮ್ಮೆ ನೀಡಿ.",
+              "source": "ICAR-IIHR Vegetable Division"
+            },
+            "protection": {
+              "action_en": "Install pheromone traps (5/acre) for Helicoverpa armigera and Tuta absoluta; spray Coragen @ 0.3 mL/L if needed.",
+              "action_kn": "ಕಾಯಿ ಕೊರೆಯುವ ಹುಳು ನಿಯಂತ್ರಿಸಲು ಮೋಹಕ ಬಲೆಗಳನ್ನು ಅಳವಡಿಸಿ."
+            }
+          },
+          "gallery_photos": [
+            {
+              "url": "public/images/stages/tomato_stage3_veg.jpg",
+              "caption_en": "Cluster of green tomato berries forming",
+              "caption_kn": "ಹಸಿರು ಕಾಯಿಗಳು ಕಟ್ಟುತ್ತಿರುವ ಗೊಂಚಲು",
+              "source": "ICAR-IIHR"
+            }
+          ],
+          "video": {
+            "title_en": "Pest & Disease Management during Tomato Flowering",
+            "title_kn": "ಟೊಮೇಟೊ ಹೂ ಮತ್ತು ಕಾಯಿ ಕಟ್ಟುವ ಹಂತದಲ್ಲಿ ರೋಗ-ಕೀಟ ನಿರ್ವಹಣೆ",
+            "publisher": "ICAR-IIHR Extension",
+            "thumbnail": "public/images/stages/tomato_stage3_veg.jpg",
+            "url": "https://www.youtube.com/watch?v=kYJj8hB7m-s",
+            "duration": "14 min",
+            "source": "IIHR Extension"
+          },
+          "quick_tip_en": "Spray Boron (Solubor 1 g/L) at 50% flowering; it drastically reduces blossom drop and fruit cracking.",
+          "quick_tip_kn": "ಹೂ ಬಿಡುವಾಗ ಬೋರಾನ್ ಸಿಂಪಡಿಸುವುದರಿಂದ ಹೂ ಉದುರುವುದು ಮತ್ತು ಕಾಯಿ ಸೀಳುವುದು ತಪ್ಪುತ್ತದೆ.",
+          "references": [
+            {
+              "title": "Micronutrient Management in Solanaceous Vegetables",
+              "source": "ICAR-IIHR",
+              "type": "Research Bulletin"
+            }
+          ]
+        },
+        {
+          "stage_id": "fruit_development_breaker",
+          "name_en": "Fruit Development & Breaker Stage",
+          "name_kn": "ಕಾಯಿ ದಪ್ಪಗಾಗುವ ಮತ್ತು ಬ್ರೇಕರ್ ಹಂತ",
+          "start_day": 76,
+          "end_day": 100,
+          "icon": "🍅",
+          "description_en": "Fruit enlargement, pulp accumulation, and color break from green to pinkish-orange.",
+          "description_kn": "ಕಾಯಿಗಳು ಗರಿಷ್ಠ ಗಾತ್ರಕ್ಕೆ ಬೆಳೆದು ಹಸಿರಿನಿಂದ ತಿಳಿ ಕೆಂಪು/ಕಿತ್ತಳೆ ಬಣ್ಣಕ್ಕೆ ತಿರುಗುವ ಹಂತ.",
+          "tasks_en": [
+            "Maintain uniform drip moisture to prevent Blossom End Rot (BER) caused by calcium stress",
+            "Fertigate Potassium Sulphate (SOP 0:0:50) to enhance fruit firmness, shelf life, and TSS (sugar)",
+            "Scout for fruit borer caterpillars boring into developing green fruits"
+          ],
+          "tasks_kn": [
+            "ಕಾಯಿ ಕೆಳಭಾಗ ಕೊಳೆಯುವುದನ್ನು (Blossom End Rot) ತಡೆಯಲು ಸಮನಾದ ನೀರು ಮತ್ತು ಕ್ಯಾಲ್ಸಿಯಂ ಒದಗಿಸಿ",
+            "ಹಣ್ಣಿನ ಗಡಸುತನ ಮತ್ತು ಬಣ್ಣ ಉತ್ತಮಗೊಳ್ಳಲು ಪೊಟ್ಯಾಷ್ ಗೊಬ್ಬರ (0:0:50) ನೀಡಿ",
+            "ಕಾಯಿಕೊರಕ ಹುಳುಗಳು ಕಾಯಿಯನ್ನು ಕೊರೆಯದಂತೆ ಎಚ್ಚರವಹಿಸಿ"
+          ],
+          "key_observations_en": "Inspect blossom end of fruits for black sunken lesions (calcium deficiency BER).",
+          "key_observations_kn": "ಕಾಯಿಯ ಕೆಳಭಾಗ ಕಪ್ಪಾಗಿ ಕೊಳೆಯುತ್ತಿದೆಯೇ (ಕ್ಯಾಲ್ಸಿಯಂ ಕೊರತೆ) ಎಂದು ಪರೀಕ್ಷಿಸಿ.",
+          "weather_sensitivity": {
+            "rain_favorable": false,
+            "drought_sensitive": true,
+            "action_on_rain_en": "Sudden heavy rain after dry spell causes fruit skin splitting/cracking.",
+            "action_on_rain_kn": "ಒಣಗಿದ ಮಣ್ಣಿಗೆ ದಿಢೀರ್ ಹೆಚ್ಚು ನೀರು ಅಥವಾ ಮಳೆಯಾದರೆ ಕಾಯಿ ಸೀಳುತ್ತದೆ."
+          },
+          "thumbnail": "public/images/stages/tomato_stage4_flower.jpg",
+          "main_photo": {
+            "url": "public/images/stages/tomato_stage4_flower.jpg",
+            "caption_en": "Heavily laden tomato vine with fruits ripening from green to breaker stage pink",
+            "caption_kn": "ಹಸಿರಿನಿಂದ ತಿಳಿ ಗುಲಾಬಿ ಬಣ್ಣಕ್ಕೆ ತಿರುಗುತ್ತಿರುವ ಬ್ರೇಕರ್ ಹಂತದ ಟೊಮೇಟೊ",
+            "source": "ICAR-IIHR Post Harvest Technology",
+            "source_url": "https://iihr.res.in"
+          },
+          "what_happens_en": "Chlorophyll breaks down as lycopene and beta-carotene synthesize rapidly. Flesh softens slightly as sugars (fructose/glucose) accumulate inside locular cavities.",
+          "what_happens_kn": "ಹಸಿರು ಬಣ್ಣ ಮಾಯವಾಗಿ ಲೈಕೋಪೀನ್ ವರ್ಣದ್ರವ್ಯ ಹೆಚ್ಚಾಗಿ ಕೆಂಪು ಬಣ್ಣಕ್ಕೆ ತಿರುಗುತ್ತದೆ. ಕಾಯಿಯಲ್ಲಿ ರಸ ತುಂಬಿ ಹಣ್ಣಾಗಲು ಆರಂಭವಾಗುತ್ತದೆ.",
+          "animation_type": "grain_filling",
+          "farmer_actions": {
+            "crop_care": {
+              "action_en": "Ensure bamboo stakes remain upright under heavy fruit load; retie loose branches.",
+              "action_kn": "ಕಾಯಿಗಳ ಭಾರಕ್ಕೆ ಕಡ್ಡಿಗಳು ಬಾಗದಂತೆ ಬಿಗಿಗೊಳಿಸಿ."
+            },
+            "water": {
+              "action_en": "Provide regular, uniform drip irrigation. Never allow soil to become bone dry between waterings.",
+              "action_kn": "ಮಣ್ಣು ಅತಿಯಾಗಿ ಒಣಗದಂತೆ ನಿಯಮಿತವಾಗಿ ಸಮನಾದ ನೀರು ನೀಡಿ."
+            },
+            "weed": {
+              "action_en": "Keep alleys clean.",
+              "action_kn": "ಸಾಲುಗಳ ಜಾಗವನ್ನು ಸ್ವಚ್ಛವಾಗಿಡಿ."
+            },
+            "nutrients": {
+              "action_en": "Fertigate Potassium Sulphate (0:0:50 @ 3 kg/acre) + Calcium Nitrate (2 kg/acre) twice weekly.",
+              "action_kn": "ವಾರಕ್ಕೆ 2 ಬಾರಿ ಪೊಟ್ಯಾಷಿಯಂ ಸಲ್ಫೇಟ್ (0:0:50) ಮತ್ತು ಕ್ಯಾಲ್ಸಿಯಂ ನೈಟ್ರೇಟ್ ಹನಿ ನೀರಾವರಿಯಲ್ಲಿ ನೀಡಿ.",
+              "npk_schedule": "SOP 0:0:50 (3 kg/acre) + Calcium Nitrate (2 kg/acre)",
+              "timing_en": "Fertigate throughout fruit sizing until harvest.",
+              "timing_kn": "ಕಾಯಿ ದಪ್ಪಗಾಗುವ ಹಂತದಲ್ಲಿ ನೀಡಿ.",
+              "source": "ICAR-IIHR"
+            },
+            "protection": {
+              "action_en": "Spray Chlorantraniliprole 18.5 SC @ 0.3 mL/L or spinosad @ 0.4 mL/L if fruit borer damage is noticed.",
+              "action_kn": "ಕಾಯಿಕೊರಕ ಹುಳು ಕಂಡರೆ ಸೂಕ್ತ ಕೀಟನಾಶಕ ಸಿಂಪಡಿಸಿ."
+            }
+          },
+          "gallery_photos": [
+            {
+              "url": "public/images/stages/tomato_stage4_flower.jpg",
+              "caption_en": "Tomato breaker stage harvest in Kolar",
+              "caption_kn": "ಬ್ರೇಕರ್ ಹಂತದಲ್ಲಿ ಕಟಾವಿಗೆ ಸಿದ್ಧವಾದ ಟೊಮೇಟೊ",
+              "source": "ICAR-IIHR"
+            }
+          ],
+          "video": {
+            "title_en": "Nutrient Balance & Blossom End Rot Prevention in Tomato",
+            "title_kn": "ಟೊಮೇಟೊದಲ್ಲಿ ಕಾಯಿ ಕೊಳೆ ರೋಗ ತಡೆಗಟ್ಟುವಿಕೆ ಮತ್ತು ಪೋಷಕಾಂಶ ನಿರ್ವಹಣೆ",
+            "publisher": "ICAR-IIHR Bengaluru",
+            "thumbnail": "public/images/stages/tomato_stage4_flower.jpg",
+            "url": "https://www.youtube.com/watch?v=kYJj8hB7m-s",
+            "duration": "12 min",
+            "source": "Extension Channel"
+          },
+          "quick_tip_en": "For distant transport, harvest at breaker stage (10-30% pink); fruits ripen safely in transit without squashing.",
+          "quick_tip_kn": "ದೂರದ ಮಾರುಕಟ್ಟೆಗೆ ಸಾಗಿಸಲು ಬ್ರೇಕರ್ (ಶೇ 10-30 ರಷ್ಟು ಕೆಂಪಾದಾಗ) ಹಂತದಲ್ಲಿ ಕೊಯ್ದರೆ ಹಣ್ಣು ಕೆಡುವುದಿಲ್ಲ.",
+          "references": [
+            {
+              "title": "Post-Harvest Handling of Commercial Tomato",
+              "source": "ICAR-IIHR",
+              "type": "Post-Harvest Bulletin"
+            }
+          ]
+        },
+        {
+          "stage_id": "harvesting_pickings",
+          "name_en": "Harvesting & Multiple Pickings",
+          "name_kn": "ಕೊಯ್ಲು ಮತ್ತು ಬಹು ಕಟಾವುಗಳ ಹಂತ",
+          "start_day": 101,
+          "end_day": 125,
+          "icon": "🍅",
+          "description_en": "Multiple manual pickings of firm ripe red fruits at 4 to 5 day intervals, sorting, and grading.",
+          "description_kn": "4-5 ದಿನಗಳ ಅಂತರದಲ್ಲಿ ಮಾಗಿದ ಗಟ್ಟಿ ಕೆಂಪು ಹಣ್ಣುಗಳ ಕೊಯ್ಲು, ವಿಂಗಡಣೆ ಮತ್ತು ಮಾರುಕಟ್ಟೆ ಸಾಗಣೆ.",
+          "tasks_en": [
+            "Harvest firm ripe fruits early in the morning before daytime temperatures rise",
+            "Grade harvested tomatoes into A, B, and C sizes; discard diseased fruits",
+            "Pack sorted fruits in ventilated plastic crates of 20 to 25 kg capacity"
+          ],
+          "tasks_kn": [
+            "ಬಿಸಿಲು ಏರುವ ಮುನ್ನ ಮುಂಜಾನೆಯ ತಂಪಾದ ವೇಳೆಯಲ್ಲಿ ಹಣ್ಣುಗಳನ್ನು ಕೀಳಿ",
+            "ಗಾತ್ರ ಮತ್ತು ಗುಣಮಟ್ಟಕ್ಕೆ ಅನುಗುಣವಾಗಿ ಎ, ಬಿ, ಸಿ ಗ್ರೇಡ್ ಮಾಡಿ",
+            "20-25 ಕೆಜಿ ಸಾಮರ್ಥ್ಯದ ಪ್ಲಾಸ್ಟಿಕ್ ಕ್ರೇಟುಗಳಲ್ಲಿ ತುಂಬಿ ಮಾರುಕಟ್ಟೆಗೆ ಸಾಗಿಸಿ"
+          ],
+          "key_observations_en": "Check fruit firmness; avoid picking soft overripe fruits that burst in transit.",
+          "key_observations_kn": "ಹಣ್ಣಿನ ಗಡಸುತನ ಪರೀಕ್ಷಿಸಿ; ಅತಿಯಾಗಿ ಮಾಗಿದ ಹಣ್ಣುಗಳನ್ನು ಪ್ರತ್ಯೇಕಿಸಿ.",
+          "weather_sensitivity": {
+            "rain_favorable": false,
+            "drought_sensitive": false,
+            "action_on_rain_en": "Harvest before heavy rains to prevent fruit cracking and fungal skin rot.",
+            "action_on_rain_kn": "ಮಳೆ ಬರುವ ಮುನ್ನ ಹಣ್ಣುಗಳನ್ನು ಕೊಯ್ದು ಒಣ ಜಾಗದಲ್ಲಿರಿಸಿ."
+          },
+          "thumbnail": "public/images/stages/tomato_stage5_harvest.jpg",
+          "main_photo": {
+            "url": "public/images/stages/tomato_stage5_harvest.jpg",
+            "caption_en": "Freshly harvested firm ripe red hybrid tomatoes packed in plastic crates in Kolar market",
+            "caption_kn": "ಕೋಲಾರ ಮಾರುಕಟ್ಟೆಗೆ ಸಿದ್ಧವಾದ ಪ್ಲಾಸ್ಟಿಕ್ ಕ್ರೇಟುಗಳಲ್ಲಿನ ತಾಜಾ ಟೊಮೇಟೊ ಹಣ್ಣುಗಳು",
+            "source": "ICAR-IIHR & University of Horticultural Sciences Bagalkot",
+            "source_url": "https://uhsbagalkot.edu.in"
+          },
+          "what_happens_en": "Fruits reach optimal total soluble solids (TSS 4.5-5.5° Brix) and deep red lycopene pigmentation. The plant continues to support secondary pickings over 3 to 4 weeks.",
+          "what_happens_kn": "ಹಣ್ಣುಗಳು ಸಂಪೂರ್ಣವಾಗಿ ಮಾಗಿ ರುಚಿ ಮತ್ತು ಗಾಢ ಕೆಂಪು ಬಣ್ಣ ಪಡೆಯುತ್ತವೆ. ಗಿಡವು ಮುಂದಿನ 3-4 ವಾರಗಳವರೆಗೆ ಕಟಾವು ನೀಡುತ್ತಿರುತ್ತದೆ.",
+          "animation_type": "harvest_curing",
+          "farmer_actions": {
+            "crop_care": {
+              "action_en": "Pick with pedicel intact to prolong shelf life; handle gently in crates.",
+              "action_kn": "ತೊಟ್ಟಿನೊಂದಿಗೆ ಕೊಯ್ದರೆ ಹಣ್ಣು ಹೆಚ್ಚು ದಿನ ಬಾಳಿಕೆ ಬರುತ್ತದೆ."
+            },
+            "water": {
+              "action_en": "Provide light drip irrigation between pickings to support remaining green fruits.",
+              "action_kn": "ಕಟಾವಿನ ನಂತರ ಉಳಿದ ಸಣ್ಣ ಕಾಯಿಗಳು ಬೆಳೆಯಲು ಲಘು ನೀರು ನೀಡಿ."
+            },
+            "weed": {
+              "action_en": "Keep alleys clear for easy picking access.",
+              "action_kn": "ಕೊಯ್ಲು ಸುಲಭವಾಗಲು ಸಾಲುಗಳನ್ನು ಸ್ವಚ್ಛವಾಗಿಡಿ."
+            },
+            "nutrients": {
+              "action_en": "Fertigate small doses of SOP (1 kg/acre) after major pickings to sustain plant vigor.",
+              "action_kn": "ಪ್ರಮುಖ ಕಟಾವಿನ ನಂತರ ಗಿಡ ಚೇತರಿಸಿಕೊಳ್ಳಲು ಲಘು ಪೊಟ್ಯಾಷ್ ಗೊಬ್ಬರ ನೀಡಿ.",
+              "npk_schedule": "Maintenance SOP 0:0:50 (1 kg/acre/week)",
+              "timing_en": "After each picking round.",
+              "timing_kn": "ಪ್ರತಿ ಕೊಯ್ಲಿನ ನಂತರ.",
+              "source": "ICAR-IIHR"
+            },
+            "protection": {
+              "action_en": "Observe pre-harvest withholding intervals (PHI) strictly before applying any crop protection.",
+              "action_kn": "ಕೊಯ್ಲಿನ ಸಮಯದಲ್ಲಿ ಕೀಟನಾಶಕಗಳ ಕಾಯುವಿಕೆ ಅವಧಿ (PHI) ನಿಯಮಗಳನ್ನು ಕಟ್ಟುನಿಟ್ಟಾಗಿ ಪಾಲಿಸಿ."
+            }
+          },
+          "gallery_photos": [
+            {
+              "url": "public/images/stages/tomato_stage5_harvest.jpg",
+              "caption_en": "Commercial crate sorting at farm gate",
+              "caption_kn": "ತೋಟದಲ್ಲಿ ಟೊಮೇಟೊ ಗ್ರೇಡಿಂಗ್",
+              "source": "UHS Bagalkot"
+            }
+          ],
+          "video": {
+            "title_en": "Harvesting, Grading & Marketing of Commercial Tomato",
+            "title_kn": "ಟೊಮೇಟೊ ಹಣ್ಣುಗಳ ಕೊಯ್ಲು, ಗ್ರೇಡಿಂಗ್ ಮತ್ತು ಮಾರುಕಟ್ಟೆ ತಂತ್ರಜ್ಞಾನ",
+            "publisher": "ICAR-IIHR Bengaluru",
+            "thumbnail": "public/images/stages/tomato_stage5_harvest.jpg",
+            "url": "https://www.youtube.com/watch?v=kYJj8hB7m-s",
+            "duration": "12 min",
+            "source": "IIHR Video"
+          },
+          "quick_tip_en": "Never drop tomatoes into crates; mechanical impact causes internal bruising that rots fruit in transit.",
+          "quick_tip_kn": "ಹಣ್ಣುಗಳನ್ನು ಕ್ರೇಟಿಗೆ ಎಸೆಯಬೇಡಿ; ಒಳಭಾಗಕ್ಕೆ ಪೆಟ್ಟಾದರೆ ಸಾಗಾಣಿಕೆಯಲ್ಲಿ ಕೊಳೆಯುತ್ತದೆ.",
+          "references": [
+            {
+              "title": "Tomato Post-Harvest Standards",
+              "source": "ICAR-IIHR",
+              "type": "Standard Operating Procedure"
+            }
+          ]
+        }
+      ]
+    },
+    "arecanut": {
+      "crop_id": "arecanut",
+      "crop_name_en": "Arecanut (Betel Nut)",
+      "crop_name_kn": "ಅಡಿಕೆ",
+      "lifecycle_type": "perennial",
+      "total_duration_days": 365,
+      "stages": [
+        {
+          "stage_id": "summer_irrigation",
+          "name_en": "Summer Irrigation & Basin Mulching",
+          "name_kn": "ಬೇಸಿಗೆ ನೀರಾವರಿ ಮತ್ತು ಬುಡದ ಹೊದಿಕೆ (ಜನೆವರಿ–ಏಪ್ರಿಲ್)",
+          "start_month": 1,
+          "end_month": 4,
+          "icon": "🌴",
+          "description_en": "Deep root basin irrigation (175-200 L/palm/week) and organic coir pith mulching to conserve moisture.",
+          "description_kn": "ಬೇಸಿಗೆಯಲ್ಲಿ ಬುಡಕ್ಕೆ ವಾರಕ್ಕೆ 175-200 ಲೀಟರ್ ನೀರು ಮತ್ತು ತೆಂಗಿನ ಸಿಪ್ಪೆ-ಕಳೆ ಹೊದಿಕೆ ನಿರ್ವಹಣೆ.",
+          "tasks_en": [
+            "Irrigate palms at 175 to 200 L/palm at 4 to 5 day intervals through micro-sprinklers or drip",
+            "Apply thick organic mulch (coir pith, dried leaves) in 1 m radius around palm base",
+            "Protect young palm trunks from sunburn by tying areca leaf sheaths on southwest side"
+          ],
+          "tasks_kn": [
+            "ವಾರಕ್ಕೆ 175-200 ಲೀಟರ್ ನೀರನ್ನು ಹನಿ ಅಥವಾ ಮೈಕ್ರೋ-ಸ್ಪ್ರಿಂಕ್ಲರ್ ಮೂಲಕ ಬುಡಕ್ಕೆ ನೀಡಿ",
+            "ಬುಡದ ಸುತ್ತ 1 ಮೀಟರ್ ವೃತ್ತದಲ್ಲಿ ತೆಂಗಿನ ಸಿಪ್ಪೆ, ಒಣ ಎಲೆಗಳ ಹೊದಿಕೆ ಹಾಕಿ",
+            "ಎಳೆಯ ಅಡಿಕೆ ಮರಗಳ ಕಾಂಡಕ್ಕೆ ಬಿಸಿಲಿನ ಝಳ ತಟ್ಟದಂತೆ ಅಡಿಕೆ ಹಾಳೆಗಳನ್ನು ಕಟ್ಟಿ"
+          ],
+          "key_observations_en": "Monitor soil moisture tension in root zone (0-50 cm); check for canopy yellowing.",
+          "key_observations_kn": "ಬುಡದ ತೇವಾಂಶ ಮತ್ತು ಬಿಸಿಲಿನ ಝಳದಿಂದ ಎಲೆಗಳು ಹಳದಿಯಾಗುತ್ತಿದೆಯೇ ಎಂದು ಗಮನಿಸಿ.",
+          "weather_sensitivity": {
+            "rain_favorable": true,
+            "drought_sensitive": true,
+            "action_on_rain_en": "Harvest occasional summer showers in contour trenches.",
+            "action_on_rain_kn": "ಬೇಸಿಗೆ ಮಳೆಯ ನೀರನ್ನು ಇಂಗು ಗುಂಡಿಗಳಲ್ಲಿ ಹಿಡಿದಿಟ್ಟುಕೊಳ್ಳಿ."
+          },
+          "thumbnail": "public/images/stages/arecanut_stage1_summer.jpg",
+          "main_photo": {
+            "url": "public/images/stages/arecanut_stage1_summer.jpg",
+            "caption_en": "Arecanut plantation basin with coir pith mulching and drip irrigation",
+            "caption_kn": "ಹನಿ ನೀರಾವರಿ ಮತ್ತು ತೆಂಗಿನ ಸಿಪ್ಪೆಯ ಹೊದಿಕೆಯಿರುವ ಅಡಿಕೆ ತೋಟದ ಬುಡ",
+            "source": "ICAR-CPCRI Regional Station Vittal",
+            "source_url": "https://cpcri.icar.gov.in"
+          },
+          "what_happens_en": "Palms transpire heavily during hot summer months. Deep roots draw moisture from the circular basin while the crown initiates new inflorescence buds.",
+          "what_happens_kn": "ಬೇಸಿಗೆಯ ತಾಪಕ್ಕೆ ಮಣ್ಣಿನ ತೇವಾಂಶ ವೇಗವಾಗಿ ಆವಿಯಾಗುತ್ತದೆ. ಬುಡದ ಬೇರುಗಳು ನೀರನ್ನು ಹೀರಿಕೊಂಡು ಮರದ ಒಳಗೆ ಹೊಸ ಗೊಂಚಲು ಮೂಡಲು ಶಕ್ತಿ ನೀಡುತ್ತವೆ.",
+          "animation_type": "irrigation_root",
+          "farmer_actions": {
+            "crop_care": {
+              "action_en": "Cover palm trunk southwest side with areca leaf sheaths to prevent sun scorching.",
+              "action_kn": "ನೈಋತ್ಯ ಬದಿಯ ಬಿಸಿಲಿನಿಂದ ಕಾಂಡ ಸೀಳದಂತೆ ಅಡಿಕೆ ಹಾಳೆ ಕಟ್ಟಿ."
+            },
+            "water": {
+              "action_en": "Supply 175 to 200 litres water per palm per week. Maintain drip emitters clean.",
+              "action_kn": "ಪ್ರತಿ ಮರಕ್ಕೆ ವಾರಕ್ಕೆ 175-200 ಲೀಟರ್ ನೀರು ಒದಗಿಸಿ."
+            },
+            "weed": {
+              "action_en": "Slash weeds and lay them as mulch around palm basins.",
+              "action_kn": "ಕಳೆಗಳನ್ನು ಕತ್ತರಿಸಿ ಬುಡಕ್ಕೆ ಹೊದಿಕೆಯಾಗಿ ಬಳಸಿ."
+            },
+            "nutrients": {
+              "action_en": "No chemical fertilizer in dry soil. Apply well-decomposed FYM (12 kg/palm) under mulch if moist.",
+              "action_kn": "ಒಣ ಮಣ್ಣಿಗೆ ರಾಸಾಯನಿಕ ಗೊಬ್ಬರ ಬೇಡ; ಕೊಟ್ಟಿಗೆ ಗೊಬ್ಬರವನ್ನು ಬುಡಕ್ಕೆ ನೀಡಬಹುದು.",
+              "npk_schedule": "ICAR-CPCRI Annual Recommendation: 100:40:140 g N:P₂O₅:K₂O per palm/year",
+              "timing_en": "Chemical fertilizers are withheld during dry summer; applied in pre and post-monsoon.",
+              "timing_kn": "ಬೇಸಿಗೆಯಲ್ಲಿ ರಾಸಾಯನಿಕ ಗೊಬ್ಬರ ನೀಡಬಾರದು; ಮುಂಗಾರು ಪೂರ್ವ ಮತ್ತು ನಂತರ ನೀಡಬೇಕು.",
+              "source": "ICAR-CPCRI Kasaragod"
+            },
+            "protection": {
+              "action_en": "Scout for white mites (Oligonychus indicus) on lower leaves; spray wettable sulphur @ 3 g/L if severe.",
+              "action_kn": "ಬಿಳಿ ನುಸಿ ಹುಳುವಿನ ಬಾಧೆ ಕಂಡರೆ ಗಂಧಕದ ಪುಡಿ (3 ಗ್ರಾಂ/ಲೀಟರ್) ಸಿಂಪಡಿಸಿ."
+            }
+          },
+          "gallery_photos": [
+            {
+              "url": "public/images/stages/arecanut_stage1_summer.jpg",
+              "caption_en": "Drip irrigated arecanut plantation in Shivamogga",
+              "caption_kn": "ಶಿವಮೊಗ್ಗದಲ್ಲಿ ಹನಿ ನೀರಾವರಿ ಅಡಿಕೆ ತೋಟ",
+              "source": "ICAR-CPCRI"
+            }
+          ],
+          "video": {
+            "title_en": "Summer Irrigation & Basin Moisture Conservation in Arecanut",
+            "title_kn": "ಅಡಿಕೆ ತೋಟದಲ್ಲಿ ಬೇಸಿಗೆ ನೀರಾವರಿ ಮತ್ತು ಬುಡದ ತೇವಾಂಶ ಸಂರಕ್ಷಣೆ",
+            "publisher": "ICAR-CPCRI Kasaragod",
+            "thumbnail": "public/images/stages/arecanut_stage1_summer.jpg",
+            "url": "https://www.youtube.com/watch?v=kYJj8hB7m-s",
+            "duration": "16 min",
+            "source": "CPCRI Official Video"
+          },
+          "quick_tip_en": "Organic mulching reduces irrigation water requirement by up to 35% and suppresses weed emergence.",
+          "quick_tip_kn": "ಬುಡಕ್ಕೆ ಸಾವಯವ ಹೊದಿಕೆ ಹಾಕುವುದರಿಂದ ಶೇಕಡಾ 35ರಷ್ಟು ನೀರು ಉಳಿತಾಯವಾಗುತ್ತದೆ ಮತ್ತು ಕಳೆ ನಿಯಂತ್ರಣವಾಗುತ್ತದೆ.",
+          "references": [
+            {
+              "title": "Arecanut Water Management and Micro-irrigation Guide",
+              "source": "ICAR-CPCRI",
+              "type": "CPCRI Extension Bulletin"
+            }
+          ]
+        },
+        {
+          "stage_id": "pre_monsoon_drainage",
+          "name_en": "Pre-Monsoon Drainage & First Bordeaux Spray",
+          "name_kn": "ಮುಂಗಾರು ಪೂರ್ವ ಬಸಿಗಾಲುವೆ ಮತ್ತು ಮೊದಲ ಸಿಂಪಡಣೆ (ಮೇ–ಜೂನ್)",
+          "start_month": 5,
+          "end_month": 6,
+          "icon": "🌴",
+          "description_en": "Clearing inter-row drainage trenches, applying first split RDF, and spraying 1% Bordeaux mixture.",
+          "description_kn": "ಬಸಿಗಾಲುವೆಗಳ ಸ್ವಚ್ಛತೆ, ಮೊದಲ ಕಂತಿನ ಗೊಬ್ಬರ ಮತ್ತು ಶೇ 1ರ ಬೋರ್ಡೋ ದ್ರಾವಣ ಸಿಂಪಡಣೆ.",
+          "tasks_en": [
+            "Clean and deepen drainage channels between palm rows (50 cm depth) to evacuate heavy rains",
+            "Apply 1st split fertilizer (33 g N, 40 g P₂O₅, 45 g K₂O per palm) in circular basin 1 m from trunk",
+            "Spray 1% Bordeaux mixture on all nut bunches before onset of southwest monsoon"
+          ],
+          "tasks_kn": [
+            "ಮಳೆ ನೀರು ಸುಲಭವಾಗಿ ಹರಿದುಹೋಗಲು ಸಾಲುಗಳ ನಡುವಿನ ಬಸಿಗಾಲುವೆಗಳನ್ನು ಆಳವಾಗಿ ಸ್ವಚ್ಛಗೊಳಿಸಿ",
+            "ಪ್ರತಿ ಮರಕ್ಕೆ ಮೊದಲ ಕಂತಿನ ಗೊಬ್ಬರ (33 ಗ್ರಾಂ ಸಾರಜನಕ, 40 ಗ್ರಾಂ ರಂಜಕ, 45 ಗ್ರಾಂ ಪೊಟ್ಯಾಷ್) ನೀಡಿ",
+            "ಮುಂಗಾರು ಮಳೆ ಆರಂಭವಾಗುವ ಮುನ್ನ ಎಲ್ಲಾ ಅಡಿಕೆ ಗೊಂಚಲುಗಳಿಗೆ ಶೇ 1ರ ಬೋರ್ಡೋ ದ್ರಾವಣ ಸಿಂಪಡಿಸಿ"
+          ],
+          "key_observations_en": "Ensure Bordeaux mixture is freshly prepared and pH tested with a clean iron nail.",
+          "key_observations_kn": "ಬೋರ್ಡೋ ದ್ರಾವಣವನ್ನು ಹೊಸದಾಗಿ ತಯಾರಿಸಿ ತುಕ್ಕು ಹಿಡಿಯದ ಕಬ್ಬಿಣದ ಮೊಳೆಯಿಂದ ಪರೀಕ್ಷಿಸಿ.",
+          "weather_sensitivity": {
+            "rain_favorable": true,
+            "drought_sensitive": false,
+            "action_on_rain_en": "Complete bunch spray immediately before heavy southwest monsoon breaks.",
+            "action_on_rain_kn": "ಮುಂಗಾರು ಮಳೆ ಬಿರುಸಾಗುವ ಮುನ್ನವೇ ಗೊಂಚಲುಗಳಿಗೆ ಸಿಂಪಡಣೆ ಪೂರ್ಣಗೊಳಿಸಿ."
+          },
+          "thumbnail": "public/images/stages/arecanut_stage2_premonsoon.jpg",
+          "main_photo": {
+            "url": "public/images/stages/arecanut_stage2_premonsoon.jpg",
+            "caption_en": "Pre-monsoon drainage trenches and canopy management in areca palm garden",
+            "caption_kn": "ಮುಂಗಾರು ಪೂರ್ವ ಬಸಿಗಾಲುವೆ ನಿರ್ವಹಣೆ ಮತ್ತು ತೋಟದ ಸ್ವಚ್ಛತೆ",
+            "source": "ICAR-CPCRI Crop Protection Division",
+            "source_url": "https://cpcri.icar.gov.in"
+          },
+          "what_happens_en": "Pre-monsoon showers stimulate active root flushing. Inflorescences complete button set and develop into tender marble-sized green nuts.",
+          "what_happens_kn": "ಮುಂಗಾರು ಪೂರ್ವ ಮಳೆಯಿಂದ ಹೊಸ ಬಿಳಿ ಬೇರುಗಳು ಹುಟ್ಟುತ್ತವೆ. ಗೊಂಚಲುಗಳಲ್ಲಿ ಸಣ್ಣ ಕಾಯಿಗಳು ಗಟ್ಟಿಯಾಗಿ ಬೆಳೆಯಲು ಆರಂಭಿಸುತ್ತವೆ.",
+          "animation_type": "flowering_panicle",
+          "farmer_actions": {
+            "crop_care": {
+              "action_en": "Open circular basin (15-20 cm deep, 75-100 cm radius) around each palm.",
+              "action_kn": "ಮರದ ಬುಡದಿಂದ 1 ಮೀಟರ್ ದೂರದಲ್ಲಿ ವೃತ್ತಾಕಾರದ ಚರಂಡಿ ತೆರೆಯಿರಿ."
+            },
+            "water": {
+              "action_en": "Transition from irrigation to drainage. Ensure all trenches have proper gradient outflow.",
+              "action_kn": "ನೀರಾವರಿ ನಿಲ್ಲಿಸಿ; ನೀರು ಸರಾಗವಾಗಿ ಹರಿಯಲು ಬಸಿಗಾಲುವೆಗಳನ್ನು ಸರಿಪಡಿಸಿ."
+            },
+            "weed": {
+              "action_en": "Sow sunnhemp or daincha green manure seeds in interspaces with early rains.",
+              "action_kn": "ಸಾಲುಗಳ ನಡುವೆ ಸೆಣಬು ಅಥವಾ ಡಯಾಂಚಾ ಹಸಿರೆಲೆ ಗೊಬ್ಬರದ ಬೀಜ ಬಿತ್ತಿ."
+            },
+            "nutrients": {
+              "action_en": "Apply 1st split RDF: 33 g N (75 g Urea) + 40 g P₂O₅ (250 g Rock phosphate) + 45 g K₂O (75 g MOP) per palm.",
+              "action_kn": "ಪ್ರತಿ ಮರಕ್ಕೆ 1ನೇ ಕಂತಿನ ರಸಗೊಬ್ಬರ (75 ಗ್ರಾಂ ಯೂರಿಯಾ + 250 ಗ್ರಾಂ ರಾಕ್ ಫಾಸ್ಫೇಟ್ + 75 ಗ್ರಾಂ ಎಂಒಪಿ) ನೀಡಿ.",
+              "npk_schedule": "First Split RDF: 33 g N + 40 g P₂O₅ + 45 g K₂O per bearing palm",
+              "timing_en": "Apply with pre-monsoon showers in May-June.",
+              "timing_kn": "ಮೇ-ಜೂನ್ ತಿಂಗಳಲ್ಲಿ ಮುಂಗಾರು ಪೂರ್ವ ಮಳೆಯ ನಂತರ ನೀಡಿ.",
+              "source": "ICAR-CPCRI Kasaragod"
+            },
+            "protection": {
+              "action_en": "Spray 1% Bordeaux mixture on all bunches before monsoon breaks against Kole Roga (Phytophthora meadii).",
+              "action_kn": "ಕೊಳೆ ರೋಗ ತಡೆಗಟ್ಟಲು ಮುಂಗಾರು ಮುನ್ನ ಶೇ 1ರ ಬೋರ್ಡೋ ದ್ರಾವಣವನ್ನು ಎಲ್ಲಾ ಗೊಂಚಲುಗಳಿಗೆ ಸಿಂಪಡಿಸಿ."
+            }
+          },
+          "gallery_photos": [
+            {
+              "url": "public/images/stages/arecanut_stage2_premonsoon.jpg",
+              "caption_en": "Inter-row drainage in Malnad areca garden",
+              "caption_kn": "ಮಲೆನಾಡಿನ ಅಡಿಕೆ ತೋಟದಲ್ಲಿ ಬಸಿಗಾಲುವೆಗಳು",
+              "source": "ICAR-CPCRI"
+            }
+          ],
+          "video": {
+            "title_en": "Preparation and Spraying of 1% Bordeaux Mixture in Arecanut",
+            "title_kn": "ಅಡಿಕೆ ಬೆಳೆಯಲ್ಲಿ ಶೇ 1ರ ಬೋರ್ಡೋ ದ್ರಾವಣ ತಯಾರಿಕೆ ಮತ್ತು ಸಿಂಪಡಣೆ",
+            "publisher": "ICAR-CPCRI Regional Station Vittal",
+            "thumbnail": "public/images/stages/arecanut_stage2_premonsoon.jpg",
+            "url": "https://www.youtube.com/watch?v=kYJj8hB7m-s",
+            "duration": "18 min",
+            "source": "CPCRI Official Channel"
+          },
+          "quick_tip_en": "Always test Bordeaux mixture with a clean iron knife; if copper coats the blade, add more lime to neutralize acidity.",
+          "quick_tip_kn": "ಬೋರ್ಡೋ ದ್ರಾವಣವನ್ನು ಕಬ್ಬಿಣದ ಚಾಕುವಿನಿಂದ ಪರೀಕ್ಷಿಸಿ; ತಾಮ್ರದ ಬಣ್ಣ ಬಂದರೆ ಮತ್ತಷ್ಟು ಸುಣ್ಣ ಸೇರಿಸಿ ಸಮತೋಲನಗೊಳಿಸಿ.",
+          "references": [
+            {
+              "title": "Bordeaux Mixture Preparation Manual",
+              "source": "ICAR-CPCRI",
+              "type": "Extension Bulletin"
+            }
+          ]
+        },
+        {
+          "stage_id": "monsoon_kole_roga",
+          "name_en": "Monsoon Management & Second Spray / Polythene Bagging",
+          "name_kn": "ಮಳೆಗಾಲದ ಕೊಳೆ ರೋಗ ನಿರ್ವಹಣೆ (ಜುಲೈ–ಆಗಸ್ಟ್)",
+          "start_month": 7,
+          "end_month": 8,
+          "icon": "🌴",
+          "description_en": "Continuous heavy monsoon drainage, second fungicide spray, and polythene bunch covering.",
+          "description_kn": "ನಿರಂತರ ಮಳೆಗಾಲದಲ್ಲಿ ನೀರು ನಿಲ್ಲದಂತೆ ಬಸಿದು ಕಳುಹಿಸುವುದು ಮತ್ತು ಗೊಂಚಲುಗಳಿಗೆ ಚೀಲ ಕಟ್ಟುವುದು.",
+          "tasks_en": [
+            "Monitor water drainage continuously; prevent root water stagnation at all costs",
+            "Cover bunches with 100-gauge non-woven or polythene bags, or give 2nd Bordeaux spray during rain break",
+            "Collect and destroy fallen infected rotting nuts to eliminate Phytophthora inoculum"
+          ],
+          "tasks_kn": [
+            "ಬೇರಿನ ಬುಡದಲ್ಲಿ ನೀರು ನಿಲ್ಲದಂತೆ ಬಸಿಗಾಲುವೆಗಳನ್ನು ನಿರಂತರವಾಗಿ ಪರಿಶೀಲಿಸಿ",
+            "ಮಳೆ ಬಿಡುವು ನೀಡಿದಾಗ ಗೊಂಚಲುಗಳಿಗೆ ಪ್ಲಾಸ್ಟಿಕ್ ಚೀಲ ಕಟ್ಟಿ ಅಥವಾ 2ನೇ ಬಾರಿ ಬೋರ್ಡೋ ದ್ರಾವಣ ಸಿಂಪಡಿಸಿ",
+            "ನೆಲಕ್ಕೆ ಬಿದ್ದ ಕೊಳೆತ ಅಡಿಕೆಗಳನ್ನು ಆರಿಸಿ ನಾಶಪಡಿಸಿ ರೋಗ ಹರಡುವುದನ್ನು ತಡೆಯಿರಿ"
+          ],
+          "key_observations_en": "Inspect fallen button nuts for dark water-soaked rot lesions and white fungal growth.",
+          "key_observations_kn": "ಉದುರಿದ ಕಾಯಿಗಳಲ್ಲಿ ಕಪ್ಪು ಮಚ್ಚೆ ಅಥವಾ ಬಿಳಿ ಬೂಸ್ಟ್ ಲಕ್ಷಣಗಳನ್ನು ಪರಿಶೀಲಿಸಿ.",
+          "weather_sensitivity": {
+            "rain_favorable": false,
+            "drought_sensitive": false,
+            "action_on_rain_en": "Heavy continuous rains spread Phytophthora zoospores; ensure bunches remain protected.",
+            "action_on_rain_kn": "ಭಾರೀ ಮಳೆಯಿಂದ ಶಿಲೀಂಧ್ರ ಹರಡುವುದರಿಂದ ಗೊಂಚಲುಗಳ ರಕ್ಷಣೆಗೆ ಹೆಚ್ಚಿನ ಆದ್ಯತೆ ನೀಡಿ."
+          },
+          "thumbnail": "public/images/stages/arecanut_stage3_monsoon.jpg",
+          "main_photo": {
+            "url": "public/images/stages/arecanut_stage3_monsoon.jpg",
+            "caption_en": "Monsoon arecanut bunch protection using polythene covering bags",
+            "caption_kn": "ಮಳೆಗಾಲದ ಕೊಳೆ ರೋಗ ತಡೆಯಲು ಅಡಿಕೆ ಗೊಂಚಲುಗಳಿಗೆ ಚೀಲ ಕಟ್ಟುವ ವಿಧಾನ",
+            "source": "ICAR-CPCRI Kannada Krishi Dairy",
+            "source_url": "https://cpcri.icar.gov.in"
+          },
+          "what_happens_en": "High humidity and continuous rain create ideal conditions for Phytophthora meadii spores to attack nut stalk joints, causing massive premature fruit shedding (Kole Roga).",
+          "what_happens_kn": "ನಿರಂತರ ಮಳೆ ಮತ್ತು ತೇವಾಂಶದಿಂದ ಶಿಲೀಂಧ್ರವು ಕಾಯಿಯ ತೊಟ್ಟಿಗೆ ಆವರಿಸಿ ಕಾಯಿಗಳು ಕೊಳೆತು ಉದುರುತ್ತವೆ (ಕೊಳೆ ರೋಗ). ರಕ್ಷಣಾ ಕ್ರಮ ಅತಿ ಮುಖ್ಯ.",
+          "animation_type": "irrigation_root",
+          "farmer_actions": {
+            "crop_care": {
+              "action_en": "Fasten 100-gauge polythene bags over bunches before heavy July downpours.",
+              "action_kn": "ಜುಲೈ ಮಳೆ ಬಿರುಸಾಗುವ ಮುನ್ನ ಗೊಂಚಲುಗಳಿಗೆ 100 ಗೇಜ್ ಪ್ಲಾಸ್ಟಿಕ್ ಚೀಲಗಳನ್ನು ಕಟ್ಟಿ."
+            },
+            "water": {
+              "action_en": "Keep drainage trenches clear; stagnant water causes root asphyxiation and collar rot.",
+              "action_kn": "ಬಸಿಗಾಲುವೆಗಳಲ್ಲಿ ನೀರು ಸರಾಗವಾಗಿ ಹರಿಯಲು ಬಿಡಿ; ನೀರು ನಿಂತರೆ ಬೇರು ಕೊಳೆಯುತ್ತದೆ."
+            },
+            "weed": {
+              "action_en": "Incorporate grown green manure crop (sunnhemp) into interspaces.",
+              "action_kn": "ಬೆಳೆದ ಹಸಿರೆಲೆ ಗೊಬ್ಬರವನ್ನು ಕೊಯ್ದು ಮಣ್ಣಿಗೆ ಸೇರಿಸಿ."
+            },
+            "nutrients": {
+              "action_en": "Do not apply chemical fertilizers during peak torrential monsoon rains (nutrient leaching).",
+              "action_kn": "ಭಾರೀ ಮಳೆ ಸುರಿಯುವಾಗ ಯಾವುದೇ ರಾಸಾಯನಿಕ ಗೊಬ್ಬರ ನೀಡಬೇಡಿ; ಕೊಚ್ಚಿಹೋಗುತ್ತದೆ.",
+              "npk_schedule": "None during peak torrential monsoon",
+              "timing_en": "Withhold fertilizers until monsoon subsides in September.",
+              "timing_kn": "ಸೆಪ್ಟೆಂಬರ್‌ನಲ್ಲಿ ಮಳೆ ಕಡಿಮೆಯಾದ ನಂತರ 2ನೇ ಕಂತು ನೀಡಿ.",
+              "source": "ICAR-CPCRI"
+            },
+            "protection": {
+              "action_en": "Give 2nd round of 1% Bordeaux mixture spray during mid-monsoon rain break (40-45 days after 1st spray).",
+              "action_kn": "ಮೊದಲ ಸಿಂಪಡಣೆಯ 40-45 ದಿನಗಳ ನಂತರ ಮಳೆ ಬಿಡುವು ನೀಡಿದಾಗ 2ನೇ ಬಾರಿ ಬೋರ್ಡೋ ಸಿಂಪಡಿಸಿ."
+            }
+          },
+          "gallery_photos": [
+            {
+              "url": "public/images/stages/arecanut_stage3_monsoon.jpg",
+              "caption_en": "Polythene bagged arecanut bunches in Sirsi",
+              "caption_kn": "ಶಿರಸಿ ತೋಟದಲ್ಲಿ ಪ್ಲಾಸ್ಟಿಕ್ ಚೀಲ ಕಟ್ಟಿದ ಅಡಿಕೆ ಗೊಂಚಲು",
+              "source": "UAS Dharwad"
+            }
+          ],
+          "video": {
+            "title_en": "Polythene Bagging Method for 100% Kole Roga Protection",
+            "title_kn": "ಅಡಿಕೆ ಕೊಳೆ ರೋಗಕ್ಕೆ ಪ್ಲಾಸ್ಟಿಕ್ ಚೀಲ ಕಟ್ಟುವ ಅತ್ಯುತ್ತಮ ತಂತ್ರಜ್ಞಾನ",
+            "publisher": "ICAR-CPCRI Regional Station Vittal",
+            "thumbnail": "public/images/stages/arecanut_stage3_monsoon.jpg",
+            "url": "https://www.youtube.com/watch?v=kYJj8hB7m-s",
+            "duration": "15 min",
+            "source": "CPCRI Video"
+          },
+          "quick_tip_en": "Polythene bunch covering provides 100% rain protection against fruit rot without repeated chemical sprays.",
+          "quick_tip_kn": "ಪ್ಲಾಸ್ಟಿಕ್ ಚೀಲ ಕಟ್ಟುವುದರಿಂದ ಮಳೆ ಎಷ್ಟು ಬಂದರೂ ಕಾಯಿ ಕೊಳೆಯುವುದಿಲ್ಲ; ಪದೇಪದೇ ಔಷಧ ಸಿಂಪಡಣೆ ಬೇಕಾಗಿಲ್ಲ.",
+          "references": [
+            {
+              "title": "Integrated Management of Fruit Rot in Arecanut",
+              "source": "ICAR-CPCRI",
+              "type": "Research Bulletin"
+            }
+          ]
+        },
+        {
+          "stage_id": "post_monsoon_fertilizer",
+          "name_en": "Post-Monsoon Fertilizer Application",
+          "name_kn": "ಮುಂಗಾರು ನಂತರದ ರಸಗೊಬ್ಬರ ಮತ್ತು ಕೊಟ್ಟಿಗೆ ಗೊಬ್ಬರ (ಸೆಪ್ಟೆಂಬರ್–ಅಕ್ಟೋಬರ್)",
+          "start_month": 9,
+          "end_month": 10,
+          "icon": "🌴",
+          "description_en": "Applying 2/3rd annual RDF plus FYM into circular root basin after monsoon recedes.",
+          "description_kn": "ಮಳೆ ಕಡಿಮೆಯಾದ ನಂತರ 2ನೇ ಕಂತಿನ ರಸಗೊಬ್ಬರ (ಶೇ 67) ಮತ್ತು ಕೊಟ್ಟಿಗೆ ಗೊಬ್ಬರವನ್ನು ಬುಡಕ್ಕೆ ಹಾಕುವುದು.",
+          "tasks_en": [
+            "Open circular basin (15 cm depth, 75 cm radius) around each palm base",
+            "Apply 2nd split RDF (67 g N, 0 g P, 95 g K₂O per palm) along with 12 kg well-decomposed FYM",
+            "Cover fertilizer with green manure foliage or compost, then level soil"
+          ],
+          "tasks_kn": [
+            "ಪ್ರತಿ ಮರದ ಬುಡದಲ್ಲಿ 75 ಸೆಂ.ಮೀ ದೂರದಲ್ಲಿ 15 ಸೆಂ.ಮೀ ಆಳದ ಚರಂಡಿ ತೆರೆಯಿರಿ",
+            "2ನೇ ಕಂತಿನ ಗೊಬ್ಬರ (67 ಗ್ರಾಂ ಸಾರಜನಕ + 95 ಗ್ರಾಂ ಪೊಟ್ಯಾಷ್) ಮತ್ತು 12 ಕೆಜಿ ಕೊಟ್ಟಿಗೆ ಗೊಬ್ಬರ ನೀಡಿ",
+            "ಗೊಬ್ಬರವನ್ನು ಹಸಿರೆಲೆ ಅಥವಾ ಮಣ್ಣಿನಿಂದ ಮುಚ್ಚಿ ಹದವಾಗಿ ಸಮತಟ್ಟು ಮಾಡಿ"
+          ],
+          "key_observations_en": "Check soil moisture before applying fertilizer; apply when soil is moist but not saturated.",
+          "key_observations_kn": "ಮಣ್ಣಿನಲ್ಲಿ ಹದವಾದ ತೇವಾಂಶವಿರುವಾಗ ಮಾತ್ರ ಗೊಬ್ಬರ ನೀಡಿ.",
+          "weather_sensitivity": {
+            "rain_favorable": true,
+            "drought_sensitive": false,
+            "action_on_rain_en": "Post-monsoon showers dissolve and integrate fertilizers into root zone.",
+            "action_on_rain_kn": "ಹಿಂಗಾರು ಮಳೆಯಿಂದ ಗೊಬ್ಬರ ಕರಗಿ ಬೇರಿಗೆ ಸುಲಭವಾಗಿ ದೊರೆಯುತ್ತದೆ."
+          },
+          "thumbnail": "public/images/stages/arecanut_stage4_fertilizer.jpg",
+          "main_photo": {
+            "url": "public/images/stages/arecanut_stage4_fertilizer.jpg",
+            "caption_en": "Circular root basin application of organic compost and post-monsoon NPK",
+            "caption_kn": "ಅಡಿಕೆ ಮರದ ಬುಡದ ಚರಂಡಿಗೆ ಕೊಟ್ಟಿಗೆ ಗೊಬ್ಬರ ಮತ್ತು ರಸಗೊಬ್ಬರ ನೀಡುವಿಕೆ",
+            "source": "ICAR-CPCRI Regional Station Vittal",
+            "source_url": "https://cpcri.icar.gov.in"
+          },
+          "what_happens_en": "Root absorption spikes as soil warms up after the monsoon. Nut development accelerates, and the palm stores carbohydrates in stem tissues for upcoming nut maturation.",
+          "what_happens_kn": "ಮಳೆಯ ನಂತರ ಮಣ್ಣು ಬೆಚ್ಚಗಾಗುತ್ತಿದ್ದಂತೆ ಬೇರುಗಳು ಚುರುಕಾಗಿ ಪೋಷಕಾಂಶಗಳನ್ನು ಹೀರುತ್ತವೆ. ಕಾಯಿಗಳು ಗಾತ್ರದಲ್ಲಿ ಬೆಳೆದು ತೂಕ ಪಡೆಯುತ್ತವೆ.",
+          "animation_type": "irrigation_root",
+          "farmer_actions": {
+            "crop_care": {
+              "action_en": "Fork the soil lightly inside the 1 m basin to break surface crust and incorporate organic matter.",
+              "action_kn": "ಬುಡದ ಮಣ್ಣನ್ನು ಲಘುವಾಗಿ ಸಡಿಲಗೊಳಿಸಿ ಗೊಬ್ಬರವನ್ನು ಮಣ್ಣಿಗೆ ಸೇರಿಸಿ."
+            },
+            "water": {
+              "action_en": "Monitor recession of monsoon. Resume light basin irrigation if dry spell exceeds 12 days in late October.",
+              "action_kn": "ಅಕ್ಟೋಬರ್ ಕೊನೆಯಲ್ಲಿ ಮಳೆ ನಿಂತು ಒಣಹವೆಯಾದರೆ ಲಘು ನೀರು ನೀಡಲು ಸಿದ್ಧರಾಗಿ."
+            },
+            "weed": {
+              "action_en": "Slash wild shrubs around plantation perimeter.",
+              "action_kn": "ತೋಟದ ಸುತ್ತಮುತ್ತಲಿನ ಕಾಡು ಪೊದೆಗಳನ್ನು ತೆರವುಗೊಳಿಸಿ."
+            },
+            "nutrients": {
+              "action_en": "Apply 2nd split: 67 g N (150 g Urea) + 95 g K₂O (160 g MOP) + 12 kg FYM/compost per palm.",
+              "action_kn": "ಪ್ರತಿ ಮರಕ್ಕೆ 150 ಗ್ರಾಂ ಯೂರಿಯಾ + 160 ಗ್ರಾಂ ಎಂಒಪಿ + 12 ಕೆಜಿ ಕೊಟ್ಟಿಗೆ ಗೊಬ್ಬರ ನೀಡಿ.",
+              "npk_schedule": "Second Split: 67 g N + 0 g P + 95 g K₂O + 12 kg FYM/palm",
+              "timing_en": "Apply in September–October with retreating monsoon moisture.",
+              "timing_kn": "ಸೆಪ್ಟೆಂಬರ್-ಅಕ್ಟೋಬರ್ ತಿಂಗಳಲ್ಲಿ ತೇವಾಂಶವಿರುವಾಗ ನೀಡಿ.",
+              "source": "ICAR-CPCRI Package of Practices"
+            },
+            "protection": {
+              "action_en": "Check for inflorescence die-back or yellow leaf disease symptoms; apply root feeder Trichoderma if required.",
+              "action_kn": "ಹಳದಿ ಎಲೆ ರೋಗದ ಲಕ್ಷಣವಿದ್ದರೆ ಜೈವಿಕ ಶಿಲೀಂಧ್ರನಾಶಕ ಟ್ರೈಕೋಡರ್ಮಾ ಬುಡಕ್ಕೆ ನೀಡಿ."
+            }
+          },
+          "gallery_photos": [
+            {
+              "url": "public/images/stages/arecanut_stage4_fertilizer.jpg",
+              "caption_en": "Compost application in arecanut garden",
+              "caption_kn": "ಅಡಿಕೆ ಮರಗಳಿಗೆ ಕೊಟ್ಟಿಗೆ ಗೊಬ್ಬರ ನೀಡುವಿಕೆ",
+              "source": "ICAR-CPCRI"
+            }
+          ],
+          "video": {
+            "title_en": "Post-Monsoon Organic & Chemical Fertilizer Management in Arecanut",
+            "title_kn": "ಅಡಿಕೆ ತೋಟದಲ್ಲಿ ಮುಂಗಾರು ನಂತರದ ರಸಗೊಬ್ಬರ ಮತ್ತು ಸಾವಯವ ನಿರ್ವಹಣೆ",
+            "publisher": "ICAR-CPCRI Kasaragod",
+            "thumbnail": "public/images/stages/arecanut_stage4_fertilizer.jpg",
+            "url": "https://www.youtube.com/watch?v=kYJj8hB7m-s",
+            "duration": "15 min",
+            "source": "CPCRI Channel"
+          },
+          "quick_tip_en": "Always apply fertilizers in the circular ring 0.75m to 1m from trunk where active feeder roots are concentrated.",
+          "quick_tip_kn": "ರಸಗೊಬ್ಬರವನ್ನು ಕಾಂಡಕ್ಕೆ ತಾಗಿಸದೆ 0.75 ರಿಂದ 1 ಮೀಟರ್ ಅಂತರದ ವೃತ್ತದಲ್ಲಿ ಹಾಕಿದರೆ ಬೇರುಗಳು ಸುಲಭವಾಗಿ ಹೀರುತ್ತವೆ.",
+          "references": [
+            {
+              "title": "Nutrition & Fertilizer Schedule for Bearing Palms",
+              "source": "ICAR-CPCRI",
+              "type": "Scientific Advisory"
+            }
+          ]
+        },
+        {
+          "stage_id": "harvesting_curing",
+          "name_en": "Bunch Harvesting & Sun Curing",
+          "name_kn": "ಗೊಂಚಲುಗಳ ಕೊಯ್ಲು ಮತ್ತು ಸಂಸ್ಕರಣೆ (ನವೆಂಬರ್–ಡಿಸೆಂಬರ್)",
+          "start_month": 11,
+          "end_month": 12,
+          "icon": "🌴",
+          "description_en": "Selective harvesting of ripe orange-yellow nut bunches by skilled climbers, dehusking, and sun drying.",
+          "description_kn": "ಮಾಗಿದ ಕೆಂಪು-ಕಿತ್ತಳೆ ಅಡಿಕೆ ಗೊಂಚಲುಗಳ ಕೊಯ್ಲು, ಸುಲಿಯುವಿಕೆ ಮತ್ತು ಕಣದಲ್ಲಿ ಒಣಗಿಸುವಿಕೆ.",
+          "tasks_en": [
+            "Harvest mature orange-red bunches using skilled palm climbers or telescopic harvesting poles",
+            "De-husk tender green nuts for boiled supari (Chali/Koka) or sun-dry ripe whole nuts for Chali",
+            "Spread harvested nuts on clean cement drying floors or tarpaulins for 40 to 45 days until dry kernel rattles"
+          ],
+          "tasks_kn": [
+            "ಮಾಗಿದ ಕೆಂಪು ಗೊಂಚಲುಗಳನ್ನು ನುರಿತ ಏಣಿಗಾರರ ಮೂಲಕ ಅಥವಾ ಕಟಾವು ರಾಡ್ ಬಳಸಿ ಕೊಯ್ಲು ಮಾಡಿ",
+            "ಹಣ್ಣಡಿಕೆಯನ್ನು ಕಣದಲ್ಲಿ ಅಥವಾ ಟಾರ್ಪಾಲಿನ್ ಮೇಲೆ 40-45 ದಿನಗಳ ಕಾಲ ಬಿಸಿಲಿನಲ್ಲಿ ಒಣಗಿಸಿ",
+            "ಒಳಗಿನ ಅಡಿಕೆ ಗಟ್ಟಿಯಾಗಿ ಕುಲುಕಾಡಿದಾಗ ಸಿಪ್ಪೆ ಸುಲಿದು ಶೇಖರಿಸಿ"
+          ],
+          "key_observations_en": "Check outer husk color: uniformly orange-red; inner kernel should separate cleanly from husk when dry.",
+          "key_observations_kn": "ಸಿಪ್ಪೆ ಕಿತ್ತಳೆ ಬಣ್ಣಕ್ಕೆ ತಿರುಗಿರುವುದನ್ನು ಮತ್ತು ಒಣಗಿದ ನಂತರ ಒಳಗೆ ಅಡಿಕೆ ಸಡಿಲವಾಗುವುದನ್ನು ಗಮನಿಸಿ.",
+          "weather_sensitivity": {
+            "rain_favorable": false,
+            "drought_sensitive": false,
+            "action_on_rain_en": "Unseasonal rains spoil drying arecanut; keep tarpaulin covers ready to protect drying floor.",
+            "action_on_rain_kn": "ಕಣದಲ್ಲಿ ಒಣಗುತ್ತಿರುವ ಅಡಿಕೆಗೆ ಅಕಾಲಿಕ ಮಳೆ ತಾಗದಂತೆ ಟಾರ್ಪಾಲಿನ್ ಮುಚ್ಚಲು ಸಿದ್ಧರಾಗಿ."
+          },
+          "thumbnail": "public/images/stages/arecanut_stage5_harvest.jpg",
+          "main_photo": {
+            "url": "public/images/stages/arecanut_stage5_harvest.jpg",
+            "caption_en": "Golden ripe arecanut bunches harvested in Shivamogga plantation",
+            "caption_kn": "ಕೊಯ್ಲಿಗೆ ಸಿದ್ಧವಾದ ಮಾಗಿದ ಕೆಂಪು ಅಡಿಕೆ ಗೊಂಚಲುಗಳು",
+            "source": "ICAR-CPCRI Post Harvest Division",
+            "source_url": "https://cpcri.icar.gov.in"
+          },
+          "what_happens_en": "The arecanut reaches full physiological maturity (35–40 weeks after pollination). Husk moisture drops from 70% to 12% during sun curing, hardening the medicinal alkaloid-rich kernel.",
+          "what_happens_kn": "ಪರಾಗಸ್ಪರ್ಶದ 35-40 ವಾರಗಳಲ್ಲಿ ಅಡಿಕೆ ಪೂರ್ಣವಾಗಿ ಮಾಗಲು ಸಿದ್ಧವಾಗುತ್ತದೆ. ಬಿಸಿಲಿನಲ್ಲಿ ಒಣಗಿಸಿದಾಗ ಸಿಪ್ಪೆಯ ತೇವಾಂಶ ಕಡಿಮೆಯಾಗಿ ಒಳಗೆ ಗಟ್ಟಿ ಅಡಿಕೆ ಸಿದ್ಧವಾಗುತ್ತದೆ.",
+          "animation_type": "harvest_curing",
+          "farmer_actions": {
+            "crop_care": {
+              "action_en": "Harvest bunches carefully using ropes to lower them without shattering nuts on hard ground.",
+              "action_kn": "ಗೊಂಚಲುಗಳನ್ನು ಹಗ್ಗದ ಮೂಲಕ ನಿಧಾನವಾಗಿ ಇಳಿಸಿ ಕಾಯಿಗಳು ಒಡೆಯದಂತೆ ಎಚ್ಚರವಹಿಸಿ."
+            },
+            "water": {
+              "action_en": "Resume winter irrigation (150 L/palm/week) immediately after harvest to support next cycle.",
+              "action_kn": "ಕೊಯ್ಲಿನ ನಂತರ ಮುಂದಿನ ಇಳುವರಿಗೆ ಸಹಕಾರಿಯಾಗಲು ಲಘು ನೀರಾವರಿ ಪುನರಾರಂಭಿಸಿ."
+            },
+            "weed": {
+              "action_en": "Clear drying floors and harvest pathways.",
+              "action_kn": "ಕಣ ಮತ್ತು ಸಾಗಾಣಿಕೆ ದಾರಿಯನ್ನು ಸ್ವಚ್ಛವಾಗಿಡಿ."
+            },
+            "nutrients": {
+              "action_en": "No fertilizer during harvesting.",
+              "action_kn": "ಕೊಯ್ಲಿನ ಸಮಯದಲ್ಲಿ ಗೊಬ್ಬರ ಬೇಡ.",
+              "npk_schedule": "None (Harvest & Processing)",
+              "timing_en": "Next fertilizer round begins in May pre-monsoon.",
+              "timing_kn": "ಮುಂದಿನ ಕಂತು ಮೇ ತಿಂಗಳಲ್ಲಿ ಮುಂಗಾರು ಪೂರ್ವದಲ್ಲಿ ಆರಂಭವಾಗುತ್ತದೆ.",
+              "source": "ICAR-CPCRI"
+            },
+            "protection": {
+              "action_en": "Ensure nuts on drying floors are turned daily to prevent Aspergillus and penicillium molds.",
+              "action_kn": "ಕಣದಲ್ಲಿ ಒಣಗುತ್ತಿರುವ ಅಡಿಕೆಯನ್ನು ಪ್ರತಿದಿನ ತಿರುವಿ ಹಾಕಿ; ಇಲ್ಲದಿದ್ದರೆ ಕೆಳಭಾಗ ಬೂಸ್ಟ್ ಹಿಡಿಯುತ್ತದೆ."
+            }
+          },
+          "gallery_photos": [
+            {
+              "url": "public/images/stages/arecanut_stage5_harvest.jpg",
+              "caption_en": "Sun drying of whole arecanut on drying yard",
+              "caption_kn": "ಕಣದಲ್ಲಿ ಹಣ್ಣಡಿಕೆ ಒಣಗಿಸುವಿಕೆ",
+              "source": "ICAR-CPCRI"
+            }
+          ],
+          "video": {
+            "title_en": "Scientific Harvesting, Curing & Processing of Arecanut",
+            "title_kn": "ಅಡಿಕೆ ಕೊಯ್ಲು, ಕಣದಲ್ಲಿ ಒಣಗಿಸುವಿಕೆ ಮತ್ತು ಸಂಸ್ಕರಣಾ ತಂತ್ರಜ್ಞಾನ",
+            "publisher": "ICAR-CPCRI Kasaragod",
+            "thumbnail": "public/images/stages/arecanut_stage5_harvest.jpg",
+            "url": "https://www.youtube.com/watch?v=kYJj8hB7m-s",
+            "duration": "18 min",
+            "source": "CPCRI Video"
+          },
+          "quick_tip_en": "Dry whole arecanut for a minimum of 40 days under bright sun until the kernel rattles inside the dry husk.",
+          "quick_tip_kn": "ಹಣ್ಣಡಿಕೆಯನ್ನು ಕನಿಷ್ಠ 40 ದಿನ ಬಿಸಿಲಿನಲ್ಲಿ ಒಣಗಿಸಿ; ಒಳಗೆ ಅಡಿಕೆ ಕುಲುಕಾಡಿದಾಗ ಮಾತ್ರ ಸಿಪ್ಪೆ ಸುಲಿಯಲು ಸಿದ್ಧ.",
+          "references": [
+            {
+              "title": "Arecanut Processing and Quality Standards",
+              "source": "ICAR-CPCRI",
+              "type": "CPCRI Publication"
+            }
+          ]
+        }
+      ]
+    },
+    "cotton": {
+      "crop_name_en": "Cotton",
+      "crop_name_kn": "ಹತ್ತಿ",
+      "scientific_name": "Gossypium hirsutum",
+      "lifecycle_type": "annual",
+      "total_duration_days": 160,
+      "description_en": "Cotton (White Gold) is Karnataka premier commercial fiber crop, extensively grown in the deep black soil of North Karnataka.",
+      "description_kn": "ಹತ್ತಿಯು ಉತ್ತರ ಕರ್ನಾಟಕದ ಕಪ್ಪು ಮಣ್ಣಿನಲ್ಲಿ ಬೆಳೆಯಲಾಗುವ ಅತ್ಯಂತ ಪ್ರಮುಖ ವಾಣಿಜ್ಯ ನಾರಿನ ಬೆಳೆಯಾಗಿದೆ.",
+      "photo": "public/images/crops/cotton.jpg",
+      "tagline": "White Gold of Karnataka",
+      "state_badge": "Major Commercial Fiber Crop",
+      "references": "ICAR-Central Institute for Cotton Research (CICR) & UAS Dharwad Package of Practices",
+      "stages": [
+        {
+          "stage_id": "seedling_emergence",
+          "stage_number": 1,
+          "name_en": "Stage 1 — Sowing & Seedling Emergence",
+          "name_kn": "ಹಂತ 1 — ಬಿತ್ತನೆ ಮತ್ತು ಮೊಳಕೆಯೊಡೆಯುವ ಹಂತ",
+          "approx_duration_en": "First 1–2 weeks (approx. 7–15 days)",
+          "approx_duration_kn": "ಮೊದಲ 1–2 ವಾರಗಳು (ಸುಮಾರು 7–15 ದಿನಗಳು)",
+          "start_day": 1,
+          "end_day": 15,
+          "icon": "🌱",
+          "description_en": "Seeds germinate and develop into young seedlings.",
+          "description_kn": "ಬೀಜಗಳು ಮೊಳಕೆಯೊಡೆದು ಸಸಿಗಳು ಹೊರಬರುತ್ತವೆ.",
+          "what_happens_en": "Seeds dibbled on ridge sides absorb soil moisture and produce vigorous seedling shoots with broad cotyledonary leaves. Root system establishes in topsoil.",
+          "what_happens_kn": "ಸಾಲಿನಲ್ಲಿ ಊರಿದ ಬೀಜಗಳು ತೇವಾಂಶ ಪಡೆದು ಮೊಳಕೆಯೊಡೆದು ಎರಡು ಅಗಲವಾದ ಎಲೆಗಳುಳ್ಳ ಸಸಿಗಳು ಮೂಡುತ್ತವೆ. ಬೇರುಗಳು ಮಣ್ಣಿನಲ್ಲಿ ಸ್ಥಾಪನೆಯಾಗುತ್ತವೆ.",
+          "main_photo": {
+            "url": "public/images/stages/cotton_stage1_emergence.jpg",
+            "caption_en": "Emerging healthy cotton seedlings on black cotton soil ridges",
+            "caption_kn": "ಕಪ್ಪು ಮಣ್ಣಿನ ಸಾಲು ಬದುಗಳಲ್ಲಿ ಮೊಳಕೆಯೊಡೆದ ಹತ್ತಿ ಸಸಿಗಳು",
+            "source": "ICAR-CICR Nagpur / UAS Dharwad",
+            "source_url": "https://cicr.icar.gov.in"
+          }
+        },
+        {
+          "stage_id": "vegetative_squaring",
+          "stage_number": 2,
+          "name_en": "Stage 2 — Vegetative Canopy & Squaring",
+          "name_kn": "ಹಂತ 2 — ಸಸ್ಯ ಬೆಳವಣಿಗೆ ಮತ್ತು ಮೊಗ್ಗು ಹಂತ",
+          "approx_duration_en": "Varies by variety; generally 5–7 weeks (approx. Day 15–60)",
+          "approx_duration_kn": "ತಳಿಗೆ ತಕ್ಕಂತೆ ಸುಮಾರು 5–7 ವಾರಗಳು (ದಿನ 15–60)",
+          "start_day": 16,
+          "end_day": 60,
+          "icon": "🌿",
+          "description_en": "Leaves, stems, and vegetative branches develop, and floral squares emerge.",
+          "description_kn": "ಕಾಂಡ, ಎಲೆಗಳು ಮತ್ತು ರೆಂಬೆಗಳು ಹುಲುಸಾಗಿ ಬೆಳೆದು ಹೂಮೊಗ್ಗುಗಳು ಮೂಡುತ್ತವೆ.",
+          "what_happens_en": "Plants branch out vigorously while floral buds (squares) develop at the leaf nodes. Terminal nipping at 80–90 days controls excessive vertical growth.",
+          "what_happens_kn": "ಗಿಡಗಳು ಕವಲೊಡೆದು ದಟ್ಟವಾಗಿ ಬೆಳೆಯುತ್ತವೆ ಮತ್ತು ಎಲೆಯ ಕಂಕುಳಲ್ಲಿ ಹೂಮೊಗ್ಗುಗಳು ಕಾಣಿಸಿಕೊಳ್ಳುತ್ತವೆ. 80-90 ದಿನಗಳಲ್ಲಿ ತುದಿ ಚಿವುಟುವುದರಿಂದ ಅಡ್ಡ ಕವಲುಗಳು ಹೆಚ್ಚುತ್ತವೆ.",
+          "main_photo": {
+            "url": "public/images/stages/cotton_stage2_squaring.jpg",
+            "caption_en": "Cotton squaring stage showing young floral square buds",
+            "caption_kn": "ಹೂಮೊಗ್ಗು ಮೂಡಿರುವ ಹಂತದ ಹತ್ತಿ ಗಿಡ",
+            "source": "ICAR-CICR Nagpur",
+            "source_url": "https://cicr.icar.gov.in"
+          }
+        },
+        {
+          "stage_id": "flowering_boll_dev",
+          "stage_number": 3,
+          "name_en": "Stage 3 — Flowering & Boll Development",
+          "name_kn": "ಹಂತ 3 — ಹೂಬಿಡುವಿಕೆ ಮತ್ತು ಕಾಯಿ ಕಟ್ಟುವ ಹಂತ",
+          "approx_duration_en": "Approx. 6–8 weeks (approx. Day 60–110)",
+          "approx_duration_kn": "ಸುಮಾರು 6–8 ವಾರಗಳು (ದಿನ 60–110)",
+          "start_day": 61,
+          "end_day": 110,
+          "icon": "🌸",
+          "description_en": "Flowers open, pollination occurs, and spherical green bolls develop.",
+          "description_kn": "ಹೂಗಳು ಅರಳಿ ಪರಾಗಸ್ಪರ್ಶವಾಗುತ್ತದೆ ಮತ್ತು ಹಸಿರು ಕಾಯಿಗಳು ಬೆಳೆಯುತ್ತವೆ.",
+          "what_happens_en": "Creamy yellow flowers turn pink after pollination, and spherical green bolls enlarge with developing seed fibers inside.",
+          "what_happens_kn": "ಕೆನೆ ಹಳದಿ ಬಣ್ಣದ ಹೂಗಳು ಅರಳಿ ನಂತರ ಗುಲಾಬಿ ಬಣ್ಣಕ್ಕೆ ತಿರುಗುತ್ತವೆ. ಹಸಿರು ಕಾಯಿಗಳು ದಪ್ಪವಾಗಿ ಒಳಗೆ ಹತ್ತಿ ನಾರು ಬೆಳೆಯಲಾರಂಭಿಸುತ್ತದೆ.",
+          "main_photo": {
+            "url": "public/images/stages/cotton_stage3_boll.jpg",
+            "caption_en": "Flowering cotton plant bearing developing green bolls",
+            "caption_kn": "ಹೂಬಿಟ್ಟು ಕಾಯಿ ಕಟ್ಟುತ್ತಿರುವ ಹತ್ತಿ ಗಿಡ",
+            "source": "UAS Dharwad Department of Agronomy",
+            "source_url": "https://uasd.edu"
+          }
+        },
+        {
+          "stage_id": "boll_bursting_harvest",
+          "stage_number": 4,
+          "name_en": "Stage 4 — Boll Bursting & Clean Picking",
+          "name_kn": "ಹಂತ 4 — ಕಾಯಿ ಒಡೆಯುವಿಕೆ ಮತ್ತು ಹತ್ತಿ ಬಿಡಿಸುವ ಹಂತ",
+          "approx_duration_en": "Approx. 4–6 weeks for multiple pickings (approx. Day 110–160+)",
+          "approx_duration_kn": "ಸುಮಾರು 4–6 ವಾರಗಳು (ದಿನ 110–160+)",
+          "start_day": 111,
+          "end_day": 160,
+          "icon": "☁️",
+          "description_en": "Mature bolls burst open with fluffy white lint, ready for clean picking.",
+          "description_kn": "ಮಾಗಿದ ಕಾಯಿಗಳು ಒಡೆದು ಬೆಳ್ಳನೆಯ ಹತ್ತಿ ಹೊರಬರುತ್ತದೆ, ಬಿಡಿಸಲು ಸಿದ್ಧವಾಗುತ್ತದೆ.",
+          "what_happens_en": "Mature bolls burst open into fluffy white cotton locks and are picked in successive rounds during dry morning hours.",
+          "what_happens_kn": "ಚೆನ್ನಾಗಿ ಮಾಗಿದ ಕಾಯಿಗಳು ಒಡೆದು ಬಿಳಿಯ ಹತ್ತಿಯ ಗೊಂಚಲುಗಳು ಹೊರಬರುತ್ತವೆ. ಇಬ್ಬನಿ ಒಣಗಿದ ನಂತರ ಸ್ವಚ್ಛವಾಗಿ ಬಿಡಿಸಲಾಗುತ್ತದೆ.",
+          "main_photo": {
+            "url": "public/images/stages/cotton_stage4_harvest.jpg",
+            "caption_en": "Fluffy open cotton bolls ready for harvest picking in sunny field",
+            "caption_kn": "ಬಿಸಿಲಿನಲ್ಲಿ ಬಿಡಿಸಲು ಸಿದ್ಧವಾಗಿರುವ ಬಿಳಿಯ ಹತ್ತಿಯ ಹೊಲ",
+            "source": "ICAR-CICR Cotton Extension",
+            "source_url": "https://cicr.icar.gov.in"
+          }
+        }
+      ]
+    }
+  }
+}

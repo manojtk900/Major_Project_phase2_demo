@@ -1,0 +1,64 @@
+<section class="view-panel" id="view-settings">
+  <div style="max-width: 800px; margin: 0 auto; padding: 20px 10px;">
+    
+    <!-- Topbar -->
+    <div style="margin-bottom: 24px;">
+      <h1 style="font-size: 1.5rem; font-weight: 800; color: #065f46; margin: 0 0 6px 0; display: flex; align-items: center; gap: 10px;">
+        <span>⚙️</span>
+        <span class="txt-kn">ಸೆಟ್ಟಿಂಗ್‌ಗಳು ಮತ್ತು ಡೇಟಾ ನಿರ್ವಹಣೆ</span>
+        <span class="txt-en" style="display: none;">Settings & Data Management</span>
+      </h1>
+      <p style="font-size: 0.88rem; color: #64748b; margin: 0;">
+        <span class="txt-kn">ಅಪ್ಲಿಕೇಶನ್ ಆದ್ಯತೆಗಳು, ಭಾಷೆ ಮತ್ತು ಜಮೀನಿನ ಪ್ರೊಫೈಲ್ ನಿರ್ವಹಣೆ.</span>
+        <span class="txt-en" style="display: none;">Application preferences, language selection, and farm profile management.</span>
+      </p>
+    </div>
+
+    <!-- Section 1: Language & Regional Preferences -->
+    <div class="card-surface" style="background: var(--bg-card, #ffffff); border-radius: 14px; border: 1px solid var(--border-color, #e2e8f0); padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 6px rgba(0,0,0,0.03);">
+      <h3 style="font-size: 1.1rem; font-weight: 700; color: #1e293b; margin: 0 0 10px 0; display: flex; align-items: center; gap: 8px;">
+        <span>🌐</span>
+        <span class="txt-kn">ಭಾಷಾ ಆದ್ಯತೆಗಳು</span>
+        <span class="txt-en" style="display: none;">Language & Localization</span>
+      </h3>
+      <p style="font-size: 0.85rem; color: #64748b; margin-bottom: 14px;">
+        <span class="txt-kn">ಕನ್ನಡ ಮತ್ತು ಇಂಗ್ಲಿಷ್ ನಡುವೆ ಅಪ್ಲಿಕೇಶನ್ ಭಾಷೆಯನ್ನು ಬದಲಾಯಿಸಿ.</span>
+        <span class="txt-en" style="display: none;">Switch application interface language between Kannada and English.</span>
+      </p>
+      <button type="button" class="btn btn-secondary" onclick="document.getElementById('lang-toggle-btn').click()" style="padding: 9px 18px; font-weight: 600; display: inline-flex; align-items: center; gap: 8px; border-radius: 8px;">
+        <span>🌐</span>
+        <span class="txt-kn">ಭಾಷೆ ಬದಲಾಯಿಸಿ (ಕನ್ನಡ / English)</span>
+        <span class="txt-en" style="display: none;">Change Language (English / ಕನ್ನಡ)</span>
+      </button>
+    </div>
+
+    <!-- Section 2: Farm Profile & Data Management (Clear Profile with Confirmation) -->
+    <div class="card-surface" style="background: var(--bg-card, #ffffff); border-radius: 14px; border: 1px solid #fed7aa; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 6px rgba(0,0,0,0.03);">
+      <div style="display: flex; align-items: flex-start; justify-content: space-between; flex-wrap: wrap; gap: 12px;">
+        <div>
+          <h3 style="font-size: 1.1rem; font-weight: 700; color: #9a3412; margin: 0 0 8px 0; display: flex; align-items: center; gap: 8px;">
+            <span>🌾</span>
+            <span class="txt-kn">ಜಮೀನಿನ ಪ್ರೊಫೈಲ್ ಡೇಟಾ ನಿರ್ವಹಣೆ</span>
+            <span class="txt-en" style="display: none;">Farm Profile & Data Management</span>
+          </h3>
+          <p style="font-size: 0.85rem; color: #64748b; margin: 0 0 12px 0; max-width: 580px; line-height: 1.5;">
+            <span class="txt-kn">ಉಳಿಸಲಾದ ಮಣ್ಣು ಪರೀಕ್ಷಾ ವರದಿ (SHC), ನೀರಾವರಿ ಮಾಹಿತಿ ಮತ್ತು ಆದ್ಯತೆಯ ಮಾರುಕಟ್ಟೆ ವಿವರಗಳನ್ನು ತೆರವುಗೊಳಿಸಿ ಪ್ರಾದೇಶಿಕ ಮಾನದಂಡಗಳಿಗೆ ಮರುಹೊಂದಿಸಿ. ಅಳಿಸುವ ಮುನ್ನ ದೃಢೀಕರಣವನ್ನು ಕೇಳಲಾಗುತ್ತದೆ.</span>
+            <span class="txt-en" style="display: none;">Clear saved Soil Health Card (SHC) parameters, irrigation methods, and preferred APMC mandi data back to regional defaults. Confirmation is required before clearing.</span>
+          </p>
+        </div>
+      </div>
+
+      <div style="background: #fff7ed; border-left: 3px solid #f97316; padding: 10px 14px; border-radius: 6px; margin-bottom: 16px; font-size: 0.8rem; color: #9a3412;">
+        <span class="txt-kn">⚠️ ಗಮನಿಸಿ: ಪ್ರೊಫೈಲ್ ತೆರವುಗೊಳಿಸಿದ ನಂತರ, ಶಿಫಾರಸು ನಮೂನೆಯು ICAR ಮಂಡ್ಯದ ಪ್ರಾದೇಶಿಕ ಸರಾಸರಿ ಮಣ್ಣಿನ ಮೌಲ್ಯಗಳಿಗೆ ಮರಳುತ್ತದೆ.</span>
+        <span class="txt-en" style="display: none;">⚠️ Notice: Clearing your profile resets the crop recommendation inputs back to ICAR Mandya regional baseline averages.</span>
+      </div>
+
+      <button type="button" id="btn-settings-clear-profile" class="btn" onclick="window.confirmClearFarmerProfile()" style="background: #fee2e2; color: #b91c1c; border: 1.5px solid #fca5a5; font-weight: 700; padding: 10px 18px; border-radius: 8px; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; transition: all 0.2s ease;">
+        <span>🗑️</span>
+        <span class="txt-kn">ಜಮೀನಿನ ಪ್ರೊಫೈಲ್ ತೆರವುಗೊಳಿಸಿ (Clear Profile)</span>
+        <span class="txt-en" style="display: none;">Clear Farm Profile Data</span>
+      </button>
+    </div>
+
+  </div>
+</section>

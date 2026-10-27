@@ -1,0 +1,180 @@
+====================================================================================================
+MANNUMITRA (AI-BASED PREDICTIVE FARMING SYSTEM) — PROJECT FILE MAP
+====================================================================================================
+
+ROOT DIRECTORY: D:\Final_Predictve_Forming_System
+PROJECT STATUS: Clean, self-contained, presentation-ready release
+
+----------------------------------------------------------------------------------------------------
+1. ROOT CONFIGURATION & EXECUTION
+----------------------------------------------------------------------------------------------------
+- run.bat
+  * Purpose: One-click launcher starting the unified Uvicorn/FastAPI server.
+  * Role: Production execution launcher.
+  * Action: Launches backend/app/main.py on http://127.0.0.1:8000, serving both API and Frontend UI.
+- requirements.txt
+  * Purpose: Minimal, strictly verified dependency list with pinned compatible versions.
+  * Role: Environment reproduction.
+- FILE_MAP.txt
+  * Purpose: Exhaustive reference documenting the role, callers, and category of every project file.
+- RUN_INSTRUCTIONS.txt
+  * Purpose: Step-by-step setup, startup, live demonstration, and notebook execution instructions.
+
+----------------------------------------------------------------------------------------------------
+2. FRONTEND (VANILLA SPA: HTML5 / CSS3 / JAVASCRIPT ES6)
+----------------------------------------------------------------------------------------------------
+- frontend/index.html
+  * Purpose: Master single-page application shell, header, navigation, and view container.
+  * Role: Production UI entry point.
+- frontend/style.css
+  * Purpose: Premium dark-mode design system with responsive layouts and micro-animations.
+  * Role: Production styling.
+- frontend/app.js
+  * Purpose: Top-level UI controller binding route transitions, notifications, and components.
+- frontend/js/main.js
+  * Purpose: Application bootstrap, event listeners, and global state initialization.
+- frontend/js/router.js
+  * Purpose: Client-side routing engine loading views dynamically into index.html.
+- frontend/js/api.js
+  * Purpose: Centralized asynchronous HTTP client communicating with backend API routes.
+- frontend/js/i18n.js
+  * Purpose: Bilingual language switcher managing dynamic English/Kannada localization.
+- frontend/locales/en.json
+  * Purpose: English localization key-value string dictionary.
+- frontend/locales/kn.json
+  * Purpose: Kannada localization key-value string dictionary (ಕನ್ನಡ ಭಾಷಾ ನಿಘಂಟು).
+- frontend/pages/
+  * about.html          : Architectural overview, system methodology, and developer credits.
+  * home.html           : Hero dashboard, quick-action cards, and system status indicators.
+  * recommendation.html : Interactive form for soil nutrient input and ranked crop recommendations.
+  * disease.html        : Image upload portal for leaf disease screening, Grad-CAM, and advice.
+  * soil_ocr.html       : PDF/Image Soil Health Card upload and digital extraction interface.
+  * water.html          : Crop water requirement and FAO-56 irrigation feasibility calculator.
+  * market.html         : Karnataka APMC mandi commodity prices and forecast horizons.
+  * lifecycle.html      : Stage-by-stage agronomic package of practices and crop schedules.
+  * fertilizer.html     : NPK replenishment calculator and organic manure alternatives.
+  * schemes.html        : Central and state agricultural welfare schemes registry.
+  * settings.html       : System configuration, language toggle, and decision engine weights.
+  * weather.html        : Local meteorological conditions and agro-advisory bulletins.
+- frontend/public/images/
+  * crops/              : Verified photographs and SVG badges for recommended Karnataka crops.
+  * demo_disease/       : High-resolution diseased leaf samples for instant testing.
+  * fertilizer/         : Images of compost, vermicompost, and green manure.
+  * home/               : Hero banners, Karnataka agro-climatic map, and feature thumbnails.
+  * samples/            : Sample Soil Health Cards (PDF and JPEG) for OCR testing.
+  * soils/              : Visual guides for Red, Black, Laterite, and Alluvial soil types.
+  * stages/             : Crop phenological growth stage illustrations.
+
+----------------------------------------------------------------------------------------------------
+3. BACKEND (FASTAPI MODULAR ASYNCHRONOUS ARCHITECTURE)
+----------------------------------------------------------------------------------------------------
+- backend/app/main.py
+  * Purpose: FastAPI root application, CORS setup, router aggregation, and static UI mounting.
+  * Called by: Uvicorn ASGI server via run.bat.
+  * Key Routes: /api/health, / (redirect to /ui/), /ui/ (static mount), /demo-samples (static mount).
+- backend/app/core/config.py
+  * Purpose: Centralized dynamic path resolution for models, data, and frontend assets.
+  * Called by: app/main.py, app/services/*.
+- backend/app/api/
+  * crop.py        : Routes for /api/recommend (invokes IntegratedRecommendationEngine).
+  * disease.py     : Routes for /api/disease/predict and /api/disease/supported-crops.
+  * water.py       : Routes for /api/water/feasibility (FAO-56 ETc calculations).
+  * market.py      : Routes for /api/market/prices and /api/market/forecast.
+  * soil_report.py : Routes for /api/soil-report/extract (PyMuPDF OCR extraction).
+  * soil_types.py  : Routes for /api/soil-types/karnataka (soil database lookup).
+  * schemes.py     : Routes for /api/schemes (PM-KISAN, Raitha Siri, PMFBY, etc.).
+  * weather.py     : Routes for /api/weather/current and /api/weather/advisories.
+  * lifecycle.py   : Routes for /api/lifecycle/stages (phenological stage guidelines).
+  * economics.py   : Routes for /api/economics/cost-benefit (gross/net return projections).
+- backend/app/schemas/
+  * farm_profile.py   : Pydantic request models for soil nutrients and farm parameters.
+  * recommendation.py : Pydantic response models for candidate rankings and explainability.
+  * lifecycle.py      : Pydantic schemas for crop stages and economic budgets.
+- backend/app/services/
+  * integrated_decision_engine.py : 5-component decision ranking engine (Agronomy + Water + Market + Forecast + Risk). Loads active production models/rf_30_class/rf_final.pkl.
+  * disease_service.py            : Deep learning inference manager loading MobileNetV2 models from models/disease_detection/.
+  * image_quality_service.py     : Pre-screening validator checking blur, brightness, contrast, and resolution.
+  * explainability_service.py    : Feature contribution and Grad-CAM visual attention heatmap generator.
+  * water_service.py             : FAO-56 Penman-Monteith crop evapotranspiration (ETc = Kc * ETo) engine.
+  * market_service.py            : APMC mandi price provider and harvest forecast model consumer.
+  * soil_ocr_service.py          : Digital text and table parser for Soil Health Card extraction.
+  * scheme_service.py            : Government subsidy eligibility and criteria matcher.
+  * weather_service.py           : Meteorological data and agro-climatic zone advisory generator.
+  * lifecycle_service.py         : Package of practices and operational calendar manager.
+
+----------------------------------------------------------------------------------------------------
+4. MACHINE LEARNING MODELS & WEIGHTS
+----------------------------------------------------------------------------------------------------
+- models/rf_30_class/ (ACTIVE PRODUCTION CROP RECOMMENDATION MODEL)
+  * rf_final.pkl         : Active production Random Forest model (300 estimators, 30 Karnataka crops, 92.68% accuracy).
+  * class_mapping.json   : 30-crop label mapping dictionary.
+  * model_metadata.json  : Architecture parameters, accuracy metrics, and class index mapping.
+  * Integrity: Verified SHA-256 = 856B561797433A11665045E3B9CD9D6035A84FDC130CC2D357B276C8BF5876D5.
+- models/rf_39_class/ (RESEARCH / BASELINE COMPARISON MODEL)
+  * crop_model.pkl       : Baseline Random Forest model (200 estimators, 39 crops, 88.30% accuracy).
+  * feature_columns.json : Ordered feature inputs: ['N', 'P', 'K', 'temperature', 'humidity', 'ph', 'rainfall'].
+  * model_metadata.json  : Architecture parameters, accuracy metrics, and class index mapping.
+  * Integrity: Verified SHA-256 = 0F0E9A2E2AE1EBE19FC861F64FC8A737534A32DE89143747D04E5E456DEAC779.
+- models/rf_hgb_hybrid/
+  * rf_baseline.pkl                 : Standalone Random Forest baseline on 30-crop dataset.
+  * hgb_baseline.pkl                : Standalone Histogram Gradient Boosting baseline.
+  * hybrid_equal_soft_voting.pkl    : Equal-weight soft voting ensemble (RF + HGB).
+  * hybrid_weighted_soft_voting.pkl : Cross-validation optimized weighted soft voting ensemble.
+  * hybrid_stacking_classifier.pkl  : Stacking classifier (Meta-model: LogisticRegression).
+  * model_comparison_results.csv    : Comparative metrics across all 5 configurations.
+  * experiment_metadata.json        : Experimental hyperparameters and execution record.
+- models/disease_detection/
+  * arecanut/       : model.keras (9 classes), class_names.json, disease_info.json.
+  * cotton/         : model.keras (4 classes), class_names.json, disease_info.json.
+  * crop_validator/ : model.keras (5 classes: leaf species validator), class_names.json.
+  * maize/          : model.keras (4 classes), class_names.json, disease_info.json.
+  * rice/           : model.keras (5 classes), class_names.json, disease_info.json.
+  * tomato/         : model.keras (10 classes), class_names.json, disease_info.json.
+- models/market/
+  * harvest_forecasting_models_bundle.pkl : Pre-trained LightGBM & Seasonal-Naive price models.
+- models/baseline/
+  * crop_random_forest/ : Compatibility link to rf_39_class.
+  * disease_mobilenetv2/: Compatibility link to disease_detection.
+
+----------------------------------------------------------------------------------------------------
+5. TRAINING DATASETS
+----------------------------------------------------------------------------------------------------
+- data/rf_39_class/improved_crop_dataset.csv
+  * Rows: 23,760 records.
+  * Columns: N, P, K, temperature, humidity, ph, rainfall, label, source.
+  * Classes: 39 Karnataka crops.
+  * Usage: Official training dataset for the production crop recommendation model.
+- data/rf_30_class/karnataka_30_crops_cpcri_rainfall_fixed.csv
+  * Rows: 18,780 records.
+  * Columns: N, P, K, temperature, humidity, ph, rainfall, soil_type, region, district, season, label.
+  * Classes: 30 standardized Karnataka crops.
+  * Usage: Official benchmark dataset for the 30-crop RF, hybrid, and class-imbalance experiments.
+- data/market/karnataka_mandi_historical.csv
+  * Records: Chronological daily modal prices from major Karnataka APMC mandis.
+- data/disease_detection/DATASET_SOURCE_INSTRUCTIONS.md
+  * Detailed source provenance, raw image counts, and download links for the disease image corpora.
+
+----------------------------------------------------------------------------------------------------
+6. JUPYTER NOTEBOOKS (DOCUMENTED & REPRODUCIBLE)
+----------------------------------------------------------------------------------------------------
+- notebooks/01_random_forest_39_class.ipynb
+  * Component: Production 39-Class Random Forest Model.
+  * Content: Data loading, 39-crop distribution, 7-feature importance, test split evaluation, model verification.
+- notebooks/02_random_forest_30_class.ipynb
+  * Component: Experimental 30-Class Random Forest Model.
+  * Content: 30-crop evaluation, 5-fold cross-validation, confusion matrices, and agronomic audit.
+- notebooks/03_rf_hgb_hybrid.ipynb
+  * Component: RF + Histogram Gradient Boosting Hybrid Experiment.
+  * Content: Compares RF, HGB, Equal Soft Voting, Weighted Soft Voting, and Stacking on 30 crops.
+- notebooks/04_mobilenetv2_disease_detection.ipynb
+  * Component: MobileNetV2 Deep Learning Plant Disease Suite.
+  * Content: Loads all 6 Keras models, evaluates sample images, and displays attention overlays.
+
+----------------------------------------------------------------------------------------------------
+7. DEMO SAMPLES (FIELD PRESENTATION TEST DATA)
+----------------------------------------------------------------------------------------------------
+- demo_samples/disease_images/
+  * High-resolution test images for Arecanut (Healthy, Koleroga), Cotton (Blight, Healthy), Maize (Rust, Healthy), Rice (Brown Spot, Blight), and Tomato (Early Blight, Healthy).
+- demo_samples/soil_reports/
+  * Authentic Karnataka Soil Health Card samples (PDF and JPEG) across 10 districts for OCR testing.
+====================================================================================================

@@ -1,0 +1,646 @@
+<section class="view-panel" id="view-recommend">
+
+        <!-- Page Header -->
+        <div class="rec-page-topbar">
+          <div class="rec-topbar-left">
+            <div class="rec-title-badge">
+              <span class="rec-badge-icon">🌱</span>
+            </div>
+            <div class="rec-title-text-group">
+              <h1 class="rec-main-title">
+                <span class="txt-kn">ನಿಮ್ಮ ಹೊಲಕ್ಕೆ ಸೂಕ್ತ ಬೆಳೆ</span>
+                <span class="txt-en" style="display: none;">Best Crop for Your Farm</span>
+              </h1>
+              <p class="rec-main-subtitle">
+                <span class="txt-kn">ಮಣ್ಣಿನ ಪ್ರಕಾರ ಮತ್ತು ಹವಾಮಾನಕ್ಕೆ ಅನುಗುಣವಾಗಿ ಕೃಷಿ ವಿಜ್ಞಾನ ಆಧಾರಿತ ಶಿಫಾರಸು</span>
+                <span class="txt-en" style="display: none;">Agro-climatic AI & soil-guided crop decision support for Karnataka</span>
+              </p>
+            </div>
+          </div>
+          <div class="rec-topbar-right">
+            <div class="rec-active-pill" id="rec-top-active-pill">
+              <span class="rec-pill-icon">📍</span>
+              <span id="rec-top-soil-label">ಕೆಂಪು ಮಣ್ಣು (Red Soil)</span>
+              <span class="rec-pill-sep">•</span>
+              <span id="rec-top-dist-label">ಮಂಡ್ಯ (Mandya)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4-Step Stepper Header (Farming Process Journey) -->
+        <div class="recommend-stepper-box">
+          <div class="stepper-track-4">
+            <div class="stepper-bg-line"></div>
+            <div class="stepper-fill-line" id="stepper-fill" style="width: 0%;"></div>
+            
+            <div class="step-node active" id="dot-1" onclick="setWizardStep(1)">
+              <div class="step-circle">🌱</div>
+              <div class="step-label-group">
+                <div class="step-name-main"><span class="txt-kn">① ಮಣ್ಣು</span><span class="txt-en" style="display: none;">① Soil</span></div>
+                <div class="step-name-sub"><span class="txt-kn">ಆಯ್ಕೆ</span><span class="txt-en" style="display: none;">Select Soil</span></div>
+              </div>
+            </div>
+
+            <div class="step-node" id="dot-2" onclick="setWizardStep(2)">
+              <div class="step-circle">📍</div>
+              <div class="step-label-group">
+                <div class="step-name-main"><span class="txt-kn">② ಸ್ಥಳ</span><span class="txt-en" style="display: none;">② Location</span></div>
+                <div class="step-name-sub"><span class="txt-kn">ಜಿಲ್ಲೆ & ಹವಾಮಾನ</span><span class="txt-en" style="display: none;">District & Weather</span></div>
+              </div>
+            </div>
+
+            <div class="step-node" id="dot-3" onclick="setWizardStep(3)">
+              <div class="step-circle">🧪</div>
+              <div class="step-label-group">
+                <div class="step-name-main"><span class="txt-kn">③ ಪರಿಸ್ಥಿತಿಗಳು</span><span class="txt-en" style="display: none;">③ Conditions</span></div>
+                <div class="step-name-sub"><span class="txt-kn">ಪೋಷಕಾಂಶ & ಹವಾಮಾನ</span><span class="txt-en" style="display: none;">Nutrients & Climate</span></div>
+              </div>
+            </div>
+
+            <div class="step-node" id="dot-4" onclick="setWizardStep(4)">
+              <div class="step-circle">🌾</div>
+              <div class="step-label-group">
+                <div class="step-name-main"><span class="txt-kn">④ ಶಿಫಾರಸು</span><span class="txt-en" style="display: none;">④ Recommendation</span></div>
+                <div class="step-name-sub"><span class="txt-kn">ಫಲಿತಾಂಶ</span><span class="txt-en" style="display: none;">Outcome</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Wizard Step 1: Soil Selection -->
+        <div class="wizard-step-screen active" id="screen-step1">
+          <div class="screen-header">
+            <h2 class="screen-title">
+              <span class="txt-kn">ಹಂತ 1: ನಿಮ್ಮ ಜಮೀನಿನ ಮಣ್ಣಿನ ಪ್ರಕಾರವನ್ನು ಆಯ್ಕೆಮಾಡಿ</span>
+              <span class="txt-en" style="display: none;">Step 1: Select Your Soil Type</span>
+            </h2>
+            <p class="screen-subtitle">
+              <span class="txt-kn">ಕೆಳಗಿನ ನೈಜ ಛಾಯಾಚಿತ್ರಗಳನ್ನು ನೋಡಿ, ನಿಮ್ಮ ಜಮೀನಿನ ಮಣ್ಣಿನ ಮೇಲೆ ಕ್ಲಿಕ್ ಮಾಡಿ.</span>
+              <span class="txt-en" style="display: none;">Look at the genuine soil photos below and select the soil matching your farm.</span>
+            </p>
+          </div>
+          <div class="soil-grid" id="soil-grid-container"></div>
+        </div>
+
+        <!-- Wizard Step 2: Location & Weather -->
+        <div class="wizard-step-screen" id="screen-step2">
+          <div class="screen-header">
+            <h2 class="screen-title">
+              <span class="txt-kn">ಹಂತ 2: ನಿಮ್ಮ ಪ್ರದೇಶ ಮತ್ತು ಹವಾಮಾನ</span>
+              <span class="txt-en" style="display: none;">Step 2: Your Location & Climate</span>
+            </h2>
+            <p class="screen-subtitle">
+              <span class="txt-kn">ನಿಮ್ಮ ಕರ್ನಾಟಕದ ಜಿಲ್ಲೆಯನ್ನು ಆರಿಸಿ. ನೈಜ ಹವಾಮಾನ ಮತ್ತು ಮಳೆಯ ವಿವರಗಳು ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಹೊಂದಿಸಲ್ಪಡುತ್ತವೆ.</span>
+              <span class="txt-en" style="display: none;">Select your Karnataka district. Live weather conditions and seasonal rainfall normal will automatically sync.</span>
+            </p>
+          </div>
+
+          <!-- Location & Zone Hero Banner -->
+          <div class="rec-loc-hero-card">
+            <div class="rec-loc-map-visual">
+              <svg viewBox="0 0 120 120" class="karnataka-mini-map-svg" aria-label="Karnataka Agro-climatic Map">
+                <!-- Stylized Karnataka Outline -->
+                <path d="M 45 10 C 60 12, 75 18, 80 30 C 85 42, 82 55, 75 68 C 72 75, 68 85, 60 98 C 52 108, 42 112, 38 102 C 34 92, 36 82, 32 72 C 28 62, 22 52, 25 38 C 28 22, 35 12, 45 10 Z" fill="#e8f5ed" stroke="#2d8a4e" stroke-width="2.5" />
+                <!-- Regional Zones -->
+                <circle cx="58" cy="35" r="5" fill="#34a853" opacity="0.7" title="Northern Zone" />
+                <circle cx="50" cy="65" r="5" fill="#f5a623" opacity="0.7" title="Central Zone" />
+                <circle cx="52" cy="90" r="7" fill="#2d8a4e" class="active-zone-pin" />
+                <circle cx="28" cy="60" r="4" fill="#4a90d9" opacity="0.7" title="Coastal Zone" />
+              </svg>
+              <div class="rec-loc-map-caption">
+                <span class="txt-kn">ಕರ್ನಾಟಕ ಕೃಷಿ ವಲಯ</span>
+                <span class="txt-en" style="display: none;">Karnataka Zone</span>
+              </div>
+            </div>
+            <div class="rec-loc-info-group">
+              <div class="rec-loc-badge-row">
+                <span class="rec-badge-zone" id="rec-loc-zone-badge">ದಕ್ಷಿಣ ಒಣ ವಲಯ (Zone 6)</span>
+                <span class="badge-gps">GPS SYNC</span>
+              </div>
+              <h3 class="rec-loc-selected-title" id="rec-loc-selected-title">
+                <span class="txt-kn">ಮಂಡ್ಯ (Mandya), ಕರ್ನಾಟಕ</span>
+                <span class="txt-en" style="display: none;">Mandya, Karnataka</span>
+              </h3>
+              <p class="rec-loc-desc">
+                <span class="txt-kn">ಕಾವೇರಿ ಕಣಿವೆ ಕೃಷಿ ವಲಯ — ರಾಗಿ, ಕಬ್ಬು, ಭತ್ತ, ಮೆಕ್ಕೆಜೋಳಕ್ಕೆ ಅತ್ಯಂತ ಪ್ರಶಸ್ತ.</span>
+                <span class="txt-en" style="display: none;">Cauvery basin agro-zone — highly optimal for Ragi, Sugarcane, Paddy, and Maize.</span>
+              </p>
+              <div class="rec-loc-action-buttons">
+                <button type="button" class="btn-use-location-step" id="btn-rec-use-location">
+                  <span class="loc-btn-icon">📍</span>
+                  <span class="txt-kn">ನನ್ನ ಪ್ರಸ್ತುತ ಸ್ಥಳ ಬಳಸಿ (GPS)</span>
+                  <span class="txt-en" style="display: none;">Use Current GPS Location</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="geo-notice-banner" id="rec-geo-notice-banner" style="display: none;">
+            <div class="geo-notice-icon">📍</div>
+            <div class="geo-notice-content">
+              <p class="geo-notice-desc">
+                <span class="txt-kn">ಸ್ಥಳದ ಅನುಮತಿಯನ್ನು ಅನುಮತಿಸಲಾಗಿಲ್ಲ. ಬದಲಿಗೆ ಕೆಳಗಿನ ಪಟ್ಟಿಯಿಂದ ನಿಮ್ಮ ಜಿಲ್ಲೆಯನ್ನು ಆರಿಸಿ.</span>
+                <span class="txt-en" style="display: none;">Location permission was not allowed. Please select your district from the list below.</span>
+              </p>
+            </div>
+            <button type="button" class="btn-close-notice" onclick="document.getElementById('rec-geo-notice-banner').style.display='none'">✕</button>
+          </div>
+
+          <!-- Live Weather Info Box -->
+          <div class="rec-weather-live-box" id="rec-weather-live-box">
+            <div class="rec-weather-live-top">
+              <div class="live-weather-indicator">
+                <span class="live-dot">●</span>
+                <span class="live-badge-txt">LIVE WEATHER</span>
+                <span class="rec-loc-label" id="rec-live-location">📍 ಮಂಡ್ಯ (Mandya), Karnataka</span>
+              </div>
+              <button class="btn-refresh-weather" id="btn-refresh-weather" type="button" title="Refresh weather from Open-Meteo">
+                🔄 <span class="txt-kn">ನವೀಕರಿಸಿ</span><span class="txt-en" style="display: none;">Refresh</span>
+              </button>
+            </div>
+            <div class="rec-weather-live-values">
+              <div class="rec-val-pill">
+                <span class="rv-icon">🌡️</span>
+                <span class="rv-label"><span class="txt-kn">ತಾಪಮಾನ:</span><span class="txt-en" style="display: none;">Temp:</span></span>
+                <strong class="rv-data" id="rec-live-temp">28.0°C</strong>
+              </div>
+              <div class="rec-val-pill">
+                <span class="rv-icon">🌧️</span>
+                <span class="rv-label"><span class="txt-kn">ಋತುಮಾನ ಮಳೆ:</span><span class="txt-en" style="display: none;">Normal Rain:</span></span>
+                <strong class="rv-data" id="rec-live-rain">760 mm</strong>
+              </div>
+              <div class="rec-val-pill">
+                <span class="rv-icon">💧</span>
+                <span class="rv-label"><span class="txt-kn">ಆರ್ದ್ರತೆ:</span><span class="txt-en" style="display: none;">Humidity:</span></span>
+                <strong class="rv-data" id="rec-live-hum">65%</strong>
+              </div>
+            </div>
+            <div class="rec-weather-sync-status">
+              <span class="sync-check">✓</span>
+              <span class="txt-kn">ನೈಜ ಹವಾಮಾನ ಮತ್ತು ಮಳೆಯ ಮೌಲ್ಯಗಳು ಮುಂದಿನ ಹಂತಕ್ಕೆ ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಅನ್ವಯಗೊಂಡಿವೆ.</span>
+              <span class="txt-en" style="display: none;">Live weather metrics and rainfall normal are auto-applied to the conditions step.</span>
+            </div>
+          </div>
+
+          <!-- District Selection Chips -->
+          <div class="district-section">
+            <div class="district-title">
+              <span class="txt-kn">ಕರ್ನಾಟಕದ ಜಿಲ್ಲೆ ಆರಿಸಿ (Select Karnataka District):</span>
+              <span class="txt-en" style="display: none;">Select Karnataka District (Quick Preset):</span>
+            </div>
+            <div class="district-grid" id="district-container"></div>
+          </div>
+        </div>
+
+        <!-- Wizard Step 3: Conditions (Soil Nutrients & Climate) -->
+        <div class="wizard-step-screen" id="screen-step3">
+          <div class="screen-header">
+            <h2 class="screen-title">
+              <span class="txt-kn">ಹಂತ 3: ಮಣ್ಣು ಮತ್ತು ಹವಾಮಾನ ಪರಿಸ್ಥಿತಿಗಳು</span>
+              <span class="txt-en" style="display: none;">Step 3: Soil & Climate Conditions</span>
+            </h2>
+            <p class="screen-subtitle">
+              <span class="txt-kn">ಪೂರ್ವನಿಯೋಜಿತ ಮೌಲ್ಯಗಳನ್ನು ಪರಿಶೀಲಿಸಿ ಅಥವಾ ನಿಮ್ಮ ಮಣ್ಣು ಪರೀಕ್ಷಾ ವರದಿಗೆ (Soil Health Card) ತಕ್ಕಂತೆ ಹೊಂದಿಸಿ.</span>
+              <span class="txt-en" style="display: none;">Review default parameters or adjust sliders according to your Soil Health Card & local farm conditions.</span>
+            </p>
+          </div>
+
+          <!-- Two-Column Conditions Grid -->
+          <div class="rec-conditions-grid">
+            
+            <!-- Left Column: Soil Nutrients & pH (Soil-Parameter Section) -->
+            <div class="rec-conditions-card" id="rec-soil-nutrients-card">
+              <div class="rec-card-header">
+                <div class="rec-card-header-left">
+                  <span class="rec-card-icon">🧪</span>
+                  <div>
+                    <h3 class="rec-card-title">
+                      <span class="txt-kn">ಮಣ್ಣಿನ ಪೋಷಕಾಂಶಗಳು</span>
+                      <span class="txt-en" style="display: none;">Soil Nutrients</span>
+                    </h3>
+                    <div class="current-soil-tag" id="selected-soil-title">ಕೆಂಪು ಮಣ್ಣು (Red Soil)</div>
+                  </div>
+                </div>
+                <button id="btn-reset-defaults" class="reset-btn" type="button" title="Reset to ICAR regional defaults">
+                  ↺ <span class="txt-kn">ಮರುಹೊಂದಿಸಿ</span><span class="txt-en" style="display: none;">Reset</span>
+                </button>
+              </div>
+
+              <!-- Soil Data Origin / Verification Status Indicator -->
+              <div id="soil-nutrients-status-indicator" style="margin: 4px 0 14px 0; padding: 8px 12px; border-radius: 8px; font-size: 0.82rem; font-weight: 600; display: flex; align-items: center; justify-content: space-between; gap: 8px; background: #eff6ff; color: #1e40af; border: 1px solid #bfdbfe;">
+                <div style="display: flex; align-items: center; gap: 6px;">
+                  <span id="soil-source-icon">⚡</span>
+                  <span id="soil-source-text">ICAR ಪ್ರಾದೇಶಿಕ ಸರಾಸರಿ ಅನ್ವಯಿಸಲಾಗಿದೆ (Regional Baseline)</span>
+                </div>
+                <span id="soil-source-badge" style="font-size: 0.72rem; padding: 2px 8px; border-radius: 999px; background: rgba(30, 64, 175, 0.1); color: #1e40af;">ಸ್ವಯಂಚಾಲಿತ / Auto</span>
+              </div>
+
+              <!-- pH Slider -->
+              <div class="form-group">
+                <div class="label-row">
+                  <div class="field-label">
+                    <span class="field-label-kn">ಮಣ್ಣಿನ pH (ಆಮ್ಲೀಯತೆ / ಕ್ಷಾರೀಯತೆ)</span>
+                    <span class="field-label-en">Soil pH Value</span>
+                  </div>
+                  <span class="field-value-badge badge-ph" id="val-ph">6.5</span>
+                </div>
+                <input type="range" id="slider-ph" class="range-slider" min="4.0" max="9.0" step="0.1" value="6.5">
+                <div class="range-meta">
+                  <span>4.0 (ಆಮ್ಲೀಯ / Acidic)</span>
+                  <span>6.5 - 7.5 (ತಟಸ್ಥ / Neutral)</span>
+                  <span>9.0 (ಕ್ಷಾರೀಯ / Alkaline)</span>
+                </div>
+              </div>
+
+              <!-- Nitrogen (N) -->
+              <div class="form-group">
+                <div class="label-row">
+                  <div class="field-label">
+                    <span class="field-label-kn">ಸಾರಜನಕ (Nitrogen - N)</span>
+                    <span class="field-label-en">Available Nitrogen (kg/ha)</span>
+                  </div>
+                  <span class="field-value-badge badge-nutrient" id="val-n">180</span>
+                </div>
+                <input type="range" id="slider-n" class="range-slider" min="50" max="350" step="5" value="180">
+                <div class="range-meta">
+                  <span>50 kg/ha (ಕಡಿಮೆ / Low)</span>
+                  <span>180 kg/ha (ಮಧ್ಯಮ / Medium)</span>
+                  <span>350 kg/ha (ಹೆಚ್ಚು / High)</span>
+                </div>
+              </div>
+
+              <!-- Phosphorus (P) -->
+              <div class="form-group">
+                <div class="label-row">
+                  <div class="field-label">
+                    <span class="field-label-kn">ರಂಜಕ (Phosphorus - P)</span>
+                    <span class="field-label-en">Available Phosphorus (kg/ha)</span>
+                  </div>
+                  <span class="field-value-badge badge-nutrient" id="val-p">18</span>
+                </div>
+                <input type="range" id="slider-p" class="range-slider" min="5" max="50" step="1" value="18">
+                <div class="range-meta">
+                  <span>5 kg/ha</span>
+                  <span>20 kg/ha</span>
+                  <span>50 kg/ha</span>
+                </div>
+              </div>
+
+              <!-- Potassium (K) -->
+              <div class="form-group">
+                <div class="label-row">
+                  <div class="field-label">
+                    <span class="field-label-kn">ಪೊಟ್ಯಾಶ್ (Potassium - K)</span>
+                    <span class="field-label-en">Available Potassium (kg/ha)</span>
+                  </div>
+                  <span class="field-value-badge badge-nutrient" id="val-k">200</span>
+                </div>
+                <input type="range" id="slider-k" class="range-slider" min="60" max="380" step="5" value="200">
+                <div class="range-meta">
+                  <span>60 kg/ha</span>
+                  <span>200 kg/ha</span>
+                  <span>380 kg/ha</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Column: Climate & Weather Parameters -->
+            <div class="rec-conditions-card">
+              <div class="rec-card-header">
+                <div class="rec-card-header-left">
+                  <span class="rec-card-icon">🌦️</span>
+                  <div>
+                    <h3 class="rec-card-title">
+                      <span class="txt-kn">ಹವಾಮಾನ & ಮಳೆ</span>
+                      <span class="txt-en" style="display: none;">Climate & Rainfall</span>
+                    </h3>
+                    <div class="current-district-tag" id="rec-conditions-dist-tag">📍 ಮಂಡ್ಯ (Mandya)</div>
+                  </div>
+                </div>
+                <span class="badge-live-sync">✓ LIVE SYNC</span>
+              </div>
+
+              <!-- Temperature -->
+              <div class="form-group">
+                <div class="label-row">
+                  <div class="field-label">
+                    <span class="field-label-kn">ಸರಾಸರಿ ತಾಪಮಾನ (Temperature)</span>
+                    <span class="field-label-en">Average Temperature (°C)</span>
+                  </div>
+                  <span class="field-value-badge badge-climate" id="val-temp">25.5 °C</span>
+                </div>
+                <input type="range" id="slider-temp" class="range-slider" min="15.0" max="40.0" step="0.5" value="25.5">
+                <div class="range-meta">
+                  <span>15°C (ತಂಪು / Cool)</span>
+                  <span>26°C (ಸಾಧಾರಣ / Moderate)</span>
+                  <span>40°C (ಬಿಸಿಲು / Hot)</span>
+                </div>
+              </div>
+
+              <!-- Rainfall -->
+              <div class="form-group">
+                <div class="label-row">
+                  <div class="field-label">
+                    <span class="field-label-kn">ಋತುಮಾನ ಸರಾಸರಿ ಮಳೆ (Seasonal Rainfall)</span>
+                    <span class="field-label-en">Seasonal Rainfall Normal (mm)</span>
+                  </div>
+                  <span class="field-value-badge badge-climate" id="val-rain">760 mm</span>
+                </div>
+                <input type="range" id="slider-rain" class="range-slider" min="200" max="2200" step="25" value="760">
+                <div class="range-meta">
+                  <span>200 mm (ಕಡಿಮೆ)</span>
+                  <span>800 mm (ಮಧ್ಯಮ)</span>
+                  <span>2200 mm (ಕರಾವಳಿ / ಅಧಿಕ)</span>
+                </div>
+                <div class="rainfall-clarification-note">
+                  <div class="note-heading">💡 <strong>ಕೃಷಿ ಮಳೆ ಸ್ಪಷ್ಟನೆ (Agricultural Transparency):</strong></div>
+                  <div class="note-body">
+                    <span class="txt-kn">ಇಲ್ಲಿ ಬಳಸಲಾದ ಮಳೆಯು ಸಂಪೂರ್ಣ ಬೆಳೆ ಅವಧಿಯ ಸರಾಸರಿ ಮಳೆಯಾಗಿದೆ (Seasonal Rainfall Normal), ಇಂದಿನ ಏಕದಿನ ಮಳೆಯಲ್ಲ. ಇದು ನಿಖರ ಬೆಳೆ ಸೂಕ್ತತೆಗೆ ಅತ್ಯಗತ್ಯ.</span>
+                    <span class="txt-en" style="display: none;">The rainfall slider reflects seasonal rainfall normal for the crop growing cycle, not single-day precipitation, ensuring consistent ML model accuracy.</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Humidity -->
+              <div class="form-group">
+                <div class="label-row">
+                  <div class="field-label">
+                    <span class="field-label-kn">ಗಾಳಿಯ ತೇವಾಂಶ (Relative Humidity)</span>
+                    <span class="field-label-en">Relative Humidity (%)</span>
+                  </div>
+                  <span class="field-value-badge badge-climate" id="val-hum">65 %</span>
+                </div>
+                <input type="range" id="slider-hum" class="range-slider" min="20" max="95" step="1" value="65">
+                <div class="range-meta">
+                  <span>20% (ಶುಷ್ಕ / Dry)</span>
+                  <span>65% (ಸಾಧಾರಣ / Normal)</span>
+                  <span>95% (ಆರ್ದ್ರತೆ / Humid)</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Shared Farm Water Resources & Planning Strategy Profile -->
+          <div class="farm-profile-integrated-card" style="margin-top: 24px; background: var(--bg-card, #ffffff); border-radius: 16px; border: 1px solid var(--border-color, #e2e8f0); padding: 22px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);">
+            
+            <!-- Farm Profile Header & Verification Status -->
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; margin-bottom: 20px; border-bottom: 1px solid var(--border-subtle, #edf2f7); padding-bottom: 16px;">
+              <div>
+                <h3 style="margin: 0; font-size: 1.15rem; color: var(--text-primary, #1e293b); display: flex; align-items: center; gap: 8px;">
+                  <span>🏞️</span>
+                  <span class="txt-kn">ಜಮೀನಿನ ನೀರಿನ ಮೂಲ & ಬೆಳೆ ಯೋಜನಾ ಆದ್ಯತೆಗಳು</span>
+                  <span class="txt-en" style="display: none;">Farm Water Resources & Crop Planning Strategy</span>
+                </h3>
+                <p style="margin: 4px 0 0; font-size: 0.85rem; color: var(--text-muted, #64748b);">
+                  <span class="txt-kn">ಒಮ್ಮೆ ನಮೂದಿಸಿದ ವಿವರಗಳನ್ನು ಉಳಿಸಲಾಗುತ್ತದೆ (ಮತ್ತೆ ನಮೂದಿಸುವ ಅಗತ್ಯವಿಲ್ಲ).</span>
+                  <span class="txt-en" style="display: none;">Shared farm profile is saved locally and synchronized across all views.</span>
+                </p>
+              </div>
+              <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+                <div id="farm-soil-verification-badge" style="display: inline-flex; align-items: center; gap: 6px; padding: 6px 14px; border-radius: 999px; font-size: 0.82rem; font-weight: 700; background: #ecfdf5; color: #065f46; border: 1px solid #a7f3d0;">
+                  <span id="soil-verif-icon">⚡</span>
+                  <span id="soil-verif-text">ಪ್ರಾದೇಶಿಕ ಅಂದಾಜು / Regional Baseline</span>
+                </div>
+                <button type="button" id="btn-open-water-suitability" onclick="window.navTo('water')" class="btn btn-sm btn-secondary" style="padding: 6px 12px; font-size: 0.82rem; border-radius: 8px; border: 1px solid var(--border-color, #cbd5e1); cursor: pointer; background: #f8fafc; color: #1e293b;">
+                  💧 <span class="txt-kn">ಜಲ ಹೊಂದಾಣಿಕೆ ವಿವರ</span><span class="txt-en" style="display: none;">Water Suitability Details</span>
+                </button>
+                <button type="button" id="btn-quick-verify-soil" onclick="window.navTo('soil_ocr')" class="btn btn-sm btn-secondary" style="padding: 6px 12px; font-size: 0.82rem; border-radius: 8px; border: 1px solid var(--border-color, #cbd5e1); cursor: pointer; background: #f8fafc; color: #1e293b;">
+                  📄 <span class="txt-kn">ಮಣ್ಣು ವರದಿ ಸ್ಕ್ಯಾನ್</span><span class="txt-en" style="display: none;">Scan Soil Card</span>
+                </button>
+                <button type="button" id="btn-clear-farm-profile" onclick="window.confirmClearFarmerProfile()" class="btn btn-sm" style="padding: 6px 12px; font-size: 0.82rem; border-radius: 8px; border: 1px solid #fca5a5; background: #fef2f2; color: #991b1b; cursor: pointer;">
+                  🧹 <span class="txt-kn">ಪ್ರೊಫೈಲ್ ಅಳಿಸಿ</span><span class="txt-en" style="display: none;">Clear Profile</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Profile Controls Grid: Water Resources & Planning Priorities (4 Rearranged Fields) -->
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 18px;">
+              
+              <!-- 1. Primary Water Source -->
+              <div>
+                <label style="display: block; font-size: 0.85rem; font-weight: 600; color: var(--text-primary, #1e293b); margin-bottom: 6px;">
+                  💧 <span class="txt-kn">ನೀರಿನ ಪ್ರಮುಖ ಮೂಲ</span><span class="txt-en" style="display: none;">Primary Water Source</span>
+                </label>
+                <select id="rec-water-source" class="form-select" style="width: 100%; padding: 10px 12px; border-radius: 10px; border: 1px solid var(--border-color, #cbd5e1); background: var(--bg-card, #ffffff); font-size: 0.9rem;">
+                  <option value="borewell" selected>ಬೋರ್‌ವೆಲ್ (Borewell)</option>
+                  <option value="canal">ಕಾಲುವೆ ನೀರು (Canal Irrigation)</option>
+                  <option value="open_well">ತೆರೆದ ಬಾವಿ (Open Well)</option>
+                  <option value="river">ನದಿ / ಹಳ್ಳ (River / Lift)</option>
+                  <option value="rainfed">ಮಳೆಯಾಶ್ರಿತ ಮಾತ್ರ (Rainfed Only)</option>
+                </select>
+              </div>
+
+              <!-- 2. Irrigation Technology -->
+              <div>
+                <label style="display: block; font-size: 0.85rem; font-weight: 600; color: var(--text-primary, #1e293b); margin-bottom: 6px;">
+                  🚿 <span class="txt-kn">ನೀರಾವರಿ ತಂತ್ರಜ್ಞಾನ</span><span class="txt-en" style="display: none;">Irrigation Technology</span>
+                </label>
+                <select id="rec-irrigation-method" class="form-select" style="width: 100%; padding: 10px 12px; border-radius: 10px; border: 1px solid var(--border-color, #cbd5e1); background: var(--bg-card, #ffffff); font-size: 0.9rem;">
+                  <option value="drip" selected>ಹನಿ ನೀರಾವರಿ (Drip - High Efficiency)</option>
+                  <option value="sprinkler">ತುಂತುರು ನೀರಾವರಿ (Sprinkler)</option>
+                  <option value="furrow">ಸಾಲು ನೀರಾವರಿ (Furrow)</option>
+                  <option value="flood">ಪಾತಿ / ಹರಿ ನೀರಾವರಿ (Flood / Basin)</option>
+                  <option value="rainfed">ಯಾವುದೂ ಇಲ್ಲ (Rainfed)</option>
+                </select>
+              </div>
+
+              <!-- 3. Water Availability Level -->
+              <div>
+                <label style="display: block; font-size: 0.85rem; font-weight: 600; color: var(--text-primary, #1e293b); margin-bottom: 6px;">
+                  🌊 <span class="txt-kn">ನೀರಿನ ಲಭ್ಯತೆಯ ಪ್ರಮಾಣ</span><span class="txt-en" style="display: none;">Water Availability Level</span>
+                </label>
+                <select id="rec-water-level" class="form-select" style="width: 100%; padding: 10px 12px; border-radius: 10px; border: 1px solid var(--border-color, #cbd5e1); background: var(--bg-card, #ffffff); font-size: 0.9rem;">
+                  <option value="moderate" selected>ಸಾಧಾರಣ ಲಭ್ಯತೆ (Moderate)</option>
+                  <option value="scarce">ಕಡಿಮೆ / ಅಭಾವ (Scarce / Deficit)</option>
+                  <option value="abundant">ಧಾರಾಳ ಲಭ್ಯತೆ (Abundant)</option>
+                </select>
+              </div>
+
+              <!-- 4. Decision Priority Strategy -->
+              <div>
+                <label style="display: block; font-size: 0.85rem; font-weight: 600; color: var(--text-primary, #1e293b); margin-bottom: 6px;">
+                  ⚖️ <span class="txt-kn">ಶಿಫಾರಸು ತಂತ್ರಜ್ಞಾನ ಆದ್ಯತೆ</span><span class="txt-en" style="display: none;">Decision Priority Strategy</span>
+                </label>
+                <select id="rec-priority-mode" class="form-select" style="width: 100%; padding: 10px 12px; border-radius: 10px; border: 1px solid var(--border-color, #cbd5e1); background: var(--bg-card, #ffffff); font-size: 0.9rem; font-weight: 600;">
+                  <option value="balanced" selected>⚖️ ಸಮತೋಲಿತ (Balanced: 45% Agri, 25% Water, 15% Price, 15% Trend)</option>
+                  <option value="water_priority">💧 ನೀರಿನ ಉಳಿತಾಯ (Water Priority: 30% Agri, 50% Water, 10% Price, 10% Trend)</option>
+                  <option value="market_priority">📈 ಗರಿಷ್ಠ ಮಾರುಕಟ್ಟೆ ಆದಾಯ (Market Priority: 30% Agri, 15% Water, 30% Price, 25% Trend)</option>
+                </select>
+              </div>
+
+            </div>
+
+            <!-- Priority Mode Guidance Box -->
+            <div id="rec-priority-explanation-box" style="margin-top: 16px; padding: 12px 16px; background: rgba(59, 130, 246, 0.05); border-left: 4px solid #3b82f6; border-radius: 8px; font-size: 0.82rem; color: var(--text-secondary, #475569);">
+              💡 <strong><span class="txt-kn">ತಂತ್ರಗಾರಿಕೆ ಮಾಹಿತಿ:</span><span class="txt-en" style="display: none;">Strategy Guidance:</span></strong>
+              <span id="priority-mode-desc-text">
+                <span class="txt-kn">ಸಮತೋಲಿತ ವಿಧಾನವು ಕೃಷಿ ವಿಜ್ಞಾನ (45%), ನೀರಿನ ಹೊಂದಾಣಿಕೆ (25%) ಮತ್ತು ಮಾರುಕಟ್ಟೆ ದರ/ಪ್ರವೃತ್ತಿಯನ್ನು (30%) ಸಮನ್ವಯಗೊಳಿಸುತ್ತದೆ.</span>
+                <span class="txt-en" style="display: none;">Balanced strategy coordinates agronomic science (45%), water compatibility (25%), and market price/trend (30%).</span>
+              </span>
+            </div>
+
+            <!-- Hidden inputs for removed fields to preserve backend/script defaults -->
+            <input type="hidden" id="rec-water-quality" value="normal">
+            <input type="date" id="rec-sowing-date" value="2026-06-15" style="display: none;">
+            <input type="hidden" id="rec-farm-area" value="1.0">
+            <input type="hidden" id="rec-preferred-mandi" value="">
+
+          </div>
+
+          <!-- Hidden fallback elements for script/test compatibility -->
+          <span id="rec-summary-line" style="display: none;"></span>
+          <button type="button" id="btn-rec-submit" style="display: none;" onclick="fetchRecommendation()"></button>
+        </div>
+
+        <!-- Wizard Step 4: Result (Hero Crop Main Visual Focus) -->
+        <div class="wizard-step-screen" id="screen-result">
+          <div class="screen-header rec-result-header">
+            <span class="rec-result-sub-badge">🌾 AI DECISION SUPPORT RESULT</span>
+            <h2 class="screen-title rec-result-title">
+              <span class="txt-kn">ನಿಮ್ಮ ಹೊಲಕ್ಕೆ ಅತ್ಯಂತ ಸೂಕ್ತ ಬೆಳೆ</span>
+              <span class="txt-en" style="display: none;">Best Suitable Crop for Your Farm</span>
+            </h2>
+            <p class="screen-subtitle">
+              <span class="txt-kn">ನಿಮ್ಮ ಮಣ್ಣು, ಸ್ಥಳ ಮತ್ತು ಹವಾಮಾನ ಪರಿಸ್ಥಿತಿಗಳಿಗೆ ಅನುಗುಣವಾಗಿ ವಿಶ್ಲೇಷಿಸಲಾಗಿದೆ.</span>
+              <span class="txt-en" style="display: none;">Calculated based on your soil type, district agro-climate, and seasonal conditions.</span>
+            </p>
+          </div>
+
+          <!-- Milestone 1: Top-3 Comprehensive Multi-Stage Decision Results & Alternatives -->
+          <div id="milestone1-top3-results-root" style="margin-top: 24px;"></div>
+
+          <!-- Hero Recommended Crop Card (Main Visual Focus) -->
+          <div class="hero-crop-featured-card">
+            
+            <!-- Hero Body -->
+            <div class="hero-crop-body">
+              <div class="hero-crop-header-row">
+                <div class="hero-crop-names" style="display: flex; align-items: center; gap: 14px;">
+                  <div class="rec-thumb-wrap">
+                    <img src="public/images/crops/ragi.jpg" alt="Recommended Crop" id="hero-crop-img" class="rec-crop-thumb" width="70" height="70" onerror="this.onerror=null; this.src='public/images/crops/default_crop.svg';">
+                  </div>
+                  <div>
+                    <div style="display: flex; align-items: center; gap: 8px;">
+                      <span class="hero-clean-icon" id="hero-clean-icon-symbol" style="font-size: 24px;">🌾</span>
+                      <h2 class="hero-clean-title-kn" id="hero-name-kn" style="margin: 0;">ರಾಗಿ</h2>
+                    </div>
+                    <div class="hero-clean-title-en" id="hero-name-en">Ragi (Finger Millet)</div>
+                  </div>
+                </div>
+                <div class="hero-crop-photo-badges" style="position: static; display: flex; align-items: center; gap: 10px;">
+                  <span class="hero-score-badge" id="hero-suitability-score">
+                    <span class="score-num">98%</span>
+                    <span class="score-txt"><span class="txt-kn">ಹೊಂದಾಣಿಕೆ</span><span class="txt-en" style="display: none;">Match</span></span>
+                  </span>
+                  <span class="hero-clean-tier" id="rec-status-badge">✓ ಅತ್ಯಂತ ಸೂಕ್ತ / Highly Suitable</span>
+                </div>
+              </div>
+                <div class="hero-crop-meta-tags">
+                  <span class="hero-meta-pill">🌱 <span class="txt-kn">ಮಣ್ಣು:</span><span class="txt-en" style="display: none;">Soil:</span> <strong id="rec-result-soil-tag">ಕೆಂಪು ಮಣ್ಣು (Red Soil)</strong></span>
+                  <span class="hero-meta-pill">📍 <span class="txt-kn">ಸ್ಥಳ:</span><span class="txt-en" style="display: none;">Location:</span> <strong id="rec-result-loc-tag">ಮಂಡ್ಯ (Mandya)</strong></span>
+                  <span class="hero-meta-pill">📅 <span class="txt-kn">ಮುಂಗಾರು</span><span class="txt-en" style="display: none;">Kharif Season</span></span>
+                </div>
+
+              <!-- Today's Advisory Pill -->
+              <div class="hero-weather-action-card" id="rec-today-action-card">
+                <div class="today-action-top">
+                  <span id="rec-today-icon" class="today-action-icon">🌦️</span>
+                  <div>
+                    <strong id="rec-today-headline" class="today-action-headline">ಇಂದಿನ ಕೃಷಿ ಸಲಹೆ</strong>
+                    <div id="rec-today-cond" class="today-action-sub">Weather Condition</div>
+                  </div>
+                </div>
+                <p id="rec-today-instruction" class="today-action-instruction">ಸಿಂಪರಣೆ ಮಾಡಬೇಡಿ ಅಥವಾ ಕಳೆ ತೆಗೆಯಿರಿ.</p>
+                <div class="rec-today-caution" id="rec-today-caution" style="display: none;">
+                  <span class="caution-icon">⚠️</span>
+                  <span id="rec-today-caution-text"></span>
+                </div>
+              </div>
+
+              <!-- Result Action Buttons -->
+              <div class="hero-action-grid">
+                <button type="button" class="btn-rec-action btn-action-care" id="btn-view-full-guide" onclick="openCropCareForCurrent()">
+                  <span class="action-btn-icon">🌾</span>
+                  <div class="action-btn-content">
+                    <span class="action-btn-main txt-kn">ಬೆಳೆ ಆರೈಕೆ ಮಾರ್ಗದರ್ಶಿ</span>
+                    <span class="action-btn-main txt-en" style="display: none;">Crop Care Guide</span>
+                    <span class="action-btn-sub txt-kn">ಹಂತ-ಹಂತದ ಕೃಷಿ ನಿರ್ವಹಣೆ</span>
+                    <span class="action-btn-sub txt-en" style="display: none;">Lifecycle management</span>
+                  </div>
+                  <span class="action-btn-arrow">➔</span>
+                </button>
+
+                <button type="button" class="btn-rec-action btn-action-disease" id="btn-goto-disease" onclick="openDiseaseForCurrent()">
+                  <span class="action-btn-icon">🔬</span>
+                  <div class="action-btn-content">
+                    <span class="action-btn-main txt-kn">ರೋಗ ಪತ್ತೆಹಚ್ಚು</span>
+                    <span class="action-btn-main txt-en" style="display: none;">Disease Scanner</span>
+                    <span class="action-btn-sub txt-kn">ಎಲೆ ಫೋಟೋ ಸ್ಕ್ಯಾನ್ & ಚಿಕಿತ್ಸೆ</span>
+                    <span class="action-btn-sub txt-en" style="display: none;">Scan leaf for diseases</span>
+                  </div>
+                  <span class="action-btn-arrow">➔</span>
+                </button>
+
+                <button type="button" class="btn-rec-action btn-action-econ" id="btn-estimate-economics" onclick="openEconomicsForCurrent()">
+                  <span class="action-btn-icon">💰</span>
+                  <div class="action-btn-content">
+                    <span class="action-btn-main txt-kn">ಕೃಷಿ ಆರ್ಥಿಕತೆ</span>
+                    <span class="action-btn-main txt-en" style="display: none;">Farm Economics</span>
+                    <span class="action-btn-sub txt-kn">ವೆಚ್ಚ, ಇಳುವರಿ & ಲಾಭ ಅಂದಾಜು</span>
+                    <span class="action-btn-sub txt-en" style="display: none;">Return & cost calculator</span>
+                  </div>
+                  <span class="action-btn-arrow">➔</span>
+                </button>
+              </div>
+
+              <!-- Hidden legacy button for compatibility -->
+              <button type="button" id="btn-start-lifecycle" onclick="startLifecycleForCurrent()" style="display: none;"></button>
+            </div>
+          </div>
+
+          <!-- Why this crop? Checklist Section -->
+          <div class="rec-section-card">
+            <div class="rec-sec-header">
+              <span class="rec-sec-icon">✅</span>
+              <h3 class="rec-sec-title">
+                <span class="txt-kn">ಈ ಬೆಳೆ ಏಕೆ ಸೂಕ್ತ? (ಕೃಷಿ ವಿಜ್ಞಾನ ಆಧಾರಿತ ಕಾರಣಗಳು)</span>
+                <span class="txt-en" style="display: none;">Why this crop? (Scientific Rationale)</span>
+              </h3>
+            </div>
+            <ul class="why-list-grid" id="why-list-container"></ul>
+          </div>
+
+          <!-- Why not other crops? -->
+          <div class="rec-section-card" id="unsuitable-section" style="display: none;">
+            <div class="rec-sec-header">
+              <span class="rec-sec-icon">⚠️</span>
+              <h3 class="rec-sec-title">
+                <span class="txt-kn">ಇತರ ಬೆಳೆಗಳು ಏಕೆ ಕಡಿಮೆ ಸೂಕ್ತ? (Why Not Other Crops?)</span>
+                <span class="txt-en" style="display: none;">Why are other crops less suitable?</span>
+              </h3>
+            </div>
+            <div class="unsuitable-list-grid" id="unsuitable-list-container"></div>
+          </div>
+
+          <!-- Action to test another soil -->
+          <div class="rec-bottom-reset-row">
+            <button type="button" class="btn btn-secondary btn-check-another" onclick="setWizardStep(1)">
+              ↺ <span class="txt-kn">ಮತ್ತೊಂದು ಮಣ್ಣು / ಪ್ರದೇಶ ಪರಿಶೀಲಿಸಿ</span>
+              <span class="txt-en" style="display: none;">Check Another Soil / District</span>
+            </button>
+          </div>
+
+          <div id="rec-stages-preview-grid" style="display: none;"></div>
+        </div>
+
+        <!-- Bottom Navigation Bar -->
+        <div class="recommend-bottom-bar" id="recommend-bottom-bar">
+          <button id="btn-back" class="btn btn-secondary">
+            ⬅ <span class="txt-kn">ಹಿಂದೆ</span><span class="txt-en" style="display: none;">Back</span>
+          </button>
+          <button id="btn-next" class="btn btn-primary">
+            <span class="txt-kn">ಮುಂದೆ</span><span class="txt-en" style="display: none;">Next</span> ➔
+          </button>
+        </div>
+      </section>

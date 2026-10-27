@@ -1,0 +1,316 @@
+{
+  "_metadata": {
+    "description": "Baseline cultivation cost benchmarks, typical yields, and reference prices for Karnataka pilot crops. Grounded in UAS Bengaluru, UAS Dharwad, UHS Bagalkot, ICAR-CPCRI, and Karnataka State MSP/APMC reports.",
+    "notice": "Values represent typical averages per acre under recommended Package of Practices. Actual farm performance varies with irrigation access, weather, market fluctuations, and soil fertility.",
+    "currency": "INR (₹)",
+    "area_unit": "acre",
+    "production_unit": "quintal (100 kg)"
+  },
+  "crops": {
+    "ragi": {
+      "crop_id": "ragi",
+      "crop_name_en": "Ragi (Finger Millet)",
+      "crop_name_kn": "ರಾಗಿ",
+      "lifecycle_type": "annual",
+      "default_yield_per_acre": 12.0,
+      "yield_range_per_acre": [8.0, 16.0],
+      "yield_unit": "quintals / acre",
+      "default_price_per_quintal": 3800.0,
+      "price_range_per_quintal": [3200.0, 4400.0],
+      "price_unit": "₹ / quintal",
+      "msp_rate": 4290.0,
+      "default_cost_per_acre": 16500.0,
+      "cost_breakdown": {
+        "seed_nursery": {
+          "label_en": "Seeds & Nursery",
+          "label_kn": "ಬೀಜ ಮತ್ತು ಸಸಿ ಮಡಿ",
+          "amount_per_acre": 800.0
+        },
+        "fym_fertilizer": {
+          "label_en": "FYM & Fertilizers",
+          "label_kn": "ಕೊಟ್ಟಿಗೆ ಗೊಬ್ಬರ ಮತ್ತು ರಾಸಾಯನಿಕ ಗೊಬ್ಬರ",
+          "amount_per_acre": 4200.0
+        },
+        "plant_protection": {
+          "label_en": "Plant Protection (Bio/Pesticides)",
+          "label_kn": "ಸಸ್ಯ ಸಂರಕ್ಷಣೆ (ಕೀಟ/ರೋಗ ನಿಯಂತ್ರಣ)",
+          "amount_per_acre": 800.0
+        },
+        "land_prep_machinery": {
+          "label_en": "Land Preparation & Tractor",
+          "label_kn": "ಭೂಮಿ ಸಿದ್ಧತೆ ಮತ್ತು ಟ್ರ್ಯಾಕ್ಟರ್ ವೆಚ್ಚ",
+          "amount_per_acre": 3200.0
+        },
+        "labour": {
+          "label_en": "Labour (Weeding & Harvesting)",
+          "label_kn": "ಕೂಲಿ ವೆಚ್ಚ (ಕಳೆ ಕೀಳುವುದು ಮತ್ತು ಕೊಯ್ಲು)",
+          "amount_per_acre": 5000.0
+        },
+        "irrigation_electricity": {
+          "label_en": "Irrigation & Electricity",
+          "label_kn": "ನೀರಾವರಿ ಮತ್ತು ವಿದ್ಯುತ್ ವೆಚ್ಚ",
+          "amount_per_acre": 500.0
+        },
+        "transport": {
+          "label_en": "Transport to APMC / Mandi",
+          "label_kn": "ಮಾರುಕಟ್ಟೆ ಸಾಗಾಣಿಕೆ ವೆಚ್ಚ",
+          "amount_per_acre": 1200.0
+        },
+        "bagging_misc": {
+          "label_en": "Bagging & Miscellaneous",
+          "label_kn": "ಚೀಲ ತುಂಬುವಿಕೆ ಮತ್ತು ಇತರೆ ವೆಚ್ಚ",
+          "amount_per_acre": 800.0
+        }
+      },
+      "source_provenance": {
+        "authority": "UAS Bengaluru Package of Practices for Field Crops & CACP Kharif Price Policy 2024–25",
+        "url": "https://www.uasbangalore.edu.in/",
+        "year": "2024-2025"
+      }
+    },
+    "rice": {
+      "crop_id": "rice",
+      "crop_name_en": "Rice / Paddy",
+      "crop_name_kn": "ಭತ್ತ",
+      "lifecycle_type": "annual",
+      "default_yield_per_acre": 22.0,
+      "yield_range_per_acre": [18.0, 28.0],
+      "yield_unit": "quintals / acre",
+      "default_price_per_quintal": 2500.0,
+      "price_range_per_quintal": [2200.0, 3000.0],
+      "price_unit": "₹ / quintal",
+      "msp_rate": 2300.0,
+      "default_cost_per_acre": 30000.0,
+      "cost_breakdown": {
+        "seed_nursery": {
+          "label_en": "Seeds & Raised Nursery",
+          "label_kn": "ಬೀಜ ಮತ್ತು ಸಸಿ ಮಡಿ ಸಿದ್ಧತೆ",
+          "amount_per_acre": 2000.0
+        },
+        "fym_fertilizer": {
+          "label_en": "FYM & Balanced Fertilizers",
+          "label_kn": "ಕೊಟ್ಟಿಗೆ ಗೊಬ್ಬರ ಮತ್ತು ರಸಗೊಬ್ಬರ (NPK+Zinc)",
+          "amount_per_acre": 6500.0
+        },
+        "plant_protection": {
+          "label_en": "Plant Protection (Weedicide/Pesticide)",
+          "label_kn": "ಕಳೆನಾಶಕ ಮತ್ತು ಸಸ್ಯ ಸಂರಕ್ಷಣೆ",
+          "amount_per_acre": 2500.0
+        },
+        "land_prep_machinery": {
+          "label_en": "Puddling & Land Preparation",
+          "label_kn": "ಗದ್ದೆ ಹಸನು ಮಾಡುವಿಕೆ (ಪಡ್ಲಿಂಗ್)",
+          "amount_per_acre": 5500.0
+        },
+        "labour": {
+          "label_en": "Transplanting & Harvesting Labour",
+          "label_kn": "ನಾಟಿ ಮತ್ತು ಕೊಯ್ಲು ಕೂಲಿ ವೆಚ್ಚ",
+          "amount_per_acre": 9000.0
+        },
+        "irrigation_electricity": {
+          "label_en": "Water Management & Pumping",
+          "label_kn": "ನೀರಾವರಿ ನಿರ್ವಹಣೆ",
+          "amount_per_acre": 2000.0
+        },
+        "transport": {
+          "label_en": "Transport to Procurement Centre",
+          "label_kn": "ಖರೀದಿ ಕೇಂದ್ರಕ್ಕೆ ಸಾಗಾಣಿಕೆ",
+          "amount_per_acre": 1500.0
+        },
+        "bagging_misc": {
+          "label_en": "Sacks, Twine & Handling",
+          "label_kn": "ಗೋಣಿ ಚೀಲ, ಹೊಲಿಗೆ ಮತ್ತು ಕೂಲಿ",
+          "amount_per_acre": 1000.0
+        }
+      },
+      "source_provenance": {
+        "authority": "UAS Dharwad / UAS Raichur Package of Practices & DES Karnataka Cost of Cultivation",
+        "url": "https://des.karnataka.gov.in/",
+        "year": "2024-2025"
+      }
+    },
+    "maize": {
+      "crop_id": "maize",
+      "crop_name_en": "Maize (Corn)",
+      "crop_name_kn": "ಮೆಕ್ಕೆ ಜೋಳ",
+      "lifecycle_type": "annual",
+      "default_yield_per_acre": 26.0,
+      "yield_range_per_acre": [20.0, 32.0],
+      "yield_unit": "quintals / acre",
+      "default_price_per_quintal": 2250.0,
+      "price_range_per_quintal": [2000.0, 2600.0],
+      "price_unit": "₹ / quintal",
+      "msp_rate": 2225.0,
+      "default_cost_per_acre": 24000.0,
+      "cost_breakdown": {
+        "seed_nursery": {
+          "label_en": "Hybrid Seed (8 kg)",
+          "label_kn": "ಸಂಕರಿತ ಬೀಜ (8 ಕೆ.ಜಿ)",
+          "amount_per_acre": 2500.0
+        },
+        "fym_fertilizer": {
+          "label_en": "FYM & Balanced Fertilizers",
+          "label_kn": "ಕೊಟ್ಟಿಗೆ ಗೊಬ್ಬರ ಮತ್ತು NPK ರಸಗೊಬ್ಬರ",
+          "amount_per_acre": 6200.0
+        },
+        "plant_protection": {
+          "label_en": "Fall Armyworm & Weed Control",
+          "label_kn": "ಲದ್ದಿಹುಳು ಮತ್ತು ಕಳೆ ನಿಯಂತ್ರಣ",
+          "amount_per_acre": 2800.0
+        },
+        "land_prep_machinery": {
+          "label_en": "Ploughing & Ridging",
+          "label_kn": "ಉಳುಮೆ ಮತ್ತು ಸಾಲು ಮಾಡುವುದು",
+          "amount_per_acre": 4000.0
+        },
+        "labour": {
+          "label_en": "Sowing, Weeding & Cob Picking",
+          "label_kn": "ಬಿತ್ತನೆ, ಕಳೆ ಕೀಳುವುದು ಮತ್ತು ತೆನೆ ಕೀಳುವುದು",
+          "amount_per_acre": 5500.0
+        },
+        "irrigation_electricity": {
+          "label_en": "Critical Stage Irrigation",
+          "label_kn": "ನಿರ್ಣಾಯಕ ಹಂತಗಳಲ್ಲಿ ನೀರಾವರಿ",
+          "amount_per_acre": 1200.0
+        },
+        "transport": {
+          "label_en": "Transport to APMC",
+          "label_kn": "ಮಾರುಕಟ್ಟೆ ಸಾಗಾಣಿಕೆ ವೆಚ್ಚ",
+          "amount_per_acre": 1200.0
+        },
+        "bagging_misc": {
+          "label_en": "Threshing, Drying & Bags",
+          "label_kn": "ಒಕ್ಕಣೆ, ಒಣಗಿಸುವುದು ಮತ್ತು ಚೀಲ ತುಂಬುವಿಕೆ",
+          "amount_per_acre": 600.0
+        }
+      },
+      "source_provenance": {
+        "authority": "ICAR-Indian Institute of Maize Research (IIMR) & UAS Dharwad",
+        "url": "https://iimr.icar.gov.in/",
+        "year": "2024-2025"
+      }
+    },
+    "tomato": {
+      "crop_id": "tomato",
+      "crop_name_en": "Tomato",
+      "crop_name_kn": "ಟೊಮೇಟೊ",
+      "lifecycle_type": "annual",
+      "default_yield_per_acre": 140.0,
+      "yield_range_per_acre": [100.0, 200.0],
+      "yield_unit": "quintals / acre",
+      "default_price_per_quintal": 1500.0,
+      "price_range_per_quintal": [800.0, 2500.0],
+      "price_unit": "₹ / quintal",
+      "msp_rate": null,
+      "default_cost_per_acre": 60000.0,
+      "cost_breakdown": {
+        "seed_nursery": {
+          "label_en": "Hybrid Seedlings (Pro-tray)",
+          "label_kn": "ಸಂಕರಿತ ಸಸಿಗಳು (ಪ್ರೋಟ್ರೆ)",
+          "amount_per_acre": 7000.0
+        },
+        "fym_fertilizer": {
+          "label_en": "FYM, Fertigation & Nutrients",
+          "label_kn": "ಕೊಟ್ಟಿಗೆ ಗೊಬ್ಬರ, ಹನಿ ನೀರಾವರಿ ಗೊಬ್ಬರ",
+          "amount_per_acre": 12000.0
+        },
+        "plant_protection": {
+          "label_en": "Blight & Pest Management",
+          "label_kn": "ಅಂಗಮಾರಿ ಮತ್ತು ಕೀಟ ನಿಯಂತ್ರಣ ಔಷಧಗಳು",
+          "amount_per_acre": 9000.0
+        },
+        "land_prep_machinery": {
+          "label_en": "Raised Bed & Mulching Prep",
+          "label_kn": "ಏರುಮಡಿ ಮತ್ತು ಮಲ್ಚಿಂಗ್ ಸಿದ್ಧತೆ",
+          "amount_per_acre": 8000.0
+        },
+        "labour": {
+          "label_en": "Staking & Multiple Harvests",
+          "label_kn": "ಆಸರೆ ಕಟ್ಟುವುದು ಮತ್ತು ಕಟಾವು ಕೂಲಿ",
+          "amount_per_acre": 15000.0
+        },
+        "irrigation_electricity": {
+          "label_en": "Drip Irrigation Power",
+          "label_kn": "ಹನಿ ನೀರಾವರಿ ಮತ್ತು ವಿದ್ಯುತ್",
+          "amount_per_acre": 3000.0
+        },
+        "transport": {
+          "label_en": "Transport to Kolar/Bengaluru Mandi",
+          "label_kn": "ಕೋಲಾರ/ಬೆಂಗಳೂರು ಮಂಡಿ ಸಾಗಾಣಿಕೆ",
+          "amount_per_acre": 4000.0
+        },
+        "bagging_misc": {
+          "label_en": "Plastic Crates & Weighing",
+          "label_kn": "ಪ್ಲಾಸ್ಟಿಕ್ ಕ್ರೇಟ್ಸ್ ಮತ್ತು ಮಾರುಕಟ್ಟೆ ವೆಚ್ಚ",
+          "amount_per_acre": 2000.0
+        }
+      },
+      "source_provenance": {
+        "authority": "University of Horticultural Sciences (UHS) Bagalkot Package of Practices & Kolar APMC Wholesale Reports",
+        "url": "https://uhsbagalkot.karnataka.gov.in/",
+        "year": "2024-2025"
+      }
+    },
+    "arecanut": {
+      "crop_id": "arecanut",
+      "crop_name_en": "Arecanut (Betel Nut)",
+      "crop_name_kn": "ಅಡಿಕೆ",
+      "lifecycle_type": "perennial",
+      "default_yield_per_acre": 8.0,
+      "yield_range_per_acre": [6.0, 12.0],
+      "yield_unit": "quintals / acre (dry chali/rashi)",
+      "default_price_per_quintal": 42000.0,
+      "price_range_per_quintal": [36000.0, 48000.0],
+      "price_unit": "₹ / quintal",
+      "msp_rate": null,
+      "default_cost_per_acre": 52000.0,
+      "cost_breakdown": {
+        "seed_nursery": {
+          "label_en": "Infill Saplings & Gap Filling",
+          "label_kn": "ತೆರವು ಬಿದ್ದ ಜಾಗದಲ್ಲಿ ಹೊಸ ಸಸಿ ನೆಡುವುದು",
+          "amount_per_acre": 1000.0
+        },
+        "fym_fertilizer": {
+          "label_en": "Green Manure & Palm Fertilizers",
+          "label_kn": "ಹಸಿರೆಲೆ, ಬೇವಿನ ಹಿಂಡಿ ಮತ್ತು ರಸಗೊಬ್ಬರ",
+          "amount_per_acre": 14000.0
+        },
+        "plant_protection": {
+          "label_en": "Bordeaux Mixture 1% (Koleroga spray)",
+          "label_kn": "ಬೋರ್ಡೋ ದ್ರಾವಣ ಸಿಂಪಡಣೆ (ಕೊಳೆರೋಗ ನಿಯಂತ್ರಣ)",
+          "amount_per_acre": 7500.0
+        },
+        "land_prep_machinery": {
+          "label_en": "Drainage Channels & De-silting",
+          "label_kn": "ಬಸಿಗಾಲುವೆ ತೋಡುವುದು ಮತ್ತು ತೋಟ ಸ್ವಚ್ಛತೆ",
+          "amount_per_acre": 5500.0
+        },
+        "labour": {
+          "label_en": "Skilled Tree Climbing & De-husking",
+          "label_kn": "ಮರ ಹತ್ತುವ ಕೂಲಿ, ಗೊನೆ ಕೊಯ್ಯುವುದು ಮತ್ತು ಸುಲಿಯುವುದು",
+          "amount_per_acre": 16000.0
+        },
+        "irrigation_electricity": {
+          "label_en": "Summer Sprinkler / Drip Irrigation",
+          "label_kn": "ಬೇಸಿಗೆ ಸ್ಪ್ರಿಂಕ್ಲರ್ / ಹನಿ ನೀರಾವರಿ",
+          "amount_per_acre": 4000.0
+        },
+        "transport": {
+          "label_en": "Transport to CAMPCO / APMC",
+          "label_kn": "ಕ್ಯಾಂಪ್ಕೋ / ಎಪಿಎಂಸಿ ಸಾಗಾಣಿಕೆ",
+          "amount_per_acre": 2500.0
+        },
+        "bagging_misc": {
+          "label_en": "Drying Yard, Grading & Gunny Bags",
+          "label_kn": "ಕಣದಲ್ಲಿ ಒಣಗಿಸುವಿಕೆ, ಗ್ರೇಡಿಂಗ್ ಮತ್ತು ಚೀಲ",
+          "amount_per_acre": 1500.0
+        }
+      },
+      "source_provenance": {
+        "authority": "ICAR-Central Plantation Crops Research Institute (CPCRI) Kasaragod & CAMPCO Annual Market Trends",
+        "url": "https://cpcri.icar.gov.in/",
+        "year": "2024-2025"
+      }
+    }
+  }
+}

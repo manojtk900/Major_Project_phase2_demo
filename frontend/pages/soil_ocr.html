@@ -1,0 +1,222 @@
+<section class="view-panel" id="view-soil-ocr">
+  <div class="page-header-box" style="margin-bottom: 8px; padding: 8px 16px;">
+    <div class="ph-title-group">
+      <span class="ph-badge" style="font-size: 0.72rem; padding: 2px 8px;">📄 Digital Agriculture AI</span>
+      <h1 class="ph-title" style="font-size: 1.22rem; margin: 2px 0;">
+        <span class="txt-kn">ಮಣ್ಣು ಪರೀಕ್ಷಾ ವರದಿ ಡಿಜಿಟಲೀಕರಣ (Soil Report OCR)</span>
+        <span class="txt-en" style="display: none;">Soil Health Card Digital OCR Extraction</span>
+      </h1>
+      <p class="ph-subtitle" style="font-size: 0.8rem; margin: 0;">
+        <span class="txt-kn">ನಿಮ್ಮ ಮಣ್ಣು ಆರೋಗ್ಯ ಕಾರ್ಡ್ (SHC) ಫೋಟೋ ಅಥವಾ PDF ಅಪ್ಲೋಡ್ ಮಾಡಿ - N, P, K, pH ಮೌಲ್ಯಗಳನ್ನು ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಗುರುತಿಸಿ.</span>
+        <span class="txt-en" style="display: none;">Upload your Soil Health Card (JPG/PNG/PDF) to automatically extract NPK, pH, EC, and Organic Carbon values.</span>
+      </p>
+    </div>
+  </div>
+
+  <div class="soil-ocr-grid" style="margin-top: 8px; gap: 16px;">
+    <!-- Upload Card -->
+    <div class="soil-upload-card card-surface" style="padding: 16px; background: var(--bg-card, #ffffff); border-radius: 14px; border: 1px solid var(--border-color, #e2e8f0); box-shadow: 0 2px 8px rgba(0,0,0,0.03); display: flex; flex-direction: column; justify-content: space-between;">
+      <div>
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+          <div>
+            <h3 style="font-size: 1.08rem; font-weight: 700; color: var(--text-primary, #0f172a); margin: 0; display: flex; align-items: center; gap: 7px;">
+              <span style="display: inline-flex; align-items: center; justify-content: center; width: 26px; height: 26px; background: rgba(16,185,129,0.12); color: #059669; border-radius: 6px; font-size: 0.9rem;">📄</span>
+              <span class="txt-kn">ಮಣ್ಣು ಆರೋಗ್ಯ ಕಾರ್ಡ್ ಅಪ್ಲೋಡ್ ಮಾಡಿ</span>
+              <span class="txt-en" style="display: none;">Upload Soil Health Card</span>
+            </h3>
+            <p style="margin: 2px 0 0 0; font-size: 0.76rem; color: var(--text-muted, #64748b);">
+              <span class="txt-kn">ಭಾರತ ಸರ್ಕಾರದ ಮಣ್ಣು ಆರೋಗ್ಯ ಕಾರ್ಡ್ (SHC) ಡಿಜಿಟಲೀಕರಣ</span>
+              <span class="txt-en" style="display: none;">Govt of India SHC Digital Extraction</span>
+            </p>
+          </div>
+          <span class="badge" style="background: #e0f2fe; color: #0284c7; padding: 3px 8px; border-radius: 10px; font-size: 0.72rem; font-weight: 600;">
+            ಕೃಷಿ ಇಲಾಖೆ SHC
+          </span>
+        </div>
+        
+        <!-- Compact Drag & Drop Area -->
+        <div id="ocr-dropzone" class="soil-dropzone" style="padding: 14px 12px;">
+          <div style="width: 38px; height: 38px; margin: 0 auto 6px; background: rgba(16, 185, 129, 0.12); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 20px; color: #059669;">
+            📑
+          </div>
+          <p style="font-weight: 600; font-size: 0.88rem; color: var(--text-primary, #0f172a); margin: 0 0 2px 0;">
+            <span class="txt-kn">ಫೈಲ್ ಆಯ್ಕೆ ಮಾಡಲು ಕ್ಲಿಕ್ ಮಾಡಿ ಅಥವಾ ಡ್ರ್ಯಾಗ್ ಮಾಡಿ</span>
+            <span class="txt-en" style="display: none;">Click to browse or drag & drop file here</span>
+          </p>
+          <span style="font-size: 0.76rem; color: var(--text-muted, #64748b);">
+            <span class="txt-kn">ಬೆಂಬಲಿತ ಮಾದರಿಗಳು: PDF, JPG, PNG (ಗರಿಷ್ಠ 10 MB)</span>
+            <span class="txt-en" style="display: none;">Supported formats: PDF, JPG, PNG (Max 10 MB)</span>
+          </span>
+          <input type="file" id="ocr-file-input" accept=".pdf,.jpg,.jpeg,.png" style="display: none;">
+        </div>
+
+        <!-- Custom Upload File Staging Bar (Only displayed when user browses/drops an actual file) -->
+        <div id="ocr-file-info" style="display: none; margin-top: 10px; padding: 8px 12px; background: rgba(16,185,129,0.08); border-radius: 8px; border: 1px solid rgba(16,185,129,0.25); align-items: center; justify-content: space-between;">
+          <div style="display: flex; align-items: center; gap: 8px; overflow: hidden;">
+            <span style="font-size: 1.1rem;">📄</span>
+            <div>
+              <span id="ocr-file-name" style="font-weight: 600; font-size: 0.82rem; color: var(--text-primary); display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">sample.jpg</span>
+              <span style="font-size: 0.72rem; color: #059669; font-weight: 600;">
+                <span class="txt-kn">ವಿಶ್ಲೇಷಣೆಗೆ ಸಿದ್ಧವಾಗಿದೆ</span><span class="txt-en" style="display: none;">Ready for OCR</span>
+              </span>
+            </div>
+          </div>
+          <button type="button" id="ocr-analyze-btn" class="btn btn-primary" style="padding: 5px 14px; font-size: 0.8rem; background: #10b981; color: white; border-radius: 6px; border: none; cursor: pointer; font-weight: 600; white-space: nowrap;">
+            <span class="txt-kn">ವಿಶ್ಲೇಷಿಸಿ</span>
+            <span class="txt-en" style="display: none;">Extract Data</span>
+          </button>
+        </div>
+
+        <!-- Quick Action Buttons -->
+        <div style="margin-top: 10px; display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
+          <button type="button" class="btn btn-secondary" id="btn-ocr-browse" style="padding: 7px 16px; border-radius: 8px; border: 1px solid var(--border-color, #cbd5e1); background: var(--bg-hover, #f8fafc); color: var(--text-primary, #0f172a); cursor: pointer; font-weight: 600; font-size: 0.84rem; display: flex; align-items: center; gap: 6px; transition: all 0.2s;">
+            📁 <span class="txt-kn">ಫೈಲ್ ಆಯ್ಕೆಮಾಡಿ</span><span class="txt-en" style="display: none;">Browse File</span>
+          </button>
+          <button type="button" class="btn btn-primary" id="btn-ocr-demo" style="padding: 7px 16px; border-radius: 8px; background: linear-gradient(135deg, #059669 0%, #047857 100%); color: white; border: none; cursor: pointer; font-weight: 600; font-size: 0.84rem; display: flex; align-items: center; gap: 6px; box-shadow: 0 2px 6px rgba(5, 150, 105, 0.25); transition: all 0.2s;">
+            🧪 <span class="txt-kn">ಮಾದರಿ ಕಾರ್ಡ್ ಬಳಸಿ (Load Demo Soil Card)</span><span class="txt-en" style="display: none;">Load Demo Soil Card</span>
+          </button>
+        </div>
+
+        <!-- Demo Info Notice Banner (Shows extraction summary) -->
+        <div id="ocr-demo-status-banner" style="display: none; margin-top: 10px; padding: 8px 12px; border-radius: 8px; background: #ecfdf5; border-left: 4px solid #10b981; font-size: 0.78rem; color: #065f46;">
+          ✓ <strong>ಕರ್ನಾಟಕ ಮಣ್ಣು ಆರೋಗ್ಯ ಕಾರ್ಡ್ (SHC) ಮಾದರಿ ವರದಿ ಲೋಡ್ ಆಗಿದೆ!</strong> N, P, K, pH ಮತ್ತು EC ಮೌಲ್ಯಗಳನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಗುರುತಿಸಲಾಗಿದೆ.
+        </div>
+      </div>
+
+      <div style="margin-top: 10px; font-size: 0.75rem; color: var(--text-muted, #64748b); line-height: 1.4; background: var(--bg-hover, #f8fafc); padding: 8px 12px; border-radius: 8px; border: 1px solid var(--border-color, #e2e8f0);">
+        <strong>🔒 ಸುರಕ್ಷತಾ ಭರವಸೆ:</strong> ನಿಮ್ಮ ಮಣ್ಣಿನ ವರದಿಯ ಫೈಲ್ ಅನ್ನು ಶಾಶ್ವತವಾಗಿ ಸಂಗ್ರಹಿಸಲಾಗುವುದಿಲ್ಲ. ಸುರಕ್ಷಿತ OCR ವಿಶ್ಲೇಷಣೆ ವ್ಯವಸ್ಥೆ ಸಕ್ರಿಯವಾಗಿದೆ.
+      </div>
+    </div>
+
+    <!-- Extracted Parameters Card -->
+    <div class="card-surface" style="background: var(--bg-card, #ffffff); padding: 16px; border-radius: 14px; border: 1px solid var(--border-color, #e2e8f0); box-shadow: 0 2px 8px rgba(0,0,0,0.03); display: flex; flex-direction: column; justify-content: space-between;">
+      <div>
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+          <div>
+            <h3 style="font-size: 1.08rem; font-weight: 700; color: var(--text-primary); margin: 0; display: flex; align-items: center; gap: 7px;">
+              <span style="display: inline-flex; align-items: center; justify-content: center; width: 26px; height: 26px; background: rgba(16,185,129,0.12); color: #059669; border-radius: 6px; font-size: 0.9rem;">🔬</span>
+              <span class="txt-kn">ಪರಿಶೀಲಿಸಿ ಮತ್ತು ದೃಢೀಕರಿಸಿ</span>
+              <span class="txt-en" style="display: none;">Extracted Values & Verification</span>
+            </h3>
+            <p style="margin: 2px 0 0 0; font-size: 0.76rem; color: var(--text-muted, #64748b);">
+              <span class="txt-kn">ಮಣ್ಣಿನ ಪೋಷಕಾಂಶಗಳ ಸಾರಾಂಶ ಹಾಗೂ ದೃಢೀಕರಣ</span>
+              <span class="txt-en" style="display: none;">Soil Nutrient Summary & Parameter Verification</span>
+            </p>
+          </div>
+          <span id="ocr-verify-badge" class="badge" style="background: #10b981; color: white; padding: 3px 8px; border-radius: 10px; font-size: 0.72rem; font-weight: 600;">
+            ✓ AI ಪರಿಶೀಲಿಸಲಾಗಿದೆ
+          </span>
+        </div>
+
+        <div style="background: #fffbeb; border-left: 4px solid #f59e0b; padding: 6px 10px; border-radius: 6px; font-size: 0.76rem; margin-bottom: 8px; color: #92400e; display: flex; align-items: center; gap: 6px;">
+          <span style="font-size: 0.9rem;">⚠️</span>
+          <span>
+            <span class="txt-kn">ವರದಿಯಿಂದ ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಪಡೆದ ಮೌಲ್ಯಗಳು — ಅಗತ್ಯವಿದ್ದರೆ ತಿದ್ದುಪಡಿ ಮಾಡಿ.</span>
+            <span class="txt-en" style="display: none;">Parameters auto-extracted from report — review and adjust if required.</span>
+          </span>
+        </div>
+
+        <form id="ocr-verification-form">
+          <!-- Grid of 6 Compact Parameter Cards -->
+          <div class="soil-params-grid" style="gap: 8px;">
+            <!-- 1. Nitrogen -->
+            <div class="soil-param-card" style="padding: 6px 10px;">
+              <div class="soil-param-header" style="margin-bottom: 3px;">
+                <span class="soil-param-title" style="font-size: 0.78rem;">🌿 <span class="txt-kn">ಸಾರಜನಕ (Nitrogen - N)</span><span class="txt-en" style="display: none;">Nitrogen (N)</span></span>
+              </div>
+              <div class="soil-param-input-wrap">
+                <input type="number" id="ocr-val-n" value="245.5" step="0.1" class="soil-param-input" style="padding: 4px 8px; font-size: 0.92rem;" aria-label="Nitrogen">
+                <span class="soil-param-unit" style="padding: 4px 8px; font-size: 0.72rem;">kg/ha</span>
+              </div>
+              <div class="soil-param-status" style="margin-top: 2px;">
+                <span id="status-tag-n" style="color: #059669; font-size: 0.68rem;">✓ ದೃಢೀಕರಿಸಲಾಗಿದೆ</span>
+                <span style="color: #94a3b8; font-size: 0.66rem;">(10-600)</span>
+              </div>
+            </div>
+
+            <!-- 2. Phosphorus -->
+            <div class="soil-param-card" style="padding: 6px 10px;">
+              <div class="soil-param-header" style="margin-bottom: 3px;">
+                <span class="soil-param-title" style="font-size: 0.78rem;">🌾 <span class="txt-kn">ರಂಜಕ (Phosphorus - P)</span><span class="txt-en" style="display: none;">Phosphorus (P)</span></span>
+              </div>
+              <div class="soil-param-input-wrap">
+                <input type="number" id="ocr-val-p" value="48.2" step="0.1" class="soil-param-input" style="padding: 4px 8px; font-size: 0.92rem;" aria-label="Phosphorus">
+                <span class="soil-param-unit" style="padding: 4px 8px; font-size: 0.72rem;">kg/ha</span>
+              </div>
+              <div class="soil-param-status" style="margin-top: 2px;">
+                <span id="status-tag-p" style="color: #059669; font-size: 0.68rem;">✓ ದೃಢೀಕರಿಸಲಾಗಿದೆ</span>
+                <span style="color: #94a3b8; font-size: 0.66rem;">(2-150)</span>
+              </div>
+            </div>
+
+            <!-- 3. Potassium -->
+            <div class="soil-param-card" style="padding: 6px 10px;">
+              <div class="soil-param-header" style="margin-bottom: 3px;">
+                <span class="soil-param-title" style="font-size: 0.78rem;">🪴 <span class="txt-kn">ಪೊಟ್ಯಾಷ್ (Potassium - K)</span><span class="txt-en" style="display: none;">Potassium (K)</span></span>
+              </div>
+              <div class="soil-param-input-wrap">
+                <input type="number" id="ocr-val-k" value="195.0" step="0.1" class="soil-param-input" style="padding: 4px 8px; font-size: 0.92rem;" aria-label="Potassium">
+                <span class="soil-param-unit" style="padding: 4px 8px; font-size: 0.72rem;">kg/ha</span>
+              </div>
+              <div class="soil-param-status" style="margin-top: 2px;">
+                <span id="status-tag-k" style="color: #059669; font-size: 0.68rem;">✓ ದೃಢೀಕರಿಸಲಾಗಿದೆ</span>
+                <span style="color: #94a3b8; font-size: 0.66rem;">(15-800)</span>
+              </div>
+            </div>
+
+            <!-- 4. Soil pH -->
+            <div class="soil-param-card" style="padding: 6px 10px;">
+              <div class="soil-param-header" style="margin-bottom: 3px;">
+                <span class="soil-param-title" style="font-size: 0.78rem;">🧪 <span class="txt-kn">ಮಣ್ಣಿನ ಪಿಹೆಚ್ (Soil pH)</span><span class="txt-en" style="display: none;">Soil pH</span></span>
+              </div>
+              <div class="soil-param-input-wrap">
+                <input type="number" id="ocr-val-ph" value="6.80" step="0.1" class="soil-param-input" style="padding: 4px 8px; font-size: 0.92rem;" aria-label="Soil pH">
+                <span class="soil-param-unit" style="padding: 4px 8px; font-size: 0.72rem;">0-14</span>
+              </div>
+              <div class="soil-param-status" style="margin-top: 2px;">
+                <span id="status-tag-ph" style="color: #059669; font-size: 0.68rem;">✓ ತಟಸ್ಥ (Neutral)</span>
+                <span style="color: #94a3b8; font-size: 0.66rem;">(3.5-10.0)</span>
+              </div>
+            </div>
+
+            <!-- 5. Electrical Conductivity (EC) -->
+            <div class="soil-param-card" style="padding: 6px 10px;">
+              <div class="soil-param-header" style="margin-bottom: 3px;">
+                <span class="soil-param-title" style="font-size: 0.78rem;">⚡ <span class="txt-kn">ವಿದ್ಯುತ್ ವಾಹಕತೆ (EC)</span><span class="txt-en" style="display: none;">Conductivity (EC)</span></span>
+              </div>
+              <div class="soil-param-input-wrap">
+                <input type="number" id="ocr-val-ec" value="0.38" step="0.01" class="soil-param-input" style="padding: 4px 8px; font-size: 0.92rem;" aria-label="Electrical Conductivity">
+                <span class="soil-param-unit" style="padding: 4px 8px; font-size: 0.72rem;">dS/m</span>
+              </div>
+              <div class="soil-param-status" style="margin-top: 2px;">
+                <span id="status-tag-ec" style="color: #059669; font-size: 0.68rem;">✓ ಸಾಮಾನ್ಯ (Normal)</span>
+                <span style="color: #94a3b8; font-size: 0.66rem;">(&lt; 1.0)</span>
+              </div>
+            </div>
+
+            <!-- 6. Organic Carbon (OC) -->
+            <div class="soil-param-card" style="padding: 6px 10px;">
+              <div class="soil-param-header" style="margin-bottom: 3px;">
+                <span class="soil-param-title" style="font-size: 0.78rem;">🍂 <span class="txt-kn">ಸಾವಯವ ಇಂಗಾಲ (OC)</span><span class="txt-en" style="display: none;">Organic Carbon</span></span>
+              </div>
+              <div class="soil-param-input-wrap">
+                <input type="number" id="ocr-val-oc" value="0.62" step="0.01" class="soil-param-input" style="padding: 4px 8px; font-size: 0.92rem;" aria-label="Organic Carbon">
+                <span class="soil-param-unit" style="padding: 4px 8px; font-size: 0.72rem;">%</span>
+              </div>
+              <div class="soil-param-status" style="margin-top: 2px;">
+                <span id="status-tag-oc" style="color: #059669; font-size: 0.68rem;">✓ ಸೂಕ್ತ (Optimal)</span>
+                <span style="color: #94a3b8; font-size: 0.66rem;">(0.1-3.5)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Prominent Apply to Crop Recommendation Button -->
+          <button type="button" id="apply-ocr-to-recommend-btn" class="btn btn-primary" style="margin-top: 10px; width: 100%; padding: 10px; font-weight: 700; font-size: 0.92rem; border-radius: 8px; background: linear-gradient(135deg, #10b981 0%, #059669 100%); color: white; border: none; cursor: pointer; box-shadow: 0 3px 10px rgba(16, 185, 129, 0.25); display: flex; align-items: center; justify-content: center; gap: 8px; transition: all 0.2s ease;">
+            🌱 <span class="txt-kn">ಬೆಳೆ ಶಿಫಾರಸು ಇಂಜಿನ್‌ಗೆ ಅನ್ವಯಿಸಿ (Apply to Crop Recommendation)</span>
+            <span class="txt-en" style="display: none;">Apply to Crop Recommendation</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

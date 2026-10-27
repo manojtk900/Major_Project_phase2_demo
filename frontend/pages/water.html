@@ -1,0 +1,128 @@
+<section class="view-panel" id="view-water">
+  <div class="page-header-box">
+    <div class="ph-title-group">
+      <span class="ph-badge">💧 FAO-56 & ICAR Standard</span>
+      <h1 class="ph-title">
+        <span class="txt-kn">ಜಲ ಸಂಪನ್ಮೂಲ ಮತ್ತು ಬೆಳೆ ಹೊಂದಾಣಿಕೆ ಎಂಜಿನ್ (Water Suitability Engine)</span>
+        <span class="txt-en" style="display: none;">Water Resource & Crop Compatibility Engine</span>
+      </h1>
+      <p class="ph-subtitle">
+        <span class="txt-kn">ನಿಮ್ಮ ಜಮೀನಿನ ನೀರಾವರಿ ಮೂಲ ಮತ್ತು ಲಭ್ಯತೆಗೆ ಸೂಕ್ತವಾದ ಬೆಳೆಗಳನ್ನು ವೈಜ್ಞಾನಿಕವಾಗಿ ಮೌಲ್ಯಮಾಪನ ಮಾಡಿ.</span>
+        <span class="txt-en" style="display: none;">Evaluate crop water requirements against farm water availability based on FAO-56 irrigation standards.</span>
+      </p>
+    </div>
+  </div>
+
+  <div class="grid-2col-layout" style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 24px;">
+    <!-- Water Profile Configuration -->
+    <div class="card-surface" style="background: var(--bg-card); padding: 24px; border-radius: 16px; border: 1px solid var(--border-color);">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px;">
+        <h3 style="font-size: 1.15rem; color: var(--text-primary); margin: 0;">
+          <span class="txt-kn">ಜಮೀನಿನ ನೀರಿನ ಪ್ರೊಫೈಲ್</span>
+          <span class="txt-en" style="display: none;">Farm Water Profile</span>
+        </h3>
+        <span class="badge" style="background: #e0f2fe; color: #0284c7; padding: 4px 10px; border-radius: 12px; font-size: 0.75rem; font-weight: 600;">
+          FAO-56 ಮಾದರಿ
+        </span>
+      </div>
+
+      <!-- Quick Demo Scenarios Chips -->
+      <div style="margin-bottom: 16px; padding: 12px; background: rgba(2, 132, 199, 0.05); border-radius: 10px; border: 1px dashed rgba(2, 132, 199, 0.4);">
+        <span style="font-size: 0.8rem; font-weight: 700; color: #0284c7; display: block; margin-bottom: 8px;">
+          🧪 <span class="txt-kn">ತ್ವರಿತ ಮಾದರಿ ಪರೀಕ್ಷೆ (Quick Demo Scenarios):</span><span class="txt-en" style="display: none;">Quick Demo Scenarios:</span>
+        </span>
+        <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+          <button type="button" class="btn-preset-chip" id="demo-water-ragi" style="padding: 6px 12px; font-size: 0.8rem; border-radius: 8px; border: 1px solid #0284c7; background: white; color: #0284c7; cursor: pointer; font-weight: 600;">
+            🌾 ರಾಗಿ + ಹನಿ ನೀರಾವರಿ (Mandya Drip)
+          </button>
+          <button type="button" class="btn-preset-chip" id="demo-water-sugarcane" style="padding: 6px 12px; font-size: 0.8rem; border-radius: 8px; border: 1px solid #0284c7; background: white; color: #0284c7; cursor: pointer; font-weight: 600;">
+            🎋 ಕಬ್ಬು + ಕಾಲುವೆ (Canal Flood)
+          </button>
+          <button type="button" class="btn-preset-chip" id="demo-water-rainfed" style="padding: 6px 12px; font-size: 0.8rem; border-radius: 8px; border: 1px solid #0284c7; background: white; color: #0284c7; cursor: pointer; font-weight: 600;">
+            🌧️ ಮೆಕ್ಕೆಜೋಳ + ಮಳೆಯಾಶ್ರಿತ (Dryland)
+          </button>
+        </div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 16px;">
+        <div>
+          <label style="font-size: 0.85rem; font-weight: 600; color: var(--text-muted);">ಬೆಳೆ ಆಯ್ಕೆ (Target Crop)</label>
+          <select id="water-crop-select" style="width: 100%; margin-top: 6px; padding: 10px 14px; border-radius: 8px; border: 1px solid var(--border-color); background: var(--bg-input); color: var(--text-primary); font-size: 0.9rem;">
+            <option value="ragi" selected>ರಾಗಿ (Finger Millet / Ragi)</option>
+            <option value="maize">ಮೆಕ್ಕೆಜೋಳ (Maize)</option>
+            <option value="rice">ಭತ್ತ (Paddy / Rice)</option>
+            <option value="cotton">ಹತ್ತಿ (Cotton)</option>
+            <option value="sugarcane">ಕಬ್ಬು (Sugarcane)</option>
+            <option value="arecanut">ಅಡಿಕೆ (Arecanut)</option>
+            <option value="tomato">ಟೊಮೇಟೊ (Tomato)</option>
+            <option value="groundnut">ಕಡಲೆಕಾಯಿ (Groundnut)</option>
+          </select>
+        </div>
+
+        <div>
+          <label style="font-size: 0.85rem; font-weight: 600; color: var(--text-muted);">ನೀರಿನ ಮೂಲ (Primary Water Source)</label>
+          <select id="water-source-select" style="width: 100%; margin-top: 6px; padding: 10px 14px; border-radius: 8px; border: 1px solid var(--border-color); background: var(--bg-input); color: var(--text-primary); font-size: 0.9rem;">
+            <option value="borewell" selected>ಕೊಳವೆಬಾವಿ (Borewell)</option>
+            <option value="canal">ಕಾಲುವೆ ನೀರು (Canal Irrigation)</option>
+            <option value="open_well">ತೆರೆದ ಬಾವಿ (Open Well)</option>
+            <option value="rainfed">ಮಳೆಯಾಶ್ರಿತ (Rainfed / Dryland)</option>
+            <option value="river">ಹೊಳೆ / ನದಿ (River Lift)</option>
+          </select>
+        </div>
+
+        <div>
+          <label style="font-size: 0.85rem; font-weight: 600; color: var(--text-muted);">ನೀರಾವರಿ ಪದ್ಧತಿ (Irrigation Method)</label>
+          <select id="water-method-select" style="width: 100%; margin-top: 6px; padding: 10px 14px; border-radius: 8px; border: 1px solid var(--border-color); background: var(--bg-input); color: var(--text-primary); font-size: 0.9rem;">
+            <option value="drip" selected>ಹನಿ ನೀರಾವರಿ (Drip - High Efficiency +25%)</option>
+            <option value="sprinkler">ತುಂತುರು ನೀರಾವರಿ (Sprinkler +15%)</option>
+            <option value="furrow">ಸಾಲು ನೀರಾವರಿ (Furrow)</option>
+            <option value="flood">ಮುಳುಗು ನೀರಾವರಿ (Flood Irrigation -15%)</option>
+            <option value="rainfed">ಕೇವಲ ಮಳೆ ನೀರು (Purely Rainfed)</option>
+          </select>
+        </div>
+
+        <div>
+          <label style="font-size: 0.85rem; font-weight: 600; color: var(--text-muted);">ನೀರಿನ ಲಭ್ಯತೆಯ ಮಟ್ಟ (Water Availability Level)</label>
+          <select id="water-level-select" style="width: 100%; margin-top: 6px; padding: 10px 14px; border-radius: 8px; border: 1px solid var(--border-color); background: var(--bg-input); color: var(--text-primary); font-size: 0.9rem;">
+            <option value="moderate" selected>ಮಧ್ಯಮ (Moderate Supply)</option>
+            <option value="abundant">ಧಾರಾಳ (Abundant / Year-round)</option>
+            <option value="scarce">ಕಡಿಮೆ / ಅಭಾವ (Scarce / Summer Stress)</option>
+          </select>
+        </div>
+
+        <button id="calc-water-compat-btn" class="btn btn-primary" style="margin-top: 10px; padding: 12px; font-weight: 600; background: #0284c7; color: white; border-radius: 10px; border: none; cursor: pointer; box-shadow: 0 4px 12px rgba(2, 132, 199, 0.25);">
+          💧 ಹೊಂದಾಣಿಕೆ ಲೆಕ್ಕಾಚಾರ ಮಾಡಿ (Evaluate Water Compatibility)
+        </button>
+      </div>
+    </div>
+
+    <!-- Compatibility Output Card -->
+    <div class="card-surface" style="background: var(--bg-card); padding: 24px; border-radius: 16px; border: 1px solid var(--border-color);">
+      <h3 style="margin-bottom: 16px; font-size: 1.15rem; color: var(--text-primary);">
+        <span class="txt-kn">ವೈಜ್ಞಾನಿಕ ಹೊಂದಾಣಿಕೆ ಫಲಿತಾಂಶ</span>
+        <span class="txt-en" style="display: none;">Scientific Compatibility Assessment</span>
+      </h3>
+
+      <div style="text-align: center; padding: 20px 0; border-bottom: 1px solid var(--border-color);">
+        <div id="water-compat-score" style="font-size: 3.5rem; font-weight: 800; color: #10b981;">100%</div>
+        <div id="water-compat-status" style="font-size: 1.1rem; font-weight: 600; color: var(--text-primary); margin-top: 6px;">ಉತ್ತಮ ಹೊಂದಾಣಿಕೆ (Highly Compatible)</div>
+      </div>
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 18px;">
+        <div style="background: var(--bg-hover); padding: 12px; border-radius: 8px;">
+          <span style="font-size: 0.75rem; color: var(--text-muted); display: block;">ಬೆಳೆಯ ನೀರಿನ ಅಗತ್ಯ (FAO-56)</span>
+          <strong id="water-crop-req" style="font-size: 1rem; color: var(--text-primary);">400 - 600 mm</strong>
+        </div>
+
+        <div style="background: var(--bg-hover); padding: 12px; border-radius: 8px;">
+          <span style="font-size: 0.75rem; color: var(--text-muted); display: block;">ಜಮೀನಿನ ಲಭ್ಯತೆ ಸೂಚ್ಯಂಕ</span>
+          <strong id="water-avail-idx" style="font-size: 1rem; color: var(--text-primary);">1.00 / 1.0</strong>
+        </div>
+      </div>
+
+      <div id="water-advisory-box" style="margin-top: 18px; padding: 14px; background: rgba(16, 185, 129, 0.08); border-left: 4px solid #10b981; border-radius: 4px; font-size: 0.9rem; color: var(--text-primary); line-height: 1.5;">
+        ಕೊಳವೆಬಾವಿ ಹಾಗೂ ಹನಿ ನೀರಾವರಿ ಪದ್ಧತಿಯು ಈ ಬೆಳೆಯ ನೀರಿನ ಅಗತ್ಯವನ್ನು ಸಂಪೂರ್ಣವಾಗಿ ಪೂರೈಸುತ್ತದೆ. ನೀರಿನ ನಷ್ಟ ಕನಿಷ್ಠವಾಗಿರುತ್ತದೆ.
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,134 @@
+<section class="view-panel" id="view-market">
+  <div class="page-header-box">
+    <div class="ph-title-group">
+      <span class="ph-badge">📈 AGMARKNET Mandi Intelligence & ML Forecast</span>
+      <h1 class="ph-title">
+        <span class="txt-kn">ಕೃಷಿ ಮಾರುಕಟ್ಟೆ ಧಾರಣೆ ಮತ್ತು ಕೊಯ್ಲು ಬೆಲೆ ಮುನ್ಸೂಚನೆ (Market Intelligence & Forecast)</span>
+        <span class="txt-en" style="display: none;">Mandi Market Intelligence & Harvest Price Forecast</span>
+      </h1>
+      <p class="ph-subtitle">
+        <span class="txt-kn">ಕರ್ನಾಟಕದ ಅಧಿಕೃತ APMC ಮಾರುಕಟ್ಟೆ ದರಗಳು, 30/90-ದಿನಗಳ ಬೆಲೆ ಪ್ರವೃತ್ತಿ ಮತ್ತು ಯಂತ್ರ ಕಲಿಕೆ (LightGBM) ಆಧಾರಿತ ಕೊಯ್ಲು ಸಮಯದ ಬೆಲೆ ಅಂದಾಜು.</span>
+        <span class="txt-en" style="display: none;">Official Karnataka APMC observations, 30d/90d empirical trends, and LightGBM-backed harvest-window price forecasts.</span>
+      </p>
+    </div>
+  </div>
+
+  <!-- Mandatory Financial Disclaimer Callout -->
+  <div style="margin-top: 14px; background: rgba(245, 158, 11, 0.08); border-left: 4px solid #f59e0b; padding: 12px 16px; border-radius: 8px; font-size: 0.85rem; color: var(--text-primary);">
+    <strong style="color: #d97706;">⚠️ <span class="txt-kn">ಗಮನಿಸಿ (Disclaimer):</span><span class="txt-en" style="display: none;">Notice (Disclaimer):</span></strong>
+    <span class="txt-kn">ಮಾರುಕಟ್ಟೆ ಮುನ್ಸೂಚನೆಗಳು ಐತಿಹಾಸಿಕ ಮಾಹಿತಿಯನ್ನು ಆಧರಿಸಿದ ಅಂದಾಜುಗಳಾಗಿದ್ದು, ನಿಜವಾದ ಕೊಯ್ಲು ಸಮಯದ ಬೆಲೆಗಳಿಗಿಂತ ಭಿನ್ನವಾಗಿರಬಹುದು. ಇವು ಖಾತರಿಯ ಮಾರಾಟ ಬೆಲೆಗಳಲ್ಲ ಅಥವಾ ಆರ್ಥಿಕ ಸಲಹೆಯಲ್ಲ.</span>
+    <span class="txt-en" style="display: none;">Market forecasts are estimates based on historical data and may differ from actual harvest-time prices. They are not guaranteed selling prices or financial advice.</span>
+  </div>
+
+  <!-- Interactive Harvest Forecast Simulator & Deep-Dive Card -->
+  <div style="margin-top: 18px; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 14px; padding: 20px; box-shadow: var(--shadow-sm);">
+    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; margin-bottom: 14px;">
+      <h3 style="margin: 0; font-size: 1.1rem; color: var(--text-primary); display: flex; align-items: center; gap: 8px;">
+        🔮 <span class="txt-kn">ಕೊಯ್ಲು ಸಮಯದ ಬೆಲೆ ಮುನ್ಸೂಚಕ (Harvest Window Price Forecaster)</span>
+        <span class="txt-en" style="display: none;">Harvest Window Price Forecaster</span>
+      </h3>
+      <div style="display: flex; gap: 6px; font-size: 0.72rem;">
+        <span style="background: #10b981; color: white; padding: 3px 8px; border-radius: 6px; font-weight: 600;">LIVE APMC</span>
+        <span style="background: #d97706; color: white; padding: 3px 8px; border-radius: 6px; font-weight: 600;">CACHED BENCHMARK</span>
+        <span style="background: #8b5cf6; color: white; padding: 3px 8px; border-radius: 6px; font-weight: 600;">MODEL FORECAST</span>
+      </div>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; align-items: flex-end;">
+      <div>
+        <label style="display: block; font-size: 0.8rem; font-weight: 600; color: var(--text-muted); margin-bottom: 6px;">
+          🌾 <span class="txt-kn">ಬೆಳೆ ಆಯ್ಕೆಮಾಡಿ (Select Crop)</span><span class="txt-en" style="display: none;">Select Crop</span>
+        </label>
+        <select id="fc-crop-select" style="width: 100%; padding: 8px 12px; border-radius: 8px; border: 1px solid var(--border-color); background: var(--bg-input, var(--bg-card)); color: var(--text-primary); font-size: 0.88rem;">
+          <option value="tomato">Tomato (ಟೊಮೇಟೊ - Kolar APMC)</option>
+          <option value="maize">Maize (ಮೆಕ್ಕೆಜೋಳ - Davanagere APMC)</option>
+          <option value="rice">Rice / Paddy (ಭತ್ತ - Gangavathi APMC)</option>
+          <option value="cotton">Cotton (ಹತ್ತಿ - Raichur APMC)</option>
+          <option value="arecanut">Arecanut (ಅಡಿಕೆ - Shivamogga APMC)</option>
+          <option value="onion">Onion (ಈರುಳ್ಳಿ - Hubballi APMC)</option>
+          <option value="ragi">Ragi (ರಾಗಿ - Tumakuru APMC)</option>
+          <option value="groundnut">Groundnut (ಕಡಲೆಕಾಯಿ - Challakere APMC)</option>
+          <option value="chickpea">Bengal Gram (ಕಡಲೆ - Kalaburagi APMC)</option>
+          <option value="turmeric">Turmeric (ಅರಿಶಿನ - Chamarajanagar APMC)</option>
+        </select>
+      </div>
+
+      <div>
+        <label style="display: block; font-size: 0.8rem; font-weight: 600; color: var(--text-muted); margin-bottom: 6px;">
+          📅 <span class="txt-kn">ಬಿತ್ತನೆ ದಿನಾಂಕ (Planned Sowing Date)</span><span class="txt-en" style="display: none;">Planned Sowing Date</span>
+        </label>
+        <input type="date" id="fc-sowing-date" value="2026-10-15" style="width: 100%; padding: 8px 12px; border-radius: 8px; border: 1px solid var(--border-color); background: var(--bg-input, var(--bg-card)); color: var(--text-primary); font-size: 0.88rem;">
+      </div>
+
+      <div>
+        <button type="button" id="btn-run-forecast" class="btn btn-primary" style="width: 100%; padding: 9px 16px; border-radius: 8px; background: #10b981; color: white; border: none; font-weight: 600; font-size: 0.88rem; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 8px;">
+          ⚡ <span class="txt-kn">ಮುನ್ಸೂಚನೆ ಲೆಕ್ಕಹಾಕಿ</span><span class="txt-en" style="display: none;">Generate Harvest Forecast</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Live Forecast Result Card -->
+    <div id="forecast-result-box" style="margin-top: 18px; padding: 16px; background: var(--bg-hover, rgba(0,0,0,0.02)); border-radius: 10px; border: 1px solid var(--border-subtle); display: none;">
+      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+        <div>
+          <span id="fc-badge-status" class="badge" style="background: #8b5cf6; color: white; font-size: 0.72rem; padding: 3px 8px; border-radius: 6px; font-weight: 600;">MODEL FORECAST</span>
+          <h4 id="fc-crop-title" style="margin: 6px 0 2px 0; font-size: 1.15rem; color: var(--text-primary);">Tomato — Kolar APMC</h4>
+          <div id="fc-meta-dates" style="font-size: 0.8rem; color: var(--text-muted);">Harvest Window: January 2027 (Horizon: 95 days)</div>
+        </div>
+        <div style="text-align: right;">
+          <span style="font-size: 0.75rem; color: var(--text-muted);">ಅಂದಾಜು ಕೊಯ್ಲು ದರ (Predicted Modal Price)</span>
+          <div id="fc-predicted-modal" style="font-size: 1.6rem; font-weight: 800; color: #10b981;">₹2,350 <span style="font-size: 0.85rem; font-weight: 500; color: var(--text-muted);">/ Quintal</span></div>
+          <div id="fc-predicted-range" style="font-size: 0.8rem; font-weight: 600; color: var(--text-muted);">80% ವ್ಯಾಪ್ತಿ: ₹2,140 - ₹2,560</div>
+        </div>
+      </div>
+
+      <div style="margin-top: 12px; padding-top: 10px; border-top: 1px dashed var(--border-subtle); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; font-size: 0.78rem; color: var(--text-muted);">
+        <span id="fc-model-meta">ಮಾಡೆಲ್: LightGBM Regressor (1,182 APMC observations)</span>
+        <span id="fc-warning-meta" style="color: #f59e0b;">⚠️ ಮಧ್ಯಮ ಚಂಚಲತೆ (Moderate Volatility)</span>
+      </div>
+    </div>
+
+    <!-- Historical Chart Visualization Canvas -->
+    <div id="market-chart-container" style="margin-top: 18px; display: none;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+        <span style="font-size: 0.85rem; font-weight: 600; color: var(--text-primary);">📊 ಇತ್ತೀಚಿನ 30-ದಿನಗಳ APMC ಧಾರಣೆ ಪ್ರವೃತ್ತಿ (Recent 30-Day Trading History)</span>
+        <span style="font-size: 0.75rem; color: var(--text-muted);"><span style="color: #10b981;">■</span> Modal Price | <span style="color: #f59e0b;">■</span> Arrivals (Tonnes)</span>
+      </div>
+      <div id="market-chart-svg" style="width: 100%; height: 160px; background: var(--bg-card); border-radius: 8px; border: 1px solid var(--border-subtle); position: relative; overflow: hidden;">
+        <!-- Injected dynamically by app.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Filter & Action Toolbar -->
+  <div style="margin-top: 18px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; background: var(--bg-card); padding: 12px 18px; border-radius: 12px; border: 1px solid var(--border-color);">
+    <div style="display: flex; gap: 8px; flex-wrap: wrap;" id="market-filter-chips">
+      <button type="button" class="btn-preset-chip active" data-cat="all" style="padding: 6px 14px; border-radius: 8px; border: 1px solid #10b981; background: #10b981; color: white; font-weight: 600; font-size: 0.8rem; cursor: pointer;">
+        🌾 ಎಲ್ಲ ಬೆಳೆಗಳು (All)
+      </button>
+      <button type="button" class="btn-preset-chip" data-cat="cereal" style="padding: 6px 14px; border-radius: 8px; border: 1px solid var(--border-color); background: var(--bg-hover); color: var(--text-primary); font-weight: 600; font-size: 0.8rem; cursor: pointer;">
+        🌽 ಧಾನ್ಯಗಳು (Cereals)
+      </button>
+      <button type="button" class="btn-preset-chip" data-cat="commercial" style="padding: 6px 14px; border-radius: 8px; border: 1px solid var(--border-color); background: var(--bg-hover); color: var(--text-primary); font-weight: 600; font-size: 0.8rem; cursor: pointer;">
+        🌴 ವಾಣಿಜ್ಯ ಬೆಳೆಗಳು (Commercial)
+      </button>
+      <button type="button" class="btn-preset-chip" data-cat="vegetable" style="padding: 6px 14px; border-radius: 8px; border: 1px solid var(--border-color); background: var(--bg-hover); color: var(--text-primary); font-weight: 600; font-size: 0.8rem; cursor: pointer;">
+        🍅 ತರಕಾರಿ (Vegetables)
+      </button>
+    </div>
+
+    <div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap;">
+      <span id="market-refresh-meta" style="font-size: 0.75rem; color: var(--text-muted); font-weight: 500;">
+        📁 Cached Benchmark (Reported: 2026-10-10) • Refreshed: Just now
+      </span>
+      <button type="button" id="btn-market-refresh" class="btn btn-secondary btn-sm" style="padding: 6px 14px; border-radius: 8px; border: 1px solid var(--border-color); background: var(--bg-card); color: var(--text-primary); cursor: pointer; font-weight: 600; font-size: 0.8rem; display: flex; align-items: center; gap: 6px;">
+        🔄 <span class="txt-kn">ದರ ನವೀಕರಿಸಿ</span><span class="txt-en" style="display: none;">Refresh Prices</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Commodity Cards Grid -->
+  <div style="margin-top: 18px; display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 18px;" id="market-commodity-grid">
+    <!-- Commodities dynamically populated by initMarketFeature -->
+  </div>
+</section>

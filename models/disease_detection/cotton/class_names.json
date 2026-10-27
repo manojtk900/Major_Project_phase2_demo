@@ -1,0 +1,26 @@
+{
+  "0": {
+    "id": "bacterial_blight",
+    "name_en": "Bacterial Blight",
+    "name_kn": "ಬ್ಯಾಕ್ಟೀರಿಯಲ್ ಬ್ಲೈಟ್ (ಕೋನೀಯ ಎಲೆ ಚುಕ್ಕೆ ರೋಗ)",
+    "is_healthy": false
+  },
+  "1": {
+    "id": "curl_virus",
+    "name_en": "Cotton Leaf Curl Virus",
+    "name_kn": "ಹತ್ತಿ ಎಲೆ ಸುರುಳಿ ವೈರಸ್ ರೋಗ",
+    "is_healthy": false
+  },
+  "2": {
+    "id": "fusarium_wilt",
+    "name_en": "Fusarium Wilt",
+    "name_kn": "ನೆಟೆ ರೋಗ / ಫ್ಯುಸೇರಿಯಮ್ ಬಾಡುವಿಕೆ ರೋಗ",
+    "is_healthy": false
+  },
+  "3": {
+    "id": "healthy",
+    "name_en": "Healthy Leaf",
+    "name_kn": "ಆರೋಗ್ಯಕರ ಎಲೆ",
+    "is_healthy": true
+  }
+}

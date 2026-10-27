@@ -1,0 +1,26 @@
+{
+  "0": {
+    "id": "cercospora_gray_leaf_spot",
+    "name_en": "Cercospora Gray Leaf Spot",
+    "name_kn": "ಬೂದು ಎಲೆ ಚುಕ್ಕೆ ರೋಗ",
+    "is_healthy": false
+  },
+  "1": {
+    "id": "common_rust",
+    "name_en": "Common Rust",
+    "name_kn": "ತುಕ್ಕು ರೋಗ",
+    "is_healthy": false
+  },
+  "2": {
+    "id": "northern_leaf_blight",
+    "name_en": "Northern Leaf Blight",
+    "name_kn": "ಉತ್ತರದ ಎಲೆ ಅಂಗಮಾರಿ ರೋಗ",
+    "is_healthy": false
+  },
+  "3": {
+    "id": "healthy",
+    "name_en": "Healthy Leaf",
+    "name_kn": "ಆರೋಗ್ಯಕರ ಎಲೆ",
+    "is_healthy": true
+  }
+}

@@ -1,0 +1,316 @@
+<section class="view-panel active" id="view-home">
+        <div class="farmer-dashboard">
+
+          <!-- 1. HERO BANNER WITH REAL FARMING PHOTOGRAPHY & OVERLAY -->
+          <div class="home-hero-banner">
+            <div class="home-hero-left">
+              <div class="home-hero-tag">
+                <span>🌾 ಕರ್ನಾಟಕ ಸ್ಮಾರ್ಟ್ ಕೃಷಿ ನಿರ್ಧಾರ ಬೆಂಬಲ ವ್ಯವಸ್ಥೆ</span>
+              </div>
+              <h1 class="home-hero-title">
+                AI-Based Predictive Farming System
+              </h1>
+              <p class="home-hero-subtitle">
+                "ಕರ್ನಾಟಕದ ರೈತ ಬಾಂಧವರಿಗೆ ನಿಖರ ಹಾಗೂ ವಿವರಿಸಬಹುದಾದ ಕೃಷಿ ನಿರ್ಧಾರ ಬೆಂಬಲ"
+              </p>
+              <div class="home-hero-actions">
+                <button class="home-hero-btn primary" type="button" onclick="window.navTo('recommend')">
+                  <span>ಬೆಳೆ ಶಿಫಾರಸು ಪರಿಶೀಲಿಸಿ ➔</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="home-hero-right">
+              <div class="home-hero-quote">
+                "Better Farming • Healthier Soil • Stronger Karnataka"
+              </div>
+              <div class="home-hero-badges">
+                <div class="home-badge-item">
+                  <div class="home-badge-circle">🌱</div>
+                  <div class="home-badge-text">
+                    <span>ಸರಿಯಾದ ಬೆಳೆ</span>
+                  </div>
+                </div>
+                <div class="home-badge-item">
+                  <div class="home-badge-circle">🩺</div>
+                  <div class="home-badge-text">
+                    <span>ಆರೋಗ್ಯಕರ ಸಸ್ಯ</span>
+                  </div>
+                </div>
+                <div class="home-badge-item">
+                  <div class="home-badge-circle">📈</div>
+                  <div class="home-badge-text">
+                    <span>ಹೆಚ್ಚಿನ ಇಳುವರಿ</span>
+                  </div>
+                </div>
+                <div class="home-badge-item">
+                  <div class="home-badge-circle">💰</div>
+                  <div class="home-badge-text">
+                    <span>ಉತ್ತಮ ಆದಾಯ</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. PRIMARY MODULES (4 ATTRACTIVE CARDS) -->
+          <div class="home-section-header">
+            <h2 class="home-section-title" data-i18n="home.services_title">
+              ಪ್ರಮುಖ ಕೃಷಿ ಸೇವೆಗಳು
+            </h2>
+            <span class="home-section-sub" data-i18n="home.services_sub">
+              ನಿಮ್ಮ ಕೃಷಿ ನಿರ್ಧಾರಗಳಿಗಾಗಿ ಪ್ರಮುಖ 4 ವಿಭಾಗಗಳು
+            </span>
+          </div>
+
+          <div class="home-modules-grid">
+            <!-- Module 1: Crop Recommendation -->
+            <div class="home-module-card" onclick="window.navTo('recommend')">
+              <div class="module-card-top">
+                <div class="module-icon-wrap icon-green">🌱</div>
+                <div class="module-arrow-btn">➔</div>
+              </div>
+              <div class="module-card-content">
+                <h3 class="module-title" data-i18n="home.card_rec_title">
+                  ಬೆಳೆ ಶಿಫಾರಸು
+                </h3>
+                <p class="module-desc" data-i18n="home.card_rec_desc">
+                  ನಿಮ್ಮ ಮಣ್ಣು ಮತ್ತು ಹವಾಮಾನಕ್ಕೆ ಸೂಕ್ತ ಬೆಳೆ ತಿಳಿಯಿರಿ
+                </p>
+              </div>
+            </div>
+
+            <!-- Module 2: Crop Lifecycle -->
+            <div class="home-module-card" onclick="window.navTo('cropcare')">
+              <div class="module-card-top">
+                <div class="module-icon-wrap icon-blue">🌾</div>
+                <div class="module-arrow-btn">➔</div>
+              </div>
+              <div class="module-card-content">
+                <h3 class="module-title" data-i18n="home.card_lifecycle_title">
+                  ಬೆಳೆ ಜೀವನ ಚಕ್ರ
+                </h3>
+                <p class="module-desc" data-i18n="home.card_lifecycle_desc">
+                  ಬೆಳೆಯ ಹಂತಗಳು ಮತ್ತು ಇಂದಿನ ಕೃಷಿ ಕೆಲಸಗಳನ್ನು ಗಮನಿಸಿ
+                </p>
+              </div>
+            </div>
+
+            <!-- Module 3: Disease Detection -->
+            <div class="home-module-card" onclick="window.navTo('disease')">
+              <div class="module-card-top">
+                <div class="module-icon-wrap icon-red">🩺</div>
+                <div class="module-arrow-btn">➔</div>
+              </div>
+              <div class="module-card-content">
+                <h3 class="module-title" data-i18n="home.card_disease_title">
+                  ರೋಗ ಪತ್ತೆಹಚ್ಚುವಿಕೆ
+                </h3>
+                <p class="module-desc" data-i18n="home.card_disease_desc">
+                  ಎಲೆ ಫೋಟೋ ಅಪ್ಲೋಡ್ ಮಾಡಿ ಸಸ್ಯದ ಆರೋಗ್ಯ ಪರೀಕ್ಷಿಸಿ
+                </p>
+              </div>
+            </div>
+
+            <!-- Module 4: Fertilizer Advisory -->
+            <div class="home-module-card" onclick="window.navTo('fertilizer')">
+              <div class="module-card-top">
+                <div class="module-icon-wrap icon-amber">🧪</div>
+                <div class="module-arrow-btn">➔</div>
+              </div>
+              <div class="module-card-content">
+                <h3 class="module-title" data-i18n="home.card_fertilizer_title">
+                  ರಸಗೊಬ್ಬರ ಸಲಹೆ
+                </h3>
+                <p class="module-desc" data-i18n="home.card_fertilizer_desc">
+                  ಸಾವಯವ ಮತ್ತು ರಾಸಾಯನಿಕ ಪೋಷಕಾಂಶಗಳ ಸಮತೋಲಿತ ಮಾರ್ಗದರ್ಶಿ
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- 3. CROP EXPLORER (Explore Crops of Karnataka) -->
+          <div class="home-explorer-card">
+            <div class="home-explorer-header">
+              <div class="explorer-header-left">
+                <div class="explorer-title-row">
+                  <span class="explorer-icon">🌱</span>
+                  <h3 class="explorer-title" data-i18n="home.explorer_title">ಕರ್ನಾಟಕದ ಪ್ರಮುಖ ಬೆಳೆಗಳು</h3>
+                </div>
+                <p class="explorer-subtitle" data-i18n="home.explorer_sub">ಬೆಳೆಯ ಜೀವನ ಚಕ್ರ ಮತ್ತು ಶಿಫಾರಸು ವೀಕ್ಷಿಸಲು ಆಯ್ಕೆ ಮಾಡಿ</p>
+              </div>
+              <button class="explorer-view-all" type="button" onclick="window.navTo('cropcare')" data-i18n="home.view_all">ಎಲ್ಲ ಬೆಳೆಗಳು ನೋಡಿ ➔</button>
+            </div>
+
+            <div class="home-crops-scroll">
+              <div class="home-crop-item" onclick="window.openCropFromHome('ragi')">
+                <div class="crop-thumb-wrap">
+                  <img src="public/images/crops/ragi.jpg" alt="Ragi" class="crop-thumb">
+                </div>
+                <div class="crop-item-name">
+                  <strong class="crop-name-main">Ragi</strong>
+                  <span class="crop-name-kn">ರಾಗಿ</span>
+                </div>
+              </div>
+
+              <div class="home-crop-item" onclick="window.openCropFromHome('rice')">
+                <div class="crop-thumb-wrap">
+                  <img src="public/images/crops/rice.jpg" alt="Rice" class="crop-thumb">
+                </div>
+                <div class="crop-item-name">
+                  <strong class="crop-name-main">Rice</strong>
+                  <span class="crop-name-kn">ಭತ್ತ</span>
+                </div>
+              </div>
+
+              <div class="home-crop-item" onclick="window.openCropFromHome('maize')">
+                <div class="crop-thumb-wrap">
+                  <img src="public/images/crops/maize.jpg" alt="Maize" class="crop-thumb">
+                </div>
+                <div class="crop-item-name">
+                  <strong class="crop-name-main">Maize</strong>
+                  <span class="crop-name-kn">ಮೆಕ್ಕೆಜೋಳ</span>
+                </div>
+              </div>
+
+              <div class="home-crop-item" onclick="window.openCropFromHome('tomato')">
+                <div class="crop-thumb-wrap">
+                  <img src="public/images/crops/tomato.jpg" alt="Tomato" class="crop-thumb">
+                </div>
+                <div class="crop-item-name">
+                  <strong class="crop-name-main">Tomato</strong>
+                  <span class="crop-name-kn">ಟೊಮೆಟೊ</span>
+                </div>
+              </div>
+
+              <div class="home-crop-item" onclick="window.openCropFromHome('arecanut')">
+                <div class="crop-thumb-wrap">
+                  <img src="public/images/crops/arecanut.jpg" alt="Arecanut" class="crop-thumb">
+                </div>
+                <div class="crop-item-name">
+                  <strong class="crop-name-main">Arecanut</strong>
+                  <span class="crop-name-kn">ಅಡಿಕೆ</span>
+                </div>
+              </div>
+
+              <div class="home-crop-item" onclick="window.openCropFromHome('cotton')">
+                <div class="crop-thumb-wrap">
+                  <img src="public/images/crops/cotton.jpg" alt="Cotton" class="crop-thumb">
+                </div>
+                <div class="crop-item-name">
+                  <strong class="crop-name-main">Cotton</strong>
+                  <span class="crop-name-kn">ಹತ್ತಿ</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. WEATHER & TODAY'S ACTION ROW -->
+          <div class="home-dual-row">
+            <!-- Compact Attractive Weather Card -->
+            <div class="home-weather-card">
+              <div class="hw-header">
+                <div class="hw-title-group">
+                  <span class="hw-icon">☀️</span>
+                  <h3 class="hw-title" data-i18n="weather.today_weather">ಇಂದಿನ ಹವಾಮಾನ</h3>
+                </div>
+                <div class="hw-location-badge">
+                  <span>📍</span>
+                  <span id="home-weather-district">ಮಂಡ್ಯ</span>
+                  <span id="home-weather-district-en" style="display: none;">Mandya</span>, KA
+                </div>
+              </div>
+
+              <div class="hw-body">
+                <div class="hw-main-temp">
+                  <span id="home-weather-icon" class="hw-glyph">⛅</span>
+                  <div>
+                    <div class="hw-temp" id="home-weather-temp">31°C</div>
+                    <div class="hw-cond" id="home-weather-cond" data-i18n="weather.partly_cloudy">ಭಾಗಶಃ ಮೋಡ • ಇಂದು ಮಳೆ ಇಲ್ಲ</div>
+                  </div>
+                </div>
+
+                <div class="hw-metrics">
+                  <div class="hw-metric-item">
+                    <span class="hw-metric-icon">💧</span>
+                    <span class="hw-metric-label" data-i18n="weather.humidity">ಆರ್ದ್ರತೆ</span>
+                    <strong class="hw-metric-val" id="home-weather-hum">73%</strong>
+                  </div>
+                  <div class="hw-metric-item">
+                    <span class="hw-metric-icon">🌧️</span>
+                    <span class="hw-metric-label" data-i18n="weather.rain_chance">ಮಳೆ ಸಂಭವ</span>
+                    <strong class="hw-metric-val" id="home-weather-rain">0.0 mm</strong>
+                  </div>
+                  <div class="hw-metric-item">
+                    <span class="hw-metric-icon">💨</span>
+                    <span class="hw-metric-label" data-i18n="weather.wind">ಗಾಳಿ</span>
+                    <strong class="hw-metric-val" id="home-weather-wind">12 km/h</strong>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hw-footer">
+                <button class="hw-btn-view" type="button" onclick="window.navTo('weather')" data-i18n="weather.view_7day">7 ದಿನಗಳ ಪೂರ್ಣ ಮುನ್ಸೂಚನೆ ನೋಡಿ ➔</button>
+              </div>
+            </div>
+
+            <!-- Today's Farm Action Card -->
+            <div class="home-action-card">
+              <div class="ha-header">
+                <div class="ha-tag">
+                  <span>⚡</span>
+                  <span data-i18n="home.action_title">ಇಂದಿನ ಕೃಷಿ ಕೆಲಸ</span>
+                </div>
+                <div class="ha-crop-pill">
+                  <span id="home-crop-icon">🌱</span>
+                  <strong id="home-crop-name">ರಾಗಿ (Ragi)</strong> &mdash;
+                  <span id="home-crop-stage">ಬೆಳವಣಿಗೆ ಹಂತ (Vegetative Stage)</span>
+                </div>
+              </div>
+
+              <div class="ha-body">
+                <p class="ha-instruction" id="home-crop-action-text" data-i18n="home.action_text">ಕಳೆ ತೆಗೆಯಿರಿ ಮತ್ತು ಮಣ್ಣಿನಲ್ಲಿ ತೇವಾಂಶ ಕಾಪಾಡಿಕೊಳ್ಳಿ. ಲಘು ನೀರಾವರಿ ನಂತರ ಸಾರಜನಕ ಗೊಬ್ಬರ ನೀಡಿ.</p>
+              </div>
+
+              <div class="ha-footer">
+                <button type="button" class="ha-btn-done" id="btn-home-action-done"
+                  onclick="this.innerHTML='✓ ಮುಗಿದಿದೆ / Completed'; this.classList.add('done');" data-i18n="home.action_done">
+                  ✓ ಕೆಲಸ ಮುಗಿದಿದೆ
+                </button>
+                <button type="button" class="ha-btn-guide" onclick="window.navTo('cropcare')" data-i18n="home.full_guide">ಸಂಪೂರ್ಣ ಮಾರ್ಗದರ್ಶಿ ➔</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. SCIENTIFIC TRUST & PARTNERS FOOTER -->
+          <div class="home-trust-bar">
+            <span class="trust-bar-label">
+              <span><b>Devoloped by Astrall Team:</b> 3ML</span>
+            </span>
+            <div class="trust-logos-wrap">
+              <span class="trust-badge">🏛️ ICAR</span>
+              <span class="trust-badge">🌾 UAS Bengaluru</span>
+              <span class="trust-badge">🌾 UAS Dharwad</span>
+              <span class="trust-badge">🌴 ICAR-CPCRI</span>
+              <span class="trust-badge">⛅ Open-Meteo Weather</span>
+            </div>
+          </div>
+
+          <!-- Hidden legacy elements for JS backward-compat -->
+          <div style="display: none;" aria-hidden="true">
+            <div id="btn-home-start"></div>
+            <div id="btn-home-weather"></div>
+            <div id="btn-home-disease"></div>
+            <span id="home-field-action-text">Good time for field work</span>
+            <span id="home-farm-area">2.5 Acres</span>
+            <span id="home-farm-crop">1 (Ragi)</span>
+            <span id="home-farm-soil">Red Soil</span>
+            <div id="home-progress-fill"></div>
+            <select id="home-district-select">
+              <option value="Mandya">Mandya</option>
+            </select>
+          </div>
+
+        </div>
+      </section>

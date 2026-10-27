@@ -1,0 +1,268 @@
+{
+  "bacterial_blight": {
+    "id": "bacterial_blight",
+    "name_en": "Bacterial Leaf Blight",
+    "name_kn": "ದುಂಡಾಣu ಎಲೆ ಅಂಗಮಾರಿ ರೋಗ",
+    "plant_id": "rice",
+    "is_healthy": false,
+    "pathogen": "Xanthomonas oryzae pv. oryzae",
+    "symptoms_en": [
+      "Water-soaked stripes developing along leaf margins",
+      "Lesions turning yellow, whitish-gray, and dry with wavy margins",
+      "Severe infection causes 'Kresek' (wilting and complete seedling drying)"
+    ],
+    "symptoms_kn": [
+      "ಎಲೆಯ ಅಂಚುಗಳಲ್ಲಿ ನೀರಿನಿಂದ ನೆನೆದಂತಹ ಉದ್ದವಾದ ಗೆರೆಗಳು ಕಾಣಿಸಿಕೊಳ್ಳುತ್ತವೆ",
+      "ರೋಗದ ಕಲೆಗಳು ಹಳದಿ ಹಾಗೂ ನಂತರ ಬಿಳಿ-ಬೂದು ಬಣ್ಣಕ್ಕೆ ತಿರುಗಿ ಒಣಗುತ್ತವೆ",
+      "ತೀವ್ರ ಬಾಧೆಯಲ್ಲಿ ಸಸಿಗಳು ಸಂಪೂರ್ಣವಾಗಿ ಒಣಗಿ ಬಾಡುವ 'ಕ್ರೆಸೆಕ್' ಲಕ್ಷಣ ಉಂಟಾಗುತ್ತದೆ"
+    ],
+    "organic_controls_en": [
+      "Spray 3% neem oil or 5% Neem Seed Kernel Extract (NSKE)",
+      "Apply Pseudomonas fluorescens bio-agent @ 5 g/L as foliar spray",
+      "Spray fresh cow dung slurry supernatant (20 g/L) mixed with water"
+    ],
+    "organic_controls_kn": [
+      "3% ಬೇವಿನ ಎಣ್ಣೆ ಅಥವಾ 5% ಬೇವಿನ ಬೀಜದ ಕಷಾಯ (NSKE) ಸಿಂಪಡಿಸಿ",
+      "ಪ್ರತಿ ಲೀಟರ್ ನೀರಿಗೆ 5 ಗ್ರಾಂ ಸೂಡೋಮೊನಾಸ್ ಫ್ಲೋರೊಸೆನ್ಸ್ ಬೆರೆಸಿ ಎಲೆಗಳ ಮೇಲೆ ಸಿಂಪಡಿಸಿ",
+      "ಹಸುವಿನ ತಾಜಾ ಸಗಣಿ ತಿಳಿನೀರು (20 ಗ್ರಾಂ/ಲೀ) ತಯಾರಿಸಿ ಸೋಸಿ ಸಿಂಪಡಿಸಿ"
+    ],
+    "chemical_controls_en": [
+      "Spray Copper Oxychloride 50 WP (2.5 g/L) + Streptocycline (100 mg/L)",
+      "Apply Plantomycin @ 1 g/L at the earliest notice of water-soaked lesions"
+    ],
+    "chemical_controls_kn": [
+      "ಪ್ರತಿ ಲೀಟರ್ ನೀರಿಗೆ 2.5 ಗ್ರಾಂ ತಾಮ್ರದ ಆಕ್ಸಿಕ್ಲೋರೈಡ್ (COC) + 100 ಮಿ.ಗ್ರಾಂ ಸ್ಟ್ರೆಪ್ಟೋಸೈಕ್ಲಿನ್ ಬೆರೆಸಿ ಸಿಂಪಡಿಸಿ",
+      "ರೋಗದ ಆರಂಭಿಕ ಹಂತದಲ್ಲಿ ಪ್ಲಾಂಟೊಮೈಸಿನ್ (1 ಗ್ರಾಂ/ಲೀ) ಸಿಂಪಡಿಸಿ"
+    ],
+    "preventive_measures_en": [
+      "Avoid excessive use of Nitrogen fertilizers; apply Nitrogen in split doses",
+      "Ensure proper field drainage and avoid stagnant water in affected plots",
+      "Plant resistant rice varieties such as IR-64, Jaya, or BPT-5204"
+    ],
+    "preventive_measures_kn": [
+      "ಹೆಚ್ಚಿನ ಯೂರಿಯಾ/ಸಾರಜನಕ ಬಳಕೆಯನ್ನು ತಪ್ಪಿಸಿ; ಸಾರಜನಕವನ್ನು ಕಂತುಗಳಲ್ಲಿ ನೀಡಿ",
+      "ಗದ್ದೆಯಲ್ಲಿ ನೀರು ನಿಲ್ಲದಂತೆ ಉತ್ತಮ ಬಸಿಗಾಲುವೆ ವ್ಯವಸ್ಥೆ ಮಾಡಿ",
+      "ರೋಗ ನಿರೋಧಕ ತಳಿಗಳಾದ ಐಆರ್-64, ಜಯ ಅಥವಾ ಬಿಪಿಟಿ-5204 ಬಿತ್ತನೆ ಮಾಡಿ"
+    ],
+    "govt_schemes_en": [
+      "Karnataka Raitha Siri Scheme for paddy farmer input subsidies",
+      "Pradhan Mantri Fasal Bima Yojana (PMFBY) covering localized pest/disease loss"
+    ],
+    "govt_schemes_kn": [
+      "ಕರ್ನಾಟಕ ರೈತ ಸಿರಿ ಯೋಜನೆ (ಭತ್ತ ಬೆಳೆಗಾರರಿಗೆ ಸಹಾಯಧನ)",
+      "ಪ್ರಧಾನಮಂತ್ರಿ ಫಸಲ್ ಬಿಮಾ ಯೋಜನೆ (PMFBY) ಬೆಳೆ ಹಾನಿ ವಿಮೆ"
+    ]
+  },
+  "blast": {
+    "id": "blast",
+    "name_en": "Rice Leaf Blast",
+    "name_kn": "ಎಲೆ ಬೆಂಕಿ ರೋಗ / ಬ್ಲಾಸ್ಟ್",
+    "plant_id": "rice",
+    "is_healthy": false,
+    "pathogen": "Magnaporthe oryzae (Pyricularia oryzae)",
+    "symptoms_en": [
+      "Spindle-shaped or diamond-shaped lesions with gray/whitish centers and brown borders",
+      "Lesions coalesce causing entire leaf blade to wither and burn",
+      "Neck blast causes panicle to break and grains to remain unfilled (chaffy)"
+    ],
+    "symptoms_kn": [
+      "ಎಲೆಗಳ ಮೇಲೆ ಕಂದು ಅಂಚು ಮತ್ತು ಬೂದು-ಬಿಳಿ ಮಧ್ಯಭಾಗ ಹೊಂದಿರುವ ಕದಿರಿನಾಕಾರದ ಕಲೆಗಳು",
+      "ಕಲೆಗಳು ಒಂದಕ್ಕೊಂದು ಸೇರಿ ಸಂಪೂರ್ಣ ಎಲೆಯು ಬೆಂಕಿಯಲ್ಲಿ ಸುಟ್ಟಂತೆ ಒಣಗುತ್ತದೆ",
+      "ಕುತ್ತಿಗೆ ಬ್ಲಾಸ್ಟ್ ಬಾಧಿಸಿದರೆ ತೆನೆಗಳು ಮುರಿದು ಕಾಳು ತುಂಬದೆ ಜೊಳ್ಳಾಗುತ್ತವೆ"
+    ],
+    "organic_controls_en": [
+      "Foliar spray of Trichoderma viride or Pseudomonas fluorescens @ 5 g/L",
+      "Spray fermented butter milk (sour curd) @ 20 ml/L as an antifungal wash",
+      "Seed treatment with bio-formulations (10 g/kg seed) before sowing"
+    ],
+    "organic_controls_kn": [
+      "ಟ್ರೈಕೋಡರ್ಮಾ ವಿರಿಡೆ ಅಥವಾ ಸೂಡೋಮೊನಾಸ್ ಫ್ಲೋರೊಸೆನ್ಸ್ 5 ಗ್ರಾಂ/ಲೀ ಸಿಂಪಡಿಸಿ",
+      "ಹುಳಿ ಮಜ್ಜಿಗೆ (20 ಮಿ.ಲೀ/ಲೀ) ದ್ರಾವಣ ಸಿಂಪಡಿಸುವುದು ಶಿಲೀಂಧ್ರ ತಡೆಯಲು ಸಹಕಾರಿ",
+      "ಬಿತ್ತನೆಗೆ ಮುನ್ನ ಬೀಜೋಪಚಾರಕ್ಕೆ ಜೈವಿಕ ಶಿಲೀಂಧ್ರನಾಶಕ (10 ಗ್ರಾಂ/ಕೆ.ಜಿ) ಬಳಸಿ"
+    ],
+    "chemical_controls_en": [
+      "Spray Tricyclazole 75 WP @ 0.6 g/L (most effective against blast)",
+      "Spray Isoprothiolane 40 EC @ 1.5 ml/L or Kasugamycin 3% SL @ 2.5 ml/L"
+    ],
+    "chemical_controls_kn": [
+      "ಟ್ರೈಸೈಕ್ಲೋಜೋಲ್ 75 WP (0.6 ಗ್ರಾಂ/ಲೀ) ಸಿಂಪಡಿಸಿ (ಬ್ಲಾಸ್ಟ್ ರೋಗಕ್ಕೆ ಅತ್ಯಂತ ಪರಿಣಾಮಕಾರಿ)",
+      "ಐಸೊಪ್ರೊಥಿಯೋಲೇನ್ 40 EC (1.5 ಮಿ.ಲೀ/ಲೀ) ಅಥವಾ ಕಸುಗಾಮೈಸಿನ್ 3% SL (2.5 ಮಿ.ಲೀ/ಲೀ) ಸಿಂಪಡಿಸಿ"
+    ],
+    "preventive_measures_en": [
+      "Avoid late sowing and close seedling planting spacing",
+      "Apply Potash (MOP) to enhance leaf cuticular resistance against fungal entry",
+      "Remove collateral weed hosts (Echinochloa, Panicum) on paddy bunds"
+    ],
+    "preventive_measures_kn": [
+      "ತಡವಾಗಿ ನಾಟಿ ಮಾಡುವುದನ್ನು ತಪ್ಪಿಸಿ ಮತ್ತು ಶಿಫಾರಸು ಮಾಡಿದ ಅಂತರ ಕಾಪಾಡಿ",
+      "ಪೊಟ್ಯಾಷ್ (MOP) ಗೊಬ್ಬರ ನೀಡುವುದರಿಂದ ಎಲೆಯ ಮೇಲ್ಪದರ ಗಟ್ಟಿಯಾಗಿ ಶಿಲೀಂಧ್ರ ಪ್ರವೇಶ ತಡೆಯುತ್ತದೆ",
+      "ಗದ್ದೆಯ ಬದುಗಳಲ್ಲಿರುವ ಹುಲ್ಲು ಕಳೆಗಳನ್ನು ನಿಯಮಿತವಾಗಿ ತೆಗೆದುಹಾಕಿ"
+    ],
+    "govt_schemes_en": [
+      "National Food Security Mission (NFSM-Rice) plant protection support",
+      "PM Fasal Bima Yojana (PMFBY)"
+    ],
+    "govt_schemes_kn": [
+      "ರಾಷ್ಟ್ರೀಯ ಆಹಾರ ಭದ್ರತಾ ಮಿಷನ್ (NFSM-ಭತ್ತ) ಸಸ್ಯ ಸಂರಕ್ಷಣಾ ನೆರವು",
+      "ಪ್ರಧಾನಮಂತ್ರಿ ಫಸಲ್ ಬಿಮಾ ಯೋಜನೆ (PMFBY)"
+    ]
+  },
+  "brown_spot": {
+    "id": "brown_spot",
+    "name_en": "Brown Spot",
+    "name_kn": "ಕಂದು ಚುಕ್ಕೆ ರೋಗ",
+    "plant_id": "rice",
+    "is_healthy": false,
+    "pathogen": "Bipolaris oryzae (Helminthosporium oryzae)",
+    "symptoms_en": [
+      "Small, oval to circular brown spots scattered across leaf surface",
+      "Spots possess dark brown margins with lighter gray or yellowish halo",
+      "Associated with nutrient-deficient or water-stressed poor soil conditions"
+    ],
+    "symptoms_kn": [
+      "ಎಲೆಯ ಮೇಲೆ ಸಣ್ಣ, ದುಂಡನೆಯ ಅಥವಾ ಅಂಡಾಕಾರದ ಕಂದು ಬಣ್ಣದ ಚುಕ್ಕೆಗಳು ಹರಡುತ್ತವೆ",
+      "ಚುಕ್ಕೆಗಳ ಅಂಚು ಗಾಢ ಕಂದು ಬಣ್ಣ ಮತ್ತು ಹಳದಿ ವೃತ್ತವನ್ನು ಹೊಂದಿರುತ್ತವೆ",
+      "ಪೋಷಕಾಂಶಗಳ ಕೊರತೆ ಅಥವಾ ಮಣ್ಣಿನಲ್ಲಿ ಸತ್ವ ಕಡಿಮೆ ಇರುವ ಗದ್ದೆಗಳಲ್ಲಿ ಹೆಚ್ಚಾಗಿ ಕಂಡುಬರುತ್ತದೆ"
+    ],
+    "organic_controls_en": [
+      "Soil application of well-decomposed FYM (Farm Yard Manure) and Zinc Sulphate (10 kg/acre)",
+      "Spray 10% cow urine solution or garlic-chilli extract on foliage",
+      "Seed treatment with Pseudomonas fluorescens @ 10 g/kg seed"
+    ],
+    "organic_controls_kn": [
+      "ಎಕರೆಗೆ 10 ಕೆ.ಜಿ ಸತು ಸಲ್ಫೇಟ್ (Zinc Sulphate) ಮತ್ತು ಸಾಕಷ್ಟು ಕೊಟ್ಟಿಗೆ ಗೊಬ್ಬರ ಮಣ್ಣಿಗೆ ಸೇರಿಸಿ",
+      "10% ಹಸುವಿನ ಗಂಜಲ ತಿಳಿ ದ್ರಾವಣ ಅಥವಾ ಬೆಳ್ಳುಳ್ಳಿ ಕಷಾಯ ಸಿಂಪಡಿಸಿ",
+      "ಬಿತ್ತನೆ ಬೀಜಗಳಿಗೆ ಸೂಡೋಮೊನಾಸ್ ಫ್ಲೋರೊಸೆನ್ಸ್ (10 ಗ್ರಾಂ/ಕೆ.ಜಿ) ಬೀಜೋಪಚಾರ ಮಾಡಿ"
+    ],
+    "chemical_controls_en": [
+      "Spray Mancozeb 75 WP @ 2.0 g/L or Propiconazole 25 EC @ 1.0 ml/L",
+      "Apply Carbendazim 12% + Mancozeb 63% WP (Saaf) @ 1.5 g/L"
+    ],
+    "chemical_controls_kn": [
+      "ಮ್ಯಾಂಕೋಜೆಬ್ 75 WP (2.0 ಗ್ರಾಂ/ಲೀ) ಅಥವಾ ಪ್ರೊಪಿಕೊನಜೋಲ್ 25 EC (1.0 ಮಿ.ಲೀ/ಲೀ) ಸಿಂಪಡಿಸಿ",
+      "ಕಾರ್ಬೆಂಡಾಜಿಮ್ + ಮ್ಯಾಂಕೋಜೆಬ್ ಸಂಯುಕ್ತ (ಸಾಫ್) 1.5 ಗ್ರಾಂ/ಲೀ ನೀರಿನಲ್ಲಿ ಬೆರೆಸಿ ಸಿಂಪಡಿಸಿ"
+    ],
+    "preventive_measures_en": [
+      "Test soil and rectify Potash and Micronutrient (Zinc & Iron) deficiencies",
+      "Provide balanced fertilizer schedule; avoid drought stress during tillering",
+      "Hot water seed treatment at 52-54°C for 10 minutes before sprouting"
+    ],
+    "preventive_measures_kn": [
+      "ಮಣ್ಣು ಪರೀಕ್ಷೆ ನಡೆಸಿ ಪೊಟ್ಯಾಷ್ ಮತ್ತು ಸತುವಿನ ಕೊರತೆಯನ್ನು ನಿವಾರಿಸಿ",
+      "ಸಮತೋಲಿತ ಗೊಬ್ಬರ ನೀಡಿ ಮತ್ತು ತೆನೆ ಬರುವ ಹಂತದಲ್ಲಿ ನೀರಿನ ಅಭಾವವಾಗದಂತೆ ನೋಡಿಕೊಳ್ಳಿ",
+      "ಬೀಜಗಳನ್ನು ಬಿತ್ತನೆಗೆ ಮುನ್ನ 52-54°C ಬಿಸಿ ನೀರಿನಲ್ಲಿ 10 ನಿಮಿಷ ನೆನೆಸಿ ಉಪಚರಿಸಿ"
+    ],
+    "govt_schemes_en": [
+      "Soil Health Card Scheme (National & Karnataka)",
+      "Rashtriya Krishi Vikas Yojana (RKVY) soil amelioration"
+    ],
+    "govt_schemes_kn": [
+      "ಮಣ್ಣು ಆರೋಗ್ಯ ಕಾರ್ಡ್ ಯೋಜನೆ (Soil Health Card Scheme)",
+      "ರಾಷ್ಟ್ರೀಯ ಕೃಷಿ ವಿಕಾಸ ಯೋಜನೆ (RKVY) ಪೋಷಕಾಂಶ ನಿರ್ವಹಣೆ"
+    ]
+  },
+  "healthy": {
+    "id": "healthy",
+    "name_en": "Healthy Leaf",
+    "name_kn": "ಆರೋಗ್ಯಕರ ಎಲೆ",
+    "plant_id": "rice",
+    "is_healthy": true,
+    "pathogen": "None (Healthy Foliage)",
+    "symptoms_en": [
+      "Lush green, uniform leaf lamina without lesions or discoloration",
+      "Vigorous erect canopy and optimal vegetative tillering",
+      "Absence of fungal, bacterial, or insect vector damage"
+    ],
+    "symptoms_kn": [
+      "ಯಾವುದೇ ಕಲೆಗಳು ಅಥವಾ ರೋಗಲಕ್ಷಣಗಳಿಲ್ಲದ ನಳನಳಿಸುವ ಹಸಿರು ಎಲೆಗಳು",
+      "ಉತ್ತಮ ತೆನೆ ಮತ್ತು ಆರೋಗ್ಯಕರ ಕವಲುಗಳ ಬೆಳವಣಿಗೆ",
+      "ಶಿಲೀಂಧ್ರ, ಬ್ಯಾಕ್ಟೀರಿಯಾ ಅಥವಾ ಕೀಟಬಾಧೆಯಿಂದ ಮುಕ್ತವಾದ ಸಮೃದ್ಧ ಬೆಳೆ"
+    ],
+    "organic_controls_en": [
+      "Apply Jeevamrutha every 15-20 days via irrigation water to maintain soil microbiome",
+      "Incorporate green manure crops (Dhaincha/Sunn hemp) before puddling"
+    ],
+    "organic_controls_kn": [
+      "ಪ್ರತಿ 15-20 ದಿನಗಳಿಗೊಮ್ಮೆ ನೀರಾವರಿಯೊಂದಿಗೆ ಜೀವಾಮೃತವನ್ನು ಹಾಯಿಸಿ ಮಣ್ಣಿನ ಫಲವತ್ತತೆ ಕಾಪಾಡಿ",
+      "ನಾಟಿಗೆ ಮುನ್ನ ಸೆಣಬು ಅಥವಾ ಡೈಂಚಾ ಹಸಿರೆಲೆ ಗೊಬ್ಬರವನ್ನು ಮಣ್ಣಿನಲ್ಲಿ ಕಳಿಯಲು ಬಿಡಿ"
+    ],
+    "chemical_controls_en": [
+      "No chemical fungicide or bactericide application required."
+    ],
+    "chemical_controls_kn": [
+      "ಯಾವುದೇ ರಾಸಾಯನಿಕ ಔಷಧಿ ಸಿಂಪಡಣೆಯ ಅಗತ್ಯವಿಲ್ಲ."
+    ],
+    "preventive_measures_en": [
+      "Maintain 2-5 cm standing water during critical vegetative and flowering stages",
+      "Conduct regular pest and disease surveillance using yellow sticky traps",
+      "Follow System of Rice Intensification (SRI) spacing principles where feasible"
+    ],
+    "preventive_measures_kn": [
+      "ಬೆಳವಣಿಗೆ ಮತ್ತು ಹೂವಾಡುವ ಹಂತದಲ್ಲಿ 2-5 ಸೆಂ.ಮೀ ನೀರನ್ನು ನಿಲ್ಲಿಸಿ ಕಾಪಾಡಿ",
+      "ಹಳದಿ ಜಿಗುಟು ಬಲೆಗಳನ್ನು ಅಳವಡಿಸಿ ಕೀಟಗಳ ಚಲನವಲನವನ್ನು ವೀಕ್ಷಿಸಿ",
+      "ಸಾಧ್ಯವಾದಲ್ಲಿ ಎಸ್.ಆರ್.ಐ (ಶ್ರೀ ಪದ್ಧತಿ) ವಿಧಾನವನ್ನು ಅಳವಡಿಸಿಕೊಳ್ಳಿ"
+    ],
+    "govt_schemes_en": [
+      "Paramparagat Krishi Vikas Yojana (PKVY) for organic paddy growers",
+      "PM Kisan Samman Nidhi Yojana"
+    ],
+    "govt_schemes_kn": [
+      "ಪರಂಪರಾಗತ್ ಕೃಷಿ ವಿಕಾಸ್ ಯೋಜನೆ (PKVY - ಸಾವಯವ ಕೃಷಿ ಪ್ರೋತ್ಸಾಹ)",
+      "ಪ್ರಧಾನಮಂತ್ರಿ ಕಿಸಾನ್ ಸಮ್ಮಾನ್ ನಿಧಿ ಯೋಜನೆ"
+    ]
+  },
+  "tungro": {
+    "id": "tungro",
+    "name_en": "Rice Tungro Disease",
+    "name_kn": "ತುಂಗ್ರೋ ವೈರಸ್ ರೋಗ",
+    "plant_id": "rice",
+    "is_healthy": false,
+    "pathogen": "Rice Tungro Bacilliform Virus (RTBV) & Spherical Virus (RTSV)",
+    "symptoms_en": [
+      "Severe plant stunting and marked reduction in tiller count",
+      "Leaves turn vivid yellow to orange-yellow starting from the tip downwards",
+      "Transmitted efficiently by Green Leafhoppers (Nephotettix virescens)"
+    ],
+    "symptoms_kn": [
+      "ಗಿಡಗಳ ಬೆಳವಣಿಗೆ ಕುಂಠಿತಗೊಂಡು, ಕವಲುಗಳ ಸಂಖ್ಯೆ ತೀವ್ರವಾಗಿ ಕಡಿಮೆಯಾಗುತ್ತದೆ",
+      "ಎಲೆಯ ತುದಿಯಿಂದ ಆರಂಭಿಸಿ ಕೆಳಮುಖವಾಗಿ ಎಲೆಗಳು ಹಳದಿ ಅಥವಾ ಕಿತ್ತಳೆ ಬಣ್ಣಕ್ಕೆ ತಿರುಗುತ್ತವೆ",
+      "ಹಸಿರು ಜಿಗಿ ಹುಳು (Green Leafhopper) ಈ ವೈರಸ್ ರೋಗವನ್ನು ವೇಗವಾಗಿ ಹರಡುತ್ತದೆ"
+    ],
+    "organic_controls_en": [
+      "Install light traps (1 per acre) to attract and eliminate green leafhoppers",
+      "Foliar spray of 3% Neem oil or 5% NSKE to deter vector feeding",
+      "Spray Pongamia (Honge) oil @ 5 ml/L mixed with mild soap solution"
+    ],
+    "organic_controls_kn": [
+      "ಹಸಿರು ಜಿಗಿಹುಳುಗಳನ್ನು ನಾಶಪಡಿಸಲು ಎಕರೆಗೆ ಒಂದು ಬೆಳಕಿನ ಬಲೆ (Light Trap) ಅಳವಡಿಸಿ",
+      "ಕೀಟಗಳು ಕುಡಿಯದಂತೆ ತಡೆಯಲು 3% ಬೇವಿನ ಎಣ್ಣೆ ಅಥವಾ 5% NSKE ಸಿಂಪಡಿಸಿ",
+      "ಹೊಂಗೆ ಎಣ್ಣೆ (5 ಮಿ.ಲೀ/ಲೀ) ಸಾಬೂನು ನೀರಿನೊಂದಿಗೆ ಬೆರೆಸಿ ಸಿಂಪಡಿಸಿ"
+    ],
+    "chemical_controls_en": [
+      "Spray Imidacloprid 17.8 SL @ 0.3 ml/L to control green leafhopper vectors",
+      "Apply Thiamethoxam 25 WG @ 0.2 g/L or Dinotefuran 20 SG @ 0.4 g/L"
+    ],
+    "chemical_controls_kn": [
+      "ವಾಹಕ ಕೀಟವಾದ ಜಿಗಿಹುಳುವಿನ ನಿಯಂತ್ರಣಕ್ಕೆ ಇಮಿಡಾಕ್ಲೋಪ್ರಿಡ್ 17.8 SL (0.3 ಮಿ.ಲೀ/ಲೀ) ಸಿಂಪಡಿಸಿ",
+      "ಥಯಾಮೆಥಾಕ್ಸಮ್ 25 WG (0.2 ಗ್ರಾಂ/ಲೀ) ಅಥವಾ ಡೈನೋಟೆಫುರಾನ್ 20 SG (0.4 ಗ್ರಾಂ/ಲೀ) ಸಿಂಪಡಿಸಿ"
+    ],
+    "preventive_measures_en": [
+      "Eradicate infected rice stubbles and grassy weeds on field bunds",
+      "Adopt synchronous planting across the farming community to break vector cycles",
+      "Cultivate Tungro-tolerant varieties like Vikramarya, IET 9995, or IR-36"
+    ],
+    "preventive_measures_kn": [
+      "ಹಿಂದಿನ ಬೆಳೆಯ ಕಳೆ ಮತ್ತು ಸೋಂಕಿತ ಕೂಳೆಗಳನ್ನು ಸಂಪೂರ್ಣವಾಗಿ ನಾಶಪಡಿಸಿ",
+      "ಕೀಟಗಳ ಜೀವನಚಕ್ರ ಮುರಿಯಲು ಗ್ರಾಮದ ಎಲ್ಲ ರೈತರು ಒಟ್ಟಾಗಿ ಏಕಕಾಲದಲ್ಲಿ ನಾಟಿ ಕೈಗೊಳ್ಳಿ",
+      "ತುಂಗ್ರೋ ನಿರೋಧಕ ತಳಿಗಳಾದ ವಿಕ್ರಮಾರ್ಕ ಅಥವಾ ಐಆರ್-36 ಬೆಳೆಯಿರಿ"
+    ],
+    "govt_schemes_en": [
+      "Integrated Pest Management (IPM) Mission under Karnataka Agriculture Dept",
+      "PM Fasal Bima Yojana (PMFBY)"
+    ],
+    "govt_schemes_kn": [
+      "ಕರ್ನಾಟಕ ಸಮಗ್ರ ಕೀಟ ನಿರ್ವಹಣಾ (IPM) ಮಿಷನ್",
+      "ಪ್ರಧಾನಮಂತ್ರಿ ಫಸಲ್ ಬಿಮಾ ಯೋಜನೆ (PMFBY)"
+    ]
+  }
+}

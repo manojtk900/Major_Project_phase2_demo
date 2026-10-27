@@ -1,0 +1,32 @@
+{
+  "0": {
+    "id": "bacterial_blight",
+    "name_en": "Bacterial Leaf Blight",
+    "name_kn": "ದುಂಡಾಣು ಎಲೆ ಅಂಗಮಾರಿ ರೋಗ",
+    "is_healthy": false
+  },
+  "1": {
+    "id": "blast",
+    "name_en": "Rice Leaf Blast",
+    "name_kn": "ಎಲೆ ಬೆಂಕಿ ರೋಗ / ಬ್ಲಾಸ್ಟ್",
+    "is_healthy": false
+  },
+  "2": {
+    "id": "brown_spot",
+    "name_en": "Brown Spot",
+    "name_kn": "ಕಂದು ಚುಕ್ಕೆ ರೋಗ",
+    "is_healthy": false
+  },
+  "3": {
+    "id": "healthy",
+    "name_en": "Healthy Leaf",
+    "name_kn": "ಆರೋಗ್ಯಕರ ಎಲೆ",
+    "is_healthy": true
+  },
+  "4": {
+    "id": "tungro",
+    "name_en": "Rice Tungro Disease",
+    "name_kn": "ತುಂಗ್ರೋ ವೈರಸ್ ರೋಗ",
+    "is_healthy": false
+  }
+}

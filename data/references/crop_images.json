@@ -1,0 +1,251 @@
+{
+  "_metadata": {
+    "title": "AI-Based Predictive Farming System — Verified Crop & Stage Image Registry",
+    "version": "2.0.0",
+    "last_updated": "2026-09-22",
+    "description": "Registry of stage-specific agricultural photographs with institutional provenance (ICAR, UAS Bengaluru, UAS Dharwad, ICAR-IIHR, ICAR-CPCRI).",
+    "license_policy": "Public educational & academic institutional extension material."
+  },
+  "crops": {
+    "ragi": {
+      "crop_id": "ragi",
+      "crop_name_en": "Ragi (Finger Millet)",
+      "crop_name_kn": "ರಾಗಿ",
+      "hero_photo": {
+        "url": "public/images/crops/ragi.jpg",
+        "caption_en": "Karnataka finger millet field landscape in Mandya district",
+        "caption_kn": "ಮಂಡ್ಯ ಜಿಲ್ಲೆಯ ಹಚ್ಚಹಸಿರಿನ ರಾಗಿ ಹೊಲ",
+        "source": "UAS Bengaluru Agricultural Extension"
+      },
+      "stages": {
+        "sowing_germination": {
+          "url": "public/images/stages/ragi_stage1_land.jpg",
+          "caption_en": "Fine seedbed tilth, furrow opening, and bullock drill line sowing",
+          "caption_kn": "ಕೆಂಪು ಮಣ್ಣಿನಲ್ಲಿ ಹದವಾದ ಬೀಜಮಡಿ ಮತ್ತು ಕೂರಿಗೆಯಿಂದ ಸಾಲು ಬಿತ್ತನೆ",
+          "source": "ICAR-IIMR / UAS Bengaluru Package of Practices",
+          "source_url": "https://uasbangalore.edu.in"
+        },
+        "vegetative_tillering": {
+          "url": "public/images/stages/ragi_stage2_sowing.jpg",
+          "caption_en": "Active vegetative tillering stand with vigorous root canopy expansion",
+          "caption_kn": "ಸಸಿಗಳ ಹುಲುಸಾದ ಕವಲೊಡೆಯುವಿಕೆ ಮತ್ತು ಸಸ್ಯ ಬೆಳವಣಿಗೆಯ ಹಂತ",
+          "source": "ICAR-IIMR Finger Millet Production Guide",
+          "source_url": "https://millets.icar.gov.in"
+        },
+        "flowering_panicle": {
+          "url": "public/images/stages/ragi_stage3_veg.jpg",
+          "caption_en": "Emergence of 4 to 6 finger-like whorled spikes with active pollination",
+          "caption_kn": "ರಾಗಿ ತೆನೆ ಹೊರಬರುವಿಕೆ ಮತ್ತು ಹೂ ಬಿಡುವ ಮಹತ್ವದ ಹಂತ",
+          "source": "UAS Bengaluru Department of Agronomy",
+          "source_url": "https://uasbangalore.edu.in"
+        },
+        "grain_filling": {
+          "url": "public/images/stages/ragi_stage4_flower.jpg",
+          "caption_en": "Milking to dough stage grain accumulation inside spikelets",
+          "caption_kn": "ರಾಗಿ ತೆನೆಗಳಲ್ಲಿ ಹಾಲು ತುಂಬಿ ಗಟ್ಟಿಯಾಗುವ ಕಾಳು ತುಂಬುವ ಹಂತ",
+          "source": "ICAR-IIMR Millet Research Station",
+          "source_url": "https://millets.icar.gov.in"
+        },
+        "maturity_harvest": {
+          "url": "public/images/stages/ragi_stage5_harvest.jpg",
+          "caption_en": "Physiological maturity with golden-brown dried earheads ready for sickle harvest",
+          "caption_kn": "ತೆನೆಗಳು ಕಂದು ಬಣ್ಣಕ್ಕೆ ತಿರುಗಿ ಕಟಾವಿಗೆ ಸಿದ್ಧವಾದ ರಾಗಿ ಬೆಳೆ",
+          "source": "UAS Bengaluru Farm Extension",
+          "source_url": "https://uasbangalore.edu.in"
+        }
+      }
+    },
+    "rice": {
+      "crop_id": "rice",
+      "crop_name_en": "Rice (Paddy)",
+      "crop_name_kn": "ಭತ್ತ",
+      "hero_photo": {
+        "url": "public/images/crops/rice.jpg",
+        "caption_en": "Kharif irrigated wetland rice ecosystem in Cauvery basin",
+        "caption_kn": "ಕಾವೇರಿ ಜಲಾನಯನ ಪ್ರದೇಶದ ಹಸಿರು ಭತ್ತದ ಗದ್ದೆ",
+        "source": "ICAR-NRRI Cuttack & UAS Dharwad"
+      },
+      "stages": {
+        "nursery_transplanting": {
+          "url": "public/images/stages/rice_stage1_nursery.jpg",
+          "caption_en": "Wetbed nursery raising and 21-day seedling uprooting for puddled transplanting",
+          "caption_kn": "21 ದಿನಗಳ ಭತ್ತದ ಸಸಿ ಮಡಿ ಮತ್ತು ಕೆಸರು ಗದ್ದೆಗೆ ನಾಟಿ ಮಾಡುವಿಕೆ",
+          "source": "UAS Dharwad Package of Practices for Rice",
+          "source_url": "https://uasd.edu"
+        },
+        "tillering_vegetative": {
+          "url": "public/images/stages/rice_stage2_transplant.jpg",
+          "caption_en": "Active vegetative tillering stage producing 15 to 25 tillers per hill",
+          "caption_kn": "ಪ್ರತಿ ಬುಡದಲ್ಲಿ 15-20 ಕವಲುಗಳು ಒಡೆಯುವ ಸಸ್ಯ ಬೆಳವಣಿಗೆ ಹಂತ",
+          "source": "ICAR-NRRI Agronomy Division",
+          "source_url": "https://icar-nrri.gov.in"
+        },
+        "panicle_initiation_flowering": {
+          "url": "public/images/stages/rice_stage3_tillering.jpg",
+          "caption_en": "Panicle initiation inside boot leaf followed by floret anthesis",
+          "caption_kn": "ತೆನೆ ಹೊರಬರುವ ಬೂಟ್ ಹಂತ ಮತ್ತು ಹೂ ಬಿಡುವ ಸೂಕ್ಷ್ಮ ಹಂತ",
+          "source": "UAS Bengaluru / UAS Dharwad Joint Recommendations",
+          "source_url": "https://uasbangalore.edu.in"
+        },
+        "grain_filling_dough": {
+          "url": "public/images/stages/rice_stage4_flower.jpg",
+          "caption_en": "Starch translocation from flag leaf turning milky liquid to firm dough",
+          "caption_kn": "ಧಾನ್ಯ ತುಂಬುವಿಕೆ: ಹಾಲಿನ ಹಂತದಿಂದ ಗಟ್ಟಿ ಕಾಳಾಗಿ ಮಾರ್ಪಡುವಿಕೆ",
+          "source": "ICAR-NRRI Extension Handbook",
+          "source_url": "https://icar-nrri.gov.in"
+        },
+        "maturity_harvest": {
+          "url": "public/images/stages/rice_stage5_harvest.jpg",
+          "caption_en": "Golden yellow panicles at 14% grain moisture ready for sickle harvest",
+          "caption_kn": "ಶೇಕಡಾ 85ರಷ್ಟು ತೆನೆಗಳು ಬಂಗಾರದ ಬಣ್ಣಕ್ಕೆ ತಿರುಗಿ ಕಟಾವಿಗೆ ಸಿದ್ಧ",
+          "source": "Karnataka Department of Agriculture & ICAR",
+          "source_url": "https://raitamitra.karnataka.gov.in"
+        }
+      }
+    },
+    "maize": {
+      "crop_id": "maize",
+      "crop_name_en": "Maize (Corn)",
+      "crop_name_kn": "ಮೆಕ್ಕೆ ಜೋಳ",
+      "hero_photo": {
+        "url": "public/images/crops/maize.jpg",
+        "caption_en": "Karnataka high-yield hybrid maize field in Haveri/Davanagere belt",
+        "caption_kn": "ದಾವಣಗೆರೆ-ಹಾವೇರಿ ಭಾಗದ ಸಮೃದ್ಧ ಹೈಬ್ರಿಡ್ ಮೆಕ್ಕೆಜೋಳ",
+        "source": "ICAR-IIMR (Directorate of Maize Research)"
+      },
+      "stages": {
+        "sowing_emergence": {
+          "url": "public/images/stages/maize_stage1_sowing.jpg",
+          "caption_en": "Precision ridge sowing and coleoptile seedling emergence (VE stage)",
+          "caption_kn": "ಬೋದು ಸಾಲುಗಳಲ್ಲಿ ಬೀಜ ಬಿತ್ತನೆ ಮತ್ತು ಸಸಿ ಮೊಳಕೆಯೊಡೆದು ಹೊರಬರುವಿಕೆ",
+          "source": "ICAR-IIMR Maize Production Technology",
+          "source_url": "https://iimr.icar.gov.in"
+        },
+        "vegetative_knee_high": {
+          "url": "public/images/stages/maize_stage2_veg.jpg",
+          "caption_en": "Knee-high vegetative growth (V6 to V8 stage) with rapid dry matter accumulation",
+          "caption_kn": "ಮೊಣಕಾಲುದ್ದದ ಸಸ್ಯ ಬೆಳವಣಿಗೆ ಹಂತ ಮತ್ತು ಕಾಂಡದ ಕ್ಷಿಪ್ರ ವಿಸ್ತರಣೆ",
+          "source": "UAS Dharwad & UAS Raichur Field Crop Guide",
+          "source_url": "https://uasraichur.edu.in"
+        },
+        "tasseling_silking": {
+          "url": "public/images/stages/maize_stage3_tassel.jpg",
+          "caption_en": "Male tassel pollen shedding and receptive female ear silking (VT-R1 stage)",
+          "caption_kn": "ಗಂಡು ಹೂ (ಚಾಮರ) ಅರಳುವುದು ಮತ್ತು ಹೆಣ್ಣು ಹೂವಿನ ರೇಷ್ಮೆ ಕದಿರು ಹೊರಬರುವುದು",
+          "source": "ICAR-IIMR Crop Science Division",
+          "source_url": "https://iimr.icar.gov.in"
+        },
+        "grain_filling_cob": {
+          "url": "public/images/stages/maize_stage4_cob.jpg",
+          "caption_en": "Cob enlargement and kernel blister to milk-dent stage filling",
+          "caption_kn": "ತೆನೆ ದಪ್ಪಗಾಗಿ ಕಾಳುಗಳಲ್ಲಿ ಹಾಲು ತುಂಬಿ ಮುತ್ತಿನಂತಾಗುವ ಹಂತ",
+          "source": "UAS Raichur Agronomy Department",
+          "source_url": "https://uasraichur.edu.in"
+        },
+        "maturity_harvest": {
+          "url": "public/images/stages/maize_stage5_harvest.jpg",
+          "caption_en": "Husk drying, kernel black layer formation at base, and cob harvesting",
+          "caption_kn": "ರೇಕೆಗಳು ಒಣಗಿ ಕಪ್ಪು ಪದರ ಉಂಟಾಗಿ ಕೊಯ್ಲಿಗೆ ಸಿದ್ಧವಾದ ತೆನೆಗಳು",
+          "source": "ICAR-IIMR & UAS Bengaluru Extension",
+          "source_url": "https://uasbangalore.edu.in"
+        }
+      }
+    },
+    "tomato": {
+      "crop_id": "tomato",
+      "crop_name_en": "Tomato",
+      "crop_name_kn": "ಟೊಮೇಟೊ",
+      "hero_photo": {
+        "url": "public/images/crops/tomato.jpg",
+        "caption_en": "Determinate commercial tomato crop on raised beds with drip irrigation in Kolar",
+        "caption_kn": "ಕೋಲಾರ ಭಾಗದ ಏರುಮಡಿ ಮತ್ತು ಹನಿ ನೀರಾವರಿ ಆಧಾರಿತ ಟೊಮೇಟೊ ತೋಟ",
+        "source": "ICAR-IIHR Hesaraghatta Bengaluru"
+      },
+      "stages": {
+        "nursery_transplanting": {
+          "url": "public/images/stages/tomato_stage1_nursery.jpg",
+          "caption_en": "Pro-tray nursery raised seedlings and 25-day transplanting onto raised plastic mulch beds",
+          "caption_kn": "ಪ್ರೋಟ್ರೆಗಳಲ್ಲಿ ಸಸಿ ಮಡಿ ಬೆಳೆಸಿ 25 ದಿನಗಳಲ್ಲಿ ಏರುಮಡಿಗೆ ನಾಟಿ ಮಾಡುವಿಕೆ",
+          "source": "ICAR-IIHR Vegetable Production Technology",
+          "source_url": "https://iihr.res.in"
+        },
+        "vegetative_branching": {
+          "url": "public/images/stages/tomato_stage2_transplant.jpg",
+          "caption_en": "Vegetative canopy branching, lateral shoot training, and bamboo staking",
+          "caption_kn": "ಕವಲುಗಳು ಹುಲುಸಾಗಿ ಹರಡುವಿಕೆ ಮತ್ತು ಬಿದಿರಿನ ಕಡ್ಡಿಗಳಿಂದ ಸಸಿ ಕಟ್ಟುವುದು",
+          "source": "ICAR-IIHR Division of Vegetable Crops",
+          "source_url": "https://iihr.res.in"
+        },
+        "flowering_fruit_set": {
+          "url": "public/images/stages/tomato_stage3_veg.jpg",
+          "caption_en": "Bright yellow floral clusters and initial green berry set",
+          "caption_kn": "ಹಳದಿ ಹೂ ಗೊಂಚಲುಗಳು ಅರಳಿ ಪುಟ್ಟ ಹಸಿರು ಕಾಯಿಗಳು ಕಟ್ಟುವ ಹಂತ",
+          "source": "ICAR-IIHR Protected Cultivation Unit",
+          "source_url": "https://iihr.res.in"
+        },
+        "fruit_development_breaker": {
+          "url": "public/images/stages/tomato_stage4_flower.jpg",
+          "caption_en": "Fruit sizing and color transition from mature green to breaker stage pink",
+          "caption_kn": "ಕಾಯಿಗಳು ದಪ್ಪಗಾಗಿ ಹಸಿರಿನಿಂದ ಗುಲಾಬಿ/ಕೆಂಪು ಬಣ್ಣಕ್ಕೆ ತಿರುಗುವ ಬ್ರೇಕರ್ ಹಂತ",
+          "source": "ICAR-IIHR Post Harvest Technology Division",
+          "source_url": "https://iihr.res.in"
+        },
+        "harvesting_pickings": {
+          "url": "public/images/stages/tomato_stage5_harvest.jpg",
+          "caption_en": "Multiple manual pickings of firm ripe red fruits at 4 to 5 day intervals",
+          "caption_kn": "4-5 ದಿನಗಳ ಅಂತರದಲ್ಲಿ ಮಾಗಿದ ಗಟ್ಟಿ ಕೆಂಪು ಟೊಮೇಟೊ ಹಣ್ಣುಗಳ ಕೊಯ್ಲು",
+          "source": "ICAR-IIHR & University of Horticultural Sciences Bagalkot",
+          "source_url": "https://uhsbagalkot.edu.in"
+        }
+      }
+    },
+    "arecanut": {
+      "crop_id": "arecanut",
+      "crop_name_en": "Arecanut (Betel Nut)",
+      "crop_name_kn": "ಅಡಿಕೆ",
+      "hero_photo": {
+        "url": "public/images/crops/arecanut.jpg",
+        "caption_en": "Perennial bearing arecanut palm plantation in Malnad / Coastal Karnataka",
+        "caption_kn": "ಮಲೆನಾಡು-ಕರಾವಳಿಯ ಹಸಿರು ಹೊದಿಕೆಯ ಸಮೃದ್ಧ ಅಡಿಕೆ ತೋಟ",
+        "source": "ICAR-CPCRI Regional Station Vittal & Kasaragod"
+      },
+      "stages": {
+        "summer_irrigation": {
+          "url": "public/images/stages/arecanut_stage1_summer.jpg",
+          "caption_en": "Summer basin irrigation (175-200 L/palm/week) with organic coir pith mulching",
+          "caption_kn": "ಬೇಸಿಗೆಯ ಹನಿ ನೀರಾವರಿ ಮತ್ತು ಬುಡಕ್ಕೆ ತೆಂಗಿನ ಸಿಪ್ಪೆ-ರೈಜೋಮ್ ಹೊದಿಕೆ",
+          "source": "ICAR-CPCRI Arecanut Management Calendar",
+          "source_url": "https://cpcri.icar.gov.in"
+        },
+        "pre_monsoon_drainage": {
+          "url": "public/images/stages/arecanut_stage2_premonsoon.jpg",
+          "caption_en": "Pre-monsoon inter-row drainage trenches and 1% Bordeaux mixture bunch spray",
+          "caption_kn": "ಮುಂಗಾರು ಪೂರ್ವ ಬಸಿಗಾಲುವೆಗಳ ಸ್ವಚ್ಛತೆ ಮತ್ತು ಶೇ 1ರ ಬೋರ್ಡೋ ದ್ರಾವಣ ಸಿಂಪಡಣೆ",
+          "source": "ICAR-CPCRI Crop Protection Guide",
+          "source_url": "https://cpcri.icar.gov.in"
+        },
+        "monsoon_kole_roga": {
+          "url": "public/images/stages/arecanut_stage3_monsoon.jpg",
+          "caption_en": "Monsoon fruit rot (Kole Roga) management with polythene bunch covering or Bordeaux spray",
+          "caption_kn": "ಮಳೆಗಾಲದ ಕೊಳೆ ರೋಗ ನಿಯಂತ್ರಣ: ಗೊಂಚಲುಗಳಿಗೆ ಪ್ಲಾಸ್ಟಿಕ್ ಚೀಲ ಕಟ್ಟುವುದು",
+          "source": "ICAR-CPCRI Kannada Krishi Dairy",
+          "source_url": "https://cpcri.icar.gov.in"
+        },
+        "post_monsoon_fertilizer": {
+          "url": "public/images/stages/arecanut_stage4_fertilizer.jpg",
+          "caption_en": "Post-monsoon circular basin opening and application of 2/3rd annual RDF plus FYM",
+          "caption_kn": "ಮುಂಗಾರು ನಂತರದ 2ನೇ ಕಂತಿನ ರಸಗೊಬ್ಬರ ಮತ್ತು ಕೊಟ್ಟಿಗೆ ಗೊಬ್ಬರ ಬುಡಕ್ಕೆ ಹಾಕುವುದು",
+          "source": "ICAR-CPCRI & UAS Dharwad (Sirsi Research Station)",
+          "source_url": "https://cpcri.icar.gov.in"
+        },
+        "harvesting_curing": {
+          "url": "public/images/stages/arecanut_stage5_harvest.jpg",
+          "caption_en": "Ripe orange-red nut bunch harvesting by skilled climbers followed by sun drying",
+          "caption_kn": "ಮಾಗಿದ ಕೆಂಪು ಅಡಿಕೆ ಗೊಂಚಲುಗಳ ಕೊಯ್ಲು ಮತ್ತು ಕಣದಲ್ಲಿ ಒಣಗಿಸುವಿಕೆ",
+          "source": "ICAR-CPCRI Post Harvest & Processing Division",
+          "source_url": "https://cpcri.icar.gov.in"
+        }
+      }
+    }
+  }
+}

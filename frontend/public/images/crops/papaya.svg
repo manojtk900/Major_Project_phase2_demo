@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <linearGradient id="bgPapaya" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fef3c7"/>
+      <stop offset="100%" stop-color="#fde68a"/>
+    </linearGradient>
+    <linearGradient id="papayaSkin" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#84cc16"/>
+      <stop offset="50%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#ea580c"/>
+    </linearGradient>
+    <linearGradient id="papayaFlesh" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f97316"/>
+      <stop offset="100%" stop-color="#dc2626"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bgPapaya)" rx="16"/>
+  <!-- Papaya Leaf in background -->
+  <path d="M120 70 Q140 20 200 40 Q260 20 280 70 Q320 120 280 150 Q200 130 120 70 Z" fill="#4ade80" opacity="0.35"/>
+  <!-- Whole Papaya -->
+  <path d="M150 170 C140 100 190 70 220 90 C250 110 260 170 240 210 C220 250 160 240 150 170 Z" fill="url(#papayaSkin)" filter="drop-shadow(2px 6px 8px rgba(0,0,0,0.15))"/>
+  <!-- Stem -->
+  <path d="M215 88 Q218 68 226 62" stroke="#65a30d" stroke-width="8" stroke-linecap="round" fill="none"/>
+  <!-- Cut Half Papaya in front -->
+  <path d="M210 180 C205 130 240 110 265 125 C290 140 300 190 280 230 C260 260 215 240 210 180 Z" fill="url(#papayaFlesh)" stroke="#84cc16" stroke-width="6" filter="drop-shadow(3px 8px 12px rgba(0,0,0,0.2))"/>
+  <!-- Papaya Cavity & Seeds -->
+  <ellipse cx="252" cy="180" rx="18" ry="32" fill="#7c2d12"/>
+  <circle cx="248" cy="165" r="3.5" fill="#1c1917"/>
+  <circle cx="255" cy="168" r="3.5" fill="#1c1917"/>
+  <circle cx="250" cy="177" r="4" fill="#1c1917"/>
+  <circle cx="256" cy="184" r="3.5" fill="#1c1917"/>
+  <circle cx="248" cy="192" r="3.5" fill="#1c1917"/>
+  <circle cx="254" cy="198" r="3" fill="#1c1917"/>
+  <!-- Label Badge -->
+  <rect x="20" y="246" width="160" height="34" rx="8" fill="rgba(255,255,255,0.9)" stroke="#fed7aa"/>
+  <text x="32" y="268" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#9a3412">🌱 Papaya (ಪರಂಗಿ)</text>
+</svg>

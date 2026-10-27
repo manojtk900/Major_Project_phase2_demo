@@ -1,0 +1,82 @@
+<section class="view-panel" id="view-crop-care">
+  <!-- Top Screen Header -->
+  <div class="screen-header" style="margin-bottom: 16px;">
+    <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px;">
+      <div>
+        <h2 class="screen-title" style="margin-bottom: 2px;">
+          🌾 <span class="txt-kn">ಬೆಳೆ ಬೆಳವಣಿಗೆಯ ಹಂತಗಳು</span><span class="txt-en" style="display: none;">Crop Growth Stages Guide</span>
+        </h2>
+        <p class="screen-subtitle" style="margin: 0; font-size: 13.5px;">
+          <span class="txt-kn">ಪ್ರಮುಖ ಬೆಳೆಗಳ ಬೆಳವಣಿಗೆಯ ಹಂತಗಳು, ಅಂದಾಜು ಅವಧಿ ಮತ್ತು ಹಂತದ ವಿವರಣೆ</span>
+          <span class="txt-en" style="display: none;">Visual guide to crop growth stages, approximate durations, and key developments</span>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Crop Selector with All 6 Supported Crops -->
+  <div class="lc-crop-selector-container" style="margin-bottom: 20px;">
+    <div class="lc-crop-selector-list" id="care-quick-chips">
+      <button type="button" class="lc-crop-pill active" data-crop="rice" onclick="selectLifecycleCrop('rice')">
+        <span class="lc-crop-pill-thumb">🌾</span>
+        <span class="lc-crop-pill-name"><strong>ಭತ್ತ</strong> <small>(Rice)</small></span>
+      </button>
+      <button type="button" class="lc-crop-pill" data-crop="maize" onclick="selectLifecycleCrop('maize')">
+        <span class="lc-crop-pill-thumb">🌽</span>
+        <span class="lc-crop-pill-name"><strong>ಮೆಕ್ಕೆ ಜೋಳ</strong> <small>(Maize)</small></span>
+      </button>
+      <button type="button" class="lc-crop-pill" data-crop="tomato" onclick="selectLifecycleCrop('tomato')">
+        <span class="lc-crop-pill-thumb">🍅</span>
+        <span class="lc-crop-pill-name"><strong>ಟೊಮೇಟೊ</strong> <small>(Tomato)</small></span>
+      </button>
+      <button type="button" class="lc-crop-pill" data-crop="arecanut" onclick="selectLifecycleCrop('arecanut')">
+        <span class="lc-crop-pill-thumb">🌴</span>
+        <span class="lc-crop-pill-name"><strong>ಅಡಿಕೆ</strong> <small>(Arecanut)</small></span>
+      </button>
+      <button type="button" class="lc-crop-pill" data-crop="cotton" onclick="selectLifecycleCrop('cotton')">
+        <span class="lc-crop-pill-thumb">☁️</span>
+        <span class="lc-crop-pill-name"><strong>ಹತ್ತಿ</strong> <small>(Cotton)</small></span>
+      </button>
+      <button type="button" class="lc-crop-pill" data-crop="ragi" onclick="selectLifecycleCrop('ragi')">
+        <span class="lc-crop-pill-thumb">🌾</span>
+        <span class="lc-crop-pill-name"><strong>ರಾಗಿ</strong> <small>(Ragi)</small></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Crop Header: Name, Photograph, and Short Description -->
+  <div class="lc-simple-header-card" id="lc-simple-header">
+    <div class="lc-simple-photo-wrap">
+      <img id="lc-crop-main-photo" src="public/images/crops/rice.jpg" alt="Crop Photograph" class="lc-simple-crop-photo">
+    </div>
+    <div class="lc-simple-info-wrap">
+      <span class="badge" style="background: #e8f5e9; color: #2e7d32; font-weight: 700; font-size: 0.78rem; padding: 4px 10px; border-radius: 999px; margin-bottom: 8px; display: inline-block;">
+        🌱 <span class="txt-kn">ಬೆಳೆ ಮಾರ್ಗದರ್ಶಿ</span><span class="txt-en" style="display: none;">Crop Stages Guide</span>
+      </span>
+      <h1 class="lc-simple-crop-title" id="lc-crop-title">
+        <span class="crop-name-kn">ಭತ್ತ</span> <span class="crop-name-en" style="color: var(--text-muted, #64748b); font-size: 1.2rem; font-weight: 600;">(Rice / Paddy)</span>
+      </h1>
+      <p class="lc-simple-crop-desc" id="lc-crop-desc">
+        A primary staple cereal cultivated extensively across river basins and irrigated command areas in Karnataka.
+      </p>
+      <div class="lc-simple-guidance-pill">
+        <span style="font-size: 1.1rem;">ℹ️</span>
+        <div>
+          <strong><span class="txt-kn">ಅಂದಾಜು ಅವಧಿ ಮಾರ್ಗದರ್ಶಿ:</span><span class="txt-en" style="display: none;">Approximate Guidance:</span></strong>
+          <span class="txt-kn">ಬೆಳೆಯ ಹಂತಗಳ ಅವಧಿಯು ತಳಿ, ಮಣ್ಣು ಮತ್ತು ಹವಾಮಾನಕ್ಕೆ ಅನುಗುಣವಾಗಿ ಬದಲಾಗಬಹುದು (ಆಧಾರ: ICAR / UAS / IRRI RKB).</span>
+          <span class="txt-en" style="display: none;">Stage durations are approximate and vary with crop variety and growing conditions (Sources: ICAR / UAS / IRRI RKB).</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Stages List: Simple cards in a clean vertical sequence -->
+  <div class="lc-stages-list" id="lc-stages-container">
+    <!-- Populated dynamically by renderCropLifecycleGuide(cropId) -->
+  </div>
+
+  <!-- Official Agricultural References & Further Reading -->
+  <div id="lc-references-container">
+    <!-- Populated dynamically by renderCropLifecycleGuide(cropId) -->
+  </div>
+</section>

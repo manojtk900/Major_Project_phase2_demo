@@ -1,0 +1,32 @@
+[
+  {
+    "index": 0,
+    "id": "arecanut",
+    "name_en": "Arecanut",
+    "name_kn": "ಅಡಿಕೆ"
+  },
+  {
+    "index": 1,
+    "id": "cotton",
+    "name_en": "Cotton",
+    "name_kn": "ಹತ್ತಿ"
+  },
+  {
+    "index": 2,
+    "id": "maize",
+    "name_en": "Maize",
+    "name_kn": "ಮೆಕ್ಕೆಜೋಳ"
+  },
+  {
+    "index": 3,
+    "id": "rice",
+    "name_en": "Rice",
+    "name_kn": "ಭತ್ತ"
+  },
+  {
+    "index": 4,
+    "id": "tomato",
+    "name_en": "Tomato",
+    "name_kn": "ಟೊಮೇಟೊ"
+  }
+]

@@ -1,0 +1,175 @@
+{
+  "model_name": "MannuMitra Universal 5-Class Crop Image Validator",
+  "base_architecture": "MobileNetV2 (ImageNet Pretrained)",
+  "input_dimensions": "224x224x3 RGB",
+  "num_classes": 5,
+  "classes": [
+    "arecanut",
+    "cotton",
+    "maize",
+    "rice",
+    "tomato"
+  ],
+  "training_dataset": {
+    "total_images": 2750,
+    "train_images": 1750,
+    "val_images": 500,
+    "test_images": 500,
+    "images_per_class": 550,
+    "balance_ratio": "1.0 (Strictly Equal Balanced)",
+    "sources": {
+      "arecanut": "Karnataka Plantation Field Dataset (Healthy Leaf + Yellow Leaf Disease)",
+      "cotton": "Cotton Leaf Disease Dataset (Bacterial Blight, Curl Virus, Fusarium Wilt, Healthy)",
+      "maize": "New Plant Diseases Dataset (Cercospora, Common Rust, Northern Blight, Healthy)",
+      "rice": "Rice Leaf Disease Dataset (Bacterial Blight, Blast, Brown Spot, Healthy, Tungro)",
+      "tomato": "New Plant Diseases Dataset (10 Disease & Healthy Classes)"
+    }
+  },
+  "test_metrics": {
+    "accuracy": 0.996,
+    "macro_precision": 0.996078431372549,
+    "macro_recall": 0.9960000000000001,
+    "macro_f1": 0.9959995999599961,
+    "weighted_f1": 0.995999599959996
+  },
+  "per_class_metrics": {
+    "arecanut": {
+      "precision": 1.0,
+      "recall": 0.98,
+      "f1_score": 0.98989898989899,
+      "support": 100
+    },
+    "cotton": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "support": 100
+    },
+    "maize": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "support": 100
+    },
+    "rice": {
+      "precision": 0.9803921568627451,
+      "recall": 1.0,
+      "f1_score": 0.9900990099009901,
+      "support": 100
+    },
+    "tomato": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "support": 100
+    }
+  },
+  "confusion_matrix": [
+    [
+      98,
+      0,
+      0,
+      2,
+      0
+    ],
+    [
+      0,
+      100,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      100,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      100,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      100
+    ]
+  ],
+  "history": {
+    "accuracy": [
+      0.8868571519851685,
+      0.9874285459518433,
+      0.9908571243286133,
+      0.998285710811615,
+      0.9971428513526917,
+      0.9988571405410767,
+      0.9994285702705383,
+      0.9977142810821533,
+      0.9954285621643066,
+      0.998285710811615,
+      0.9977142810821533,
+      0.99657142162323,
+      0.9954285621643066,
+      0.9977142810821533,
+      0.9988571405410767
+    ],
+    "loss": [
+      0.31609368324279785,
+      0.04794854298233986,
+      0.025967881083488464,
+      0.008232983760535717,
+      0.008302976377308369,
+      0.0063522858545184135,
+      0.006337723694741726,
+      0.009932715445756912,
+      0.014756114222109318,
+      0.005530519410967827,
+      0.005812005139887333,
+      0.009127694182097912,
+      0.010443446226418018,
+      0.009404109790921211,
+      0.005391374230384827
+    ],
+    "val_accuracy": [
+      0.9860000014305115,
+      0.9879999756813049,
+      0.9919999837875366,
+      0.9980000257492065,
+      0.9980000257492065,
+      0.9959999918937683,
+      0.9980000257492065,
+      0.9959999918937683,
+      0.9940000176429749,
+      0.9940000176429749,
+      0.9919999837875366,
+      0.9980000257492065,
+      0.9959999918937683,
+      0.9959999918937683,
+      0.9980000257492065
+    ],
+    "val_loss": [
+      0.06335235387086868,
+      0.03884432837367058,
+      0.026671867817640305,
+      0.015195601619780064,
+      0.013111838139593601,
+      0.011837027966976166,
+      0.010568816214799881,
+      0.014575316570699215,
+      0.02284911461174488,
+      0.016556138172745705,
+      0.015292362309992313,
+      0.007830055430531502,
+      0.011947846040129662,
+      0.010198638774454594,
+      0.009031091816723347
+    ]
+  },
+  "training_time_seconds": 227.12
+}

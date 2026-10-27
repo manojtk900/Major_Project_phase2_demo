@@ -1,0 +1,267 @@
+<!-- ======================================================= -->
+<!-- FEATURE PAGE: WEATHER REPORT & ADVISORY                   -->
+<!-- ======================================================= -->
+<section class="view-panel" id="view-weather">
+  <!-- Weather Page Top Bar -->
+  <div class="weather-page-topbar">
+    <div class="weather-topbar-left">
+      <div class="weather-title-badge">
+        <span class="weather-badge-icon">🌦️</span>
+      </div>
+      <div>
+        <h2 class="weather-main-title">
+          <span data-i18n="weather.title">Weather Report</span> / <span class="weather-title-kn">ಹವಾಮಾನ ವರದಿ</span>
+        </h2>
+        <p class="weather-main-subtitle" data-i18n="weather.subtitle">
+          Live weather, forecasts and field advisories for better farming decisions.
+        </p>
+      </div>
+    </div>
+    <div class="weather-topbar-right">
+      <button class="weather-location-pill-btn" id="btn-use-my-location" type="button"
+        title="Use My Current GPS Location" onclick="window.weatherModule ? window.weatherModule.useMyLocation() : null">
+        <span class="loc-pin-red">📍</span>
+        <span data-i18n="weather.my_location">ನನ್ನ ಸ್ಥಳ</span>
+        <span class="caret-down">▾</span>
+      </button>
+      <div class="weather-district-select-wrapper">
+        <select id="weather-district-dropdown" class="weather-district-select-styled"
+          aria-label="Select Karnataka District"
+          onchange="window.weatherModule ? window.weatherModule.onDistrictChange(this.value) : null">
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <!-- Banners -->
+  <div class="geo-notice-banner" id="geo-notice-banner" style="display: none; margin-bottom: 12px;">
+    <div class="geo-notice-icon">📍</div>
+    <div class="geo-notice-content">
+      <span>ಸ್ಥಳದ ಅನುಮತಿಯನ್ನು ಅನುಮತಿಸಲಾಗಿಲ್ಲ. ದಯವಿಟ್ಟು ಪಟ್ಟಿಯಿಂದ ಜಿಲ್ಲೆಯನ್ನು ಆರಿಸಿ.</span>
+    </div>
+    <button type="button" class="btn-close-notice"
+      onclick="document.getElementById('geo-notice-banner').style.display='none'">✕</button>
+  </div>
+
+  <div class="weather-error-banner" id="weather-error-banner" style="display: none;">
+    <div class="error-banner-icon">⚠️</div>
+    <div class="error-banner-text">
+      <strong id="weather-error-title">ಹವಾಮಾನ ಮಾಹಿತಿ ಪಡೆಯಲು ಸಾಧ್ಯವಾಗುತ್ತಿಲ್ಲ</strong>
+      <p id="weather-error-desc">ಹವಾಮಾನ ಮಾಹಿತಿ ತಾತ್ಕಾಲಿಕವಾಗಿ ಲಭ್ಯವಿಲ್ಲ. ದಯವಿಟ್ಟು ಪುನಃ ಪ್ರಯತ್ನಿಸಿ.</p>
+    </div>
+    <button class="btn btn-secondary btn-sm" id="btn-weather-retry"
+      onclick="window.weatherModule ? window.weatherModule.retryWeatherFetch() : (window.retryWeatherFetch ? window.retryWeatherFetch() : null)">
+      🔄 <span data-i18n="common.retry">ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ</span>
+    </button>
+  </div>
+
+  <!-- Large Weather Hero Card with Real Agricultural Field Background -->
+  <div class="weather-hero-card" id="weather-hero-card">
+    <div class="weather-hero-bg-overlay"></div>
+
+    <!-- Hero Left: Current Weather & Metrics -->
+    <div class="weather-hero-left">
+      <div class="weather-hero-location">
+        <span class="loc-pin">📍</span>
+        <span id="weather-curr-district">Mandya, Karnataka</span>
+        <span id="weather-curr-zone" style="display: none;"></span>
+      </div>
+
+      <div class="weather-hero-main-row">
+        <div class="weather-hero-icon" id="weather-main-icon">⛅</div>
+        <div class="weather-hero-temp-block">
+          <div class="weather-temp-num-row">
+            <span class="weather-temp-huge" id="weather-curr-temp">28</span>
+            <span class="weather-temp-deg">°C</span>
+          </div>
+          <div class="weather-condition-text" id="weather-curr-cond">Partly Cloudy / ಭಾಗಶಃ ಮೋಡ</div>
+        </div>
+      </div>
+
+      <!-- Quick Metrics Pills -->
+      <div class="weather-metrics-pills-row">
+        <div class="w-pill">
+          <span class="w-pill-icon">💧</span>
+          <div class="w-pill-info">
+            <div class="w-pill-lbl" data-i18n="weather.humidity">ಆರ್ದ್ರತೆ</div>
+            <div class="w-pill-val" id="weather-curr-humidity">65%</div>
+          </div>
+        </div>
+        <div class="w-pill">
+          <span class="w-pill-icon">💨</span>
+          <div class="w-pill-info">
+            <div class="w-pill-lbl" data-i18n="weather.wind">ಗಾಳಿಯ ವೇಗ</div>
+            <div class="w-pill-val" id="weather-curr-wind">12 km/h</div>
+          </div>
+        </div>
+        <div class="w-pill">
+          <span class="w-pill-icon">🌧️</span>
+          <div class="w-pill-info">
+            <div class="w-pill-lbl" data-i18n="weather.rain">ಋತುಮಾನ ಮಳೆ</div>
+            <div class="w-pill-val" id="weather-curr-rainfall">760 mm</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero Right: Dynamic Crop & Weather Advisory Card -->
+    <div class="weather-hero-right">
+      <div class="weather-advisory-card" id="weather-advisory-box">
+        <div class="advisory-badge-row">
+          <span class="advisory-badge" id="advisory-badge-tag">FIELD ADVISORY</span>
+          <span class="advisory-timestamp" id="advisory-time-tag">Updated: Today</span>
+        </div>
+        <div class="advisory-action-item">
+          <div class="advisory-action-icon" id="advice-icon">🌧️</div>
+          <div class="advisory-text-content">
+            <h4 class="advisory-main-title" id="weather-work-action-title">Rain is expected soon.</h4>
+            <p class="advisory-sub-instruction" id="weather-work-action-sub">Avoid spraying pesticides before rain.</p>
+            <h5 class="advisory-kn-title" id="weather-work-action-kn-title">ಶೀಘ್ರದಲ್ಲೇ ಮಳೆ ನಿರೀಕ್ಷಿಸಲಾಗಿದೆ.</h5>
+            <p class="advisory-kn-sub" id="weather-work-action-kn-sub">ಮಳೆ ಬರಲು ಮುನ್ನ ಕೀಟನಾಶಕ ಸಿಂಪಡಣೆಯಿಂದ ದೂರವಿರಿ.</p>
+            <!-- Hidden elements for backward compatibility -->
+            <span id="weather-work-action-text" style="display: none;"></span>
+            <span id="advice-kn" style="display: none;"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 7-Day Forecast Section -->
+  <div class="weather-forecast-section">
+    <div class="forecast-section-header">
+      <div class="forecast-header-left">
+        <span class="forecast-cal-icon">📅</span>
+        <h3 class="forecast-heading">7-Day Forecast / 7 ದಿನಗಳ ಮುನ್ಸೂಚನೆ</h3>
+      </div>
+      <button type="button" class="btn-detailed-forecast" id="btn-toggle-forecast-details"
+        onclick="window.weatherModule ? window.weatherModule.toggleDetailedForecast() : (window.toggleDetailedForecast ? window.toggleDetailedForecast() : null)">
+        <span class="btn-chart-icon">📊</span>
+        <span data-i18n="weather.detailed_forecast">View Detailed Forecast ➔</span>
+      </button>
+    </div>
+
+    <!-- 7-Day Dynamic Cards Row -->
+    <div class="forecast-cards-grid" id="weather-forecast-grid"></div>
+
+    <!-- Collapsible Detailed Charts Drawer -->
+    <div class="detailed-forecast-drawer" id="weather-charts-drawer" style="display: none;">
+      <div class="charts-drawer-inner">
+        <div class="chart-box">
+          <h4 class="chart-box-title">🌡️ <span>ದೈನಂದಿನ ತಾಪಮಾನ (°C) / Daily Temperature</span></h4>
+          <canvas id="weather-temp-chart" height="180"></canvas>
+        </div>
+        <div class="chart-box">
+          <h4 class="chart-box-title">🌧️ <span>ದೈನಂದಿನ ಮಳೆ ಮುನ್ಸೂಚನೆ (mm) / Daily Rainfall</span></h4>
+          <canvas id="weather-rain-chart" height="180"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Secondary Agricultural Information Grid -->
+  <div class="weather-secondary-grid">
+    <!-- Card 1: Soil Moisture & Agro-Climatic Guidance -->
+    <div class="weather-info-card">
+      <div class="info-card-header">
+        <span class="info-icon">🪴</span>
+        <span class="info-title">Soil & Moisture Guidance / ಮಣ್ಣಿನ ತೇವಾಂಶ</span>
+      </div>
+      <div class="info-card-body">
+        <div class="info-stat-row">
+          <span class="info-stat-label">Estimated Topsoil Moisture:</span>
+          <span class="info-stat-val val-green" id="soil-moisture-status">Adequate (60-70%)</span>
+        </div>
+        <div class="info-stat-row">
+          <span class="info-stat-label">Evapotranspiration (ET0):</span>
+          <span class="info-stat-val" id="evapo-rate">3.8 mm/day</span>
+        </div>
+        <div class="info-stat-row">
+          <span class="info-stat-label">Recommended Irrigation:</span>
+          <span class="info-stat-val" id="recommended-irrigation">Light Irrigation in 2 days</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2: Spraying & Field Operations Window -->
+    <div class="weather-info-card">
+      <div class="info-card-header">
+        <span class="info-icon">🚜</span>
+        <span class="info-title">Field Operations Window / ಕೃಷಿ ಕೆಲಸಗಳ ಸಮಯ</span>
+      </div>
+      <div class="info-card-body">
+        <div class="info-stat-row">
+          <span class="info-stat-label">Pesticide / Foliar Spray:</span>
+          <span class="info-stat-val val-green" id="spray-window-status">✓ Favorable (Morning 7-10 AM)</span>
+        </div>
+        <div class="info-stat-row">
+          <span class="info-stat-label">Tillage & Field Prep:</span>
+          <span class="info-stat-val val-green" id="tillage-window-status">✓ Suitable</span>
+        </div>
+        <div class="info-stat-row">
+          <span class="info-stat-label">Harvesting & Drying:</span>
+          <span class="info-stat-val val-amber" id="harvest-window-status">⚠️ Monitor cloud cover</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3: Satellite View -->
+    <div class="weather-info-card satellite-preview-card">
+      <div class="info-card-header">
+        <span class="info-icon">🛰️</span>
+        <span class="info-title" data-i18n="weather.satellite">Live Satellite View</span>
+      </div>
+      <div class="satellite-thumb-container"
+        style="background-image: url('public/images/weather/satellite_thumb.jpg');">
+        <button type="button" class="btn-view-satellite-map"
+          onclick="window.weatherModule ? window.weatherModule.openSatelliteModal() : (window.openSatelliteModal ? window.openSatelliteModal() : null)">
+          View Map ➔
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Farming Tip Banner -->
+  <div class="weather-tip-banner">
+    <div class="tip-left-content">
+      <div class="tip-seedling-circle">🌱</div>
+      <div class="tip-text-block">
+        <h4 class="tip-banner-heading">
+          <span data-i18n="weather.tip_title">Farming Tip for Today</span> / <span class="tip-heading-kn">ಇಂದಿನ ಕೃಷಿ ಸಲಹೆ</span>
+        </h4>
+        <p class="tip-text-en" id="farming-tip-en">Good time for field preparation. Monitor soil moisture and plan irrigation if needed.</p>
+        <p class="tip-text-kn" id="farming-tip-kn">ಇದು ಹೊಲ ಸಿದ್ಧತೆಗೆ ಅನುಕೂಲಕರ ಸಮಯ. ಮಣ್ಣಿನ ತೇವಾಂಶವನ್ನು ಗಮನಿಸಿ ಮತ್ತು ಅಗತ್ಯವಿದ್ದರೆ ನೀರಾವರಿ ಯೋಜನೆ ಮಾಡಿ.</p>
+      </div>
+    </div>
+    <div class="tip-right-illustration">
+      <img src="public/images/weather/tractor_tip.jpg" alt="Farming Tip Tractor Illustration" class="tip-tractor-img">
+    </div>
+  </div>
+
+  <!-- Satellite Modal -->
+  <div class="satellite-modal-backdrop" id="satellite-modal" style="display: none;"
+    onclick="if(event.target === this) (window.weatherModule ? window.weatherModule.closeSatelliteModal() : (window.closeSatelliteModal ? window.closeSatelliteModal() : null))">
+    <div class="satellite-modal-dialog" onclick="event.stopPropagation()">
+      <div class="satellite-modal-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span>🛰️</span>
+          <h3 style="margin: 0; font-size: 16px;">Karnataka Cloud & Precipitation Satellite Imagery</h3>
+        </div>
+        <button type="button" class="btn-close-satellite"
+          onclick="window.weatherModule ? window.weatherModule.closeSatelliteModal() : (window.closeSatelliteModal ? window.closeSatelliteModal() : null)">✕</button>
+      </div>
+      <div class="satellite-modal-body">
+        <img src="public/images/weather/satellite_thumb.jpg" alt="Karnataka Live Satellite Imagery"
+          style="width: 100%; border-radius: 8px; display: block; max-height: 480px; object-fit: cover;">
+        <div style="display: flex; justify-content: space-between; font-size: 12px; margin-top: 10px; color: var(--text-muted); flex-wrap: wrap; gap: 6px;">
+          <span>🛰️ INSAT-3D / 3DR Enhanced IR & Visible Satellite</span>
+          <span>🟢 Current Status: Normal cloud activity over Southern Dry Zone</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="font-size: 11.5px; color: var(--text-light); text-align: center; margin-top: 14px;">
+    Data: Open-Meteo Weather Service • Karnataka Agro-Climatic Advisory • Indian Meteorological Department (IMD)
+  </div>
+</section>

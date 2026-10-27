@@ -1,0 +1,877 @@
+<section class="view-panel" id="view-fertilizer">
+  <!-- Top Screen Header -->
+  <div class="screen-header" style="margin-bottom: 16px;">
+    <div>
+      <h2 class="screen-title" style="margin-bottom: 2px;">
+        🌿 <span class="txt-kn">ರಸಗೊಬ್ಬರ ಹಾಗೂ ಪೋಷಕಾಂಶ ನಿರ್ವಹಣೆ</span><span class="txt-en" style="display: none;">Fertilizer & Nutrient Advisory</span>
+      </h2>
+      <p class="screen-subtitle" style="margin: 0; font-size: 13.5px;">
+        <span class="txt-kn">ಕರ್ನಾಟಕ ಕೃಷಿ ವಿವಿಗಳು (UAS Bengaluru / UAS Dharwad) ಹಾಗೂ ICAR ಶಿಫಾರಸು ಮಾಡಿದ ವೈಜ್ಞಾನಿಕ ಪೋಷಕಾಂಶ ವೇಳಾಪಟ್ಟಿ</span>
+        <span class="txt-en" style="display: none;">Scientific nutrient schedules recommended by Karnataka Agri Universities (UAS-B, UAS-D) & ICAR</span>
+      </p>
+    </div>
+  </div>
+
+  <!-- Crop Selector Tabs -->
+  <div class="card" style="padding: 14px 18px; margin-bottom: 18px; border-radius: 14px;">
+    <div style="font-size: 13px; font-weight: 700; color: var(--primary-dark); margin-bottom: 10px;">
+      <span class="txt-kn">ಬೆಳೆ ಆಯ್ಕೆಮಾಡಿ (Select Crop):</span>
+      <span class="txt-en" style="display: none;">Select Crop:</span>
+    </div>
+    <div class="quick-chips-list" id="fert-crop-chips">
+      <button type="button" class="quick-chip fert-chip active" data-crop="ragi" onclick="selectFertilizerCrop('ragi', this)">
+        🌾 <span class="txt-kn">ರಾಗಿ</span><span class="txt-en" style="display: none;">Ragi</span>
+      </button>
+      <button type="button" class="quick-chip fert-chip" data-crop="rice" onclick="selectFertilizerCrop('rice', this)">
+        🌾 <span class="txt-kn">ಭತ್ತ</span><span class="txt-en" style="display: none;">Rice</span>
+      </button>
+      <button type="button" class="quick-chip fert-chip" data-crop="maize" onclick="selectFertilizerCrop('maize', this)">
+        🌽 <span class="txt-kn">ಮೆಕ್ಕೆ ಜೋಳ</span><span class="txt-en" style="display: none;">Maize</span>
+      </button>
+      <button type="button" class="quick-chip fert-chip" data-crop="tomato" onclick="selectFertilizerCrop('tomato', this)">
+        🍅 <span class="txt-kn">ಟೊಮೇಟೊ</span><span class="txt-en" style="display: none;">Tomato</span>
+      </button>
+      <button type="button" class="quick-chip fert-chip" data-crop="arecanut" onclick="selectFertilizerCrop('arecanut', this)">
+        🌴 <span class="txt-kn">ಅಡಿಕೆ</span><span class="txt-en" style="display: none;">Arecanut</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       1. RAGI (FINGER MILLET) PANEL
+       ========================================================================= -->
+  <div id="fert-panel-ragi" class="fert-crop-panel" style="display: block;">
+    <div class="card" style="border-left: 5px solid #2e7d32; margin-bottom: 20px; padding: 20px; border-radius: 16px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; margin-bottom: 16px;">
+        <div>
+          <h3 style="margin: 0; font-size: 1.15rem; font-weight: 800; color: #1b5e20;">
+            🌾 <span class="txt-kn">ರಾಗಿ (Finger Millet) — ಪೋಷಕಾಂಶ ಶಿಫಾರಸು</span>
+            <span class="txt-en" style="display: none;">Ragi (Finger Millet) — Nutrient Schedule</span>
+          </h3>
+          <span style="font-size: 12px; color: var(--text-muted);">
+            <span class="txt-kn">ಮೂಲ: UAS Bengaluru Package of Practices (Zone 5 & 6)</span>
+            <span class="txt-en" style="display: none;">Source: UAS Bengaluru Package of Practices (Zone 5 & 6)</span>
+          </span>
+        </div>
+        <span style="background: #e8f5e9; color: #1b5e20; font-weight: 800; font-size: 13px; padding: 5px 14px; border-radius: 999px; border: 1px solid #c8e6c9;">
+          NPK: 40 : 20 : 20 kg/acre
+        </span>
+      </div>
+
+      <!-- Application Stages: 3 Small Separated Cards -->
+      <div class="fert-stages-grid">
+        <!-- Stage 1: Basal -->
+        <div class="fert-stage-card">
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+              <span class="fert-stage-badge-basal">🌱 <span class="txt-kn">1. ಬಿತ್ತನೆ ಪೂರ್ವ (Basal)</span><span class="txt-en" style="display: none;">1. Basal Application</span></span>
+              <span style="font-size: 11px; font-weight: 700; color: #64748b;">Day 0</span>
+            </div>
+            <div style="font-size: 13.5px; font-weight: 700; color: var(--text-primary); margin-bottom: 4px;">
+              <span class="txt-kn">ಕೊಟ್ಟಿಗೆ ಗೊಬ್ಬರ (FYM) + DAP + Urea + MOP</span>
+              <span class="txt-en" style="display: none;">FYM + DAP + Urea + MOP</span>
+            </div>
+            <div style="font-size: 12.5px; font-weight: 800; color: #2e7d32; margin-bottom: 8px;">
+              <span class="txt-kn">ಪ್ರಮಾಣ: FYM 4 ಟನ್, DAP 44 kg, Urea 22 kg, MOP 33 kg / ಎಕರೆ</span>
+              <span class="txt-en" style="display: none;">Dose: FYM 4 Ton, DAP 44 kg, Urea 22 kg, MOP 33 kg / acre</span>
+            </div>
+            <p style="margin: 0; font-size: 12px; color: var(--text-secondary); line-height: 1.45;">
+              <span class="txt-kn">ಸಾಲುಗಳಲ್ಲಿ ಬಿತ್ತನೆಗೆ ಮೊದಲು ಮಣ್ಣಿಗೆ ಬೆರೆಸಿ (50% N + 100% P & K ಒದಗಿಸುತ್ತದೆ).</span>
+              <span class="txt-en" style="display: none;">Mix evenly into soil along seed furrows before sowing (Supplies 50% N + 100% P & K).</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- Stage 2: First Top-Dress -->
+        <div class="fert-stage-card">
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+              <span class="fert-stage-badge-top1">🌿 <span class="txt-kn">2. ಕವಲೊಡೆಯುವ ಹಂತ</span><span class="txt-en" style="display: none;">2. First Top-Dress</span></span>
+              <span style="font-size: 11px; font-weight: 700; color: #64748b;">25–30 Days</span>
+            </div>
+            <div style="font-size: 13.5px; font-weight: 700; color: var(--text-primary); margin-bottom: 4px;">
+              <span class="txt-kn">ಯೂರಿಯಾ ಮೇಲುಗೊಬ್ಬರ (Urea Top-dress)</span>
+              <span class="txt-en" style="display: none;">Urea Top-Dress</span>
+            </div>
+            <div style="font-size: 12.5px; font-weight: 800; color: #0284c7; margin-bottom: 8px;">
+              <span class="txt-kn">ಪ್ರಮಾಣ: 22 kg ಯೂರಿಯಾ / ಎಕರೆ</span>
+              <span class="txt-en" style="display: none;">Dose: 22 kg Urea / acre</span>
+            </div>
+            <p style="margin: 0; font-size: 12px; color: var(--text-secondary); line-height: 1.45;">
+              <span class="txt-kn">ಮೊದಲ ಕಳೆ ತೆಗೆದ ನಂತರ, ಮಣ್ಣಿನಲ್ಲಿ ತೇವಾಂಶವಿದ್ದಾಗ ಸಾಲುಗಳ ಪಕ್ಕದಲ್ಲಿ ಹಾಕಿ ಮಣ್ಣು ಮುಚ್ಚಿ.</span>
+              <span class="txt-en" style="display: none;">Apply along rows after first weeding when soil retains adequate moisture.</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- Stage 3: Second Top-Dress -->
+        <div class="fert-stage-card">
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+              <span class="fert-stage-badge-top2">🌾 <span class="txt-kn">3. ತೆನೆ ಮೂಡುವ ಹಂತ</span><span class="txt-en" style="display: none;">3. Second Top-Dress</span></span>
+              <span style="font-size: 11px; font-weight: 700; color: #64748b;">45–50 Days</span>
+            </div>
+            <div style="font-size: 13.5px; font-weight: 700; color: var(--text-primary); margin-bottom: 4px;">
+              <span class="txt-kn">ಯೂರಿಯಾ ಮೇಲುಗೊಬ್ಬರ (Urea Top-dress)</span>
+              <span class="txt-en" style="display: none;">Urea Top-Dress</span>
+            </div>
+            <div style="font-size: 12.5px; font-weight: 800; color: #b45309; margin-bottom: 8px;">
+              <span class="txt-kn">ಪ್ರಮಾಣ: 22 kg ಯೂರಿಯಾ / ಎಕರೆ</span>
+              <span class="txt-en" style="display: none;">Dose: 22 kg Urea / acre</span>
+            </div>
+            <p style="margin: 0; font-size: 12px; color: var(--text-secondary); line-height: 1.45;">
+              <span class="txt-kn">ಹಗುರ ನೀರಾವರಿ ಅಥವಾ ಮಳೆಯ ನಂತರ ನೀಡಿ (ಭಾರಿ ಮಳೆ ಬರುವ ಮುನ್ಸೂಚನೆ ಇದ್ದಾಗ ಬೇಡ).</span>
+              <span class="txt-en" style="display: none;">Apply following light irrigation or rainfall. Avoid application before heavy downpours.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Detailed Schedule Table -->
+      <div style="overflow-x: auto; margin-bottom: 16px; border: 1px solid #e2e8f0; border-radius: 12px;">
+        <table class="fert-table" style="width: 100%; border-collapse: collapse; font-size: 13px;">
+          <thead>
+            <tr style="background: #f1f8e9; text-align: left; border-bottom: 2px solid #c5e1a5;">
+              <th style="padding: 10px 12px; font-weight: 700; color: #2e7d32;"><span class="txt-kn">ಬೆಳವಣಿಗೆ ಹಂತ (Stage)</span><span class="txt-en" style="display: none;">Growth Stage</span></th>
+              <th style="padding: 10px 12px; font-weight: 700; color: #2e7d32;"><span class="txt-kn">ಗೊಬ್ಬರದ ವಿಧ (Fertilizer)</span><span class="txt-en" style="display: none;">Fertilizers</span></th>
+              <th style="padding: 10px 12px; font-weight: 700; color: #2e7d32;"><span class="txt-kn">ಪ್ರಮಾಣ / ಎಕರೆ (Dose/Acre)</span><span class="txt-en" style="display: none;">Dose per Acre</span></th>
+              <th style="padding: 10px 12px; font-weight: 700; color: #2e7d32;"><span class="txt-kn">ವಿಧಾನ & ಎಚ್ಚರಿಕೆ (Method)</span><span class="txt-en" style="display: none;">Application Method</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom: 1px solid #e0e0e0;">
+              <td style="padding: 10px 12px; font-weight: 700;">1. <span class="txt-kn">ಬಿತ್ತನೆ ಪೂರ್ವ / ಸಸಿ ನಾಟಿ</span><span class="txt-en" style="display: none;">Basal Application</span><br><small style="color: #666;">(Basal Dose)</small></td>
+              <td style="padding: 10px 12px;">FYM + DAP + Urea + MOP</td>
+              <td style="padding: 10px 12px; font-weight: 600;">FYM 4 ಟನ್, DAP 44 kg, Urea 22 kg, MOP 33 kg</td>
+              <td style="padding: 10px 12px;"><span class="txt-kn">ಸಾಲುಗಳಲ್ಲಿ ಬಿತ್ತನೆಗೆ ಮೊದಲು ಮಣ್ಣಿಗೆ ಬೆರೆಸಿ (50% N + 100% P & K)</span><span class="txt-en" style="display: none;">Mix in furrows before sowing (50% N + 100% P & K)</span></td>
+            </tr>
+            <tr style="border-bottom: 1px solid #e0e0e0; background: #fafafa;">
+              <td style="padding: 10px 12px; font-weight: 700;">2. <span class="txt-kn">ಕವಲೊಡೆಯುವ ಹಂತ</span><span class="txt-en" style="display: none;">Active Tillering</span><br><small style="color: #666;">(25-30 <span class="txt-kn">ದಿನಗಳು</span><span class="txt-en" style="display: none;">days</span>)</small></td>
+              <td style="padding: 10px 12px;"><span class="txt-kn">ಯೂರಿಯಾ ಮೇಲುಗೊಬ್ಬರ</span><span class="txt-en" style="display: none;">Urea Top-Dress</span></td>
+              <td style="padding: 10px 12px; font-weight: 600;">22 kg <span class="txt-kn">ಯೂರಿಯಾ / ಎಕರೆ</span><span class="txt-en" style="display: none;">Urea / acre</span></td>
+              <td style="padding: 10px 12px;"><span class="txt-kn">ಮೊದಲ ಕಳೆ ತೆಗೆದ ನಂತರ, ಮಣ್ಣಿನಲ್ಲಿ ತೇವಾಂಶವಿದ್ದಾಗ ಹಾಕಿ</span><span class="txt-en" style="display: none;">Apply along rows after weeding with soil moisture</span></td>
+            </tr>
+            <tr>
+              <td style="padding: 10px 12px; font-weight: 700;">3. <span class="txt-kn">ತೆನೆ ಮೂಡುವ ಹಂತ</span><span class="txt-en" style="display: none;">Panicle Heading</span><br><small style="color: #666;">(45-50 <span class="txt-kn">ದಿನಗಳು</span><span class="txt-en" style="display: none;">days</span>)</small></td>
+              <td style="padding: 10px 12px;"><span class="txt-kn">ಯೂರಿಯಾ ಮೇಲುಗೊಬ್ಬರ</span><span class="txt-en" style="display: none;">Urea Top-Dress</span></td>
+              <td style="padding: 10px 12px; font-weight: 600;">22 kg <span class="txt-kn">ಯೂರಿಯಾ / ಎಕರೆ</span><span class="txt-en" style="display: none;">Urea / acre</span></td>
+              <td style="padding: 10px 12px;"><span class="txt-kn">ಹಗುರ ನೀರಾವರಿ ನಂತರ ನೀಡಿ (ಮಳೆ ಬರುವ ಲಕ್ಷಣವಿದ್ದಾಗ ಬೇಡ)</span><span class="txt-en" style="display: none;">Apply after light irrigation; avoid before rain</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Biofertilizers & Micronutrients -->
+      <div style="background: #f9fbf9; border: 1px solid #e2ece3; border-radius: 12px; padding: 14px 16px;">
+        <h4 style="margin: 0 0 8px 0; font-size: 13.5px; font-weight: 800; color: #2e7d32;">
+          🌿 <span class="txt-kn">ಜೈವಿಕ ಹಾಗೂ ಸಾವಯವ ಪರ್ಯಾಯಗಳು (Biofertilizers):</span>
+          <span class="txt-en" style="display: none;">Biofertilizers & Soil Amendments:</span>
+        </h4>
+        <ul style="margin: 0; padding-left: 20px; font-size: 12.5px; color: #37474f; line-height: 1.6;">
+          <li><strong>ಅಜೋಸ್ಪೈರಿಲಂ (Azospirillum):</strong> <span class="txt-kn">ಬಿತ್ತನೆ ಬೀಜೋಪಚಾರಕ್ಕೆ 250 ಗ್ರಾಂ/ಎಕರೆಗೆ ಬಳಸಿ (ಸಾರಜನಕ ಉಳಿತಾಯ).</span><span class="txt-en" style="display: none;">Seed treatment with 250 g/acre saves up to 25% chemical Nitrogen.</span></li>
+          <li><strong>ರಂಜಕ ಕರಗಿಸುವ ಜೀವಾಣು (PSB):</strong> <span class="txt-kn">250 ಗ್ರಾಂ ಮಣ್ಣಿಗೆ ಬೆರೆಸುವುದರಿಂದ ರಂಜಕ ಲಭ್ಯತೆ ಶೇ.25 ರಷ್ಟು ಹೆಚ್ಚುತ್ತದೆ.</span><span class="txt-en" style="display: none;">Mix 250 g with soil to increase Phosphorus availability by ~25%.</span></li>
+          <li><strong>ಜಿಂಕ್ ಸಲ್ಫೇಟ್ (Zinc Sulphate):</strong> <span class="txt-kn">ಕೆಂಪು ಮಣ್ಣಿನಲ್ಲಿ 10 kg/ಎಕರೆಗೆ ಬಿತ್ತನೆ ಸಮಯದಲ್ಲಿ ನೀಡುವುದು ಕಡ್ಡಾಯ.</span><span class="txt-en" style="display: none;">Apply 10 kg/acre in red sandy loam soils at sowing time.</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       2. RICE (PADDY) PANEL
+       ========================================================================= -->
+  <div id="fert-panel-rice" class="fert-crop-panel" style="display: none;">
+    <div class="card" style="border-left: 5px solid #1565c0; margin-bottom: 20px; padding: 20px; border-radius: 16px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; margin-bottom: 16px;">
+        <div>
+          <h3 style="margin: 0; font-size: 1.15rem; font-weight: 800; color: #1565c0;">
+            🌾 <span class="txt-kn">ಭತ್ತ (Paddy / Rice) — ಪೋಷಕಾಂಶ ಶಿಫಾರಸು</span>
+            <span class="txt-en" style="display: none;">Paddy / Rice — Nutrient Schedule</span>
+          </h3>
+          <span style="font-size: 12px; color: var(--text-muted);">
+            <span class="txt-kn">ಮೂಲ: Mandya VC Farm / UAS Bengaluru (Cauvery Basin)</span>
+            <span class="txt-en" style="display: none;">Source: Mandya VC Farm / UAS Bengaluru (Cauvery Basin)</span>
+          </span>
+        </div>
+        <span style="background: #e3f2fd; color: #1565c0; font-weight: 800; font-size: 13px; padding: 5px 14px; border-radius: 999px; border: 1px solid #bbdefb;">
+          NPK: 50 : 25 : 25 kg/acre
+        </span>
+      </div>
+
+      <!-- Application Stages: 3 Small Separated Cards -->
+      <div class="fert-stages-grid">
+        <div class="fert-stage-card">
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+              <span class="fert-stage-badge-basal">🌱 <span class="txt-kn">1. ಕೊನೆಯ ಉಳುಮೆ (Basal)</span><span class="txt-en" style="display: none;">1. Basal Transplanting</span></span>
+              <span style="font-size: 11px; font-weight: 700; color: #64748b;">Day 0</span>
+            </div>
+            <div style="font-size: 13.5px; font-weight: 700; color: var(--text-primary); margin-bottom: 4px;">
+              <span class="txt-kn">ಹಸಿರೆಲೆ/FYM + DAP + MOP + Zinc</span>
+              <span class="txt-en" style="display: none;">Green Manure/FYM + DAP + MOP + Zinc</span>
+            </div>
+            <div style="font-size: 12.5px; font-weight: 800; color: #1565c0; margin-bottom: 8px;">
+              <span class="txt-kn">ಪ್ರಮಾಣ: ಹಸಿರೆಲೆ 3 ಟನ್, DAP 55 kg, MOP 20 kg, ಜಿಂಕ್ 10 kg</span>
+              <span class="txt-en" style="display: none;">Dose: GM 3 Ton, DAP 55 kg, MOP 20 kg, Zinc 10 kg</span>
+            </div>
+            <p style="margin: 0; font-size: 12px; color: var(--text-secondary); line-height: 1.45;">
+              <span class="txt-kn">ಕೆಸರು ಗದ್ದೆಗೆ ಸಮನಾಗಿ ಬೆರೆಸಿ (50% N + 100% P + 50% K).</span>
+              <span class="txt-en" style="display: none;">Incorporate into puddled soil before planting (50% N + 100% P + 50% K).</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="fert-stage-card">
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+              <span class="fert-stage-badge-top1">🌿 <span class="txt-kn">2. ತೆನೆ ಒಡೆಯುವ ಹಂತ</span><span class="txt-en" style="display: none;">2. Active Tillering</span></span>
+              <span style="font-size: 11px; font-weight: 700; color: #64748b;">25–30 Days</span>
+            </div>
+            <div style="font-size: 13.5px; font-weight: 700; color: var(--text-primary); margin-bottom: 4px;">
+              <span class="txt-kn">ಯೂರಿಯಾ ಮೇಲುಗೊಬ್ಬರ (Urea)</span>
+              <span class="txt-en" style="display: none;">Urea Top-Dress</span>
+            </div>
+            <div style="font-size: 12.5px; font-weight: 800; color: #0284c7; margin-bottom: 8px;">
+              <span class="txt-kn">ಪ್ರಮಾಣ: 27 kg ಯೂರಿಯಾ / ಎಕರೆ</span>
+              <span class="txt-en" style="display: none;">Dose: 27 kg Urea / acre</span>
+            </div>
+            <p style="margin: 0; font-size: 12px; color: var(--text-secondary); line-height: 1.45;">
+              <span class="txt-kn">ಗದ್ದೆಯಲ್ಲಿ ನೀರು ಬಸಿದು ಗೊಬ್ಬರ ಹಾಕಿ, ಮರುದಿನ ನೀರು ಕಟ್ಟಿ.</span>
+              <span class="txt-en" style="display: none;">Drain standing water before broadcast, irrigate next day for root absorption.</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="fert-stage-card">
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+              <span class="fert-stage-badge-top2">🌾 <span class="txt-kn">3. ತೆನೆ ಹೊರಬರುವ ಹಂತ</span><span class="txt-en" style="display: none;">3. Panicle Emergence</span></span>
+              <span style="font-size: 11px; font-weight: 700; color: #64748b;">45–50 Days</span>
+            </div>
+            <div style="font-size: 13.5px; font-weight: 700; color: var(--text-primary); margin-bottom: 4px;">
+              <span class="txt-kn">ಯೂರಿಯಾ + ಮ್ಯುರೇಟ್ ಆಫ್ ಪೊಟ್ಯಾಶ್</span>
+              <span class="txt-en" style="display: none;">Urea + MOP</span>
+            </div>
+            <div style="font-size: 12.5px; font-weight: 800; color: #b45309; margin-bottom: 8px;">
+              <span class="txt-kn">ಪ್ರಮಾಣ: 27 kg ಯೂರಿಯಾ + 20 kg MOP</span>
+              <span class="txt-en" style="display: none;">Dose: 27 kg Urea + 20 kg MOP / acre</span>
+            </div>
+            <p style="margin: 0; font-size: 12px; color: var(--text-secondary); line-height: 1.45;">
+              <span class="txt-kn">ಧಾನ್ಯಗಳು ಗಟ್ಟಿಯಾಗಲು ಮತ್ತು ತೂಕ ಹೆಚ್ಚಲು ಪೊಟ್ಯಾಶ್ ಸಹಕಾರಿ.</span>
+              <span class="txt-en" style="display: none;">Potash enhances grain filling, starch accumulation, and disease resistance.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Detailed Schedule Table -->
+      <div style="overflow-x: auto; margin-bottom: 16px; border: 1px solid #e2e8f0; border-radius: 12px;">
+        <table class="fert-table" style="width: 100%; border-collapse: collapse; font-size: 13px;">
+          <thead>
+            <tr style="background: #e3f2fd; text-align: left; border-bottom: 2px solid #90caf9;">
+              <th style="padding: 10px 12px; font-weight: 700; color: #1565c0;"><span class="txt-kn">ಬೆಳವಣಿಗೆ ಹಂತ</span><span class="txt-en" style="display: none;">Stage</span></th>
+              <th style="padding: 10px 12px; font-weight: 700; color: #1565c0;"><span class="txt-kn">ಗೊಬ್ಬರದ ವಿಧ</span><span class="txt-en" style="display: none;">Fertilizers</span></th>
+              <th style="padding: 10px 12px; font-weight: 700; color: #1565c0;"><span class="txt-kn">ಪ್ರಮಾಣ / ಎಕರೆ</span><span class="txt-en" style="display: none;">Dose/Acre</span></th>
+              <th style="padding: 10px 12px; font-weight: 700; color: #1565c0;"><span class="txt-kn">ವಿಧಾನ & ಎಚ್ಚರಿಕೆ</span><span class="txt-en" style="display: none;">Method</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom: 1px solid #e0e0e0;">
+              <td style="padding: 10px 12px; font-weight: 700;">1. <span class="txt-kn">ನಾಟಿಗೆ ಮುನ್ನ (ಕೊನೆಯ ಉಳುಮೆ)</span><span class="txt-en" style="display: none;">Final Puddling (Basal)</span></td>
+              <td style="padding: 10px 12px;">FYM/ಹಸಿರೆಲೆ + DAP + MOP</td>
+              <td style="padding: 10px 12px; font-weight: 600;">ಹಸಿರೆಲೆ 3 ಟನ್, DAP 55 kg, MOP 20 kg, ಜಿಂಕ್ 10 kg</td>
+              <td style="padding: 10px 12px;"><span class="txt-kn">ಕೆಸರು ಗದ್ದೆಗೆ ಸಮನಾಗಿ ಬೆರೆಸಿ (50% N + 100% P + 50% K)</span><span class="txt-en" style="display: none;">Incorporate into puddle</span></td>
+            </tr>
+            <tr style="border-bottom: 1px solid #e0e0e0; background: #fafafa;">
+              <td style="padding: 10px 12px; font-weight: 700;">2. <span class="txt-kn">ತೆನೆ ಒಡೆಯುವ ಹಂತ (Tillering)</span><span class="txt-en" style="display: none;">Active Tillering (25-30 DAT)</span></td>
+              <td style="padding: 10px 12px;">ಯೂರಿಯಾ ಮೇಲುಗೊಬ್ಬರ</td>
+              <td style="padding: 10px 12px; font-weight: 600;">27 kg <span class="txt-kn">ಯೂರಿಯಾ / ಎಕರೆ</span><span class="txt-en" style="display: none;">Urea / acre</span></td>
+              <td style="padding: 10px 12px;"><span class="txt-kn">ಗದ್ದೆಯಲ್ಲಿ ನೀರು ಬಸಿದು ಗೊಬ್ಬರ ಹಾಕಿ, ಮರುದಿನ ನೀರು ಕಟ್ಟಿ</span><span class="txt-en" style="display: none;">Drain field before application</span></td>
+            </tr>
+            <tr>
+              <td style="padding: 10px 12px; font-weight: 700;">3. <span class="txt-kn">ತೆನೆ ಹೊರಬರುವ ಹಂತ (Panicle)</span><span class="txt-en" style="display: none;">Panicle Heading (45-50 DAT)</span></td>
+              <td style="padding: 10px 12px;">ಯೂರಿಯಾ + MOP</td>
+              <td style="padding: 10px 12px; font-weight: 600;">27 kg ಯೂರಿಯಾ + 20 kg MOP</td>
+              <td style="padding: 10px 12px;"><span class="txt-kn">ಧಾನ್ಯಗಳು ಗಟ್ಟಿಯಾಗಲು ಮತ್ತು ತೂಕ ಹೆಚ್ಚಲು ಪೊಟ್ಯಾಶ್ ಸಹಕಾರಿ</span><span class="txt-en" style="display: none;">Boosts grain test weight and filling</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Biofertilizers -->
+      <div style="background: #f0f7ff; border: 1px solid #cfe2ff; border-radius: 12px; padding: 14px 16px;">
+        <h4 style="margin: 0 0 6px 0; font-size: 13.5px; font-weight: 800; color: #1565c0;">
+          🌿 <span class="txt-kn">ಜೈವಿಕ ಗೊಬ್ಬರ ಸಲಹೆ (Bio-advisory):</span>
+          <span class="txt-en" style="display: none;">Bio-fertilizer Advisory:</span>
+        </h4>
+        <p style="margin: 0; font-size: 12.5px; color: #37474f; line-height: 1.55;">
+          <span class="txt-kn">ಅಜೋಲ್ಲಾ (Azolla) ಅಥವಾ ನೀಲಿ ಹಸಿರು ಪಾಚಿ (BGA) ಗದ್ದೆಗೆ ಬಿಡುವುದರಿಂದ ಎಕರೆಗೆ 10-15 kg ಸಾರಜನಕ ಉಳಿತಾಯವಾಗುತ್ತದೆ. ಜಿಂಕ್ ಕೊರತೆ ಕಂಡುಬಂದರೆ ಶೇ.0.5 ರಷ್ಟು ಜಿಂಕ್ ಸಲ್ಫೇಟ್ ಸಿಂಪಡಿಸಿ.</span>
+          <span class="txt-en" style="display: none;">Inoculating Azolla or Blue Green Algae (BGA) fixes 10–15 kg atmospheric Nitrogen/acre. For zinc deficiency (Khaira disease), spray 0.5% Zinc Sulphate foliar solution.</span>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       3. MAIZE PANEL
+       ========================================================================= -->
+  <div id="fert-panel-maize" class="fert-crop-panel" style="display: none;">
+    <div class="card" style="border-left: 5px solid #f57c00; margin-bottom: 20px; padding: 20px; border-radius: 16px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; margin-bottom: 16px;">
+        <div>
+          <h3 style="margin: 0; font-size: 1.15rem; font-weight: 800; color: #e65100;">
+            🌽 <span class="txt-kn">ಮೆಕ್ಕೆಜೋಳ (Maize) — ಪೋಷಕಾಂಶ ಶಿಫಾರಸು</span>
+            <span class="txt-en" style="display: none;">Maize — Nutrient Schedule</span>
+          </h3>
+          <span style="font-size: 12px; color: var(--text-muted);">
+            <span class="txt-kn">ಮೂಲ: UAS Dharwad & UAS Bengaluru Recommendations</span>
+            <span class="txt-en" style="display: none;">Source: UAS Dharwad & UAS Bengaluru Recommendations</span>
+          </span>
+        </div>
+        <span style="background: #fff3e0; color: #e65100; font-weight: 800; font-size: 13px; padding: 5px 14px; border-radius: 999px; border: 1px solid #ffe0b2;">
+          NPK: 60 : 30 : 15 kg/acre
+        </span>
+      </div>
+
+      <!-- Application Stages: 3 Small Separated Cards -->
+      <div class="fert-stages-grid">
+        <div class="fert-stage-card">
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+              <span class="fert-stage-badge-basal">🌱 <span class="txt-kn">1. ಬಿತ್ತನೆ ಸಮಯ (Basal)</span><span class="txt-en" style="display: none;">1. Basal Sowing</span></span>
+              <span style="font-size: 11px; font-weight: 700; color: #64748b;">Day 0</span>
+            </div>
+            <div style="font-size: 13.5px; font-weight: 700; color: var(--text-primary); margin-bottom: 4px;">
+              <span class="txt-kn">FYM + DAP + MOP + Zinc</span>
+              <span class="txt-en" style="display: none;">FYM + DAP + MOP + Zinc</span>
+            </div>
+            <div style="font-size: 12.5px; font-weight: 800; color: #e65100; margin-bottom: 8px;">
+              <span class="txt-kn">ಪ್ರಮಾಣ: FYM 4 ಟನ್, DAP 65 kg, MOP 25 kg, Zinc 10 kg</span>
+              <span class="txt-en" style="display: none;">Dose: FYM 4 Ton, DAP 65 kg, MOP 25 kg, Zinc 10 kg</span>
+            </div>
+            <p style="margin: 0; font-size: 12px; color: var(--text-secondary); line-height: 1.45;">
+              <span class="txt-kn">ಬಿತ್ತನೆ ಸಾಲಿನ ಪಕ್ಕದಲ್ಲಿ 5 ಸೆಂ.ಮೀ ಆಳಕ್ಕೆ ಹಾಕಿ ಮಣ್ಣು ಮುಚ್ಚಿ.</span>
+              <span class="txt-en" style="display: none;">Place 5 cm to the side and 5 cm deeper than seed furrow.</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="fert-stage-card">
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+              <span class="fert-stage-badge-top1">🌿 <span class="txt-kn">2. ಮಂಡಿ ಎತ್ತರ ಬೆಳೆದಾಗ</span><span class="txt-en" style="display: none;">2. Knee-High Stage</span></span>
+              <span style="font-size: 11px; font-weight: 700; color: #64748b;">30 Days</span>
+            </div>
+            <div style="font-size: 13.5px; font-weight: 700; color: var(--text-primary); margin-bottom: 4px;">
+              <span class="txt-kn">ಯೂರಿಯಾ ಮೇಲುಗೊಬ್ಬರ</span>
+              <span class="txt-en" style="display: none;">Urea Top-Dress</span>
+            </div>
+            <div style="font-size: 12.5px; font-weight: 800; color: #0284c7; margin-bottom: 8px;">
+              <span class="txt-kn">ಪ್ರಮಾಣ: 35 kg ಯೂರಿಯಾ / ಎಕರೆ</span>
+              <span class="txt-en" style="display: none;">Dose: 35 kg Urea / acre</span>
+            </div>
+            <p style="margin: 0; font-size: 12px; color: var(--text-secondary); line-height: 1.45;">
+              <span class="txt-kn">ಕಳೆ ಕೀಳುವಿಕೆ ನಂತರ ಸಾಲುಗಳ ಬದಿಗೆ ಹಾಕಿ ಮಣ್ಣು ಏರಿಸಿ (Earthing-up).</span>
+              <span class="txt-en" style="display: none;">Band place along plant base and earth up soil after inter-cultivation.</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="fert-stage-card">
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+              <span class="fert-stage-badge-top2">🌾 <span class="txt-kn">3. ತೆನೆ ಹೂ ಬಿಡುವ ಹಂತ</span><span class="txt-en" style="display: none;">3. Tasseling / Silking</span></span>
+              <span style="font-size: 11px; font-weight: 700; color: #64748b;">45–50 Days</span>
+            </div>
+            <div style="font-size: 13.5px; font-weight: 700; color: var(--text-primary); margin-bottom: 4px;">
+              <span class="txt-kn">ಯೂರಿಯಾ ಮೇಲುಗೊಬ್ಬರ</span>
+              <span class="txt-en" style="display: none;">Urea Top-Dress</span>
+            </div>
+            <div style="font-size: 12.5px; font-weight: 800; color: #b45309; margin-bottom: 8px;">
+              <span class="txt-kn">ಪ್ರಮಾಣ: 35 kg ಯೂರಿಯಾ / ಎಕರೆ</span>
+              <span class="txt-en" style="display: none;">Dose: 35 kg Urea / acre</span>
+            </div>
+            <p style="margin: 0; font-size: 12px; color: var(--text-secondary); line-height: 1.45;">
+              <span class="txt-kn">ಕಾಳು ಕಟ್ಟುವುದು ಉತ್ತಮವಾಗಲು ಮಣ್ಣಿನಲ್ಲಿ ತೇವಾಂಶವಿದ್ದಾಗ ನೀಡಿ.</span>
+              <span class="txt-en" style="display: none;">Ensure soil moisture during tasseling to maximize cob grain setting.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Detailed Schedule Table -->
+      <div style="overflow-x: auto; margin-bottom: 16px; border: 1px solid #e2e8f0; border-radius: 12px;">
+        <table class="fert-table" style="width: 100%; border-collapse: collapse; font-size: 13px;">
+          <thead>
+            <tr style="background: #fff3e0; text-align: left; border-bottom: 2px solid #ffcc80;">
+              <th style="padding: 10px 12px; font-weight: 700; color: #e65100;"><span class="txt-kn">ಬೆಳವಣಿಗೆ ಹಂತ</span><span class="txt-en" style="display: none;">Stage</span></th>
+              <th style="padding: 10px 12px; font-weight: 700; color: #e65100;"><span class="txt-kn">ಗೊಬ್ಬರ</span><span class="txt-en" style="display: none;">Fertilizers</span></th>
+              <th style="padding: 10px 12px; font-weight: 700; color: #e65100;"><span class="txt-kn">ಪ್ರಮಾಣ / ಎಕರೆ</span><span class="txt-en" style="display: none;">Dose/Acre</span></th>
+              <th style="padding: 10px 12px; font-weight: 700; color: #e65100;"><span class="txt-kn">ವಿಧಾನ</span><span class="txt-en" style="display: none;">Method</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom: 1px solid #e0e0e0;">
+              <td style="padding: 10px 12px; font-weight: 700;">1. <span class="txt-kn">ಬಿತ್ತನೆ ಸಮಯ (Basal)</span><span class="txt-en" style="display: none;">Basal Sowing</span></td>
+              <td style="padding: 10px 12px;">FYM + DAP + MOP + Zinc</td>
+              <td style="padding: 10px 12px; font-weight: 600;">FYM 4 ಟನ್, DAP 65 kg, MOP 25 kg, Zinc 10 kg</td>
+              <td style="padding: 10px 12px;"><span class="txt-kn">ಬಿತ್ತನೆ ಸಾಲಿನ ಪಕ್ಕದಲ್ಲಿ 5 ಸೆಂ.ಮೀ ಆಳಕ್ಕೆ ಹಾಕಿ</span><span class="txt-en" style="display: none;">Furrow placement</span></td>
+            </tr>
+            <tr style="border-bottom: 1px solid #e0e0e0; background: #fafafa;">
+              <td style="padding: 10px 12px; font-weight: 700;">2. <span class="txt-kn">ಮಂಡಿ ಎತ್ತರ ಬೆಳೆದಾಗ (Knee-high)</span><span class="txt-en" style="display: none;">Knee-High (30 Days)</span></td>
+              <td style="padding: 10px 12px;">ಯೂರಿಯಾ ಮೇಲುಗೊಬ್ಬರ</td>
+              <td style="padding: 10px 12px; font-weight: 600;">35 kg <span class="txt-kn">ಯೂರಿಯಾ / ಎಕರೆ</span><span class="txt-en" style="display: none;">Urea / acre</span></td>
+              <td style="padding: 10px 12px;"><span class="txt-kn">ಕಳೆ ಕೀಳುವಿಕೆ ನಂತರ ಸಾಲುಗಳ ಬದಿಗೆ ಹಾಕಿ ಮಣ್ಣು ಏರಿಸಿ</span><span class="txt-en" style="display: none;">Band placement & earthing up</span></td>
+            </tr>
+            <tr>
+              <td style="padding: 10px 12px; font-weight: 700;">3. <span class="txt-kn">ತೆನೆ ಹೂ ಬಿಡುವ ಹಂತ (Tasseling)</span><span class="txt-en" style="display: none;">Tasseling (45-50 Days)</span></td>
+              <td style="padding: 10px 12px;">ಯೂರಿಯಾ ಮೇಲುಗೊಬ್ಬರ</td>
+              <td style="padding: 10px 12px; font-weight: 600;">35 kg <span class="txt-kn">ಯೂರಿಯಾ / ಎಕರೆ</span><span class="txt-en" style="display: none;">Urea / acre</span></td>
+              <td style="padding: 10px 12px;"><span class="txt-kn">ಕಾಳು ಕಟ್ಟುವುದು ಉತ್ತಮವಾಗಲು ತೇವಾಂಶವಿದ್ದಾಗ ನೀಡಿ</span><span class="txt-en" style="display: none;">Broadcast with adequate moisture</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       4. TOMATO PANEL
+       ========================================================================= -->
+  <div id="fert-panel-tomato" class="fert-crop-panel" style="display: none;">
+    <div class="card" style="border-left: 5px solid #d32f2f; margin-bottom: 20px; padding: 20px; border-radius: 16px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; margin-bottom: 16px;">
+        <div>
+          <h3 style="margin: 0; font-size: 1.15rem; font-weight: 800; color: #c62828;">
+            🍅 <span class="txt-kn">ಟೊಮೇಟೊ (Tomato) — ಪೋಷಕಾಂಶ ಶಿಫಾರಸು</span>
+            <span class="txt-en" style="display: none;">Tomato — Nutrient Schedule</span>
+          </h3>
+          <span style="font-size: 12px; color: var(--text-muted);">
+            <span class="txt-kn">ಮೂಲ: IIHR Hesaraghatta & UHS Bagalkot</span>
+            <span class="txt-en" style="display: none;">Source: IIHR Hesaraghatta & UHS Bagalkot</span>
+          </span>
+        </div>
+        <span style="background: #ffebee; color: #c62828; font-weight: 800; font-size: 13px; padding: 5px 14px; border-radius: 999px; border: 1px solid #ffcdd2;">
+          NPK: 70 : 50 : 50 kg/acre
+        </span>
+      </div>
+
+      <!-- Application Stages: 3 Small Separated Cards -->
+      <div class="fert-stages-grid">
+        <div class="fert-stage-card">
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+              <span class="fert-stage-badge-basal">🌱 <span class="txt-kn">1. ನಾಟಿ ಮಾಡುವಾಗ (Basal)</span><span class="txt-en" style="display: none;">1. Basal Transplanting</span></span>
+              <span style="font-size: 11px; font-weight: 700; color: #64748b;">Day 0</span>
+            </div>
+            <div style="font-size: 13.5px; font-weight: 700; color: var(--text-primary); margin-bottom: 4px;">
+              <span class="txt-kn">FYM + Neem Cake + DAP + MOP</span>
+              <span class="txt-en" style="display: none;">FYM + Neem Cake + DAP + MOP</span>
+            </div>
+            <div style="font-size: 12.5px; font-weight: 800; color: #c62828; margin-bottom: 8px;">
+              <span class="txt-kn">ಪ್ರಮಾಣ: FYM 8 ಟನ್, ಬೇವಿನ ಹಿಂಡಿ 200 kg, DAP 100 kg, MOP 40 kg</span>
+              <span class="txt-en" style="display: none;">Dose: FYM 8 Ton, Neem Cake 200 kg, DAP 100 kg, MOP 40 kg</span>
+            </div>
+            <p style="margin: 0; font-size: 12px; color: var(--text-secondary); line-height: 1.45;">
+              <span class="txt-kn">ಬೋದುಗಳ ಮೇಲೆ ಹರಡಿ ಮಣ್ಣು ಮುಚ್ಚಿ (ಬೇವಿನ ಹಿಂಡಿ ನೆಮಟೋಡ್ ತಡೆಯುತ್ತದೆ).</span>
+              <span class="txt-en" style="display: none;">Incorporate into raised beds; neem cake suppresses nematodes and soil pests.</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="fert-stage-card">
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+              <span class="fert-stage-badge-top1">🌿 <span class="txt-kn">2. ಕವಲು ಒಡೆಯುವ ಹಂತ</span><span class="txt-en" style="display: none;">2. Branching Stage</span></span>
+              <span style="font-size: 11px; font-weight: 700; color: #64748b;">30 DAT</span>
+            </div>
+            <div style="font-size: 13.5px; font-weight: 700; color: var(--text-primary); margin-bottom: 4px;">
+              <span class="txt-kn">ಯೂರಿಯಾ + ಪೊಟ್ಯಾಶ್ (MOP)</span>
+              <span class="txt-en" style="display: none;">Urea + MOP</span>
+            </div>
+            <div style="font-size: 12.5px; font-weight: 800; color: #0284c7; margin-bottom: 8px;">
+              <span class="txt-kn">ಪ್ರಮಾಣ: 35 kg ಯೂರಿಯಾ + 20 kg MOP / ಎಕರೆ</span>
+              <span class="txt-en" style="display: none;">Dose: 35 kg Urea + 20 kg MOP / acre</span>
+            </div>
+            <p style="margin: 0; font-size: 12px; color: var(--text-secondary); line-height: 1.45;">
+              <span class="txt-kn">ಸಸಿಗಳ ಬುಡದಿಂದ 8 ಸೆಂ.ಮೀ ದೂರದಲ್ಲಿ ಹಾಕಿ ನೀರು ಹಾಯಿಸಿ.</span>
+              <span class="txt-en" style="display: none;">Ring place 8 cm away from stem followed by drip or furrow irrigation.</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="fert-stage-card">
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+              <span class="fert-stage-badge-top2">🌾 <span class="txt-kn">3. ಹೂ ಮತ್ತು ಕಾಯಿ ಕಟ್ಟುವಿಕೆ</span><span class="txt-en" style="display: none;">3. Fruit Set & Sizing</span></span>
+              <span style="font-size: 11px; font-weight: 700; color: #64748b;">45–60 DAT</span>
+            </div>
+            <div style="font-size: 13.5px; font-weight: 700; color: var(--text-primary); margin-bottom: 4px;">
+              <span class="txt-kn">ಯೂರಿಯಾ + ಪೊಟ್ಯಾಶ್ + ಕ್ಯಾಲ್ಸಿಯಂ</span>
+              <span class="txt-en" style="display: none;">Urea + Potash + Calcium</span>
+            </div>
+            <div style="font-size: 12.5px; font-weight: 800; color: #b45309; margin-bottom: 8px;">
+              <span class="txt-kn">ಪ್ರಮಾಣ: 35 kg ಯೂರಿಯಾ + 20 kg MOP + 19:19:19 ಸಿಂಪಡಣೆ</span>
+              <span class="txt-en" style="display: none;">Dose: 35 kg Urea + 20 kg MOP + 19:19:19 foliar</span>
+            </div>
+            <p style="margin: 0; font-size: 12px; color: var(--text-secondary); line-height: 1.45;">
+              <span class="txt-kn">ಕಾಯಿ ತಳ ಕೊಳೆಯುವಿಕೆ ತಡೆಗೆ ಕ್ಯಾಲ್ಸಿಯಂ ನೈಟ್ರೇಟ್ 5g/ಲೀಟರ್ ಸಿಂಪಡಿಸಿ.</span>
+              <span class="txt-en" style="display: none;">Foliar spray Calcium Nitrate (5g/L) to prevent Blossom End Rot (BER).</span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Detailed Schedule Table -->
+      <div style="overflow-x: auto; margin-bottom: 16px; border: 1px solid #e2e8f0; border-radius: 12px;">
+        <table class="fert-table" style="width: 100%; border-collapse: collapse; font-size: 13px;">
+          <thead>
+            <tr style="background: #ffebee; text-align: left; border-bottom: 2px solid #ef9a9a;">
+              <th style="padding: 10px 12px; font-weight: 700; color: #c62828;"><span class="txt-kn">ಹಂತ</span><span class="txt-en" style="display: none;">Stage</span></th>
+              <th style="padding: 10px 12px; font-weight: 700; color: #c62828;"><span class="txt-kn">ಗೊಬ್ಬರ</span><span class="txt-en" style="display: none;">Fertilizers</span></th>
+              <th style="padding: 10px 12px; font-weight: 700; color: #c62828;"><span class="txt-kn">ಪ್ರಮಾಣ / ಎಕರೆ</span><span class="txt-en" style="display: none;">Dose/Acre</span></th>
+              <th style="padding: 10px 12px; font-weight: 700; color: #c62828;"><span class="txt-kn">ವಿಧಾನ</span><span class="txt-en" style="display: none;">Method</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom: 1px solid #e0e0e0;">
+              <td style="padding: 10px 12px; font-weight: 700;">1. <span class="txt-kn">ಸಸಿ ನಾಟಿ ಮಾಡುವಾಗ (Basal)</span><span class="txt-en" style="display: none;">Basal Transplanting</span></td>
+              <td style="padding: 10px 12px;">FYM + Neem Cake + DAP + MOP</td>
+              <td style="padding: 10px 12px; font-weight: 600;">FYM 8 ಟನ್, ಬೇವಿನ ಹಿಂಡಿ 200 kg, DAP 100 kg, MOP 40 kg</td>
+              <td style="padding: 10px 12px;"><span class="txt-kn">ಬೋದುಗಳ ಮೇಲೆ ಹರಡಿ ಮಣ್ಣು ಮುಚ್ಚಿ</span><span class="txt-en" style="display: none;">Bed incorporation</span></td>
+            </tr>
+            <tr style="border-bottom: 1px solid #e0e0e0; background: #fafafa;">
+              <td style="padding: 10px 12px; font-weight: 700;">2. <span class="txt-kn">ಕವಲು ಒಡೆಯುವ ಹಂತ (30 DAT)</span><span class="txt-en" style="display: none;">Branching (30 DAT)</span></td>
+              <td style="padding: 10px 12px;">ಯೂರಿಯಾ + ಪೊಟ್ಯಾಶ್</td>
+              <td style="padding: 10px 12px; font-weight: 600;">35 kg ಯೂರಿಯಾ + 20 kg MOP</td>
+              <td style="padding: 10px 12px;"><span class="txt-kn">ಸಸಿಗಳ ಬುಡದಿಂದ 8 ಸೆಂ.ಮೀ ದೂರದಲ್ಲಿ ಹಾಕಿ ನೀರು ಹಾಯಿಸಿ</span><span class="txt-en" style="display: none;">Ring application</span></td>
+            </tr>
+            <tr>
+              <td style="padding: 10px 12px; font-weight: 700;">3. <span class="txt-kn">ಹೂ ಮತ್ತು ಕಾಯಿ ಕಟ್ಟುವ ಹಂತ (45-60 DAT)</span><span class="txt-en" style="display: none;">Fruit Set (45-60 DAT)</span></td>
+              <td style="padding: 10px 12px;">ಯೂರಿಯಾ + ಪೊಟ್ಯಾಶ್ + ಕ್ಯಾಲ್ಸಿಯಂ</td>
+              <td style="padding: 10px 12px; font-weight: 600;">35 kg ಯೂರಿಯಾ + 20 kg MOP + 19:19:19 ಸಿಂಪಡಣೆ</td>
+              <td style="padding: 10px 12px;"><span class="txt-kn">ಕಾಯಿ ಕೊಳೆಯುವಿಕೆ ತಡೆಗೆ ಕ್ಯಾಲ್ಸಿಯಂ ನೈಟ್ರೇಟ್ 5g/ಲೀಟರ್ ಸಿಂಪಡಿಸಿ</span><span class="txt-en" style="display: none;">Spray Calcium Nitrate 5g/L</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       5. ARECANUT PANEL
+       ========================================================================= -->
+  <div id="fert-panel-arecanut" class="fert-crop-panel" style="display: none;">
+    <div class="card" style="border-left: 5px solid #388e3c; margin-bottom: 20px; padding: 20px; border-radius: 16px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; margin-bottom: 16px;">
+        <div>
+          <h3 style="margin: 0; font-size: 1.15rem; font-weight: 800; color: #1b5e20;">
+            🌴 <span class="txt-kn">ಅಡಿಕೆ (Arecanut Palm) — ಪೋಷಕಾಂಶ ಶಿಫಾರಸು</span>
+            <span class="txt-en" style="display: none;">Arecanut Palm — Nutrient Schedule</span>
+          </h3>
+          <span style="font-size: 12px; color: var(--text-muted);">
+            <span class="txt-kn">ಮೂಲ: CPCRI Kasaragod & UAS Shivamogga</span>
+            <span class="txt-en" style="display: none;">Source: CPCRI Kasaragod & UAS Shivamogga</span>
+          </span>
+        </div>
+        <span style="background: #e8f5e9; color: #1b5e20; font-weight: 800; font-size: 13px; padding: 5px 14px; border-radius: 999px; border: 1px solid #c8e6c9;">
+          <span class="txt-kn">ಪ್ರತಿ ಮರಕ್ಕೆ: 100g N : 40g P : 140g K</span>
+          <span class="txt-en" style="display: none;">Per Palm: 100g N : 40g P : 140g K</span>
+        </span>
+      </div>
+
+      <!-- Application Stages: 2 Seasonal Split Cards -->
+      <div class="fert-stages-grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));">
+        <div class="fert-stage-card">
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+              <span class="fert-stage-badge-basal">🌧️ <span class="txt-kn">1. ಮುಂಗಾರು ಮುಗಿದ ನಂತರ (Post-Monsoon)</span><span class="txt-en" style="display: none;">1. Post-Monsoon Split</span></span>
+              <span style="font-size: 11px; font-weight: 700; color: #64748b;">Sep–Oct</span>
+            </div>
+            <div style="font-size: 13.5px; font-weight: 700; color: var(--text-primary); margin-bottom: 4px;">
+              <span class="txt-kn">ಕೊಟ್ಟಿಗೆ ಗೊಬ್ಬರ + ರಾಕ್‌ಫಾಸ್ಫೇಟ್ + ಯೂರಿಯಾ + MOP</span>
+              <span class="txt-en" style="display: none;">FYM + Rock Phosphate + Urea + MOP</span>
+            </div>
+            <div style="font-size: 12.5px; font-weight: 800; color: #1b5e20; margin-bottom: 8px;">
+              <span class="txt-kn">ಪ್ರಮಾಣ: FYM 12 kg, ಯೂರಿಯಾ 110g, ರಾಕ್‌ಫಾಸ್ಫೇಟ್ 200g, MOP 120g / ಮರಕ್ಕೆ</span>
+              <span class="txt-en" style="display: none;">Dose: FYM 12 kg, Urea 110g, Rock Phosphate 200g, MOP 120g / palm</span>
+            </div>
+            <p style="margin: 0; font-size: 12px; color: var(--text-secondary); line-height: 1.45;">
+              <span class="txt-kn">ಬುಡದಿಂದ 75-100 ಸೆಂ.ಮೀ ದೂರದಲ್ಲಿ ಆಳವಿಲ್ಲದ ಬೋಗುಣಿಯಲ್ಲಿ ಹಾಕಿ ಮಣ್ಣು ಮುಚ್ಚಿ.</span>
+              <span class="txt-en" style="display: none;">Apply in a shallow circular basin 75–100 cm away from trunk and cover with soil.</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="fert-stage-card">
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+              <span class="fert-stage-badge-top1">☀️ <span class="txt-kn">2. ಬೇಸಿಗೆ ನೀರಾವರಿ ಜೊತೆ (Pre-Monsoon)</span><span class="txt-en" style="display: none;">2. Summer Irrigation Split</span></span>
+              <span style="font-size: 11px; font-weight: 700; color: #64748b;">Feb–Mar</span>
+            </div>
+            <div style="font-size: 13.5px; font-weight: 700; color: var(--text-primary); margin-bottom: 4px;">
+              <span class="txt-kn">ಯೂರಿಯಾ + ಪೊಟ್ಯಾಶ್ (MOP) + ಬೋರಾಕ್ಸ್</span>
+              <span class="txt-en" style="display: none;">Urea + MOP + Borax</span>
+            </div>
+            <div style="font-size: 12.5px; font-weight: 800; color: #0284c7; margin-bottom: 8px;">
+              <span class="txt-kn">ಪ್ರಮಾಣ: ಯೂರಿಯಾ 110g, MOP 120g, ಬೋರಾಕ್ಸ್ 25g / ಮರಕ್ಕೆ</span>
+              <span class="txt-en" style="display: none;">Dose: Urea 110g, MOP 120g, Borax 25g / palm</span>
+            </div>
+            <p style="margin: 0; font-size: 12px; color: var(--text-secondary); line-height: 1.45;">
+              <span class="txt-kn">ನೀರಾವರಿ ಒದಗಿಸುವಾಗ ಹಾಕಿ ಬುಡಕ್ಕೆ ಹಸಿರೆಲೆ ಹೊದಿಕೆ (Mulching) ಮಾಡಿ.</span>
+              <span class="txt-en" style="display: none;">Apply with basin irrigation and mulch with dry leaves to conserve moisture.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Detailed Schedule Table -->
+      <div style="overflow-x: auto; margin-bottom: 16px; border: 1px solid #e2e8f0; border-radius: 12px;">
+        <table class="fert-table" style="width: 100%; border-collapse: collapse; font-size: 13px;">
+          <thead>
+            <tr style="background: #e8f5e9; text-align: left; border-bottom: 2px solid #a5d6a7;">
+              <th style="padding: 10px 12px; font-weight: 700; color: #1b5e20;"><span class="txt-kn">ಸಮಯ (Season)</span><span class="txt-en" style="display: none;">Season</span></th>
+              <th style="padding: 10px 12px; font-weight: 700; color: #1b5e20;"><span class="txt-kn">ಗೊಬ್ಬರಗಳು (Fertilizers)</span><span class="txt-en" style="display: none;">Fertilizers</span></th>
+              <th style="padding: 10px 12px; font-weight: 700; color: #1b5e20;"><span class="txt-kn">ಪ್ರತಿ ಮರಕ್ಕೆ ಪ್ರಮಾಣ (Dose/Palm)</span><span class="txt-en" style="display: none;">Dose per Palm</span></th>
+              <th style="padding: 10px 12px; font-weight: 700; color: #1b5e20;"><span class="txt-kn">ವಿಧಾನ (Application)</span><span class="txt-en" style="display: none;">Application Method</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom: 1px solid #e0e0e0;">
+              <td style="padding: 10px 12px; font-weight: 700;">1. <span class="txt-kn">ಸೆಪ್ಟೆಂಬರ್ - ಅಕ್ಟೋಬರ್</span><span class="txt-en" style="display: none;">September–October</span><br><small style="color: #666;">(<span class="txt-kn">ಮುಂಗಾರು ಮುಗಿದ ನಂತರ</span><span class="txt-en" style="display: none;">Post-Monsoon</span>)</small></td>
+              <td style="padding: 10px 12px;">FYM + ರಾಕ್‌ಫಾಸ್ಫೇಟ್ + ಯೂರಿಯಾ + MOP</td>
+              <td style="padding: 10px 12px; font-weight: 600;">FYM 12 kg, ಯೂರಿಯಾ 110g, ರಾಕ್‌ಫಾಸ್ಫೇಟ್ 200g, MOP 120g</td>
+              <td style="padding: 10px 12px;"><span class="txt-kn">ಬುಡದಿಂದ 75-100 ಸೆಂ.ಮೀ ದೂರದಲ್ಲಿ ಆಳವಿಲ್ಲದ ಬೋಗುಣಿಯಲ್ಲಿ ಹಾಕಿ ಮಣ್ಣು ಮುಚ್ಚಿ</span><span class="txt-en" style="display: none;">Basin application 75-100 cm away from trunk</span></td>
+            </tr>
+            <tr style="background: #fafafa;">
+              <td style="padding: 10px 12px; font-weight: 700;">2. <span class="txt-kn">ಫೆಬ್ರವರಿ - ಮಾರ್ಚ್</span><span class="txt-en" style="display: none;">February–March</span><br><small style="color: #666;">(<span class="txt-kn">ಬೇಸಿಗೆ ನೀರಾವರಿ ಜೊತೆ</span><span class="txt-en" style="display: none;">Summer Irrigation</span>)</small></td>
+              <td style="padding: 10px 12px;">ಯೂರಿಯಾ + MOP + ಬೋರಾಕ್ಸ್</td>
+              <td style="padding: 10px 12px; font-weight: 600;">ಯೂರಿಯಾ 110g, MOP 120g, ಬೋರಾಕ್ಸ್ 25g</td>
+              <td style="padding: 10px 12px;"><span class="txt-kn">ನೀರಾವರಿ ಒದಗಿಸುವಾಗ ಹಾಕಿ ಹಸಿರೆಲೆ ಹೊದಿಕೆ (Mulching) ಮಾಡಿ</span><span class="txt-en" style="display: none;">Apply with irrigation and mulch basins</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Micronutrients -->
+      <div style="background: #f9fbf9; border: 1px solid #e2ece3; border-radius: 12px; padding: 14px 16px;">
+        <h4 style="margin: 0 0 6px 0; font-size: 13.5px; font-weight: 800; color: #2e7d32;">
+          🌿 <span class="txt-kn">ಸೂಕ್ಷ್ಮ ಪೋಷಕಾಂಶಗಳ ನಿರ್ವಹಣೆ:</span>
+          <span class="txt-en" style="display: none;">Micronutrient Advisory:</span>
+        </h4>
+        <p style="margin: 0; font-size: 12.5px; color: #37474f; line-height: 1.55;">
+          <span class="txt-kn">ಅಡಿಕೆ ಹಳದಿ ರೋಗ ಅಥವಾ ಹಿಂಗಾರ ಒಣಗುವಿಕೆ ತಡೆಗೆ ಪ್ರತಿ ಮರಕ್ಕೆ 50 ಗ್ರಾಂ ಮೆಗ್ನೀಷಿಯಂ ಸಲ್ಫೇಟ್ ಮತ್ತು 25 ಗ್ರಾಂ ಬೋರಾಕ್ಸ್ ನೀಡುವುದು ಅತ್ಯಗತ್ಯ.</span>
+          <span class="txt-en" style="display: none;">Apply 50g Magnesium Sulphate and 25g Borax per palm annually to prevent yellow leaf disorder and crown drying.</span>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       3. ORGANIC FERTILIZER GUIDES (COMPACT 3-CARD SECTION)
+       ========================================================================= -->
+  <div style="margin-bottom: 24px;">
+    <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; margin-bottom: 6px;">
+      <h3 style="margin: 0; font-size: 1.12rem; font-weight: 800; color: #1b5e20;">
+        🌿 <span class="txt-kn">ಸಾವಯವ ಗೊಬ್ಬರ ಮಾರ್ಗದರ್ಶಿಗಳು</span>
+        <span class="txt-en" style="display: none;">Organic Fertilizer Guides</span>
+      </h3>
+      <span class="badge" style="background: #e8f5e9; color: #2e7d32; font-size: 0.74rem; font-weight: 700; padding: 3px 10px; border-radius: 999px;">
+        SUSTAINABLE SOIL HEALTH
+      </span>
+    </div>
+    <p style="margin: 0 0 14px 0; font-size: 0.85rem; color: var(--text-muted);">
+      <span class="txt-kn">ಮಣ್ಣಿನ ಫಲವತ್ತತೆ, ಜೈವಿಕ ಇಂಗಾಲ ಮತ್ತು ಸೂಕ್ಷ್ಮಾಣು ಜೀವಿಗಳನ್ನು ಹೆಚ್ಚಿಸಲು ವಿಜ್ಞಾನ-ಆಧಾರಿತ ಸಾವಯವ ತಯಾರಿಕಾ ಪದ್ಧತಿಗಳು</span>
+      <span class="txt-en" style="display: none;">Science-backed organic preparation methods to enhance soil carbon, beneficial microbes, and long-term soil fertility</span>
+    </p>
+
+    <div class="fert-organic-grid">
+      <!-- Organic Card 1: Farmyard Manure & Compost -->
+      <div class="fert-organic-card">
+        <div class="fert-organic-img-wrap">
+          <img src="public/images/fertilizer/compost_manure.jpg" alt="Farmyard Manure and Compost Preparation" onerror="this.src='public/images/home/sprout_hands.jpg';" />
+        </div>
+        <div class="fert-organic-body">
+          <div>
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 6px;">
+              <span style="font-size: 0.72rem; font-weight: 800; background: #fef3c7; color: #b45309; padding: 2px 8px; border-radius: 6px;">
+                <span class="txt-kn">ಕೊಟ್ಟಿಗೆ ಗೊಬ್ಬರ / ಕಾಂಪೋಸ್ಟ್</span><span class="txt-en" style="display: none;">FYM & Compost</span>
+              </span>
+              <span style="font-size: 0.72rem; color: #64748b;">KAU Agri-Library</span>
+            </div>
+            <h4 style="margin: 0 0 6px 0; font-size: 1rem; font-weight: 800; color: var(--text-primary);">
+              <span class="txt-kn">ಕಾಂಪೋಸ್ಟ್ ಮತ್ತು ಕೊಟ್ಟಿಗೆ ಗೊಬ್ಬರ</span>
+              <span class="txt-en" style="display: none;">Farmyard Manure & Compost</span>
+            </h4>
+            <p style="margin: 0; font-size: 0.82rem; color: var(--text-secondary); line-height: 1.45;">
+              <span class="txt-kn">ಕೃಷಿ ತ್ಯಾಜ್ಯ, ಸಗಣಿ ಮತ್ತು ಬೆಳೆ ಉಳಿಕೆಗಳನ್ನು ಹಂತ-ಹಂತವಾಗಿ ಕೊಳೆಯಿಸಿ ಅತ್ಯುತ್ಕೃಷ್ಟ ಸಾವಯವ ಹ್ಯೂಮಸ್ ಗೊಬ್ಬರ ತಯಾರಿಸುವ ವಿಧಾನ.</span>
+              <span class="txt-en" style="display: none;">Converts crop biomass, livestock dung, and agricultural residues into rich, crumbly organic soil humus.</span>
+            </p>
+          </div>
+          <a href="https://celkau.in/agrivideos/videolibrary.php?category=Compost" target="_blank" rel="noopener noreferrer" class="fert-organic-btn">
+            ▶ <span class="txt-kn">ವಿಡಿಯೋ ವೀಕ್ಷಿಸಿ (KAU)</span><span class="txt-en" style="display: none;">Watch Video (KAU)</span> ↗
+          </a>
+        </div>
+      </div>
+
+      <!-- Organic Card 2: Vermicompost Preparation -->
+      <div class="fert-organic-card">
+        <div class="fert-organic-img-wrap">
+          <img src="public/images/fertilizer/vermicompost.jpg" alt="Vermicompost Preparation with Earthworms" onerror="this.src='public/images/home/sprout_hands.jpg';" />
+        </div>
+        <div class="fert-organic-body">
+          <div>
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 6px;">
+              <span style="font-size: 0.72rem; font-weight: 800; background: #e8f5e9; color: #166534; padding: 2px 8px; border-radius: 6px;">
+                <span class="txt-kn">ICAR ಪ್ರಾತ್ಯಕ್ಷಿಕೆ</span><span class="txt-en" style="display: none;">ICAR Method</span>
+              </span>
+              <span style="font-size: 0.72rem; color: #64748b;">ICAR-CCARI</span>
+            </div>
+            <h4 style="margin: 0 0 6px 0; font-size: 1rem; font-weight: 800; color: var(--text-primary);">
+              <span class="txt-kn">ಎರೆಹುಳು ಗೊಬ್ಬರ ತಯಾರಿಕೆ</span>
+              <span class="txt-en" style="display: none;">Vermicompost Preparation</span>
+            </h4>
+            <p style="margin: 0; font-size: 0.82rem; color: var(--text-secondary); line-height: 1.45;">
+              <span class="txt-kn">ಐಸೀನಿಯಾ ಫೆಟಿಡಾ (Eisenia fetida) ಎರೆಹುಳುಗಳನ್ನು ಬಳಸಿ ಕೃಷಿ ತ್ಯಾಜ್ಯವನ್ನು ಅಧಿಕ ಪೋಷಕಾಂಶಯುಕ್ತ ವರ್ಮಿಕಾಂಪೋಸ್ಟ್ ಆಗಿ ಪರಿವರ್ತಿಸುವ ICAR ವಿಧಾನ.</span>
+              <span class="txt-en" style="display: none;">Live demonstration on transforming biomass into microbial-rich vermicast using Eisenia fetida earthworms.</span>
+            </p>
+          </div>
+          <a href="https://www.icar.org.in/en/vermicomposting-sustainable-agriculture-live-method-demonstration-icar-kvk-ccari-goa" target="_blank" rel="noopener noreferrer" class="fert-organic-btn">
+            ▶ <span class="txt-kn">ಪ್ರಾತ್ಯಕ್ಷಿಕೆ ವೀಕ್ಷಿಸಿ (ICAR)</span><span class="txt-en" style="display: none;">Watch ICAR Demo</span> ↗
+          </a>
+        </div>
+      </div>
+
+      <!-- Organic Card 3: Green Manure & Biofertilizers -->
+      <div class="fert-organic-card">
+        <div class="fert-organic-img-wrap">
+          <img src="public/images/fertilizer/green_manure.jpg" alt="Green Manure and Biofertilizers Cover Crop" onerror="this.src='public/images/home/sprout_hands.jpg';" />
+        </div>
+        <div class="fert-organic-body">
+          <div>
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 6px;">
+              <span style="font-size: 0.72rem; font-weight: 800; background: #e0f2fe; color: #0284c7; padding: 2px 8px; border-radius: 6px;">
+                <span class="txt-kn">ಜೈವಿಕ ಸಾರಜನಕ</span><span class="txt-en" style="display: none;">Bio-Nitrogen</span>
+              </span>
+              <span style="font-size: 0.72rem; color: #64748b;">UAS Bengaluru</span>
+            </div>
+            <h4 style="margin: 0 0 6px 0; font-size: 1rem; font-weight: 800; color: var(--text-primary);">
+              <span class="txt-kn">ಹಸಿರೆಲೆ ಗೊಬ್ಬರ ಮತ್ತು ಜೈವಿಕ ಗೊಬ್ಬರಗಳು</span>
+              <span class="txt-en" style="display: none;">Green Manure & Biofertilizers</span>
+            </h4>
+            <p style="margin: 0; font-size: 0.82rem; color: var(--text-secondary); line-height: 1.45;">
+              <span class="txt-kn">ಸಣಬು, ಡೈಂಚಾ ಹಸಿರೆಲೆ ಬೆಳೆಗಳು ಹಾಗೂ ಅಜೋಸ್ಪೈರಿಲಂ, ಪಿಎಸ್‌ಬಿ ಜೈವಿಕ ಸೂಕ್ಷ್ಮಾಣುಗಳಿಂದ ಮಣ್ಣಿನ ನೈಸರ್ಗಿಕ ಸಾರಜನಕ ಮತ್ತು ರಂಜಕ ವೃದ್ಧಿ.</span>
+              <span class="txt-en" style="display: none;">Growing Sunnhemp/Dhaincha cover crops with Azospirillum & PSB bio-inoculants to naturally enrich soil fertility.</span>
+            </p>
+          </div>
+          <a href="https://www.uasbangalore.edu.in/en/soil-test-and-crop-response-ss-ac-gkvk-bengaluru/" target="_blank" rel="noopener noreferrer" class="fert-organic-btn">
+            📖 <span class="txt-kn">ಕೈಪಿಡಿ ಓದಿ (UAS Bengaluru)</span><span class="txt-en" style="display: none;">Learn More (UAS-B)</span> ↗
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       4. SOIL-TEST & BALANCED NUTRIENT ADVISORY (GOLDEN RULES)
+       ========================================================================= -->
+  <div class="card" style="background: var(--surface-warm); padding: 18px 20px; border: 1.5px solid var(--border-subtle); border-radius: 14px; margin-bottom: 22px;">
+    <h4 style="margin: 0 0 8px 0; font-size: 14px; font-weight: 800; color: var(--primary-dark);">
+      ⚠️ <span class="txt-kn">ರೈತರಿಗೆ ಪ್ರಮುಖ ಪೋಷಕಾಂಶ ನಿರ್ವಹಣಾ ನಿಯಮಗಳು (Golden Rules of Nutrient Management):</span>
+      <span class="txt-en" style="display: none;">Golden Rules of Soil-Test & Balanced Nutrient Management:</span>
+    </h4>
+    <ol style="margin: 0; padding-left: 20px; font-size: 13px; color: var(--text-secondary); line-height: 1.6;">
+      <li>
+        <strong><span class="txt-kn">ಮಣ್ಣು ಪರೀಕ್ಷೆ ಆಧಾರಿತ ಬಳಕೆ (STCR):</span><span class="txt-en" style="display: none;">Soil-Test Based Application (STCR):</span></strong>
+        <span class="txt-kn">ಮಣ್ಣು ಆರೋಗ್ಯ ಕಾರ್ಡ್ (SHC) ವರದಿಯ ಆಧಾರದ ಮೇಲೆ ಗೊಬ್ಬರ ಪ್ರಮಾಣ ನಿಗದಿಪಡಿಸಿ. ಅತಿಯಾದ ಯೂರಿಯಾ ಬಳಕೆಯಿಂದ ಗಿಡಗಳು ಬಾಗುವುದು (lodging) ಮತ್ತು ಕೀಟಬಾಧೆ ಹೆಚ್ಚಾಗುತ್ತದೆ.</span>
+        <span class="txt-en" style="display: none;">Always adjust fertilizer dosage according to your Soil Health Card test values. Excessive Urea causes lodging, soft succulent tissue, and high insect pest vulnerability.</span>
+      </li>
+      <li>
+        <strong><span class="txt-kn">ಸಮಗ್ರ ಪೋಷಕಾಂಶ ನಿರ್ವಹಣೆ (INM):</span><span class="txt-en" style="display: none;">Integrated Nutrient Management (INM):</span></strong>
+        <span class="txt-kn">ಸಾವಯವ ಗೊಬ್ಬರಗಳು (FYM, ವರ್ಮಿಕಾಂಪೋಸ್ಟ್) ಮಣ್ಣಿನ ಜೈವಿಕ ಇಂಗಾಲ ಮತ್ತು ತೇವಾಂಶ ಧಾರಣ ಶಕ್ತಿಯನ್ನು ಹೆಚ್ಚಿಸುತ್ತವೆ; ಆದರೆ ಹೆಚ್ಚಿನ ಇಳುವರಿಗಾಗಿ ಮಣ್ಣು ಪರೀಕ್ಷೆ ಆಧಾರಿತ ಸಮತೋಲಿತ ಪೋಷಕಾಂಶಗಳೊಂದಿಗೆ ಸಂಯೋಜಿಸಬೇಕು.</span>
+        <span class="txt-en" style="display: none;">Organic fertilizers restore soil structure, water retention, and microbial life, but work best when integrated with balanced, soil-tested nutrients for target harvest yields.</span>
+      </li>
+      <li>
+        <strong><span class="txt-kn">ಸಿಂಪರಣೆ ಹಾಗೂ ಮಳೆ ಮುನ್ನೆಚ್ಚರಿಕೆ:</span><span class="txt-en" style="display: none;">Application Timing & Weather Caution:</span></strong>
+        <span class="txt-kn">ಭಾರಿ ಮಳೆ ಮುನ್ಸೂಚನೆ ಇರುವಾಗ ಯೂರಿಯಾ ಹಾಕಬೇಡಿ (ನೀರಿನಲ್ಲಿ ಕೊಚ್ಚಿಹೋಗುತ್ತದೆ). ರಂಜಕಯುಕ್ತ ಗೊಬ್ಬರಗಳನ್ನು (DAP / SSP) ಯಾವಾಗಲೂ ಬಿತ್ತನೆ ಸಮಯದಲ್ಲಿ ಸಾಲಿನಲ್ಲಿ ಆಳವಾಗಿ ನೀಡಬೇಕು.</span>
+        <span class="txt-en" style="display: none;">Never broadcast urea before heavy rains to prevent leaching and surface runoff. Always place phosphatic fertilizers (DAP/SSP) deeply along the seed zone at sowing.</span>
+      </li>
+    </ol>
+  </div>
+
+  <!-- =========================================================================
+       5. OFFICIAL AGRICULTURAL REFERENCES & FURTHER READING
+       ========================================================================= -->
+  <div class="card" style="padding: 18px 20px; border-radius: 14px; border: 1px solid var(--border-color, #e2e8f0); background: #ffffff;">
+    <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; margin-bottom: 4px;">
+      <h3 style="margin: 0; font-size: 1.05rem; font-weight: 800; color: var(--text-primary);">
+        📚 <span class="txt-kn">ಅಧಿಕೃತ ಕೃಷಿ ಉಲ್ಲೇಖಗಳು ಮತ್ತು ಸಂಶೋಧನಾ ಮೂಲಗಳು</span>
+        <span class="txt-en" style="display: none;">Official Agricultural References & Research Portals</span>
+      </h3>
+      <span class="badge" style="background: #e8f5e9; color: #2e7d32; font-size: 0.72rem; font-weight: 700; padding: 3px 8px; border-radius: 6px;">
+        VERIFIED SOURCES
+      </span>
+    </div>
+    <p style="margin: 0 0 12px 0; font-size: 0.8rem; color: var(--text-muted);">
+      <span class="txt-kn">ಭಾರತೀಯ ಕೃಷಿ ಸಂಶೋಧನಾ ಮಂಡಳಿ (ICAR) ಹಾಗೂ ಕರ್ನಾಟಕ ಕೃಷಿ ವಿಶ್ವವಿದ್ಯಾಲಯಗಳ ಅಧಿಕೃತ ತಾಂತ್ರಿಕ ಕೈಪಿಡಿಗಳು</span>
+      <span class="txt-en" style="display: none;">Official package of practices, fertilizer recommendations, and extension manuals from ICAR, UAS Bengaluru, and KAU</span>
+    </p>
+
+    <div class="lc-ref-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px;">
+      <a href="https://www.uasbangalore.edu.in/en/soil-test-and-crop-response-ss-ac-gkvk-bengaluru/" target="_blank" rel="noopener noreferrer" class="lc-ref-link-item">
+        <div>
+          <div style="font-weight: 600; font-size: 0.88rem; color: var(--text-primary);">
+            <span class="txt-kn">ಯುಎಎಸ್ ಬೆಂಗಳೂರು — ಮಣ್ಣು ಪರೀಕ್ಷೆ ಆಧಾರಿತ ಗೊಬ್ಬರ ಶಿಫಾರಸು (STCR)</span>
+            <span class="txt-en" style="display: none;">UAS Bengaluru — Soil Test and Crop Response (STCR) GKVK</span>
+          </div>
+          <div style="font-size: 0.76rem; color: var(--text-muted); margin-top: 2px;">
+            <span class="txt-kn">ಕರ್ನಾಟಕದ ವಿವಿಧ ಬೆಳೆಗಳಿಗೆ ಮಣ್ಣಿನ ಫಲವತ್ತತೆ ಆಧಾರಿತ ರಸಗೊಬ್ಬರ ಪ್ರಮಾಣ ಸಮೀಕರಣಗಳು.</span>
+            <span class="txt-en" style="display: none;">Soil-test-based fertilizer equations and target-yield nutrient recommendations for Karnataka.</span>
+          </div>
+        </div>
+        <span style="font-size: 1.1rem; color: #10b981; margin-left: 8px; flex-shrink: 0;">↗</span>
+      </a>
+
+      <a href="https://iihrkvk.org/package-of-practices/" target="_blank" rel="noopener noreferrer" class="lc-ref-link-item">
+        <div>
+          <div style="font-weight: 600; font-size: 0.88rem; color: var(--text-primary);">
+            <span class="txt-kn">ಐಸಿಎಆರ್-ಕೆವಿಕೆ ಹಿರೇಹಳ್ಳಿ — ಸಮಗ್ರ ಬೇಸಾಯ ಪದ್ಧತಿ ಕೈಪಿಡಿ</span>
+            <span class="txt-en" style="display: none;">ICAR-KVK Hirehalli — Package of Practices</span>
+          </div>
+          <div style="font-size: 0.76rem; color: var(--text-muted); margin-top: 2px;">
+            <span class="txt-kn">ತೋಟಗಾರಿಕಾ ಬೆಳೆಗಳು, ಅಡಿಕೆ ಮತ್ತು ತರಕಾರಿಗಳ ಅಧಿಕೃತ ಪೋಷಕಾಂಶ ಹಾಗೂ ರೋಗ ನಿರ್ವಹಣೆ.</span>
+            <span class="txt-en" style="display: none;">Crop and horticultural fertilizer management protocols and pest advisories.</span>
+          </div>
+        </div>
+        <span style="font-size: 1.1rem; color: #10b981; margin-left: 8px; flex-shrink: 0;">↗</span>
+      </a>
+
+      <a href="https://icar.gov.in/" target="_blank" rel="noopener noreferrer" class="lc-ref-link-item">
+        <div>
+          <div style="font-weight: 600; font-size: 0.88rem; color: var(--text-primary);">
+            <span class="txt-kn">ಐಸಿಎಆರ್ — ರಾಷ್ಟ್ರೀಯ ಕೃಷಿ ಸಂಶೋಧನೆ ಹಾಗೂ ಬೆಳೆ ಸಲಹೆಗಳು</span>
+            <span class="txt-en" style="display: none;">ICAR — National Agricultural Research & Crop Advisories</span>
+          </div>
+          <div style="font-size: 0.76rem; color: var(--text-muted); margin-top: 2px;">
+            <span class="txt-kn">ಕೇಂದ್ರ ಸರ್ಕಾರದ ಕೃಷಿ ಸಲಹೆಗಳು, ಖಾರಿಫ್/ರಬಿ ಪೋಷಕಾಂಶ ಮಾರ್ಗಸೂಚಿಗಳು.</span>
+            <span class="txt-en" style="display: none;">National crop nutrient management circulars, Kharif advisories, and research updates.</span>
+          </div>
+        </div>
+        <span style="font-size: 1.1rem; color: #10b981; margin-left: 8px; flex-shrink: 0;">↗</span>
+      </a>
+
+      <a href="https://celkau.in/agrivideos/videolibrary.php?category=Compost" target="_blank" rel="noopener noreferrer" class="lc-ref-link-item">
+        <div>
+          <div style="font-weight: 600; font-size: 0.88rem; color: var(--text-primary);">
+            <span class="txt-kn">ಕೇರಳ ಕೃಷಿ ವಿಶ್ವವಿದ್ಯಾಲಯ (KAU) — ಸಾವಯವ ಕಾಂಪೋಸ್ಟ್ ವಿಡಿಯೋ ಲೈಬ್ರರಿ</span>
+            <span class="txt-en" style="display: none;">Kerala Agricultural University (KAU) — Compost Video Library</span>
+          </div>
+          <div style="font-size: 0.76rem; color: var(--text-muted); margin-top: 2px;">
+            <span class="txt-kn">ರೈತರಿಗಾಗಿ ಪ್ರಾಯೋಗಿಕ ಕಾಂಪೋಸ್ಟ್ ಮತ್ತು ವರ್ಮಿಕಲ್ಚರ್ ಪ್ರಾತ್ಯಕ್ಷಿಕೆ ವಿಡಿಯೋಗಳ ಸಂಗ್ರಹ.</span>
+            <span class="txt-en" style="display: none;">Instructional organic farming video repository for farmers on composting and vermiculture.</span>
+          </div>
+        </div>
+        <span style="font-size: 1.1rem; color: #10b981; margin-left: 8px; flex-shrink: 0;">↗</span>
+      </a>
+    </div>
+  </div>
+</section>

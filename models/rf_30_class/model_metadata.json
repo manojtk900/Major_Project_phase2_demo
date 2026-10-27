@@ -1,0 +1,30 @@
+{
+  "model_name": "MannuMitra 30-Crop Random Forest (Final Rigorous Validation)",
+  "model_type": "RandomForestClassifier",
+  "dataset_name": "data/processed/karnataka_30_crops_cpcri_rainfall_fixed.csv",
+  "dataset_sha256": "d89d68c144a3b17b8ae19bf7215ca316546a3cdbe289e4299e1a8002605a2c0d",
+  "model_sha256": "856b561797433a11665045e3b9cd9d6035a84fdc130cc2d357b276c8bf5876d5",
+  "random_seed": 42,
+  "split_strategy": "Stratified 80/20 train/test split, random_state=42",
+  "hyperparameters": {
+    "n_estimators": 300,
+    "max_depth": null,
+    "min_samples_split": 2,
+    "min_samples_leaf": 1,
+    "max_features": "sqrt",
+    "class_weight": "balanced",
+    "n_jobs": -1,
+    "random_state": 42
+  },
+  "train_samples": 15024,
+  "test_samples": 3756,
+  "num_classes": 30,
+  "test_metrics": {
+    "accuracy": 0.92678,
+    "balanced_accuracy": 0.91292,
+    "macro_f1": 0.91388,
+    "weighted_f1": 0.92691,
+    "macro_precision": 0.91615,
+    "macro_recall": 0.91292
+  }
+}

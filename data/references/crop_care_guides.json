@@ -1,0 +1,350 @@
+{
+  "_metadata": {
+    "description": "Bilingual crop care guidelines and lifecycle stages for prominent Karnataka crops. Compiled from published package of practices (ICAR and UAS Bengaluru / Dharwad).",
+    "notice": "These are reference-based agronomic guidelines to help farmers plan field activities. They do not constitute prescribed chemical dosages or yield guarantees.",
+    "supported_crops": ["ragi", "groundnut", "rice", "maize", "cotton"],
+    "stages_sequence": ["before_sowing", "sowing", "water_management", "crop_growth", "pest_monitoring", "harvest"]
+  },
+  "crops": {
+    "ragi": {
+      "id": "ragi",
+      "name_en": "Ragi (Finger Millet)",
+      "name_kn": "ರಾಗಿ",
+      "source_authority": "UAS Bengaluru & ICAR-IIMR Package of Practices",
+      "stages": [
+        {
+          "stage_id": "before_sowing",
+          "icon": "🌱",
+          "title_en": "Before Sowing (Field Preparation)",
+          "title_kn": "ಬಿತ್ತನೆಗೆ ಮುನ್ನ (ಭೂಮಿ ಸಿದ್ಧತೆ)",
+          "action_en": "Prepare the soil with organic manure",
+          "action_kn": "ಮಣ್ಣನ್ನು ಕೊಟ್ಟಿಗೆ ಗೊಬ್ಬರದೊಂದಿಗೆ ಸಿದ್ಧಪಡಿಸಿ",
+          "advice_en": "Plough the land 2-3 times after pre-monsoon showers. Apply well-decomposed farmyard manure (FYM) or compost to improve moisture retention in red soil.",
+          "advice_kn": "ಮುಂಗಾರು ಪೂರ್ವ ಮಳೆಯ ನಂತರ 2-3 ಬಾರಿ ಆಳವಾಗಿ ಉಳುಮೆ ಮಾಡಿ. ಮಣ್ಣಿನ ತೇವಾಂಶ ಹಿಡಿದಿಡುವ ಶಕ್ತಿ ಹೆಚ್ಚಿಸಲು ಚೆನ್ನಾಗಿ ಕೊಳೆತ ಕೊಟ್ಟಿಗೆ ಗೊಬ್ಬರ ಅಥವಾ ಕಾಂಪೋಸ್ಟ್ ಬೆರೆಸಿ."
+        },
+        {
+          "stage_id": "sowing",
+          "icon": "🌧️",
+          "title_en": "Sowing & Seed Treatment",
+          "title_kn": "ಬಿತ್ತನೆ ಮತ್ತು ಸಾಲು ಪಾಲನೆ",
+          "action_en": "Sow when suitable moisture is available",
+          "action_kn": "ಸೂಕ್ತ ತೇವಾಂಶವಿದ್ದಾಗ ಬಿತ್ತನೆ ಮಾಡಿ",
+          "advice_en": "Sow with adequate soil moisture during June-July (Kharif). Line sowing with 22.5 to 30 cm row spacing ensures uniform plant population.",
+          "advice_kn": "ಜೂನ್-ಜುಲೈ ತಿಂಗಳಲ್ಲಿ ಸೂಕ್ತ ಮಣ್ಣಿನ ತೇವಾಂಶವಿರುವಾಗ ಬಿತ್ತನೆ ಮಾಡಿ. ಸಾಲಿನಿಂದ ಸಾಲಿಗೆ 22.5 ರಿಂದ 30 ಸೆಂ.ಮೀ ಅಂತರವಿಟ್ಟು ಕೂರಿಗೆಯಿಂದ ಬಿತ್ತನೆ ಮಾಡುವುದು ಸೂಕ್ತ."
+        },
+        {
+          "stage_id": "water_management",
+          "icon": "💧",
+          "title_en": "Water Management",
+          "title_kn": "ನೀರಾವರಿ ನಿರ್ವಹಣೆ",
+          "action_en": "Follow the crop's water requirement",
+          "action_kn": "ಬೆಳೆಯ ನೀರಿನ ಅಗತ್ಯವನ್ನು ಅನುಸರಿಸಿ",
+          "advice_en": "Ragi is primarily rainfed. Critical moisture-sensitive stages are tillering and grain filling; provide protective irrigation if prolonged dry spell occurs.",
+          "advice_kn": "ರಾಗಿ ಮುಖ್ಯವಾಗಿ ಮಳೆಯಾಶ್ರಿತ ಬೆಳೆ. ಕವಲೊಡೆಯುವ ಹಾಗೂ ಕಾಳು ತುಂಬುವ ಹಂತಗಳಲ್ಲಿ ಮಳೆ ಕೈಕೊಟ್ಟರೆ ಸಂರಕ್ಷಣಾತ್ಮಕ ನೀರಾವರಿ ನೀಡಿ."
+        },
+        {
+          "stage_id": "crop_growth",
+          "icon": "🌿",
+          "title_en": "Crop Growth & Weeding",
+          "title_kn": "ಸಸ್ಯ ಪೋಷಣೆ ಮತ್ತು ಕಳೆ ನಿರ್ವಹಣೆ",
+          "action_en": "Monitor crop growth and manage weeds",
+          "action_kn": "ಬೆಳೆಯ ಬೆಳವಣಿಗೆಯನ್ನು ಗಮನಿಸಿ ಕಳೆ ಕೀಳಿಸಿ",
+          "advice_en": "Carry out first inter-cultivation (hoeing) 20-25 days after sowing. Thin out excess seedlings to maintain optimum spacing and remove competing weeds.",
+          "advice_kn": "ಬಿತ್ತನೆಯಾದ 20-25 ದಿನಗಳಲ್ಲಿ ಮೊದಲ ಎಡೆಕುಂಟೆ ಹೊಡೆದು ಕಳೆ ಕೀಳಿಸಿ. ಹೆಚ್ಚುವರಿ ಸಸಿಗಳನ್ನು ಕಿತ್ತು ಸೂಕ್ತ ಅಂತರ ಕಾಪಾಡಿ."
+        },
+        {
+          "stage_id": "pest_monitoring",
+          "icon": "🐛",
+          "title_en": "Pest & Disease Monitoring",
+          "title_kn": "ಕೀಟ ಹಾಗೂ ರೋಗಗಳ ನಿಗಾ",
+          "action_en": "Check for pests and leaf spots regularly",
+          "action_kn": "ಕೀಟ ಮತ್ತು ರೋಗಗಳ ಲಕ್ಷಣಗಳನ್ನು ಗಮನಿಸಿ",
+          "advice_en": "Regularly monitor for finger blast and stem borer. Maintain field sanitation; avoid water stagnation and remove infected lower leaves.",
+          "advice_kn": "ಬೆಂಕಿ ರೋಗ (ಬ್ಲಾಸ್ಟ್) ಮತ್ತು ಕಾಂಡ ಕೊರೆಯುವ ಹುಳದ ಬಗ್ಗೆ ಎಚ್ಚರವಿರಲಿ. ಹೊಲದಲ್ಲಿ ನೀರು ನಿಲ್ಲದಂತೆ ನೋಡಿಕೊಳ್ಳಿ ಹಾಗೂ ರೋಗಪೀಡಿತ ಎಲೆಗಳನ್ನು ತೆಗೆದುಹಾಕಿ."
+        },
+        {
+          "stage_id": "harvest",
+          "icon": "🌾",
+          "title_en": "Harvest & Threshing",
+          "title_kn": "ಕೊಯ್ಲು ಮತ್ತು ಒಕ್ಕಣೆ",
+          "action_en": "Harvest at the suitable maturity stage",
+          "action_kn": "ಸೂಕ್ತ ಪಕ್ವತೆಯ ಹಂತದಲ್ಲಿ ಕೊಯ್ಲು ಮಾಡಿ",
+          "advice_en": "Harvest when earheads turn golden brown and straw dries up. Sun-dry earheads properly before threshing to maintain grain quality.",
+          "advice_kn": "ತೆನೆಗಳು ಹಳದಿ-ಕಂದು ಬಣ್ಣಕ್ಕೆ ತಿರುಗಿ ಒಣಗಿದಾಗ ಕೊಯ್ಲು ಮಾಡಿ. ಒಕ್ಕಣೆ ಮಾಡುವ ಮುನ್ನ ತೆನೆಗಳನ್ನು ಬಿಸಿಲಿನಲ್ಲಿ ಚೆನ್ನಾಗಿ ಒಣಗಿಸಿ."
+        }
+      ]
+    },
+    "groundnut": {
+      "id": "groundnut",
+      "name_en": "Groundnut (Peanut)",
+      "name_kn": "ಕಡಲೆಕಾಯಿ",
+      "source_authority": "UAS Dharwad & Directorate of Groundnut Research (ICAR-DGR)",
+      "stages": [
+        {
+          "stage_id": "before_sowing",
+          "icon": "🌱",
+          "title_en": "Before Sowing (Soil Preparation)",
+          "title_kn": "ಬಿತ್ತನೆಗೆ ಮುನ್ನ (ಭೂಮಿ ಸಿದ್ಧತೆ)",
+          "action_en": "Prepare friable soil and apply gypsum",
+          "action_kn": "ಮಣ್ಣು ಹದಗೊಳಿಸಿ ಜಿಪ್ಸಮ್ ಬಳಸಿ",
+          "advice_en": "Prepare a friable, weed-free seedbed. In sandy and red soils, apply gypsum to supply calcium and sulfur needed for vigorous pegging and pod filling.",
+          "advice_kn": "ಮಣ್ಣು ಹದವಾಗಿ, ಕಳೆರಹಿತವಾಗಿರುವಂತೆ ಉಳುಮೆ ಮಾಡಿ. ಮರಳು ಮಿಶ್ರಿತ ಮತ್ತು ಕೆಂಪು ಮಣ್ಣಿನಲ್ಲಿ ಕಾಯಿ ಕಟ್ಟುವ ಹಂತಕ್ಕೆ ಕ್ಯಾಲ್ಸಿಯಂ ಪೂರೈಸಲು ಜಿಪ್ಸಮ್ ಬಳಸುವುದು ಉಪಯುಕ್ತ."
+        },
+        {
+          "stage_id": "sowing",
+          "icon": "🌧️",
+          "title_en": "Sowing & Seed Selection",
+          "title_kn": "ಬಿತ್ತನೆ ಮತ್ತು ಬೀಜದ ಆಯ್ಕೆ",
+          "action_en": "Sow healthy bold kernels at optimum depth",
+          "action_kn": "ಉತ್ತಮ ಕಾಳುಗಳನ್ನು ಆಯ್ದು ಹದವಾದ ತೇವಾಂಶದಲ್ಲಿ ಬಿತ್ತಿ",
+          "advice_en": "Treat whole undamaged kernels before sowing. Sow at 5 cm depth with 30 x 10 cm spacing when monsoon rain provides good soil moisture.",
+          "advice_kn": "ಒಡೆಯದ ದೃಢವಾದ ಬೀಜಗಳನ್ನು ಬಳಸಿ. ಮಳೆಯ ನಂತರ ಹದವಾದ ತೇವಾಂಶದಲ್ಲಿ 5 ಸೆಂ.ಮೀ ಆಳದಲ್ಲಿ, ಸಾಲಿನಿಂದ ಸಾಲಿಗೆ 30 ಸೆಂ.ಮೀ ಅಂತರದಲ್ಲಿ ಬಿತ್ತಿ."
+        },
+        {
+          "stage_id": "water_management",
+          "icon": "💧",
+          "title_en": "Water Management",
+          "title_kn": "ನೀರಾವರಿ ನಿರ್ವಹಣೆ",
+          "action_en": "Keep moisture adequate during flowering & pegging",
+          "action_kn": "ಹೂವಾಡುವ ಮತ್ತು ಕಾಯಿ ಕಟ್ಟುವಾಗ ತೇವಾಂಶ ಕಾಪಾಡಿ",
+          "advice_en": "Critical water stages are flowering (25-30 DAS) and peg penetration (40-50 DAS). Avoid water stress during pod development, but ensure good drainage.",
+          "advice_kn": "ಹೂವಾಡುವ (25-30 ದಿನಗಳು) ಮತ್ತು ಕಾಯಿ ಕಚ್ಚುವ (40-50 ದಿನಗಳು) ಹಂತಗಳಲ್ಲಿ ತೇವಾಂಶ ಅತ್ಯಗತ್ಯ. ಜಮೀನಿನಲ್ಲಿ ನೀರು ನಿಲ್ಲದಂತೆ ಬಸಿಗಾಲುವೆ ನಿರ್ವಹಿಸಿ."
+        },
+        {
+          "stage_id": "crop_growth",
+          "icon": "🌿",
+          "title_en": "Crop Growth & Pegging",
+          "title_kn": "ಸಸ್ಯ ಪೋಷಣೆ ಮತ್ತು ಮಣ್ಣು ಏರಿಸುವುದು",
+          "action_en": "Complete intercultural work before pegging begins",
+          "action_kn": "ಊಡ ಇಳಿಯುವ ಮೊದಲೇ ಕಳೆ ಕೆಲಸ ಮುಗಿಸಿ",
+          "advice_en": "Complete intercultural operations before pegging (around 35-40 days). Do not disturb soil once pegs begin penetrating into the ground.",
+          "advice_kn": "ಬಿತ್ತಿದ 35-40 ದಿನಗಳೊಳಗೆ ಕಳೆ ನಿರ್ವಹಣೆ ಪೂರ್ಣಗೊಳಿಸಿ. ಊಡ (ಪೆಗ್) ಮಣ್ಣಿಗೆ ಇಳಿಯಲು ಪ್ರಾರಂಭಿಸಿದ ಮೇಲೆ ಮಣ್ಣನ್ನು ಕದಲಿಸಬೇಡಿ."
+        },
+        {
+          "stage_id": "pest_monitoring",
+          "icon": "🐛",
+          "title_en": "Pest & Disease Monitoring",
+          "title_kn": "ಕೀಟ ಮತ್ತು ರೋಗಗಳ ನಿಗಾ",
+          "action_en": "Monitor for tikka leaf spot and leaf miner",
+          "action_kn": "ತಿಕ್ಕಾ ಎಲೆಚುಕ್ಕೆ ಮತ್ತು ಎಲೆ ಕೊರೆಯುವ ಹುಳ ಗಮನಿಸಿ",
+          "advice_en": "Inspect leaves for tikka leaf spot and leaf miners. Remove alternate host weeds from bunds to keep pest populations low.",
+          "advice_kn": "ತಿಕ್ಕಾ ಎಲೆಚುಕ್ಕೆ ರೋಗ ಮತ್ತು ಎಲೆ ತಿನ್ನುವ ಹುಳುಗಳ ಬಗ್ಗೆ ನಿಗಾವಹಿಸಿ. ಬದುಗಳ ಮೇಲಿನ ಕಳೆಗಳನ್ನು ಸ್ವಚ್ಛವಾಗಿಡಿ."
+        },
+        {
+          "stage_id": "harvest",
+          "icon": "🌾",
+          "title_en": "Harvest & Curing",
+          "title_kn": "ಕೊಯ್ಲು ಮತ್ತು ಸಂಸ್ಕರಣೆ",
+          "action_en": "Harvest when inner shell turns brownish",
+          "action_kn": "ಕಾಯಿಯ ಒಳಭಾಗ ಕಂದುಬಣ್ಣಕ್ಕೆ ಬಂದಾಗ ಕೀಳಿ",
+          "advice_en": "Harvest when the inner shell surface shows dark brown veins and leaves turn yellow. Dry harvested pods in shade until moisture drops to 8-9%.",
+          "advice_kn": "ಕಾಯಿಯ ಒಳಭಾಗ ಕಂದು ಬಣ್ಣಕ್ಕೆ ತಿರುಗಿದಾಗ ಮತ್ತು ಎಲೆಗಳು ಹಳದಿಯಾದಾಗ ಕೀಳಿ. ಕಾಯಿಗಳನ್ನು ನೆರಳಿನಲ್ಲಿ ಒಣಗಿಸಿ ಸುರಕ್ಷಿತವಾಗಿ ಸಂಗ್ರಹಿಸಿ."
+        }
+      ]
+    },
+    "rice": {
+      "id": "rice",
+      "name_en": "Rice (Paddy)",
+      "name_kn": "ಭತ್ತ",
+      "source_authority": "ICAR-NRRI & UAS Bengaluru Package of Practices",
+      "stages": [
+        {
+          "stage_id": "before_sowing",
+          "icon": "🌱",
+          "title_en": "Field Puddling & Nursery",
+          "title_kn": "ಭೂಮಿ ಸಿದ್ಧತೆ ಮತ್ತು ಮಡಿ ತಯಾರಿ",
+          "action_en": "Puddle field well to conserve water",
+          "action_kn": "ನೀರು ಇಂಗುವುದನ್ನು ತಡೆಯಲು ಚೆನ್ನಾಗಿ ಕೆಸರು ಮಾಡಿ",
+          "advice_en": "Puddle the field thoroughly to reduce water percolation in alluvial/black soils. Incorporate green manure or well-rotted FYM before leveling.",
+          "advice_kn": "ನೀರು ಬಸಿದುಹೋಗುವುದನ್ನು ತಡೆಯಲು ಗದ್ದೆಯನ್ನು ಚೆನ್ನಾಗಿ ಕೆಸರು ಮಾಡಿ (ಪಡ್ಲಿಂಗ್). ಹಸಿರೆಲೆ ಗೊಬ್ಬರ ಅಥವಾ ಕೊಟ್ಟಿಗೆ ಗೊಬ್ಬರವನ್ನು ಮಣ್ಣಿಗೆ ಸೇರಿಸಿ ಮಟ್ಟಮಾಡಿ."
+        },
+        {
+          "stage_id": "sowing",
+          "icon": "🌧️",
+          "title_en": "Transplanting / Direct Seeding",
+          "title_kn": "ನಾಟಿ ಅಥವಾ ನೇರ ಬಿತ್ತನೆ",
+          "action_en": "Transplant young healthy seedlings at optimum spacing",
+          "action_kn": "ಯೌವನಾವಸ್ಥೆಯ ಸಸಿಗಳನ್ನು ಸಾಲಾಗಿ ನಾಟಿ ಮಾಡಿ",
+          "advice_en": "Transplant 21-25 day old seedlings with 2-3 seedlings per hill at 20 x 10 cm spacing under shallow standing water.",
+          "advice_kn": "21-25 ದಿನಗಳ ಸಸಿಗಳನ್ನು ಒಂದು ಬುಡಕ್ಕೆ 2-3 ಸಸಿಗಳಂತೆ 20 x 10 ಸೆಂ.ಮೀ ಅಂತರದಲ್ಲಿ ಕಡಿಮೆ ಆಳದ ನೀರಿನಲ್ಲಿ ನಾಟಿ ಮಾಡಿ."
+        },
+        {
+          "stage_id": "water_management",
+          "icon": "💧",
+          "title_en": "Water Management",
+          "title_kn": "ನೀರಾವರಿ ನಿರ್ವಹಣೆ",
+          "action_en": "Maintain shallow water depth according to stage",
+          "action_kn": "ಹಂತಕ್ಕೆ ತಕ್ಕಂತೆ ಕಡಿಮೆ ಆಳದ ನೀರು ನಿಲ್ಲಿಸಿ",
+          "advice_en": "Maintain 2-3 cm shallow water depth during establishment and 5 cm during tillering to panicle initiation. Drain field 10 days before harvest.",
+          "advice_kn": "ನಾಟಿ ಹಂತದಲ್ಲಿ 2-3 ಸೆಂ.ಮೀ ಮತ್ತು ತೆನೆ ಬರುವ ಹಂತದಲ್ಲಿ 5 ಸೆಂ.ಮೀ ನೀರು ನಿಲ್ಲಿಸಿ. ಕೊಯ್ಲಿಗೆ 10 ದಿನಗಳ ಮುಂಚಿತವಾಗಿ ಗದ್ದೆಯಿಂದ ನೀರನ್ನು ಬಸಿದುಹಾಕಿ."
+        },
+        {
+          "stage_id": "crop_growth",
+          "icon": "🌿",
+          "title_en": "Tillering & Weed Control",
+          "title_kn": "ಕವಲೊಡೆಯುವುದು ಮತ್ತು ಕಳೆ ನಿರ್ವಹಣೆ",
+          "action_en": "Weed mechanically and split fertilizer applications",
+          "action_kn": "ಕೋನೋವೀಡರ್ ಬಳಸಿ ಕಳೆ ಕೀಳಿಸಿ ಮತ್ತು ಪೋಷಕಾಂಶ ನೀಡಿ",
+          "advice_en": "Perform mechanical weeding or manual weeding at 20 and 40 days after transplanting. Maintain balanced nutrient splits for sturdy tillers.",
+          "advice_kn": "ನಾಟಿ ಮಾಡಿದ 20 ಮತ್ತು 40 ನೇ ದಿನಗಳಲ್ಲಿ ಕೋನೋವೀಡರ್ ಅಥವಾ ಕೈಯಿಂದ ಕಳೆ ಕೀಳಿಸಿ. ಸದೃಢ ಕವಲುಗಳಿಗಾಗಿ ಶಿಫಾರಸು ಮಾಡಿದ ಪೋಷಕಾಂಶಗಳನ್ನು ಹಂತಗಳಲ್ಲಿ ನೀಡಿ."
+        },
+        {
+          "stage_id": "pest_monitoring",
+          "icon": "🐛",
+          "title_en": "Pest & Disease Monitoring",
+          "title_kn": "ಕೀಟ ಮತ್ತು ರೋಗಗಳ ನಿಗಾ",
+          "action_en": "Watch for stem borer, BPH, and blast",
+          "action_kn": "ಕಾಂಡ ಕೊರೆಯುವ ಹುಳು ಮತ್ತು ಬ್ಲಾಸ್ಟ್ ರೋಗ ಗಮನಿಸಿ",
+          "advice_en": "Monitor for stem borer, brown planthopper (BPH), and blast. Avoid excessive nitrogen which promotes blast incidence during humid weather.",
+          "advice_kn": "ಕಾಂಡ ಕೊರೆಯುವ ಹುಳು, ಜಿಗಿ ಹುಳು (BPH) ಮತ್ತು ಬ್ಲಾಸ್ಟ್ ರೋಗದ ಬಗ್ಗೆ ನಿಗಾವಹಿಸಿ. ತೇವಾಂಶವಿರುವಾಗ ಅತಿಯಾದ ಯೂರಿಯಾ ಬಳಕೆಯನ್ನು ತಪ್ಪಿಸಿ."
+        },
+        {
+          "stage_id": "harvest",
+          "icon": "🌾",
+          "title_en": "Harvest & Drying",
+          "title_kn": "ಕೊಯ್ಲು ಮತ್ತು ಒಣಗಿಸುವಿಕೆ",
+          "action_en": "Harvest when 85% grains turn golden yellow",
+          "action_kn": "ಶೇ. 85 ರಷ್ಟು ಕಾಳುಗಳು ಹಳದಿಯಾದಾಗ ಕೊಯ್ಲು ಮಾಡಿ",
+          "advice_en": "Harvest when 85% of the grains in the panicle turn straw-golden color. Thresh promptly and dry grain to 12-14% moisture before storage.",
+          "advice_kn": "ತೆನೆಯಲ್ಲಿನ ಶೇ. 85 ರಷ್ಟು ಕಾಳುಗಳು ಬಂಗಾರದ ಹಳದಿ ಬಣ್ಣಕ್ಕೆ ಬಂದಾಗ ಕೊಯ್ಲು ಮಾಡಿ. ಕಾಳುಗಳನ್ನು 12-14% ತೇವಾಂಶಕ್ಕೆ ಒಣಗಿಸಿ ಭದ್ರವಾಗಿ ಸಂಗ್ರಹಿಸಿ."
+        }
+      ]
+    },
+    "maize": {
+      "id": "maize",
+      "name_en": "Maize (Corn)",
+      "name_kn": "ಮೆಕ್ಕೆ ಜೋಳ",
+      "source_authority": "ICAR-IIMR & UAS Dharwad Package of Practices",
+      "stages": [
+        {
+          "stage_id": "before_sowing",
+          "icon": "🌱",
+          "title_en": "Land Preparation",
+          "title_kn": "ಭೂಮಿ ಸಿದ್ಧತೆ",
+          "action_en": "Deep ploughing and drainage channel formation",
+          "action_kn": "ಆಳವಾಗಿ ಉಳುಮೆ ಮಾಡಿ ಬಸಿಗಾಲುವೆ ನಿರ್ಮಿಸಿ",
+          "advice_en": "Plough deeply followed by harrowing to obtain a loose, well-aerated seedbed. Ensure good field drainage as maize cannot tolerate waterlogging.",
+          "advice_kn": "ಆಳವಾಗಿ ಉಳುಮೆ ಮಾಡಿ ಹೆಂಟೆ ಒಡೆದು ಹದ ಮಾಡಿ. ಮೆಕ್ಕೆಜೋಳಕ್ಕೆ ನೀರು ನಿಲ್ಲುವುದು ಹಾನಿಕರವಾದ್ದರಿಂದ ಉತ್ತಮ ಬಸಿಗಾಲುವೆ ವ್ಯವಸ್ಥೆ ಕಲ್ಪಿಸಿ."
+        },
+        {
+          "stage_id": "sowing",
+          "icon": "🌧️",
+          "title_en": "Sowing & Spacing",
+          "title_kn": "ಬಿತ್ತನೆ ಮತ್ತು ಅಂತರ",
+          "action_en": "Sow at 60 x 20 cm spacing in moist soil",
+          "action_kn": "60 x 20 ಸೆಂ.ಮೀ ಅಂತರದಲ್ಲಿ ತೇವಾಂಶವಿರುವಾಗ ಬಿತ್ತಿ",
+          "advice_en": "Sow seeds at 4-5 cm depth with 60 cm row spacing and 20 cm plant-to-plant spacing. Ensure soil has adequate moisture for rapid germination.",
+          "advice_kn": "ಸಾಲಿನಿಂದ ಸಾಲಿಗೆ 60 ಸೆಂ.ಮೀ ಮತ್ತು ಗಿಡದಿಂದ ಗಿಡಕ್ಕೆ 20 ಸೆಂ.ಮೀ ಅಂತರವಿಟ್ಟು 4-5 ಸೆಂ.ಮೀ ಆಳದಲ್ಲಿ ಹದವಾದ ತೇವಾಂಶದಲ್ಲಿ ಬಿತ್ತನೆ ಮಾಡಿ."
+        },
+        {
+          "stage_id": "water_management",
+          "icon": "💧",
+          "title_en": "Water Management",
+          "title_kn": "ನೀರಾವರಿ ನಿರ್ವಹಣೆ",
+          "action_en": "Protect from moisture stress at tasseling & silking",
+          "action_kn": "ತೆನೆ ಬಿಡುವ ಮತ್ತು ಕೂದಲು ಬರುವಾಗ ನೀರು ಕೊರತೆಯಾಗದಂತೆ ನೋಡಿ",
+          "advice_en": "Crucial stages for moisture are tasseling (flower emergence) and silking (cob development). Avoid moisture stress during these two critical weeks.",
+          "advice_kn": "ತೆನೆ ಬಿಡುವ (ಹೂವಾಡುವ) ಮತ್ತು ತೆನೆಗೆ ಕೂದಲು ಬರುವ ಹಂತಗಳಲ್ಲಿ ನೀರಿನ ಕೊರತೆಯಾಗದಂತೆ ಎಚ್ಚರವಹಿಸಿ. ಈ ಹಂತದಲ್ಲಿ ಒಣಹವೆ ಇಳುವರಿಯನ್ನು ಕುಂಠಿತಗೊಳಿಸುತ್ತದೆ."
+        },
+        {
+          "stage_id": "crop_growth",
+          "icon": "🌿",
+          "title_en": "Inter-cultivation & Earthing Up",
+          "title_kn": "ಎಡೆಕುಂಟೆ ಮತ್ತು ಮಣ್ಣು ಏರಿಸುವುದು",
+          "action_en": "Earth up soil at knee-high stage to prevent lodging",
+          "action_kn": "ಮೊಣಕಾಲು ಎತ್ತರ ಬೆಳೆದಾಗ ಗಿಡದ ಬುಡಕ್ಕೆ ಮಣ್ಣು ಏರಿಸಿ",
+          "advice_en": "Perform weeding at 20-25 days. Earthing up at knee-high stage (30-35 DAS) provides mechanical support against lodging and suppresses weeds.",
+          "advice_kn": "ಬಿತ್ತಿದ 20-25 ದಿನಗಳಲ್ಲಿ ಕಳೆ ತೆಗೆಯಿರಿ. ಮೊಣಕಾಲು ಎತ್ತರ ಬೆಳೆದಾಗ ಗಿಡಗಳ ಬುಡಕ್ಕೆ ಮಣ್ಣು ಏರಿಸುವುದರಿಂದ ಗಿಡಗಳು ಬಿದ್ದುಹೋಗುವುದಿಲ್ಲ."
+        },
+        {
+          "stage_id": "pest_monitoring",
+          "icon": "🐛",
+          "title_en": "Fall Armyworm (FAW) Watch",
+          "title_kn": "ಲದ್ದಿ ಹುಳು (ಫಾಲ್ ಆರ್ಮಿವರ್ಮ್) ನಿಗಾ",
+          "action_en": "Scout plant whorls weekly for caterpillar signs",
+          "action_kn": "ಗಿಡದ ಸುಳಿಯಲ್ಲಿ ಲದ್ದಿ ಹುಳು ಬಾಧೆಯನ್ನು ಪರಿಶೀಲಿಸಿ",
+          "advice_en": "Check the central whorl of young plants weekly for Fall Armyworm damage (pinholes and sawdust-like frass). Apply neem-based repellents early.",
+          "advice_kn": "ಗಿಡದ ಸುಳಿಯಲ್ಲಿ ಲದ್ದಿ ಹುಳು (FAW) ಬಾಧೆಯ ಬಗ್ಗೆ ವಾರಕ್ಕೊಮ್ಮೆ ಪರಿಶೀಲಿಸಿ. ಆರಂಭಿಕ ಹಂತದಲ್ಲೇ ಬೇವಿನ ಕಷಾಯ ಅಥವಾ ಬೇವಿನ ಎಣ್ಣೆ ಸಿಂಪಡಿಸಿ."
+        },
+        {
+          "stage_id": "harvest",
+          "icon": "🌾",
+          "title_en": "Harvest & De-husking",
+          "title_kn": "ಕೊಯ್ಲು ಮತ್ತು ತೆನೆ ಸುಲಿಯುವುದು",
+          "action_en": "Harvest when cob sheath turns papery dry",
+          "action_kn": "ತೆನೆಯ ಕವಚ ಪೂರ್ಣ ಒಣಗಿದಾಗ ಕಟಾವು ಮಾಡಿ",
+          "advice_en": "Harvest cobs when outer husk dries completely and grains develop a hard black layer at the base. Sun-dry cobs before shelling.",
+          "advice_kn": "ತೆನೆಯ ಹೊರಕವಚ ಒಣಗಿ ಕಂದುಬಣ್ಣಕ್ಕೆ ಬಂದು, ಕಾಳಿನ ಬುಡದಲ್ಲಿ ಕಪ್ಪು ಗೆರೆ ಕಾಣಿಸಿಕೊಂಡಾಗ ಕಟಾವು ಮಾಡಿ ಬಿಸಿಲಿನಲ್ಲಿ ಚೆನ್ನಾಗಿ ಒಣಗಿಸಿ."
+        }
+      ]
+    },
+    "cotton": {
+      "id": "cotton",
+      "name_en": "Cotton",
+      "name_kn": "ಹತ್ತಿ",
+      "source_authority": "ICAR-CICR & UAS Dharwad Package of Practices",
+      "stages": [
+        {
+          "stage_id": "before_sowing",
+          "icon": "🌱",
+          "title_en": "Deep Ploughing",
+          "title_kn": "ಆಳವಾದ ಉಳುಮೆ",
+          "action_en": "Summer ploughing to expose dormant bollworm pupae",
+          "action_kn": "ಬೇಸಿಗೆ ಉಳುಮೆಯಿಂದ ಕಾಯಿಕೊರಕ ಹುಳುಗಳ ಕೋಶ ನಾಶಪಡಿಸಿ",
+          "advice_en": "Deep ploughing in summer breaks hardpan in black soil and exposes dormant pupae of bollworms. Form ridges and furrows for rainwater conservation.",
+          "advice_kn": "ಬೇಸಿಗೆಯಲ್ಲಿ ಆಳವಾದ ಉಳುಮೆ ಮಾಡುವುದರಿಂದ ಕಪ್ಪು ಮಣ್ಣಿನ ಗಡಸು ಪದರ ಸಡಿಲವಾಗಿ ಕಾಯಿಕೊರಕ ಹುಳುಗಳ ಕೋಶಗಳು ನಾಶವಾಗುತ್ತವೆ. ಸಾಲು ಬದುಗಳನ್ನು ನಿರ್ಮಿಸಿ."
+        },
+        {
+          "stage_id": "sowing",
+          "icon": "🌧️",
+          "title_en": "Sowing on Ridges",
+          "title_kn": "ಸಾಲಿನಲ್ಲಿ ಬಿತ್ತನೆ",
+          "action_en": "Dibble on ridge sides with optimum wide spacing",
+          "action_kn": "ಸಾಲು ಬದುಗಳ ಪಕ್ಕದಲ್ಲಿ ಸೂಕ್ತ ಅಂತರವಿಟ್ಟು ಬಿತ್ತಿ",
+          "advice_en": "Sow on the side of ridges with 90 x 60 cm spacing upon onset of monsoon showers. Dibble 2 seeds per hill and thin to 1 healthy seedling later.",
+          "advice_kn": "ಮುಂಗಾರು ಮಳೆ ಆರಂಭವಾದ ನಂತರ 90 x 60 ಸೆಂ.ಮೀ ಅಂತರದಲ್ಲಿ ಸಾಲು ಬದುಗಳ ಪಕ್ಕದಲ್ಲಿ ಬಿತ್ತಿ. ಒಂದು ಗುಂಡಿಗೆ 2 ಬೀಜ ಊರಿ, ನಂತರ ಒಂದು ಸದೃಢ ಸಸಿ ಉಳಿಸಿ."
+        },
+        {
+          "stage_id": "water_management",
+          "icon": "💧",
+          "title_en": "Moisture Management",
+          "title_kn": "ತೇವಾಂಶ ನಿರ್ವಹಣೆ",
+          "action_en": "Ensure moisture during flowering and boll opening",
+          "action_kn": "ಹೂಮೊಗ್ಗು ಮತ್ತು ಕಾಯಿ ಕಟ್ಟುವಾಗ ನೀರು ನಿಲ್ಲದಂತೆ ತೇವಾಂಶ ಕಾಪಾಡಿ",
+          "advice_en": "Cotton taproots explore deep black soil. Peak water need is during square formation and boll development; avoid excess water which causes boll drop.",
+          "advice_kn": "ಹತ್ತಿಯ ಬೇರು ಆಳಕ್ಕೆ ಇಳಿಯುತ್ತದೆ. ಹೂಮೊಗ್ಗು ಹಾಗೂ ಕಾಯಿ ಕಟ್ಟುವ ಹಂತದಲ್ಲಿ ತೇವಾಂಶ ಅತ್ಯಗತ್ಯ. ಅತಿಯಾದ ನೀರು ನಿಂತರೆ ಕಾಯಿ ಉದುರುತ್ತವೆ."
+        },
+        {
+          "stage_id": "crop_growth",
+          "icon": "🌿",
+          "title_en": "Nipping & Weed Control",
+          "title_kn": "ತುದಿ ಚಿವುಟುವುದು ಮತ್ತು ಕಳೆ ನಿಯಂತ್ರಣ",
+          "action_en": "Nip terminal shoot at 80-90 days for more side bolls",
+          "action_kn": "80-90 ದಿನಗಳಲ್ಲಿ ತುದಿ ಚಿವುಟಿ ಕವಲುಗಳನ್ನು ಹೆಚ್ಚಿಸಿ",
+          "advice_en": "Nip the terminal shoot at 80-90 days to restrict vegetative height and encourage sympodial branches with more bolls. Keep field weed-free.",
+          "advice_kn": "80-90 ದಿನಗಳಲ್ಲಿ ಗಿಡದ ಮುಖ್ಯ ತುದಿಯನ್ನು ಚಿವುಟಿ (ನಿಪ್ಪಿಂಗ್), ಇದರಿಂದ ಪಕ್ಕದ ಕವಲುಗಳು ಹೆಚ್ಚಾಗಿ ಅಧಿಕ ಕಾಯಿಗಳು ಕಟ್ಟುತ್ತವೆ."
+        },
+        {
+          "stage_id": "pest_monitoring",
+          "icon": "🐛",
+          "title_en": "Sucking Pests & Bollworm Check",
+          "title_kn": "ರಸಹೀರುವ ಕೀಟಗಳು ಮತ್ತು ಕಾಯಿಕೊರಕದ ನಿಗಾ",
+          "action_en": "Install pheromone traps for pink bollworm",
+          "action_kn": "ಗುಲಾಬಿ ಕಾಯಿಕೊರಕದ ಪತ್ತೆಗೆ ಮೋಹಕ ಬಲೆ ಅಳವಡಿಸಿ",
+          "advice_en": "Inspect leaf undersides for jassids and thrips. Install yellow sticky traps and pheromone traps for early monitoring of pink bollworm.",
+          "advice_kn": "ಎಲೆಯ ಕೆಳಭಾಗದಲ್ಲಿ ಜಿಗಿಹುಳು ಮತ್ತು ಥ್ರಿಪ್ಸ್ ಕೀಟಗಳ ನಿಗಾವಹಿಸಿ. ಗುಲಾಬಿ ಕಾಯಿಕೊರಕದ ಪತ್ತೆಗೆ ಮೋಹಕ (ಫೆರಮೋನ್) ಬಲೆಗಳನ್ನು ಅಳವಡಿಸಿ."
+        },
+        {
+          "stage_id": "harvest",
+          "icon": "🌾",
+          "title_en": "Clean Picking",
+          "title_kn": "ಸ್ವಚ್ಛ ಹತ್ತಿ ಬಿಡಿಸುವುದು",
+          "action_en": "Pick clean open bolls after morning dew dries",
+          "action_kn": "ಇಬ್ಬನಿ ಒಣಗಿದ ನಂತರ ಸ್ವಚ್ಛವಾಗಿ ಬಿಡಿಸಿ",
+          "advice_en": "Pick cotton clean when bolls burst fully open in morning after dew dries. Store picked cotton dry, free of dried bracts and leaf trash.",
+          "advice_kn": "ಬೆಳಗಿನ ಇಬ್ಬನಿ ಒಣಗಿದ ನಂತರ ಚೆನ್ನಾಗಿ ಒಡೆದ ಕಾಯಿಗಳಿಂದ ಶುದ್ಧ ಹತ್ತಿಯನ್ನು ಬಿಡಿಸಿ. ಎಲೆ ಮತ್ತು ಕಸಕಡ್ಡಿ ಇಲ್ಲದಂತೆ ಒಣ ಜಾಗದಲ್ಲಿ ಸಂಗ್ರಹಿಸಿ."
+        }
+      ]
+    }
+  }
+}

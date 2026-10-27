@@ -1,0 +1,184 @@
+{
+  "_metadata": {
+    "description": "Default soil properties for Karnataka soil types. Used to pre-fill the UI when a farmer selects a soil type.",
+    "note": "Values are approximate typical ranges compiled from ICAR-NBSS&LUP guidelines, UAS Dharwad/Bengaluru research, and Krishi Vigyan Kendra publications. Exact values vary by location, depth, season, and management history.",
+    "units": {
+      "ph": "pH scale (0-14)",
+      "nitrogen": "kg/ha (available N)",
+      "phosphorus": "kg/ha (available P2O5)",
+      "potassium": "kg/ha (available K2O)"
+    },
+    "sources": [
+      "ICAR-NBSS&LUP Soil Resource Maps of India",
+      "UAS Dharwad — Department of Soil Science and Agricultural Chemistry",
+      "UAS Bengaluru — Soil Fertility Research",
+      "Karnataka State Department of Agriculture — Soil Health Card Data",
+      "Krishi Vigyan Kendra publications (various districts)"
+    ],
+    "last_updated": "2026-09-05"
+  },
+  "soil_types": [
+    {
+      "id": "red_soil",
+      "name_en": "Red Soil",
+      "name_kn": "ಕೆಂಪು ಮಣ್ಣು",
+      "description_en": "Common across southern and eastern Karnataka. Derived from granite and gneiss rocks. Generally acidic to neutral, low in nitrogen and phosphorus.",
+      "description_kn": "ದಕ್ಷಿಣ ಮತ್ತು ಪೂರ್ವ ಕರ್ನಾಟಕದಲ್ಲಿ ಸಾಮಾನ್ಯ.",
+      "karnataka_districts": ["Bengaluru Rural", "Kolar", "Tumkur", "Chikkaballapura", "Ramanagara", "Hassan", "Chitradurga"],
+      "properties": {
+        "ph": {
+          "default": 6.5,
+          "range_min": 5.5,
+          "range_max": 6.8
+        },
+        "nitrogen": {
+          "default": 180,
+          "range_min": 150,
+          "range_max": 250,
+          "category": "low to medium"
+        },
+        "phosphorus": {
+          "default": 18,
+          "range_min": 10,
+          "range_max": 25,
+          "category": "low to medium"
+        },
+        "potassium": {
+          "default": 200,
+          "range_min": 150,
+          "range_max": 250,
+          "category": "medium"
+        }
+      },
+      "characteristics": [
+        "Well-drained",
+        "Low water-holding capacity",
+        "Low in organic matter",
+        "Deficient in nitrogen and phosphorus",
+        "Moderate potassium levels"
+      ]
+    },
+    {
+      "id": "black_soil",
+      "name_en": "Black Soil",
+      "name_kn": "ಕಪ್ಪು ಮಣ್ಣು",
+      "description_en": "Predominant in northern Karnataka. Clayey, moisture-retentive. Rich in calcium, magnesium, and potash. Often alkaline.",
+      "description_kn": "ಉತ್ತರ ಕರ್ನಾಟಕದಲ್ಲಿ ಪ್ರಧಾನ.",
+      "karnataka_districts": ["Dharwad", "Belagavi", "Vijayapura", "Bagalkot", "Gadag", "Koppal", "Raichur", "Bellary", "Davangere"],
+      "properties": {
+        "ph": {
+          "default": 7.8,
+          "range_min": 7.5,
+          "range_max": 8.5
+        },
+        "nitrogen": {
+          "default": 250,
+          "range_min": 200,
+          "range_max": 350,
+          "category": "medium"
+        },
+        "phosphorus": {
+          "default": 22,
+          "range_min": 15,
+          "range_max": 35,
+          "category": "medium"
+        },
+        "potassium": {
+          "default": 310,
+          "range_min": 250,
+          "range_max": 400,
+          "category": "medium to high"
+        }
+      },
+      "characteristics": [
+        "High clay content",
+        "High moisture retention",
+        "Swells when wet, cracks when dry",
+        "Rich in lime, magnesium, potash",
+        "Often deficient in nitrogen and phosphorus",
+        "Self-ploughing due to shrink-swell"
+      ]
+    },
+    {
+      "id": "sandy_soil",
+      "name_en": "Sandy Soil",
+      "name_kn": "ಮರಳು ಮಣ್ಣು",
+      "description_en": "Found in parts of eastern Karnataka and river basins. Well-drained but poor in nutrients and water-holding capacity.",
+      "description_kn": "ಪೂರ್ವ ಕರ್ನಾಟಕ ಮತ್ತು ನದಿ ಜಲಾನಯನ ಪ್ರದೇಶಗಳಲ್ಲಿ ಕಂಡುಬರುತ್ತದೆ.",
+      "karnataka_districts": ["Ramanagara", "Kolar", "Chikkaballapura", "parts of Tumkur"],
+      "properties": {
+        "ph": {
+          "default": 6.2,
+          "range_min": 5.5,
+          "range_max": 7.0
+        },
+        "nitrogen": {
+          "default": 120,
+          "range_min": 80,
+          "range_max": 150,
+          "category": "low"
+        },
+        "phosphorus": {
+          "default": 12,
+          "range_min": 8,
+          "range_max": 20,
+          "category": "low"
+        },
+        "potassium": {
+          "default": 110,
+          "range_min": 80,
+          "range_max": 150,
+          "category": "low"
+        }
+      },
+      "characteristics": [
+        "Large particle size",
+        "Very well-drained (excess drainage)",
+        "Low water-holding capacity",
+        "Low organic matter",
+        "Low in all major nutrients",
+        "Easy to till"
+      ]
+    },
+    {
+      "id": "alluvial_soil",
+      "name_en": "Alluvial Soil",
+      "name_kn": "ಮೆಕ್ಕಲು ಮಣ್ಣು",
+      "description_en": "Found along river banks and coastal Karnataka. Generally fertile, good for paddy and sugarcane. Contains balanced nutrients.",
+      "description_kn": "ನದಿ ತೀರ ಮತ್ತು ಕರಾವಳಿ ಕರ್ನಾಟಕದಲ್ಲಿ ಕಂಡುಬರುತ್ತದೆ.",
+      "karnataka_districts": ["Dakshina Kannada", "Udupi", "Uttara Kannada", "Mandya", "Mysuru"],
+      "properties": {
+        "ph": {
+          "default": 7.0,
+          "range_min": 6.5,
+          "range_max": 7.5
+        },
+        "nitrogen": {
+          "default": 240,
+          "range_min": 200,
+          "range_max": 300,
+          "category": "medium"
+        },
+        "phosphorus": {
+          "default": 22,
+          "range_min": 15,
+          "range_max": 30,
+          "category": "medium"
+        },
+        "potassium": {
+          "default": 260,
+          "range_min": 200,
+          "range_max": 350,
+          "category": "medium to high"
+        }
+      },
+      "characteristics": [
+        "Fine-grained, deposited by rivers",
+        "Good moisture retention",
+        "Fertile with balanced nutrients",
+        "Suitable for wide variety of crops",
+        "May need drainage management in coastal areas"
+      ]
+    }
+  ]
+}

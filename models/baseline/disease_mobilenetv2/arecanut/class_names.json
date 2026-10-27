@@ -1,0 +1,56 @@
+{
+  "0": {
+    "id": "Healthy_Leaf",
+    "name_en": "Healthy Leaf",
+    "name_kn": "ಆರೋಗ್ಯಕರ ಎಲೆ (Healthy Leaf)",
+    "is_healthy": true
+  },
+  "1": {
+    "id": "Healthy_Nut",
+    "name_en": "Healthy Nut",
+    "name_kn": "ಆರೋಗ್ಯಕರ ಅಡಿಕೆ ಕಾಯಿ (Healthy Nut)",
+    "is_healthy": true
+  },
+  "2": {
+    "id": "Healthy_Trunk",
+    "name_en": "Healthy Trunk",
+    "name_kn": "ಆರೋಗ್ಯಕರ ಕಾಂಡ/ಮರ (Healthy Trunk)",
+    "is_healthy": true
+  },
+  "3": {
+    "id": "Mahali_Koleroga",
+    "name_en": "Fruit Rot / Koleroga (Mahali)",
+    "name_kn": "ಮಹಾಲಿ / ಕೊಳೆರೋಗ (Koleroga)",
+    "is_healthy": false
+  },
+  "4": {
+    "id": "Stem_Bleeding",
+    "name_en": "Stem Bleeding Disease",
+    "name_kn": "ಕಾಂಡದ ರಸ ಸೋರುವಿಕೆ (Stem Bleeding)",
+    "is_healthy": false
+  },
+  "5": {
+    "id": "Bud_Borer",
+    "name_en": "Bud Borer Infestation",
+    "name_kn": "ಸುಳಿ ಕೊರೆಯುವ ಹುಳು (Bud Borer)",
+    "is_healthy": false
+  },
+  "6": {
+    "id": "Healthy_Foot",
+    "name_en": "Healthy Trunk Base (Foot)",
+    "name_kn": "ಆರೋಗ್ಯಕರ ಬುಡ (Healthy Base)",
+    "is_healthy": true
+  },
+  "7": {
+    "id": "Stem_Cracking",
+    "name_en": "Stem Cracking Disorder",
+    "name_kn": "ಕಾಂಡ ಬಿರುಕು ರೋಗ (Stem Cracking)",
+    "is_healthy": false
+  },
+  "8": {
+    "id": "Yellow_Leaf_Disease",
+    "name_en": "Yellow Leaf Disease",
+    "name_kn": "ಹಳದಿ ಎಲೆ ರೋಗ (Yellow Leaf Disease)",
+    "is_healthy": false
+  }
+}

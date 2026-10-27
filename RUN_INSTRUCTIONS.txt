@@ -1,0 +1,103 @@
+====================================================================================================
+MANNUMITRA (AI-BASED PREDICTIVE FARMING SYSTEM) — RUN INSTRUCTIONS
+====================================================================================================
+
+Follow these simple steps to run, demonstrate, and evaluate the project on any Windows PC.
+
+----------------------------------------------------------------------------------------------------
+STEP 1: ENVIRONMENT SETUP
+----------------------------------------------------------------------------------------------------
+1. Ensure Python 3.10, 3.11, or 3.12 is installed on your system.
+2. Open Command Prompt or PowerShell in the project directory:
+   cd /d D:\Final_Predictve_Forming_System
+
+3. Create a clean Python virtual environment (recommended):
+   python -m venv venv
+   call venv\Scripts\activate
+
+4. Install the required dependencies:
+   pip install -r requirements.txt
+
+----------------------------------------------------------------------------------------------------
+STEP 2: LAUNCHING THE UNIFIED SYSTEM
+----------------------------------------------------------------------------------------------------
+Option A (One-Click Launcher):
+  Simply double-click:
+  run.bat
+
+Option B (Command Line):
+  cd /d D:\Final_Predictve_Forming_System\backend
+  python -m uvicorn app.main:app --host 127.0.0.1 --port 8000 --reload
+
+The server initializes in under 5 seconds and serves BOTH the API and the Web Interface:
+- Web Application (Frontend):  http://127.0.0.1:8000/ui/
+- Interactive API Docs:        http://127.0.0.1:8000/docs
+- Health Check:                http://127.0.0.1:8000/api/health
+
+----------------------------------------------------------------------------------------------------
+STEP 3: PRESENTATION & DEMONSTRATION WORKFLOW
+----------------------------------------------------------------------------------------------------
+1. Open your browser and navigate to: http://127.0.0.1:8000/ui/
+
+2. DEMO 1: CROP RECOMMENDATION (Active Production 30-Crop Model)
+   - Click 'Crop Recommendation' on the top navigation bar.
+   - Enter soil values (e.g., Nitrogen: 55, Phosphorus: 28, Potassium: 32, pH: 6.5, Rainfall: 720).
+   - Click 'Get Crop Recommendations'.
+   - View the Top-3 overall recommendations, Top-3 agronomic alternatives, suitability scores, FAO-56 water feasibility, and APMC market price outlook.
+   - Switch language to Kannada (ಕನ್ನಡ) using the top-right toggle to demonstrate bilingual localization.
+
+3. DEMO 2: PLANT DISEASE DETECTION (MobileNetV2 Deep Learning)
+   - Click 'Plant Health / Disease Detection' on the navigation bar.
+   - Select a crop (e.g., Arecanut).
+   - Click 'Choose File' and select one of the test images from:
+     demo_samples\disease_images\arecanut_koleroga_fruit_rot.jpg
+   - Click 'Diagnose Leaf Health'.
+   - View the predicted disease, classification confidence, Grad-CAM attention heatmap overlay, and curative chemical/organic advice in English and Kannada.
+
+4. DEMO 3: DIGITAL SOIL HEALTH CARD OCR
+   - Click 'Soil Report OCR' on the navigation bar.
+   - Upload any sample PDF from:
+     demo_samples\soil_reports\sample_soil_health_card.pdf
+   - Click 'Extract Soil Parameters'.
+   - The system extracts N, P, K, and pH, automatically filling the Crop Recommendation form.
+
+5. DEMO 4: WATER REQUIREMENTS & MARKET MANDI PRICES
+   - Click 'Water Intelligence' to show FAO-56 crop water requirement calculations.
+   - Click 'Market Intelligence' to view APMC mandi modal commodity prices across Karnataka.
+
+----------------------------------------------------------------------------------------------------
+STEP 4: RUNNING THE 4 JUPYTER NOTEBOOKS
+----------------------------------------------------------------------------------------------------
+To demonstrate model training, evaluation, and experiments to evaluators:
+
+1. Launch Jupyter Notebook or JupyterLab:
+   cd /d D:\Final_Predictve_Forming_System
+   jupyter notebook
+
+2. Available Notebooks:
+   - notebooks\01_random_forest_39_class.ipynb
+     Demonstrates training and evaluation of the production 39-crop Random Forest model on 23,760 rows.
+   - notebooks\02_random_forest_30_class.ipynb
+     Demonstrates the experimental 30-crop Random Forest model and cross-validation on 18,780 rows.
+   - notebooks\03_rf_hgb_hybrid.ipynb
+     Compares Random Forest, Histogram Gradient Boosting, Soft Voting, and Stacking ensembles.
+   - notebooks\04_mobilenetv2_disease_detection.ipynb
+     Loads the 6 MobileNetV2 models and executes live image inference with Grad-CAM visualization.
+
+----------------------------------------------------------------------------------------------------
+STEP 5: PRODUCTION INTEGRITY VERIFICATION
+----------------------------------------------------------------------------------------------------
+To prove to project evaluators that the production and baseline model artifacts are authentic:
+
+A. Active Production Model (30-Crop Random Forest):
+Get-FileHash -Algorithm SHA256 models\rf_30_class\rf_final.pkl
+
+Verified Checksum:
+856B561797433A11665045E3B9CD9D6035A84FDC130CC2D357B276C8BF5876D5
+
+B. Baseline Comparison Model (39-Crop Random Forest):
+Get-FileHash -Algorithm SHA256 models\rf_39_class\crop_model.pkl
+
+Verified Checksum:
+0F0E9A2E2AE1EBE19FC861F64FC8A737534A32DE89143747D04E5E456DEAC779
+====================================================================================================
